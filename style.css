@@ -1,0 +1,850 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.toggle {
+    position: fixed;
+
+    top: 30px;
+    right: 30px;
+    width: 3vw;
+    height: 3vw;
+
+    background: #000000 url(icons/menu.png);
+    background-size: 2.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: #ffffff;
+
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.contentToggle {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    width: 3vw;
+    height: 3vw;
+
+    background: #f5f5f5 url(icons/menu.png);
+    background-size: 2.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: #ffffff;
+
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.toggle.active {
+    background: #000000 url(icons/close.png);
+    background-size: 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contentToggle.active {
+    display: block;
+    background: #f5f5f5 url(icons/close.png);
+    background-size: 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 100px;
+    min-height: 100vh;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner .imgSidebar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 500px;
+    height: 100%;
+}
+
+.banner .imgSidebar  img{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.banner .contentBox,
+.sidebar,
+.portfolioContent {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 100px;
+    
+    top: 0;
+    right: 0;
+
+    width: calc(100% - 500px);
+    height: 100%;
+}
+
+.logoText {
+    position: absolute;
+
+    top: 40px;
+    left: 100px;
+
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    background-color: #333333;
+    color: #ffffff;
+
+    padding: 0 5px;
+}
+
+.banner .contentBox h4 {
+    font-size: 2vw;
+    color: #333333;
+    font-weight: 300;
+}
+
+.banner .contentBox h4 span {
+    color: #00bcd4;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.banner .contentBox h2 {
+    color: #333333;
+    font-size: 3.5vw;
+    line-height: 1em;
+}
+
+p {
+    font-size: 1.6vw;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.8vw;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #00bcd4;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    padding: 10px 30px;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    right: -100%;
+
+    background-color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    margin: 10px 0;
+}
+
+.sidebar ul li a:hover {
+    color: #00bcd4;
+}
+
+.sideContentText {
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+
+    font-size: 2.5vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    margin: 10px 0;
+}
+
+.sci {
+    position: absolute;
+    display: flex;
+    left: 100px;
+    bottom: 20px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    margin-right: 10px;
+    list-style: none;
+}
+
+.sci li img {
+    transform: scale(0.5);
+    opacity: 0.7;
+    width: 60px;
+}
+
+.sci li img:hover {
+    opacity: 1;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h2 {
+    position: relative;
+
+    color: #00bcd4;
+
+    font-size: 2.3vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title p {
+    max-width: 80%;
+    display: inline-block;
+}
+
+.title h2::before {
+    content: "";
+    background-color: #333333;
+
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+
+    width: 60px;
+    height: 4px;
+
+    transform: translateX(-50%);
+}
+
+.title.white h2,
+.title.white p {
+    color: #ffffff;
+}
+
+.title.white h2::before {
+    background-color: #ffffff;
+}
+
+.about {
+    background-color: #333333;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about .content .textBox {
+    min-width: 49%;
+    width: 49%;
+    text-align: center;
+}
+
+.about .content .textBox p {
+    color: #ffffff;
+    margin-top: 45px;
+}
+
+.about .content .imgBox {
+    margin-left: 40px;
+}
+
+.about .content .imgBox img {
+    max-width: 100%;
+}
+
+hr.solidSeparator {
+    margin: 5px auto 32px;
+    width: 75%;
+    border-top: 1px solid #f5f5f5;
+}
+
+.work .title {
+    margin-bottom: 20px;
+}
+
+.education .content,
+.work .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.education .content h3 {
+    margin-top: 20px;
+}
+
+.education .content p {
+    margin-bottom: 15px;
+}
+
+.education .content .educationBox,
+.work .content .workBox {
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px 10px;
+    margin: 5px 5px 10px 5px;
+
+    transition: 0.5s;
+}
+
+.education .content .educationBox img,
+.work .content .workBox img {
+    width: 35%;
+    object-fit: contain;
+}
+
+.education .content .educationBox div,
+.work .content .workBox div {
+    width: auto;
+    margin: auto 0 auto 15px;
+}
+
+.education .content .educationBox div a {
+    background-color: #f5f5f5;
+    color: #000000;
+
+    text-decoration: none;
+    font-weight: 400;
+
+    padding: 1px 3px;
+}
+
+.portfolio .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio .content .portfolioBox {
+    position: relative;
+
+    width: 20vw;
+    height: 22vw;
+
+    text-align: center;
+    margin: 10px;
+
+    transition: 0.5s;
+}
+
+.portfolio .content .portfolioBox .imgBox,
+.portfolio .content .portfolioBox .textBox {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+
+    width: 90%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .content .portfolioBox .imgBox {
+    height: 90%;
+}
+
+.portfolio .content .portfolioBox .imgBox  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.portfolio .content .portfolioBox .textBox {
+    height: 100%;
+    background-color: #333333;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.portfolio .content .portfolioBox:hover .textBox {
+    opacity: 0.95;
+}
+
+.portfolio .content .portfolioBox .textBox h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+}
+
+.portfolio .content .portfolioBox p {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+
+    width: 90%;
+    height: 10%;
+
+    background-color: #f5f5f5;
+
+    margin: 0;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2vw;
+
+    animation: blink-animation 2s infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        color: #f5f5f5;
+    }
+}
+
+.portfolio .content .portfolioBox:hover p {
+    opacity: 0;
+}
+
+.portfolioContent {
+    position: fixed;
+    right: -100%;
+    
+    background-color: #f5f5f5;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.portfolioContent.active {
+    box-shadow: -7px 0 5px #333333;
+    right: 0;
+}
+
+.portfolioContentBox {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 55px;
+}
+
+.portfolioContent p {
+    color: transparent;
+    transition: 0.9s;
+
+    max-height: 100%;
+    overflow: hidden;
+
+    font-size: auto;
+
+    padding-right: 15px;
+    margin: auto;
+
+    transition: color 500ms 500ms;
+}
+
+.portfolioContent p.active {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.portfolioContent img {
+    width: 200px;
+    height: auto;
+
+    border: 1px solid #e5e5e5;
+
+    margin-left: 10px;
+}
+
+#portfolioContent_GGJ2k20 .portfolioContentBox img,
+#portfolioContent_gameEngine .portfolioContentBox img {
+    width: 400px;
+    border: 0;
+}
+
+#portfolioContent_rotate .portfolioContentBox img {
+    border: 0;
+}
+
+.skills .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills .content .skillBox {
+    max-width: 340px;
+    width: 180px;
+
+    background-color: #f5f5f5;
+
+    padding: 30px 20px;
+    margin: 5px;
+
+    text-align: center;
+    transition: 0.5s;
+}
+
+.skills .content .skillBox:hover {
+    background-color: #333333;
+}
+
+.skills .content .skillBox img {
+    max-width: 80px;
+    transition: 0.5s;
+}
+
+.skills .content .skillBox:hover img {
+    filter: saturate(2);
+}
+
+.skills .content .skillBox h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    font-size: 1.2vw;
+    font-weight: 600;
+
+    transition: 0.5s;
+}
+
+.skills .content .skillBox:hover h2 {
+    color: #ffffff;
+}
+
+.skills .content .skillBox p {
+    margin: 0;
+    transition: 0.5s;
+}
+
+.skills .content .skillBox:hover p {
+    color: #ffffff;
+}
+
+.interests .rowFlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.interests .rowFlexContainer img {
+    max-width: 50%;
+    margin: 2px;
+    border: 0;
+}
+
+.interests .content .interestsBox {
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px 10px;
+    margin: 55px 5px 10px 5px;
+
+    transition: 0.5s;
+}
+
+.interests .content .interestsBox p {
+    align-self: center;
+}
+
+.interests .content .interestsBox div {
+    width: 40%;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.interests .content .interestsBox div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.interests .content .interestsBox div p {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    color: #333333;
+}
+
+.interests #iLoveBasketball {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.resume .content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.resume .content .resumeBox a {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.resume .content .resumeBox a img {
+    width: 33%;
+}
+
+.contact {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: #ffffff;
+    background-color: #111111;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 1.6vw;
+}
+
+@media (max-width: 991px) {
+    .banner .contentBox h4 {
+        font-size: 3vw;
+    }
+    .banner .imgSidebar {
+        display: none;
+    }
+    .banner .contentBox, .sidebar {
+        width: 100%;
+        padding: 40px;
+    }
+    .logoText {
+        left: 40px;
+    }
+    .toggle,
+    .contentToggle  {
+        right: 40px;
+        width: 5vw;
+        height: 5vw;
+        background-size: 4vw;
+    }
+    .toggle.active,
+    .contentToggle.active  {
+        right: 40px;
+        width: 4.5vw;
+        height: 4.5vw;
+        background-size: 4vw;
+    }
+    .sci {
+        left: 40px;
+    }
+    p {
+        font-size: 2.5vw;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }  
+    h4 {
+        font-size: 3vw;
+    }
+    .title h2 {
+        font-size: 4vw;
+    }
+    section {
+        padding: 40px;
+    }
+    .about .content {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .about .content .textBox {
+        min-width: 100%;
+        width: 100%;
+    }
+    .education .content .educationBox {
+        flex-direction: column-reverse;
+    }
+    .work .content .workBox {
+        flex-direction: column;
+    }
+    .education .content .educationBox img,
+    .work .content .workBox img {
+        align-self: center;
+        width: 75%;
+    }
+    .portfolioContent {
+        padding: 70px;
+    }
+    .portfolioContentBox {
+        flex-direction: column;
+        padding: 0;
+    } 
+    .portfolioContentBox img {
+        display: none;
+    }
+    .skills .content .skillBox {
+        padding: 30px 20px;
+        max-width: 340px;
+    }
+    .skills .content .skillBox h2 {
+        font-size: 2vw;
+    }
+    .sidebar ul li a {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner .contentBox h4 {
+        font-size: 4vw;
+    }
+    .toggle,
+    .contentToggle {
+        right: 20px;
+        width: 9vw;
+        height: 9vw;
+        background-size: 8vw;
+    }
+    .toggle.active,
+    .contentToggle.active {
+        right: 20px;
+        width: 7vw;
+        height: 7vw;
+        background-size: 6vw;
+    }
+    p {
+        font-size: 3.5vw;
+    }
+    h3 {
+        font-size: 4.5vw;
+    }  
+    h4 {
+        font-size: 4vw;
+    }
+    .title h2 {
+        font-size: 5vw;
+    }
+    .work .content .workBox {
+        max-width: 100%;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .portfolio .content .portfolioBox {
+        width: 31vw;
+        height: 31vw;
+        margin: 5px;
+        padding: 10px 20px;
+    }
+    .skills .content .skillBox {
+        max-width: 45%;
+        width: 45%;
+        margin: 5px;
+        padding: 10px 20px;
+    }
+    .skills .content .skillBox h2 {
+        font-size: 3vw;
+    }
+    .skills .content .skillBox:hover h2 {
+        margin: 2px 0;
+    }
+    .interests .content .interestsBox {
+        flex-direction: column;
+    }
+    .interests .content .interestsBox div {
+        width: 60%;
+        align-self: center;
+    }
+    .resume .content .resumeBox figcaption {
+        font-size: 3vw;
+    }
+}
