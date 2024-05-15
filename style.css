@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #ffffff;;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 1px solid #bbb;
+    z-index: 100;
+}
+  
+.heading {
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+  
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+  
+.nav-links li {
+    list-style: none;
+}
+  
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+  
+.nav-links a:hover {
+    color: #04AA6D;
+}
+
+section {
+    padding: 75px;
+}
+
+p {
+    font-size: 1.6vw;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.8vw;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #00bcd4;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    padding: 10px 30px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h2 {
+    position: relative;
+
+    color: #00bcd4;
+
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title h1 {
+    margin-top: 15px;
+    max-width: 80%;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.title h2::before {
+    content: "";
+    background-color: #333333;
+
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+
+    width: 60px;
+    height: 4px;
+
+    transform: translateX(-50%);
+}
+
+.title.white h1,
+.title.white h2,
+.title.white h3,
+.title.white h4 {
+    color: #ffffff;
+}
+
+.title.white h2::before {
+    background-color: #ffffff;
+}
+
+.banner {
+    margin-top: 8vh;
+    background-color: #333333;
+}
+
+.banner .content p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.banner .content .imgBox {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .content .imgBox img {
+    max-width: 25%;
+    margin: auto;
+}
+
+.portfolio .content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.portfolio .content .portfolioBox {
+    position: relative;
+
+    width: 20vw;
+    height: 22vw;
+
+    text-align: center;
+    margin: 10px;
+
+    transition: 0.5s;
+}
+
+.portfolio .content .portfolioBox:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.portfolio .content .portfolioBox .imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    height: 60%;
+    width: 60%;
+}
+
+.portfolio .content .portfolioBox .imgBox  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.portfolio .content .portfolioBox:hover  {
+    opacity: 0.95;
+}
+
+.portfolio .content .portfolioBox .textBox h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+}
+
+.portfolio .content .portfolioBox p {
+    font-size: 0.9vw;
+}
+
+.portfolioContent {
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    
+    margin-top: 5vh;
+    width: 100%;
+    color: #333333;
+}
+
+.portfolioContent p {
+    font-size: 1.2vw;
+}
+
+.portfolioContent .imgBox {
+    display: grid;
+    justify-content: center;
+}
+
+.portfolioContent .imgBox.portrait_box {
+    grid-template-columns: auto auto auto auto;
+}
+
+.portfolioContent .imgBox.landscape_box {
+    grid-template-columns: auto auto;
+}
+
+.portfolioContent .imgBox .portrait_img {
+    padding: 20px;
+    height: 500px;
+    margin: auto;
+}
+
+.portfolioContent .imgBox .landscape_img {
+    padding: 10px;
+    height: 300px;
+    margin: auto;
+}
+
+.reference .content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.reference .content .referenceBox a {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.reference .content .referenceBox a img {
+    width: 33%;
+}
+
+.contact {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .icon_links {
+    display: inline-flex;
+}
+
+.contact .icon_links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+@media (max-width: 991px) {
+    .banner h4 {
+        font-size: 3vw;
+    }
+    .banner .imgSidebar {
+        display: none;
+    }
+    .banner {
+        width: 100%;
+        padding: 40px;
+    }
+    .logoText {
+        left: 40px;
+    }
+    .toggle,
+    .contentToggle  {
+        right: 40px;
+        width: 5vw;
+        height: 5vw;
+        background-size: 4vw;
+    }
+    .toggle.active,
+    .contentToggle.active  {
+        right: 40px;
+        width: 4.5vw;
+        height: 4.5vw;
+        background-size: 4vw;
+    }
+    .sci {
+        left: 40px;
+    }
+    p {
+        font-size: 2.5vw;
+    }
+    h3 {
+        font-size: 3.5vw;
+    }  
+    h4 {
+        font-size: 3vw;
+    }
+    .title h2 {
+        font-size: 4vw;
+    }
+    section {
+        padding: 40px;
+    }
+    .portfolio .content {
+        flex-direction: column-reverse;
+    }
+    .portfolio .content img {
+        align-self: center;
+        width: 75%;
+    }
+    .sidebar ul li a {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner h4 {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 3.5vw;
+    }
+    h3 {
+        font-size: 4.5vw;
+    }  
+    h4 {
+        font-size: 4vw;
+    }
+    .title h2 {
+        font-size: 5vw;
+    }
+    .portfolio .content .portfolioBox {
+        width: 31vw;
+        height: 31vw;
+        margin: 5px;
+        padding: 10px 20px;
+    }
+    .reference .content .referenceBox figcaption {
+        font-size: 3vw;
+    }
+}
