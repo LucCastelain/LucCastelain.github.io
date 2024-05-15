@@ -16,6 +16,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
+    max-height: 8vh;
     background-color: #ffffff;;
     font-family: "Montserrat", sans-serif;
     border-bottom: 1px solid #bbb;
@@ -133,6 +134,11 @@ h4 {
     background-color: #333333;
 }
 
+.banner.top p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .banner p {
     color: #ffffff;
     text-align: center;
@@ -150,6 +156,30 @@ h4 {
     margin: 0 20% 0 20%;
     font-size: 1.3vw;
     padding-bottom: 8px;
+}
+
+.bannerPhoto {
+    position: absolute;
+    justify-content: center;
+    width: 15%;
+    height: fit-content;
+    top: 17vh;
+    right: 5%;
+    transform: rotate(15deg);
+}
+
+.bannerPhoto p {
+    position: absolute;
+    top: -30%;
+    left: -10%;
+}
+
+.bannerPhoto img {
+    display: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .skills {
@@ -194,6 +224,25 @@ h4 {
     font-size: 1.3vw;
 }
 
+.skills .complementary_skillbox {
+    margin-top: 25px;
+    margin-left: 2vw;
+    margin-right: 2vw; 
+    width: 18vw;
+}
+
+.skills .complementary_skillbox img {
+    max-height: 10vw;
+}
+
+.skills .complementary_skillbox h4 {
+    font-size: 1.4vw;
+}
+
+.skills .complementary_skillbox p {
+    font-size: 1.1vw;
+}
+
 .portfolio .content {
     margin-top: 30px;
     display: grid;
@@ -211,7 +260,7 @@ h4 {
     position: relative;
 
     width: 20vw;
-    height: 22vw;
+    height: 25vw;
 
     text-align: center;
     margin: 10px;
@@ -250,18 +299,61 @@ h4 {
     font-size: 1.2vw;
 }
 
+.portfolio .content .portfolioBox .textBox ul {
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.portfolio .content .portfolioBox .textBox li {
+    display: inline-block;
+}
+
+.portfolio .content .portfolioBox .textBox .skillbox {
+    margin: 1px;
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    font-size: 0.7vw;
+}
+
+.portfolio .content .portfolioBox .textBox .softwarebox {
+    margin: 1px;
+    border-radius: 25px;
+    background: #2796db;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    font-size: 0.7vw;
+}
+
 .portfolio .content .portfolioBox p {
     font-size: 0.9vw;
+    margin: 5px 0 20px 0;
 }
 
 .portfolioContent {
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 5%;
-    text-align: center;
-    justify-content: center;
     
     margin-top: 5vh;
-    width: 100%;
     color: #333333;
+}
+
+.portfolioContent .skills {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.portfolioContent .skills .skillgrid {
+    justify-content: start;
+}
+
+.portfolioContent .skills .softwaregrid {
+    justify-content: start;
 }
 
 .portfolioContent p {
@@ -283,13 +375,20 @@ h4 {
 
 .portfolioContent .imgBox .portrait_img {
     padding: 20px;
-    height: 500px;
+    max-height: 43vw;
     margin: auto;
 }
 
 .portfolioContent .imgBox .landscape_img {
     padding: 10px;
-    height: 300px;
+    height: 22.5vw;
+    margin: auto;
+}
+
+.portfolioContent video {
+    max-width: 50vw;
+    max-height: 41vw;
+    display: block;
     margin: auto;
 }
 
