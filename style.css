@@ -360,6 +360,19 @@ h4 {
     font-size: 1.2vw;
 }
 
+.portfolioContent ul {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.portfolioContent .list_p {
+    margin: 5px;
+}
+
+.portfolioContent .list_p b {
+    font-weight: 600;
+}
+
 .portfolioContent .imgBox {
     display: grid;
     justify-content: center;
