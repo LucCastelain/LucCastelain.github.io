@@ -3,27 +3,49 @@
 import {ReactElement} from "react";
 import {useRouter} from "next/navigation";
 import Image from "next/image";
-import {ProjectData} from "@/data/data.component";
+import {ProjectData} from "@/data/portfolio-data.component";
 
 export default function ProjectCardComponent({project}: Readonly<ProjectCardComponentProps>): ReactElement {
     const router = useRouter();
 
     return (
-        <div className="flex flex-col w-full p-4 gap-y-2 text-center text-gray-900 dark:text-gray-50 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+        <div className="group flex flex-col w-full p-4 gap-y-2 text-center text-gray-900 dark:text-gray-50 hover:bg-neutral-100 dark:hover:bg-neutral-700"
              onClick={() => router.push(project.id)}>
             <h3 className="text-xl font-bold">
                 {project.title}
             </h3>
-            <div className="max-h-72">
-            <Image src={`/static/${project.id}/icon.png`}
-                   alt={project.title}
-                   width={500}
-                   height={0}
-                   style={{width: "auto", height: "100%"}}
-                   className="mx-auto min-h-72 max-h-72 rounded-sm"/>
+            <div className="flex flex-row gap-1 justify-center">
+                {project.types.slice(1).map(type => (
+                    <div key={type}
+                         className="px-2 py-1 rounded-md bg-neutral-200 border-neutral-300 dark:bg-neutral-600 dark:border-neutral-800">
+                        {type}
+                    </div>
+                ))}
             </div>
-            <div className="flex flex-row">
-                <p>type: {project.types.slice(1).join(", ")}</p>
+            <div className="max-h-72 overflow-hidden">
+                <Image src={`/static/${project.id}/icon.png`}
+                       alt={project.title}
+                       width={500}
+                       height={0}
+                       style={{width: "auto", height: "100%"}}
+                       className="mx-auto min-h-72 max-h-72 rounded-sm transition-all group-hover:scale-[1.02]"/>
+            </div>
+            <div className="flex flex-col gap-y-2">
+                <div className="flex flex-row gap-1">
+                    {project.programmingLanguages.map(language => (
+                        <div key={language}
+                             className="px-2 py-1 rounded-md bg-green-100 border-green-200 dark:bg-green-700 dark:border-green-800">
+                            {language}
+                        </div>
+                    ))}
+                    {project.software.map(software => (
+                        <div key={software}
+                             className="px-2 py-1 rounded-md bg-sky-100 border-sky-200 dark:bg-sky-700 dark:border-sky-800">
+                            {software}
+                        </div>
+                    ))}
+                </div>
+                <p>{project.summary}</p>
             </div>
         </div>
     );

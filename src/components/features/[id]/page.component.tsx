@@ -1,10 +1,10 @@
 "use client"
 
 import {ReactElement} from "react";
-import DataComponent from "@/data/data.component";
+import PortfolioDataComponent from "@/data/portfolio-data.component";
 
 export default function ProjectPageComponent({projectId}: Readonly<ProjectPageComponentProps>): ReactElement {
-    const project = DataComponent().projects.find(project => project.id === projectId);
+    const project = PortfolioDataComponent().projects.find(project => project.id === projectId);
 
     return (
         <div className="size-full">
