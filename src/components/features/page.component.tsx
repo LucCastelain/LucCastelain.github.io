@@ -2,25 +2,24 @@
 
 import {ReactElement, useEffect, useState} from "react";
 import ProjectCardComponent from "@/components/ui/project-card.component";
-import PortfolioDataComponent, {ProjectTypeComponent} from "@/data/portfolio-data.component";
+import {getPortfolioData} from "@/data/utils/get-data";
 
-export default function PageComponent(): ReactElement {
-    const data = PortfolioDataComponent();
-    const projectTypes = ProjectTypeComponent();
-    const [projectTypeFilter, setProjectTypeFilter] = useState<string>(projectTypes.ALL);
+export default function PageComponent({language}: Readonly<PageComponentProps>): ReactElement {
+    const data = getPortfolioData(language);
+    const [projectTypeFilter, setProjectTypeFilter] = useState<string>(data.projectTypes.ALL);
 
     useEffect(() => {
-        setProjectTypeFilter(projectTypes.ALL);
-    }, [projectTypes]);
+        setProjectTypeFilter(data.projectTypes.ALL);
+    }, [data.projectTypes]);
 
-    if(!projectTypes) return <div>loading...</div>
+    if(!data.projectTypes) return <div>loading...</div>
 
     return (
         <div className="size-full flex flex-col gap-y-2">
-            <div className="flex flex-row mb-2">
+            <div className="flex flex-row w-full mb-2">
                 <select className="ml-auto w-36 px-3 py-2.5 bg-transparent border-b-2 border-blue-500 text-gray-900 dark:text-gray-50"
                     onChange={(e) => setProjectTypeFilter(e.currentTarget.value)}>
-                    {Object.values(projectTypes).map(type => (
+                    {Object.values(data.projectTypes).map(type => (
                         <option key={type} value={type}>{type}</option>
                     ))}
                 </select>
@@ -35,4 +34,8 @@ export default function PageComponent(): ReactElement {
             </div>
         </div>
     );
+}
+
+interface PageComponentProps {
+    language: string;
 }

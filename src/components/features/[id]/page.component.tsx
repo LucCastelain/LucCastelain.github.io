@@ -1,10 +1,10 @@
 "use client"
 
 import {ReactElement} from "react";
-import PortfolioDataComponent from "@/data/portfolio-data.component";
+import {getPortfolioData} from "@/data/utils/get-data";
 
-export default function ProjectPageComponent({projectId}: Readonly<ProjectPageComponentProps>): ReactElement {
-    const project = PortfolioDataComponent().projects.find(project => project.id === projectId);
+export default function ProjectPageComponent({language, projectId}: Readonly<ProjectPageComponentProps>): ReactElement {
+    const project = getPortfolioData(language).projects.find(project => project.id === projectId);
 
     return (
         <div className="size-full">
@@ -21,5 +21,6 @@ export default function ProjectPageComponent({projectId}: Readonly<ProjectPageCo
 }
 
 interface ProjectPageComponentProps {
+    language: string;
     projectId: string;
 }

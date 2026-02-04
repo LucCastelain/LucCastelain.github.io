@@ -54,7 +54,7 @@ export default function DropdownComponent({
             <div ref={refs.setFloating}
                  style={floatingStyles}
                  {...getFloatingProps()}
-                 className={twMerge("z-50 rounded-lg border border-neutral-100 dark:border-neutral-800 shadow-sm dark:shadow-neutral-800 transition-all duration-150 origin-top scale-95 data-[open=true]:opacity-100 data-[open=true]:scale-100", className, !isOpen && "opacity-0 pointer-events-none")}
+                 className={twMerge("z-50 rounded-lg border bg-neutral-50 border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 shadow-sm dark:shadow-neutral-800 transition-all duration-150 origin-top scale-95 data-[open=true]:opacity-100 data-[open=true]:scale-100", className, !isOpen && "opacity-0 pointer-events-none")}
                  data-open={isOpen}>
                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                     {children}

@@ -1,9 +1,15 @@
+"use client"
+
 import {ReactElement} from "react";
 import {DarkModeToggleComponent} from "@/components/ui/dark-mode/dark-mode-toggle.component";
 import LanguageDropdownComponent from "@/components/ui/languages/language-dropdown.component";
 import Link from "next/dist/client/link";
+import {useSearchParams} from "next/dist/client/components/navigation";
 
 export default function NavbarComponent(): ReactElement {
+    const params = useSearchParams();
+    const language = params.get("lang") ?? "en";
+
     return (
         <nav className="absolute top-0 w-full h-fit bg-white border-gray-200 dark:border-neutral-800 dark:bg-neutral-900 border-b">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
@@ -19,12 +25,12 @@ export default function NavbarComponent(): ReactElement {
                             </a>
                         </li>
                         <li>
-                            <Link href="/" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            <Link href={`/?lang=${language}`} className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 Portfolio
                             </Link>
                         </li>
                         <li>
-                            <Link href="/resume" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            <Link href={`/resume?lang=${language}`} className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 Resume
                             </Link>
                         </li>
@@ -34,7 +40,7 @@ export default function NavbarComponent(): ReactElement {
                             </a>
                         </li>
                         <li>
-                            <Link href="/contact" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            <Link href={`/contact?lang=${language}`} className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 Contact
                             </Link>
                         </li>

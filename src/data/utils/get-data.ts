@@ -1,39 +1,237 @@
-"use client"
+import {EN_DATA, EN_PROJECT_TYPE, EN_RESUME_TYPE} from "@/data/data.en";
+import {FR_DATA, FR_PROJECT_TYPE, FR_RESUME_TYPE} from "@/data/data.fr";
+import {CH_DATA, CH_PROJECT_TYPE, CH_RESUME_TYPE} from "@/data/data.ch";
 
-import {useLanguageContext} from "@/components/ui/languages/languages-provider.component";
-import {EN_DATA, EN_PROJECT_TYPE} from "@/data/data.en";
-import {FR_DATA, FR_PROJECT_TYPE} from "@/data/data.fr";
-import {CH_DATA, CH_PROJECT_TYPE} from "@/data/data.ch";
-
-export default function PortfolioDataComponent(): PortfolioData {
-    const language = useLanguageContext();
+export function getResumeData(language: string): ResumeData {
     let data = EN_DATA;
-    let projectType: ProjectType;
+    let resumeType: ResumeType;
 
-    switch(language.language) {
-        case "français":
+    switch(language) {
+        case "fr":
             data = FR_DATA;
-            projectType = FR_PROJECT_TYPE;
+            resumeType = FR_RESUME_TYPE;
             break;
-        case "中文":
+        case "ch":
             data = CH_DATA;
-            projectType = CH_PROJECT_TYPE;
+            resumeType = CH_RESUME_TYPE;
             break;
         default:
             data = EN_DATA;
-            projectType = EN_PROJECT_TYPE;
+            resumeType = EN_RESUME_TYPE;
     }
 
     return {
+        types: {
+            ALL: resumeType.ALL,
+            EDUCATION: resumeType.EDUCATION,
+            EXPERIENCE: resumeType.EXPERIENCE
+        },
+        experiences: [
+            {
+                id: "high-school",
+                title: data.highSchool_title,
+                summary: data.highSchool_summary,
+                company: data.highSchool_company,
+                companyWebsite: data.highSchool_company_website,
+                location: data.highSchool_location,
+                startDate: new Date(Number(data.highSchool_startDate.split("-")[2]), Number(data.highSchool_startDate.split("-")[1]), Number(data.highSchool_startDate.split("-")[0])),
+                endDate: new Date(Number(data.highSchool_endDate.split("-")[2]), Number(data.highSchool_endDate.split("-")[1]), Number(data.highSchool_endDate.split("-")[0])),
+                type: resumeType.EDUCATION,
+                software: [],
+                programmingLanguages: [],
+                keypoints: []
+            },
+            {
+                id: "erasmus-exchange",
+                title: data.erasmusExchange_title,
+                summary: data.erasmusExchange_summary,
+                company: data.erasmusExchange_company,
+                companyWebsite: data.erasmusExchange_company_website,
+                location: data.erasmusExchange_location,
+                startDate: new Date(Number(data.erasmusExchange_startDate.split("-")[2]), Number(data.erasmusExchange_startDate.split("-")[1]), Number(data.erasmusExchange_startDate.split("-")[0])),
+                endDate: new Date(Number(data.erasmusExchange_endDate.split("-")[2]), Number(data.erasmusExchange_endDate.split("-")[1]), Number(data.erasmusExchange_endDate.split("-")[0])),
+                type: resumeType.EDUCATION,
+                software: [],
+                programmingLanguages: [],
+                keypoints: []
+            },
+            {
+                id: "engineering-degree",
+                title: data.engineeringDegree_title,
+                summary: data.engineeringDegree_summary,
+                company: data.engineeringDegree_company,
+                companyWebsite: data.engineeringDegree_company_website,
+                location: data.engineeringDegree_location,
+                startDate: new Date(Number(data.engineeringDegree_startDate.split("-")[2]), Number(data.engineeringDegree_startDate.split("-")[1]), Number(data.engineeringDegree_startDate.split("-")[0])),
+                endDate: new Date(Number(data.engineeringDegree_endDate.split("-")[2]), Number(data.engineeringDegree_endDate.split("-")[1]), Number(data.engineeringDegree_endDate.split("-")[0])),
+                type: resumeType.EDUCATION,
+                software: [],
+                programmingLanguages: [],
+                keypoints: []
+            },
+            {
+                id: "three-months-internship",
+                title: data.threeMonthsInternship_title,
+                summary: data.threeMonthsInternship_summary,
+                company: data.threeMonthsInternship_company,
+                companyWebsite: data.threeMonthsInternship_company_website,
+                location: data.threeMonthsInternship_location,
+                startDate: new Date(Number(data.threeMonthsInternship_startDate.split("-")[2]), Number(data.threeMonthsInternship_startDate.split("-")[1]), Number(data.threeMonthsInternship_startDate.split("-")[0])),
+                endDate: new Date(Number(data.threeMonthsInternship_endDate.split("-")[2]), Number(data.threeMonthsInternship_endDate.split("-")[1]), Number(data.threeMonthsInternship_endDate.split("-")[0])),
+                type: resumeType.EXPERIENCE,
+                software: [data.software.QT],
+                programmingLanguages: [data.programming_languages.C_PLUSPLUS],
+                keypoints: []
+            },
+            {
+                id: "four-months-internship",
+                title: data.fourMonthsInternship_title,
+                summary: data.fourMonthsInternship_summary,
+                company: data.fourMonthsInternship_company,
+                companyWebsite: data.fourMonthsInternship_company_website,
+                location: data.fourMonthsInternship_location,
+                startDate: new Date(Number(data.fourMonthsInternship_startDate.split("-")[2]), Number(data.fourMonthsInternship_startDate.split("-")[1]), Number(data.fourMonthsInternship_startDate.split("-")[0])),
+                endDate: new Date(Number(data.fourMonthsInternship_endDate.split("-")[2]), Number(data.fourMonthsInternship_endDate.split("-")[1]), Number(data.fourMonthsInternship_endDate.split("-")[0])),
+                type: resumeType.EXPERIENCE,
+                software: [data.software.SVN, data.software.VSCODE, data.software.UNITY],
+                programmingLanguages: [data.programming_languages.C_PLUSPLUS, data.programming_languages.C_SHARP, data.programming_languages.UML],
+                keypoints: []
+            },
+            {
+                id: "engineering-internship",
+                title: data.engineeringInternship_title,
+                summary: data.engineeringInternship_summary,
+                company: data.engineeringInternship_company,
+                companyWebsite: data.genesys_company_website,
+                location: data.engineeringInternship_location,
+                startDate: new Date(Number(data.engineeringInternship_startDate.split("-")[2]), Number(data.engineeringInternship_startDate.split("-")[1]), Number(data.engineeringInternship_startDate.split("-")[0])),
+                endDate: new Date(Number(data.engineeringInternship_endDate.split("-")[2]), Number(data.engineeringInternship_endDate.split("-")[1]), Number(data.engineeringInternship_endDate.split("-")[0])),
+                type: resumeType.EXPERIENCE,
+                software: [data.software.GITHUB, data.software.CONFLUENCE],
+                programmingLanguages: [data.programming_languages.NODEJS, data.programming_languages.JS, data.programming_languages.JQUERY, data.programming_languages.HTML, data.programming_languages.CSS],
+                keypoints: []
+            },
+            {
+                id: "genesys",
+                title: data.genesys_title,
+                summary: data.genesys_summary,
+                company: data.genesys_company,
+                companyWebsite: data.genesys_company_website,
+                location: data.genesys_location,
+                startDate: new Date(Number(data.genesys_startDate.split("-")[2]), Number(data.genesys_startDate.split("-")[1]), Number(data.genesys_startDate.split("-")[0])),
+                endDate: new Date(Number(data.genesys_endDate.split("-")[2]), Number(data.genesys_endDate.split("-")[1]), Number(data.genesys_endDate.split("-")[0])),
+                type: resumeType.EXPERIENCE,
+                software: [data.software.GITHUB, data.software.CONFLUENCE, data.software.JIRA],
+                programmingLanguages: [data.programming_languages.NODEJS, data.programming_languages.JS, data.programming_languages.ANGULAR_JS, data.programming_languages.REACT_JS, data.programming_languages.HTML, data.programming_languages.CSS],
+                keypoints: []
+            },
+            {
+                id: "freelance",
+                title: data.freelance_title,
+                summary: data.freelance_summary,
+                company: data.freelance_company,
+                location: data.freelance_location,
+                startDate: new Date(Number(data.freelance_startDate.split("-")[2]), Number(data.freelance_startDate.split("-")[1]), Number(data.freelance_startDate.split("-")[0])),
+                endDate: new Date(Number(data.freelance_endDate.split("-")[2]), Number(data.freelance_endDate.split("-")[1]), Number(data.freelance_endDate.split("-")[0])),
+                type: resumeType.EXPERIENCE,
+                software: [data.software.GITHUB, data.software.XCODE, data.software.GODOT],
+                programmingLanguages: [data.programming_languages.GD_SCRIPT, data.programming_languages.UML],
+                keypoints: []
+            },
+            {
+                id: "baudin",
+                title: data.baudin_title,
+                summary: data.baudin_summary,
+                company: data.baudin_company,
+                companyWebsite: data.baudin_company_website,
+                location: data.baudin_location,
+                startDate: new Date(Number(data.baudin_startDate.split("-")[2]), Number(data.baudin_startDate.split("-")[1]), Number(data.baudin_startDate.split("-")[0])),
+                type: resumeType.EXPERIENCE,
+                software: [data.software.GITLAB, data.software.DOCKER, data.software.GRAFANA, data.software.KEYCLOAK, data.software.PGADMIN, data.software.WEBSTORM, data.software.POSTMAN],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.JS, data.programming_languages.REACT_JS, data.programming_languages.TAILWIND_CSS, data.programming_languages.PRISMA, data.programming_languages.POSTGRE_SQL],
+                keypoints: []
+            }
+        ]
+    };
+}
+
+export function getPortfolioData(language: string): PortfolioData {
+    let data = EN_DATA;
+    let projectTypes: ProjectType;
+
+    switch(language) {
+        case "français":
+            data = FR_DATA;
+            projectTypes = FR_PROJECT_TYPE;
+            break;
+        case "中文":
+            data = CH_DATA;
+            projectTypes = CH_PROJECT_TYPE;
+            break;
+        default:
+            data = EN_DATA;
+            projectTypes = EN_PROJECT_TYPE;
+    }
+
+    return {
+        projectTypes: projectTypes,
         projects: [
+            {
+                id: "",
+                title: data.supportDSI_title,
+                summary: data.supportDSI_summary,
+                description: data.supportDSI_description,
+                types: [projectTypes.ALL, projectTypes.WEB],
+                images: [],
+                software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                keypoints: [
+                    {
+                        title: data.supportDSI_keypoint1_title,
+                        description: data.supportDSI_keypoint1_description
+                    },
+                    {
+                        title: data.supportDSI_keypoint2_title,
+                        description: data.supportDSI_keypoint2_description
+                    },
+                    {
+                        title: data.supportDSI_keypoint3_title,
+                        description: data.supportDSI_keypoint3_description
+                    },
+                    {
+                        title: data.supportDSI_keypoint4_title,
+                        description: data.supportDSI_keypoint4_description
+                    },
+                    {
+                        title: data.supportDSI_keypoint5_title,
+                        description: data.supportDSI_keypoint5_description
+                    },
+                ]
+            },
+            {
+                id: "bc-formation",
+                title: data.bcFormation_title,
+                summary: data.bcFormation_summary,
+                description: data.bcFormation_description,
+                types: [projectTypes.ALL, projectTypes.WEB],
+                images: [],
+                software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                keypoints: [
+                    {
+                        title: data.bcFormation_keypoint1_title,
+                        description: data.bcFormation_keypoint1_description
+                    },
+                ]
+            },
             {
                 id: "this-website",
                 title: data.thisWebsite_title,
                 summary: data.thisWebsite_summary,
                 description: data.thisWebsite_description,
-                types: [projectType.ALL, projectType.WEB],
+                types: [projectTypes.ALL, projectTypes.WEB],
                 images: [],
-                software: [data.software.WEBSTORM],
+                software: [data.software.WEBSTORM, data.software.GITHUB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.REACT_JS, data.programming_languages.TAILWIND_CSS],
                 keypoints: []
             },
@@ -42,7 +240,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.deepMine_title,
                 summary: data.deepMine_summary,
                 description: data.deepMine_description,
-                types: [projectType.ALL, projectType.GAME],
+                types: [projectTypes.ALL, projectTypes.GAME],
                 images: [
                     "DeepMine_1.png",
                     "DeepMine_2.png",
@@ -106,7 +304,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.dicesDungeon_title,
                 summary: data.dicesDungeon_summary,
                 description: data.dicesDungeon_description,
-                types: [projectType.ALL, projectType.GAME, projectType.ANDROID],
+                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.ANDROID],
                 images: [],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -138,7 +336,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.farmingGame_title,
                 summary: data.farmingGame_summary,
                 description: data.farmingGame_description,
-                types: [projectType.ALL, projectType.GAME],
+                types: [projectTypes.ALL, projectTypes.GAME],
                 images: [],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -182,7 +380,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.cardGamePrototype_title,
                 summary: data.cardGamePrototype_summary,
                 description: data.cardGamePrototype_description,
-                types: [projectType.ALL, projectType.GAME],
+                types: [projectTypes.ALL, projectTypes.GAME],
                 images: [],
                 software: [data.software.GODOT],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -206,7 +404,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.atelierRyzaCraftingSystem_title,
                 summary: data.atelierRyzaCraftingSystem_summary,
                 description: data.atelierRyzaCraftingSystem_description,
-                types: [projectType.ALL, projectType.GAME],
+                types: [projectTypes.ALL, projectTypes.GAME],
                 images: [],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -234,7 +432,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.missed_title,
                 summary: data.missed_summary,
                 description: data.missed_description,
-                types: [projectType.ALL, projectType.GAME, projectType.ANDROID],
+                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.ANDROID],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -262,7 +460,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.globalGameJam2022_title,
                 summary: data.globalGameJam2022_summary,
                 description: data.globalGameJam2022_description,
-                types: [projectType.ALL, projectType.GAME],
+                types: [projectTypes.ALL, projectTypes.GAME],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE, data.software.GITHUB],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -295,7 +493,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.globalGameJam2020_title,
                 summary: data.globalGameJam2020_summary,
                 description: data.globalGameJam2020_description,
-                types: [projectType.ALL, projectType.GAME],
+                types: [projectTypes.ALL, projectTypes.GAME],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE, data.software.GITHUB],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -332,7 +530,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.gameEngine_title,
                 summary: data.gameEngine_summary,
                 description: data.gameEngine_description,
-                types: [projectType.ALL, projectType.GAME],
+                types: [projectTypes.ALL, projectTypes.GAME],
                 images: [],
                 software: [data.software.SDL2, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_PLUSPLUS],
@@ -343,7 +541,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: "Rotate",
                 summary: data.rotate_summary,
                 description: data.rotate_description,
-                types: [projectType.ALL, projectType.GAME, projectType.IOS],
+                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.IOS],
                 images: [],
                 software: [data.software.XCODE, data.software.SPRITE_KIT],
                 programmingLanguages: [data.programming_languages.SWIFT],
@@ -363,7 +561,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.dotWar_title,
                 summary: data.dotWar_summary,
                 description: data.dotWar_description,
-                types: [projectType.ALL, projectType.GAME, projectType.ANDROID],
+                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.ANDROID],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -387,7 +585,7 @@ export default function PortfolioDataComponent(): PortfolioData {
                 title: data.localBeer_title,
                 summary: data.localBeer_summary,
                 description: data.localBeer_description,
-                types: [projectType.ALL, projectType.ANDROID],
+                types: [projectTypes.ALL, projectTypes.ANDROID],
                 images: [],
                 software: [data.software.ANDROID_STUDIO, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.JAVA],
@@ -406,24 +604,17 @@ export default function PortfolioDataComponent(): PortfolioData {
     };
 }
 
-export function ProjectTypeComponent(): ProjectType {
-    const language = useLanguageContext();
-
-    switch (language.language) {
-        case "français":
-            return FR_PROJECT_TYPE;
-        case "中文":
-            return CH_PROJECT_TYPE;
-        default:
-            return EN_PROJECT_TYPE;
-    }
+export type ResumeData = {
+    types: ResumeType;
+    experiences: ExperienceData[];
 }
 
-interface PortfolioData {
+export type PortfolioData = {
+    projectTypes: ProjectType;
     projects: ProjectData[];
 }
 
-export interface ProjectData {
+export type ProjectData = {
     id: string,
     title: string,
     summary: string,
@@ -435,16 +626,37 @@ export interface ProjectData {
     keypoints: Keypoint[]
 }
 
-interface Keypoint {
+export type Keypoint = {
     title: string,
     description: string,
     link?: string,
 }
 
-export interface ProjectType {
+export type ProjectType = {
     ALL: string;
     GAME: string;
     WEB: string;
     ANDROID: string;
     IOS: string;
+}
+
+export interface ExperienceData {
+    id: string,
+    title: string,
+    summary: string,
+    company: string,
+    companyWebsite?: string,
+    location: string,
+    startDate: Date,
+    endDate?: Date,
+    type: string,
+    software: string[],
+    programmingLanguages: string[],
+    keypoints: Keypoint[]
+}
+
+export interface ResumeType {
+    ALL: string;
+    EDUCATION: string;
+    EXPERIENCE: string;
 }

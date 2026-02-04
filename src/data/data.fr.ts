@@ -1,5 +1,33 @@
 export const FR_DATA = {
-    // ------------------ This website ------------------ //
+// ------------------ BC Formation ------------------ //
+    supportDSI_title: "Support DSI",
+    supportDSI_summary: "A web app for user to create ticket for support from IT.",
+    supportDSI_description: "Support DSI is a web app allowing the IT employees to create a lot of different support scenarios that the other employees car ask support for (from asking for computer equipments such as mouse, screen, etc... To a software problem they encounter or else...).\nThen users can follow the scenarios according to their need to create a ticket with all the information needed for IT to help them. Once the ticket is created, users can access history of all their tickets, be notified when one is updated, exchange with IT if need and put an appreciation when a ticket is closed.",
+
+    supportDSI_keypoint1_title: "Role management",
+    supportDSI_keypoint1_description: "The app does not display the same information and possibility to users depending on their assigned role (IT, department manager, base user). Access to page and information have been secured both from frontend and backend point of view.",
+
+    supportDSI_keypoint2_title: "Scenario création via a graph",
+    supportDSI_keypoint2_description: "Creation and visualization of scenarios is easy thanks to a interactive graph (via cytoscape.js)",
+
+    supportDSI_keypoint3_title: "Link to GLPI issue tracking system",
+    supportDSI_keypoint3_description: "The creation of a ticket is mirrored and linked to GLPI for easy management in IT side",
+
+    supportDSI_keypoint4_title: "Very personalizable scenarios",
+    supportDSI_keypoint4_description: "Can create various type of scenarios with an extensive configuration of forms for each scenario if needed",
+
+    supportDSI_keypoint5_title: "Allows to quantify support data",
+    supportDSI_keypoint5_description: "Average time resolution for tickets, as well as number of tickets per category and such data can be monitored thanks to the app.",
+
+// ------------------ BC Formation ------------------ //
+    bcFormation_title: "BC Formation",
+    bcFormation_summary: "A web app to manage and view a company's trainings and training sessions",
+    bcFormation_description: "BC Formation is a web app allowing user to view available trainings as well as their trainings history. The manager of each department can view the training history of all the persons in their department and ask for new trainings for them. The training administrator can add new trainings and trainers, create and manage training sessions from people in it, dates, document, location, ...",
+
+    bcFormation_keypoint1_title: "Role management",
+    bcFormation_keypoint1_description: "The app does not display the same information and possibility to users depending on their assigned role. Access to page and information have been secured both from frontend and backend point of view.",
+
+// ------------------ This website ------------------ //
     thisWebsite_title: "Ce site web",
     thisWebsite_summary: "",
     thisWebsite_description: "Contenu 1",
@@ -239,6 +267,7 @@ export const FR_DATA = {
         GRAFANA: "Grafana Cloud",
         DOCKER: "Docker",
         KEYCLOAK: "Keycloak",
+        POSTMAN: "Postman",
     },
     programming_languages: {
         C_PLUSPLUS: "C++",
@@ -267,12 +296,12 @@ export const FR_DATA = {
 // ------------------ Resume data ------------------ //
 // ------------------ Education ------------------ //
     engineeringDegree_title: "Engineering degree",
-    engineeringDegree_summary: "Preparatory classes integrated into engineering curriculum. Engineering classes since January 2019.",
+    engineeringDegree_summary: "Preparatory classes integrated into engineering curriculum. Engineering classes featuring three main fields: Programming, Electronics and Mechatronics. Thanks to that, we have a global understanding and knowledge in all these engineering fields no matter the specialization.\nSpecialization: programming",
     engineeringDegree_company: "ENIB",
     engineeringDegree_company_website: "https://www.enib.fr/",
     engineeringDegree_location: "Brest, France",
-    engineeringDegree_startDate: "09-01-2016",
-    engineeringDegree_endDate: "03-01-2022",
+    engineeringDegree_startDate: "01-09-2016",
+    engineeringDegree_endDate: "01-03-2022",
 
     erasmusExchange_title: "6 months Erasmus exchange in Norway",
     erasmusExchange_summary: "Erasmus semester in Norway where I mainly studied Data Mining, Machine Learning and Web Programming. ",
@@ -280,47 +309,47 @@ export const FR_DATA = {
     erasmusExchange_company_website: "https://www.uis.no/en",
     erasmusExchange_location: "Stavanger, Norway",
     erasmusExchange_startDate: "01-01-2020",
-    erasmusExchange_endDate: "07-01-2020",
+    erasmusExchange_endDate: "01-07-2020",
 
     highSchool_title: "High School Diploma with honours",
     highSchool_summary: "Specialization: computer sciences and programming fields. With honours.",
     highSchool_company: "Junior High-School Jacques Monod",
     highSchool_company_website: "https://lyceejacquesmonod.eu/",
     highSchool_location: "Saint-Jean-de-Braye, France",
-    highSchool_startDate: "09-01-2013",
-    highSchool_endDate: "07-01-2016",
+    highSchool_startDate: "01-09-2013",
+    highSchool_endDate: "01-07-2016",
 
 // ------------------ Experiences ------------------ //
     threeMonthsInternship_title: "3 months programming internship",
-    threeMonthsInternship_summary: "I improved and upgraded a tool that can edit and lay out medical reports in a medical software 'Planet Onco Dose'.",
+    threeMonthsInternship_summary: "I improved and upgraded a tool that can edit and lay out medical reports in a medical software called 'Planet Onco Dose'. Planet Onco Dose is a medical imaging software for cancer diseases which deals with a ton of data. Optimization while using such large amounts of data was also a big part of making the medical reports tool working.",
     threeMonthsInternship_company: "DOSIsoft",
     threeMonthsInternship_company_website: "https://www.dosisoft.com/",
     threeMonthsInternship_location: "Paris, France",
-    threeMonthsInternship_startDate: "06-01-2019",
-    threeMonthsInternship_endDate: "08-30-2019",
+    threeMonthsInternship_startDate: "01-06-2019",
+    threeMonthsInternship_endDate: "30-08-2019",
 
     fourMonthsInternship_title: "4 months programming internship",
-    fourMonthsInternship_summary: "I both worked on a software in C++ and in Unity3D to create scenarios for an interactive classroom simulation system.",
+    fourMonthsInternship_summary: "I worked on an interactive simulation system created to help early career teachers learn effective classroom management skills. I had to debug and optimize a new software used to create and edit scenarios for this system.\nI also worked on Unity to make a scene working on VR Devices.",
     fourMonthsInternship_company: "Affective Social Computing Laboratory, Florida International University",
     fourMonthsInternship_company_website: "https://ascl.cs.fiu.edu/",
     fourMonthsInternship_location: "From Centre Européen de Réalité Virtuelle (CERV), Brest, France",
-    fourMonthsInternship_startDate: "09-01-2020",
-    fourMonthsInternship_endDate: "12-21-2020",
+    fourMonthsInternship_startDate: "01-09-2020",
+    fourMonthsInternship_endDate: "21-12-2020",
 
     engineeringInternship_title: "6 months engineering internship",
-    engineeringInternship_summary: "I created a web application from scratch.",
+    engineeringInternship_summary: "I created a web application from scratch which allowed QA team to access their own scripts and fill Root Cause Analysis in cases of failed status.\nThe app displayed many information in different tabs. It was the starting point to get every automated tests from QA, all in the same place.",
     engineeringInternship_company: "Genesys",
     engineeringInternship_location: "Brest, France",
-    engineeringInternship_startDate: "09-01-2021",
-    engineeringInternship_endDate: "03-15-2022",
+    engineeringInternship_startDate: "01-09-2021",
+    engineeringInternship_endDate: "15-03-2022",
 
     genesys_title: "Full-stack associate software engineer",
-    genesys_summary: "I worked as an associate software engineer full-stack developing Genesys’ products.\nGenesys is a company that offers cloud solutions to various partners, for agents and customers managements.\nI worked with an international team with people from Canada, United States, India and Europe.",
+    genesys_summary: "I worked as an associate software engineer full-stack developing Genesys’ products.\nGenesys is a company that offers cloud solutions to various partners, for agents and customers managements.\nI worked in an international team with people from Canada, United States, India and Europe.",
     genesys_company: "Genesys",
     genesys_company_website: "https://www.genesys.com/",
     genesys_location: "Brest, France",
-    genesys_startDate: "04-01-2022",
-    genesys_endDate: "05-15-2023",
+    genesys_startDate: "01-04-2022",
+    genesys_endDate: "15-05-2023",
 
     freelance_title: "Freelance developer",
     freelance_summary: "I gave myself 1 year to work as a freelance developer for my self-employed company.\nI have designed and published several games as well as made many prototypes. I did the pre-production work: game design documents, description of the \"minimum viable product\" and creation of UML diagrams.\nI then programmed the games using Godot game engine.",
@@ -328,6 +357,14 @@ export const FR_DATA = {
     freelance_location: "Brest, France",
     freelance_startDate: "01-06-2023",
     freelance_endDate: "01-07-2024",
+
+    baudin_title: "Full-stack software engineer",
+    baudin_summary: "I worked as a software engineer for Baudin Chateauneuf.\nThe Baudin Chateauneuf Group is one on the main player for construction and civil engineering in France with more than 2000 employees. It operates in metal and mechanical construction, civil engineering and building with more than a 100 years of history.\nMy main job was to transition their thick client applications to a web environment. The applications chosen for transition were redesigned from the ground up. Working with a small team, I had to participate in every step of their development, from conception to programming, devops, going into production and support.",
+    baudin_company: "Baudin Chateauneuf",
+    baudin_company_website: "https://www.baudinchateauneuf.com/",
+    baudin_location: "Châteauneuf-sur-Loire, France",
+    baudin_startDate: "10-21-2024",
+    baudin_endDate: "",
 }
 
 export const FR_PROJECT_TYPE = {

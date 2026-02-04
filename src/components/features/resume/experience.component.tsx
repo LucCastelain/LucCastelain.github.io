@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
-import {ExperienceData} from "@/data/resume-data.component";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
+import {ExperienceData} from "@/data/utils/get-data";
 
 export default function ExperienceComponent({experience}: Readonly<ExperienceComponentProps>): ReactElement {
     return (
@@ -8,7 +8,7 @@ export default function ExperienceComponent({experience}: Readonly<ExperienceCom
             <div className="flex flex-row items-center">
                 <p className="font-bold text-lg">{experience.title}</p>
                 <p className="ml-4 text-sm text-neutral-500 dark:text-neutral-400">
-                    {experience.startDate.getMonth() < 9 ? "0" : ""}{experience.startDate.getMonth()+1}/{experience.startDate.getFullYear()} - {experience.endDate ? (experience.endDate.getMonth() < 9 ? `0${experience.startDate.getMonth()+1}/${experience.endDate.getFullYear()}` : `${experience.startDate.getMonth()+1}/${experience.endDate.getFullYear()}`) : "now"}
+                    {experience.startDate.getMonth() < 9 ? "0" : ""}{experience.startDate.getMonth()+1}/{experience.startDate.getFullYear()} - {experience.endDate ? (experience.endDate.getMonth() < 9 ? `0${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}` : `${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}`) : "now"}
                 </p>
             </div>
             <div className="flex flex-row items-center">
@@ -25,14 +25,14 @@ export default function ExperienceComponent({experience}: Readonly<ExperienceCom
                 }
                 <p>, {experience.location}</p>
             </div>
-            <div className="flex flex-row gap-1">
-                {experience.programmingLanguages.map(language => (
+            <div className="flex flex-wrap gap-1">
+                {experience.programmingLanguages.map((language: string) => (
                     <div key={language}
                          className="px-2 py-1 rounded-md bg-green-100 border-green-200 dark:bg-green-700 dark:border-green-800">
                         {language}
                     </div>
                 ))}
-                {experience.software.map(software => (
+                {experience.software.map((software: string) => (
                     <div key={software}
                          className="px-2 py-1 rounded-md bg-sky-100 border-sky-200 dark:bg-sky-700 dark:border-sky-800">
                         {software}
