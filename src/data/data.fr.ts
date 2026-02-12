@@ -1,4 +1,21 @@
 export const FR_DATA = {
+// ------------------ Matrix ------------------ //
+    matrix_title: "Matrix",
+    matrix_summary: "A web app acting like an phone book or directory for the company employees.",
+    matrix_description: "Matrix is an app displaying all kind of information about the company's employees such as their professional phone number and email, the place they work in (main company or subsidiary), their department and manager.\nIt allows to search for a specific or a group of specific employees if you need to contact them.",
+
+    matrix_keypoint1_title: "General Data Protection Regulation (GDPR) - protection of employees sensitive data",
+    matrix_keypoint1_description: "The app does not display sensitive information about employees. Access to detailed data is restricted to only people with the correct authorization (such as the persons in charge of the salary or the HR department if needed)",
+
+    matrix_keypoint2_title: "Connexion to Microsoft Graph API",
+    matrix_keypoint2_description: "A connexion to Microsoft Graph API allows the application to get information about user presence and schedule to directly display inside the app (for example if the person you are looking for is currently in a meeting or not)",
+
+    matrix_keypoint3_title: "Export to XLSX",
+    matrix_keypoint3_description: "An export to an XLSX file of the currently seen employees information is possible",
+
+    matrix_keypoint4_title: "Filters",
+    matrix_keypoint4_description: "Users have a lot of filters to faster their search or to show a specific group of people (only one or some departments, only manager, etc...)",
+
 // ------------------ BC Formation ------------------ //
     supportDSI_title: "Support DSI",
     supportDSI_summary: "A web app for user to create ticket for support from IT.",
@@ -26,6 +43,46 @@ export const FR_DATA = {
 
     bcFormation_keypoint1_title: "Role management",
     bcFormation_keypoint1_description: "The app does not display the same information and possibility to users depending on their assigned role. Access to page and information have been secured both from frontend and backend point of view.",
+
+    bcFormation_keypoint2_title: "Training requests easy to manage for training administrator",
+    bcFormation_keypoint2_description: "Each request for a training is grouped together for the administrator to see how many there is, and then select them to create a session if there is enough.",
+
+    bcFormation_keypoint3_title: "Each user can access his training history",
+    bcFormation_keypoint3_description: "Each user can access the history of his past trainings with his certifications. That way, each person can easily see if they need to redo a training or not.\nOn top of that, managers can see the history of the people they manage to have a global overview of their perimeter.",
+
+    bcFormation_keypoint4_title: "Notifications and emails",
+    bcFormation_keypoint4_description: "When a training session is confirmed by the training administrator, a notification is send on the app (visible through all web applications in BC Portail) as well as an email to each member of the session.\nFor each session convocation document is generated and sent with each email. It is then linked to the training request of each person in the session so that they can check it anytime.",
+
+// ------------------ Load testing script ------------------ //
+    loadTesting_title: "Load testing script",
+    loadTesting_summary: "A script to load test the different web environments",
+    loadTesting_description: "This script allow to load test and stress test the web servers of our apps for a defined period of time and with different charges, allowing us to see if they are correctly configured and will be able to withstand a large amount of users in production.\nThis script is connected to a local Grafana board to easily monitor the results",
+
+    loadTesting_keypoint1_title: "Can be configured to test different real-time situations",
+    loadTesting_keypoint1_description: "Different charges and period of time can be set to test thoroughly our servers.",
+
+    loadTesting_keypoint2_title: "Result are easy to read and in real-time",
+    loadTesting_keypoint2_description: "On top of the results summary the script give at the end of execution, it is connected to a Grafana board to easily read the results in real-time",
+
+// ------------------ BC Formation ------------------ //
+    bcPortail_title: "BC Portail",
+    bcPortail_summary: "A web app acting at the entry point to access the company's apps",
+    bcPortail_description: "BC Portail encapsulate all the other web applications made by Baudin Chateauneuf. It works like a Service-Oriented Architecture as a common ground for each other web applications.",
+
+    bcPortail_keypoint1_title: "Service-Oriented Architecture (SOA)",
+    bcPortail_keypoint1_description: "Applications are built as a collection of loosely coupled, larger-grained services. Services can be reused across different applications when needed. It allows for independent development and deployment of larger functional blocks.",
+
+    bcPortail_keypoint2_title: "Common components",
+    bcPortail_keypoint2_description: "Contains a list of reusable component and services across all web applications.",
+
+    bcPortail_keypoint3_title: "Default layout and configuration",
+    bcPortail_keypoint3_description: "It contains the default layout (front-end) and configuration for each web application.",
+
+    bcPortail_keypoint4_title: "Show all the company's applications",
+    bcPortail_keypoint4_description: "The portal shows all the company's applications, the web apps but also the thick client apps. All the applications can be launched from this place, even the thick client apps thanks to a deep linking system.",
+
+    bcPortail_keypoint5_title: "Configuration page",
+    bcPortail_keypoint5_description: "The configuration page let an administrator to add a web applications icon to the portal, allowing users to access the added web app. Administrators can add, edit, and remove web applications. While adding or editing a web application, they can manage which role or perimeter in the company can access the app amongst other things (name, icon, etc...). In this configuration page, an administrator can also add alerts for all users to be seen, thus allowing an extra layer of communication if needed.",
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "Ce site web",
@@ -144,6 +201,20 @@ export const FR_DATA = {
     atelierRyzaCraftingSystem_keypoint4_title: "Standalone system",
     atelierRyzaCraftingSystem_keypoint4_description: "Easy to add in bigger games.",
 
+    // ------------------ Genesys Designer ------------------ //
+    genesysDesigner_title: "Genesys Designer",
+    genesysDesigner_summary: "A web app for developing self-service and assisted service applications",
+    genesysDesigner_description: "Genesys Designer is a web based tool allowing big companies to create self-service (Interactive Voice Response) and assisted service (Routing) applications for their businesses. It provides functional blocks to users who can drag and drop them to easily build the self-service or routing application they want.\nUsers can set up the voice assistant persona, prompts with text to speech, their business hours, etc...\nAt the end of AngularJS support by Microsoft, I had to find a way to transition the app block by block from AngularJS to ReactJS. This transition had to be seamless and invisible for the users.",
+
+    genesysDesigner_keypoint1_title: "Easy to learn and use",
+    genesysDesigner_keypoint1_description: "Dragable and dropable functional blocks, so it really is easy for the user to learn and use",
+
+    genesysDesigner_keypoint2_title: "Adaptable to any business",
+    genesysDesigner_keypoint2_description: "Any company can adapt Designer's applications to suit their needs.",
+
+    genesysDesigner_keypoint3_title: "Microservice architecture",
+    genesysDesigner_keypoint3_description: "Almost every tab of the application is a microservice and can be removed without impacting the other tabs.",
+
 // ------------------ Missed! ------------------ //
     missed_title: "Missed!",
     missed_summary: "A 3D game made with Unity3D for Android phones",
@@ -247,6 +318,7 @@ export const FR_DATA = {
 
 // ------------------ Software & programming languages ------------------ //
     software: {
+        ALL: "Tous",
         UNITY: "Unity 3D",
         GODOT: "Godot",
         GITHUB: "Github",
@@ -270,6 +342,7 @@ export const FR_DATA = {
         POSTMAN: "Postman",
     },
     programming_languages: {
+        ALL: "Tous",
         C_PLUSPLUS: "C++",
         C: "C",
         C_SHARP: "C#",
@@ -344,7 +417,7 @@ export const FR_DATA = {
     engineeringInternship_endDate: "15-03-2022",
 
     genesys_title: "Full-stack associate software engineer",
-    genesys_summary: "I worked as an associate software engineer full-stack developing Genesys’ products.\nGenesys is a company that offers cloud solutions to various partners, for agents and customers managements.\nI worked in an international team with people from Canada, United States, India and Europe.",
+    genesys_summary: "I worked as an associate software engineer full-stack developing Genesys’ products.\nGenesys is a company that offers cloud solutions to various partners, for agents and customers managements.\nI worked on an web application allowing big companies to create self-service (Interactive Voice Response) and assisted service (Routing) applications for their businesses.\nThe team I worked with was composed of people from Canada, United States, India and Europe.",
     genesys_company: "Genesys",
     genesys_company_website: "https://www.genesys.com/",
     genesys_location: "Brest, France",

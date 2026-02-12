@@ -26,13 +26,13 @@ export default function ExperienceComponent({experience}: Readonly<ExperienceCom
                 <p>, {experience.location}</p>
             </div>
             <div className="flex flex-wrap gap-1">
-                {experience.programmingLanguages.map((language: string) => (
+                {experience.programmingLanguages.sort().map((language: string) => (
                     <div key={language}
                          className="px-2 py-1 rounded-md bg-green-100 border-green-200 dark:bg-green-700 dark:border-green-800">
                         {language}
                     </div>
                 ))}
-                {experience.software.map((software: string) => (
+                {experience.software.sort().map((software: string) => (
                     <div key={software}
                          className="px-2 py-1 rounded-md bg-sky-100 border-sky-200 dark:bg-sky-700 dark:border-sky-800">
                         {software}

@@ -15,7 +15,7 @@ export default function ProjectCardComponent({project}: Readonly<ProjectCardComp
                 {project.title}
             </h3>
             <div className="flex flex-row gap-1 justify-center">
-                {project.types.slice(1).map((type: string) => (
+                {project.types.map((type: string) => (
                     <div key={type}
                          className="px-2 py-1 rounded-md bg-neutral-200 border-neutral-300 dark:bg-neutral-600 dark:border-neutral-800">
                         {type}

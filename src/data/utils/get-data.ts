@@ -160,11 +160,11 @@ export function getPortfolioData(language: string): PortfolioData {
     let projectTypes: ProjectType;
 
     switch(language) {
-        case "français":
+        case "fr":
             data = FR_DATA;
             projectTypes = FR_PROJECT_TYPE;
             break;
-        case "中文":
+        case "ch":
             data = CH_DATA;
             projectTypes = CH_PROJECT_TYPE;
             break;
@@ -175,13 +175,43 @@ export function getPortfolioData(language: string): PortfolioData {
 
     return {
         projectTypes: projectTypes,
+        software: data.software,
+        programmingLanguages: data.programming_languages,
         projects: [
             {
-                id: "",
+                id: "matrix",
+                title: data.matrix_title,
+                summary: data.matrix_summary,
+                description: data.matrix_description,
+                types: [projectTypes.WEB],
+                images: [],
+                software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                keypoints: [
+                    {
+                        title: data.matrix_keypoint1_title,
+                        description: data.matrix_keypoint1_description
+                    },
+                    {
+                        title: data.matrix_keypoint2_title,
+                        description: data.matrix_keypoint2_description
+                    },
+                    {
+                        title: data.matrix_keypoint3_title,
+                        description: data.matrix_keypoint3_description
+                    },
+                    {
+                        title: data.matrix_keypoint4_title,
+                        description: data.matrix_keypoint4_description
+                    }
+                ]
+            },
+            {
+                id: "support-dsi",
                 title: data.supportDSI_title,
                 summary: data.supportDSI_summary,
                 description: data.supportDSI_description,
-                types: [projectTypes.ALL, projectTypes.WEB],
+                types: [projectTypes.WEB],
                 images: [],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
@@ -213,7 +243,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.bcFormation_title,
                 summary: data.bcFormation_summary,
                 description: data.bcFormation_description,
-                types: [projectTypes.ALL, projectTypes.WEB],
+                types: [projectTypes.WEB],
                 images: [],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
@@ -222,6 +252,70 @@ export function getPortfolioData(language: string): PortfolioData {
                         title: data.bcFormation_keypoint1_title,
                         description: data.bcFormation_keypoint1_description
                     },
+                    {
+                        title: data.bcFormation_keypoint2_title,
+                        description: data.bcFormation_keypoint2_description
+                    },
+                    {
+                        title: data.bcFormation_keypoint3_title,
+                        description: data.bcFormation_keypoint3_description
+                    },
+                    {
+                        title: data.bcFormation_keypoint4_title,
+                        description: data.bcFormation_keypoint4_description
+                    },
+                ]
+            },
+            {
+                id: "load-testing",
+                title: data.loadTesting_title,
+                summary: data.loadTesting_summary,
+                description: data.loadTesting_description,
+                types: [projectTypes.WEB],
+                images: [],
+                software: [data.software.WEBSTORM, data.software.KEYCLOAK, data.software.GRAFANA, data.software.GITLAB],
+                programmingLanguages: [data.programming_languages.NEXT_JS],
+                keypoints: [
+                    {
+                        title: data.loadTesting_keypoint1_title,
+                        description: data.loadTesting_keypoint1_description
+                    },
+                    {
+                        title: data.loadTesting_keypoint2_title,
+                        description: data.loadTesting_keypoint2_description
+                    },
+                ]
+            },
+            {
+                id: "bc-portail",
+                title: data.bcPortail_title,
+                summary: data.bcPortail_summary,
+                description: data.bcPortail_description,
+                types: [projectTypes.WEB],
+                images: [],
+                software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                keypoints: [
+                    {
+                        title: data.bcPortail_keypoint1_title,
+                        description: data.bcPortail_keypoint1_description
+                    },
+                    {
+                        title: data.bcPortail_keypoint2_title,
+                        description: data.bcPortail_keypoint2_description
+                    },
+                    {
+                        title: data.bcPortail_keypoint3_title,
+                        description: data.bcPortail_keypoint3_description
+                    },
+                    {
+                        title: data.bcPortail_keypoint4_title,
+                        description: data.bcPortail_keypoint4_description
+                    },
+                    {
+                        title: data.bcPortail_keypoint5_title,
+                        description: data.bcPortail_keypoint5_description
+                    },
                 ]
             },
             {
@@ -229,7 +323,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.thisWebsite_title,
                 summary: data.thisWebsite_summary,
                 description: data.thisWebsite_description,
-                types: [projectTypes.ALL, projectTypes.WEB],
+                types: [projectTypes.WEB],
                 images: [],
                 software: [data.software.WEBSTORM, data.software.GITHUB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.REACT_JS, data.programming_languages.TAILWIND_CSS],
@@ -240,7 +334,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.deepMine_title,
                 summary: data.deepMine_summary,
                 description: data.deepMine_description,
-                types: [projectTypes.ALL, projectTypes.GAME],
+                types: [projectTypes.GAME],
                 images: [
                     "DeepMine_1.png",
                     "DeepMine_2.png",
@@ -304,7 +398,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.dicesDungeon_title,
                 summary: data.dicesDungeon_summary,
                 description: data.dicesDungeon_description,
-                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.ANDROID],
+                types: [projectTypes.GAME, projectTypes.IOS],
                 images: [],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -336,7 +430,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.farmingGame_title,
                 summary: data.farmingGame_summary,
                 description: data.farmingGame_description,
-                types: [projectTypes.ALL, projectTypes.GAME],
+                types: [projectTypes.GAME],
                 images: [],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -380,7 +474,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.cardGamePrototype_title,
                 summary: data.cardGamePrototype_summary,
                 description: data.cardGamePrototype_description,
-                types: [projectTypes.ALL, projectTypes.GAME],
+                types: [projectTypes.GAME],
                 images: [],
                 software: [data.software.GODOT],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -404,7 +498,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.atelierRyzaCraftingSystem_title,
                 summary: data.atelierRyzaCraftingSystem_summary,
                 description: data.atelierRyzaCraftingSystem_description,
-                types: [projectTypes.ALL, projectTypes.GAME],
+                types: [projectTypes.GAME],
                 images: [],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -428,11 +522,35 @@ export function getPortfolioData(language: string): PortfolioData {
                 ]
             },
             {
+                id: "genesys-designer",
+                title: data.genesysDesigner_title,
+                summary: data.genesysDesigner_summary,
+                description: data.genesysDesigner_description,
+                types: [projectTypes.WEB],
+                images: [],
+                software: [data.software.VSCODE, data.software.GITHUB, data.software.CONFLUENCE, data.software.JIRA],
+                programmingLanguages: [data.programming_languages.ANGULAR_JS, data.programming_languages.REACT_JS, data.programming_languages.PYTHON],
+                keypoints: [
+                    {
+                        title: data.genesysDesigner_keypoint1_title,
+                        description: data.genesysDesigner_keypoint1_description
+                    },
+                    {
+                        title: data.genesysDesigner_keypoint2_title,
+                        description: data.genesysDesigner_keypoint2_description
+                    },
+                    {
+                        title: data.genesysDesigner_keypoint3_title,
+                        description: data.genesysDesigner_keypoint3_description
+                    }
+                ]
+            },
+            {
                 id: "missed",
                 title: data.missed_title,
                 summary: data.missed_summary,
                 description: data.missed_description,
-                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.ANDROID],
+                types: [projectTypes.GAME, projectTypes.ANDROID],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -460,7 +578,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.globalGameJam2022_title,
                 summary: data.globalGameJam2022_summary,
                 description: data.globalGameJam2022_description,
-                types: [projectTypes.ALL, projectTypes.GAME],
+                types: [projectTypes.GAME],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE, data.software.GITHUB],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -493,7 +611,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.globalGameJam2020_title,
                 summary: data.globalGameJam2020_summary,
                 description: data.globalGameJam2020_description,
-                types: [projectTypes.ALL, projectTypes.GAME],
+                types: [projectTypes.GAME],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE, data.software.GITHUB],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -530,7 +648,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.gameEngine_title,
                 summary: data.gameEngine_summary,
                 description: data.gameEngine_description,
-                types: [projectTypes.ALL, projectTypes.GAME],
+                types: [projectTypes.GAME],
                 images: [],
                 software: [data.software.SDL2, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_PLUSPLUS],
@@ -541,7 +659,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: "Rotate",
                 summary: data.rotate_summary,
                 description: data.rotate_description,
-                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.IOS],
+                types: [projectTypes.GAME, projectTypes.IOS],
                 images: [],
                 software: [data.software.XCODE, data.software.SPRITE_KIT],
                 programmingLanguages: [data.programming_languages.SWIFT],
@@ -561,7 +679,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.dotWar_title,
                 summary: data.dotWar_summary,
                 description: data.dotWar_description,
-                types: [projectTypes.ALL, projectTypes.GAME, projectTypes.ANDROID],
+                types: [projectTypes.GAME, projectTypes.ANDROID],
                 images: [],
                 software: [data.software.UNITY, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_SHARP],
@@ -585,7 +703,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 title: data.localBeer_title,
                 summary: data.localBeer_summary,
                 description: data.localBeer_description,
-                types: [projectTypes.ALL, projectTypes.ANDROID],
+                types: [projectTypes.ANDROID],
                 images: [],
                 software: [data.software.ANDROID_STUDIO, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.JAVA],
@@ -605,13 +723,15 @@ export function getPortfolioData(language: string): PortfolioData {
 }
 
 export type ResumeData = {
-    types: ResumeType;
-    experiences: ExperienceData[];
+    types: ResumeType,
+    experiences: ExperienceData[]
 }
 
 export type PortfolioData = {
-    projectTypes: ProjectType;
-    projects: ProjectData[];
+    projectTypes: ProjectType,
+    software: typeof EN_DATA.software,
+    programmingLanguages: typeof EN_DATA.programming_languages,
+    projects: ProjectData[]
 }
 
 export type ProjectData = {
@@ -629,18 +749,18 @@ export type ProjectData = {
 export type Keypoint = {
     title: string,
     description: string,
-    link?: string,
+    link?: string
 }
 
 export type ProjectType = {
-    ALL: string;
-    GAME: string;
-    WEB: string;
-    ANDROID: string;
-    IOS: string;
+    ALL: string,
+    GAME: string,
+    WEB: string,
+    ANDROID: string,
+    IOS: string
 }
 
-export interface ExperienceData {
+export type ExperienceData = {
     id: string,
     title: string,
     summary: string,
@@ -655,8 +775,8 @@ export interface ExperienceData {
     keypoints: Keypoint[]
 }
 
-export interface ResumeType {
-    ALL: string;
-    EDUCATION: string;
-    EXPERIENCE: string;
+export type ResumeType = {
+    ALL: string,
+    EDUCATION: string,
+    EXPERIENCE: string
 }
