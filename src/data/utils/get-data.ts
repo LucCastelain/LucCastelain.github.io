@@ -448,7 +448,21 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.farmingGame_description,
                 creationDate: "2023",
                 types: [projectTypes.GAME],
-                images: [],
+                images: [
+                    "icon.webp",
+                    "farmingGame_1.webp",
+                    "farmingGame_2.webp",
+                    "farmingGame_3.png",
+                    "farmingGame_4.png",
+                    "farmingGame_5.png",
+                    "farmingGame_6.png",
+                    "farmingGame_7.png",
+                    "farmingGame_8.png",
+                    "farmingGame_9.png",
+                    "farmingGame_10.png",
+                    "farmingGame_11.webp",
+                    "farmingGame.mp4"
+                ],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
                 keypoints: [

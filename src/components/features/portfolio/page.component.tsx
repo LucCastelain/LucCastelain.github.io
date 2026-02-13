@@ -5,7 +5,7 @@ import ProjectCardComponent from "@/components/ui/project-card.component";
 import {getPortfolioData} from "@/data/utils/get-data";
 import {getText} from "@/data/utils/get-text";
 
-export default function PageComponent({language}: Readonly<PageComponentProps>): ReactElement {
+export default function PortfolioPageComponent({language}: Readonly<PortfolioPageComponentProps>): ReactElement {
     const data = getPortfolioData(language);
     const text = getText(language);
     const [projectTypeFilter, setProjectTypeFilter] = useState<string>(data.projectTypes.ALL);
@@ -63,6 +63,6 @@ export default function PageComponent({language}: Readonly<PageComponentProps>):
     );
 }
 
-interface PageComponentProps {
+interface PortfolioPageComponentProps {
     language: string;
 }

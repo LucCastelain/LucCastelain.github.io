@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import ProjectPageComponent from "@/components/features/[id]/page.component";
+import ProjectPageComponent from "@/components/features/portfolio/[id]/page.component";
 
 export default async function ProjectPage({params, searchParams}: Readonly<ProjectPageProps>): Promise<ReactElement> {
     const {id} = await params;

@@ -1,7 +1,7 @@
 import {ReactElement} from "react";
 import AboutPageComponent from "@/components/features/about/page.component";
 
-export default async function HomePage({searchParams}: Readonly<HomePageProps>): Promise<ReactElement> {
+export default async function AboutPage({searchParams}: Readonly<AboutPageProps>): Promise<ReactElement> {
     const {lang} = await searchParams;
 
     return (
@@ -9,7 +9,6 @@ export default async function HomePage({searchParams}: Readonly<HomePageProps>):
     );
 }
 
-interface HomePageProps {
-    searchParams: Promise<{ lang: string }>
+interface AboutPageProps {
+    searchParams: Promise<{ lang: string }>;
 }
-
