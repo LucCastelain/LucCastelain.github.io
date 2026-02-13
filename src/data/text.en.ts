@@ -3,4 +3,5 @@ export const EN_TEXT = {
     software: "Software",
     programmingLanguage: "Programming language",
     projectType: "Project Type",
+    browserNoSupportVideo: "Your browser does not support the video player",
 }

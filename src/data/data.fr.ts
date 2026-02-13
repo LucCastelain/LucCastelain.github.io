@@ -118,7 +118,7 @@ export const FR_DATA = {
     deepMine_keypoint8_title: "Local multiplayer",
     deepMine_keypoint8_description: "Up to 4 players in split-screen.",
 
-    deepMine_keypoint9_title: "Steam",
+    deepMine_keypoint9_title: "Lien vers la page Steam",
     deepMine_keypoint9_description: "",
 
 // ------------------ Dices Dungeon ------------------ //

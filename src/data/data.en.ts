@@ -92,7 +92,7 @@ export const EN_DATA = {
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
     deepMine_summary: "A 2D adventure game in a procedurally generated world",
-    deepMine_description: "Deep Mine est un jeu d'exploration et d'exploitation minière en 2D se déroulant dans un monde généré de manière procédurale. Il est développé avec un ami à l'aide du moteur Godot.\nChaque monde est généré de manière procédurale grâce à des textures de bruit et un système de threads. Il crée un monde infini avec différents biomes en fonction de la profondeur (profondeur verticale dans le monde) et de la température (déterminée par les textures de bruit).\nDes gemmes apparaissent également en fonction des biomes et de la profondeur.\n\nLe joueur peut échanger et fabriquer des objets, ainsi qu'améliorer son personnage. Il peut combattre des monstres et accomplir des quêtes.\nLe jeu est jouable jusqu'à 4 joueurs en local et est entièrement compatible avec une manette.\n\nCe jeu est encore en développement et possède une page Steam.",
+    deepMine_description: "Deep Mine is a 2D exploration and mining game that takes place in a procedurally generated world. It is made with a friend using Godot engine.\nEach world is procedurally generated using noise textures and threading system. It creates an infinite world with different biomes based on depth (vertical depth in the world) and temperature (temperature is determined with noise texture). Gems also appear depending on the biomes and depth.\n\nThe player can trade and craft objects as well as improve his character. He can fight monster and fullfil quests.\nThe game is playable with up to 4 players locally and can be fully played with a controller.\n\nThis game is still in development and has a Steam page.",
 
     deepMine_keypoint1_title: "Procedurally generated world",
     deepMine_keypoint1_description: "Use of noise textures, threads and chunks.",
@@ -118,7 +118,7 @@ export const EN_DATA = {
     deepMine_keypoint8_title: "Local multiplayer",
     deepMine_keypoint8_description: "Up to 4 players in split-screen.",
 
-    deepMine_keypoint9_title: "Steam",
+    deepMine_keypoint9_title: "Link to the Steam page",
     deepMine_keypoint9_description: "",
 
 // ------------------ Dices Dungeon ------------------ //
