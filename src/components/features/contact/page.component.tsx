@@ -2,27 +2,32 @@
 
 import {ReactElement} from "react";
 import {getText} from "@/data/utils/get-text";
+import {FaLinkedin} from "react-icons/fa6";
 
 export default function ContactPageComponent({language}: Readonly<ContactPageComponentProps>): ReactElement {
     const text = getText(language);
 
     return (
         <div className="size-full flex flex-col items-center mt-24">
-            <h3 className="mx-auto text-2xl font-bold text-sky-500">{text.contact}</h3>
+            <h3 className="mx-auto text-2xl font-bold text-sky-500 mb-5">{text.contact}</h3>
             <div className="gap-y-3 flex flex-col">
-                <div className="flex flex-row items-center">
-                    <p>You can contact me by email: </p>
+                <div className="flex flex-row items-center gap-x-1">
+                    <p>{text.canContactMeByEmail}</p>
                     <a href="mailto:luc.castelain@icloud.com"
-                       className="hover:underline">
+                       className="hover:underline font-semibold">
                         luc.castelain@icloud.com
                     </a>
                 </div>
-                <a href="https://www.linkedin.com/in/luc-castelain-714307178/"
-                   className="hover:underline">
-                    Here is my LinkedIn
-                </a>
+                <div className="flex flex-row items-center gap-x-1">
+                    <p>{text.orOn}</p>
+                    <a href="https://www.linkedin.com/in/luc-castelain-714307178/"
+                       className="flex flex-row rounded-lg p-2 border text-gray-100 bg-[#0A66C2] hover:bg-[#0a5daf] border-[#0b61b7] hover:border-[#0956a3] dark:bg-[#0a5daf] dark:hover:bg-[#0956a3]">
+                        <FaLinkedin className="size-6"/>
+                        LinkedIn
+                    </a>
+                </div>
             </div>
-            <p className="mt-14">Yeah, I know this page is pretty empty...</p>
+            <p className="mt-14">{text.pageIsEmpty}</p>
         </div>
     );
 }

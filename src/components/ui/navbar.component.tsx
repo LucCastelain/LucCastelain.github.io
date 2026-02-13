@@ -6,11 +6,13 @@ import LanguageDropdownComponent from "@/components/ui/languages/language-dropdo
 import Link from "next/dist/client/link";
 import {usePathname, useSearchParams} from "next/dist/client/components/navigation";
 import {twMerge} from "tailwind-merge";
+import {getText} from "@/data/utils/get-text";
 
 export default function NavbarComponent(): ReactElement {
     const pathname = usePathname();
     const params = useSearchParams();
     const language = params.get("lang") ?? "en";
+    const text = getText(language);
 
     return (
         <nav className="absolute top-0 w-full h-fit bg-white border-gray-200 dark:border-neutral-800 dark:bg-neutral-900 border-b">
@@ -24,31 +26,31 @@ export default function NavbarComponent(): ReactElement {
                         <li>
                             <Link href={`/about?lang=${language}`}
                                   className={twMerge("block py-2 px-3 text-gray-900 rounded-sm md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500", pathname.includes("/about") && "text-blue-700 dark:text-blue-500")}>
-                                About
+                                {text.about}
                             </Link>
                         </li>
                         <li>
                             <Link href={`/portfolio?lang=${language}`}
                                   className={twMerge("block py-2 px-3 text-gray-900 rounded-sm md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500", pathname.includes("/portfolio") && "text-blue-700 dark:text-blue-500")}>
-                                Portfolio
+                                {text.portfolio}
                             </Link>
                         </li>
                         <li>
                             <Link href={`/resume?lang=${language}`}
                                   className={twMerge("block py-2 px-3 text-gray-900 rounded-sm md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500", pathname.includes("/resume") && "text-blue-700 dark:text-blue-500")}>
-                                Resume
+                                {text.resume}
                             </Link>
                         </li>
                         <li>
-                            <a href="#"
+                            <Link href={`/references?lang=${language}`}
                                className={twMerge("block py-2 px-3 text-gray-900 rounded-sm md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500", pathname.includes("/references") && "text-blue-700 dark:text-blue-500")}>
-                                References
-                            </a>
+                                {text.references}
+                            </Link>
                         </li>
                         <li>
                             <Link href={`/contact?lang=${language}`}
                                   className={twMerge("block py-2 px-3 text-gray-900 rounded-sm md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500", pathname.includes("/contact") && "text-blue-700 dark:text-blue-500")}>
-                                Contact
+                                {text.contact}
                             </Link>
                         </li>
                     </ul>
