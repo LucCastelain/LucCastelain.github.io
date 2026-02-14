@@ -15,4 +15,6 @@ export const CH_TEXT = {
     orOn: "Or on",
     canContactMeByEmail: "You can contact me by email:",
     referencesIHave: "Here is some references I have from my previous jobs.",
+    fiuReference: "FIU reference",
+    dosisoftReference: "DOSIsoft reference",
 }

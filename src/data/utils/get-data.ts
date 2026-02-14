@@ -321,6 +321,10 @@ export function getPortfolioData(language: string): PortfolioData {
                         title: data.bcPortail_keypoint5_title,
                         description: data.bcPortail_keypoint5_description
                     },
+                    {
+                        title: data.bcPortail_keypoint6_title,
+                        description: data.bcPortail_keypoint6_description
+                    },
                 ]
             },
             {
@@ -507,7 +511,13 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.cardGamePrototype_description,
                 creationDate: "2023",
                 types: [projectTypes.GAME],
-                images: [],
+                images: [
+                    "icon.webp",
+                    "cardGame_1.webp",
+                    "cardGame_2.webp",
+                    "cardGame.mp4",
+                    "cardGame2D.mp4",
+                ],
                 software: [data.software.GODOT],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
                 keypoints: [
@@ -706,7 +716,10 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.gameEngine_description,
                 creationDate: "2019",
                 types: [projectTypes.GAME],
-                images: [],
+                images: [
+                    "icon.webp",
+                    "SDL2_gameEngine.webp",
+                ],
                 software: [data.software.SDL2, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_PLUSPLUS],
                 keypoints: []
@@ -720,7 +733,8 @@ export function getPortfolioData(language: string): PortfolioData {
                 types: [projectTypes.GAME, projectTypes.IOS],
                 images: [
                     "icon.webp",
-                    "SDL2_gameEngine.webp",
+                    "rotate_gameplay.webp",
+                    "rotate_gameOver.webp"
                 ],
                 software: [data.software.XCODE, data.software.SPRITE_KIT],
                 programmingLanguages: [data.programming_languages.SWIFT],

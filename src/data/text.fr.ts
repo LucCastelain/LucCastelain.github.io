@@ -15,4 +15,6 @@ export const FR_TEXT = {
     orOn: "Ou sur",
     canContactMeByEmail: "Vous pouvez me joindre par mail:",
     referencesIHave: "Voici des lettres de recommandation de la part de mes précédents employeurs.",
+    fiuReference: "Lettre de recommandation - FIU",
+    dosisoftReference: "Lettre de recommandation - DOSIsoft",
 }

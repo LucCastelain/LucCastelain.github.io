@@ -81,8 +81,11 @@ export const CH_DATA = {
     bcPortail_keypoint4_title: "Show all the company's applications",
     bcPortail_keypoint4_description: "The portal shows all the company's applications, the web apps but also the thick client apps. All the applications can be launched from this place, even the thick client apps thanks to a deep linking system.",
 
-    bcPortail_keypoint5_title: "Configuration page",
-    bcPortail_keypoint5_description: "The configuration page let an administrator to add a web applications icon to the portal, allowing users to access the added web app. Administrators can add, edit, and remove web applications. While adding or editing a web application, they can manage which role or perimeter in the company can access the app amongst other things (name, icon, etc...). In this configuration page, an administrator can also add alerts for all users to be seen, thus allowing an extra layer of communication if needed.",
+    bcPortail_keypoint5_title: "App library",
+    bcPortail_keypoint5_description: "An app library is present in the navbar for the user to be able to access any application from any app.",
+
+    bcPortail_keypoint6_title: "Configuration page",
+    bcPortail_keypoint6_description: "The configuration page let an administrator to add a web applications icon to the portal, allowing users to access the added web app. Administrators can add, edit, and remove web applications. While adding or editing a web application, they can manage which role or perimeter in the company can access the app amongst other things (name, icon, etc...). In this configuration page, an administrator can also add alerts for all users to be seen, thus allowing an extra layer of communication if needed.",
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "This website",
@@ -410,7 +413,7 @@ export const CH_DATA = {
     fourMonthsInternship_endDate: "21-12-2020",
 
     engineeringInternship_title: "6 months engineering internship",
-    engineeringInternship_summary: "I created a web application from scratch which allowed QA team to access their own scripts and fill Root Cause Analysis in cases of failed status.\nThe app displayed many information in different tabs. It was the starting point to get every automated tests from QA, all in the same place.",
+    engineeringInternship_summary: "I created a web application from scratch which allowed QA team to access their own scripts and fill Root Cause Analysis in cases of failed status.\nThe app displayed many information in different tabs. It was the starting point to get every automated tests from QA, all in the same place.\nDuring this internship, I had to discuss weekly with the QA team with them as my clients, to take in account their feedback and make sure the final product was what they wanted.",
     engineeringInternship_company: "Genesys",
     engineeringInternship_location: "Brest, France",
     engineeringInternship_startDate: "01-09-2021",
