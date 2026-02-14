@@ -53,7 +53,7 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
                             {project.images.map((src, i) => {
                                 return (
                                     <div key={i}
-                                         className="relative h-96 flex-[0_0_100%]">
+                                         className="relative h-72 md:h-96 flex-[0_0_100%]">
                                         {src.endsWith(".mp4") ?
                                             <video width={500}
                                                    height={0}
@@ -69,7 +69,7 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
                                                    width={500}
                                                    height={0}
                                                    style={{width: "auto", height: "100%"}}
-                                                   className="mx-auto"
+                                                   className="mx-auto object-contain"
                                                    alt={src}/>
                                         }
                                     </div>
@@ -77,8 +77,8 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
                             })}
                         </CarouselComponent>
                     </div>
-                    <div className="flex flex-row gap-x-4">
-                        <div className="w-10 grow flex flex-col gap-y-2">
+                    <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
+                        <div className="md:w-10 md:grow flex flex-col gap-y-2">
                             <div className="flex flex-wrap gap-1">
                                 {project.programmingLanguages.sort().map((language: string) => (
                                     <div key={language}
@@ -96,7 +96,8 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
                             <TextWithLineBreaksComponent text={project.description}
                                                          className="w-full"/>
                         </div>
-                        <ul className="w-[40%] flex flex-col gap-y-2">
+                        <ul className="md:w-[40%] flex flex-col gap-y-2 mt-4 md:mt-0">
+                            <li className="font-bold text-xl">Keypoints</li>
                             {project.keypoints.map(keypoint => (
                                 <li key={keypoint.title}>
                                     {keypoint.link ?

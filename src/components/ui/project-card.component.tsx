@@ -22,13 +22,13 @@ export default function ProjectCardComponent({project}: Readonly<ProjectCardComp
                     </div>
                 ))}
             </div>
-            <div className="max-h-72 overflow-hidden">
+            <div className="min-h-72 max-h-72 overflow-hidden">
                 <Image src={`/static/${project.id}/icon.webp`}
                        alt={project.title}
                        width={500}
                        height={0}
                        style={{width: "auto", height: "100%"}}
-                       className="mx-auto min-h-72 max-h-72 rounded-sm transition-all group-hover:scale-[1.02]"/>
+                       className="mx-auto object-contain rounded-sm transition-all group-hover:scale-[1.02]"/>
             </div>
             <div className="flex flex-col gap-y-2">
                 <div className="flex flex-wrap gap-1">

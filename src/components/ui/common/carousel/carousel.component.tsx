@@ -49,11 +49,11 @@ export default function CarouselComponent({options, setSelectedImage, children}:
                           selectedIndex={selectedIndex}
                           emblaApi={emblaApi}/>
 
-            <button className="absolute z-10 top-1/2 left-1 -translate-y-1/2 text-indigo-400 dark:text-indigo-200 opacity-50 transition-all hover:scale-110"
+            <button className="absolute z-10 top-1/2 -left-12 -translate-y-1/2 text-indigo-400 dark:text-indigo-200 opacity-50 transition-all hover:scale-110"
                     onClick={scrollPrev}>
                 <FaArrowCircleLeft className="size-10"/>
             </button>
-            <button className="absolute z-10 top-1/2 right-1 -translate-y-1/2 text-indigo-400 dark:text-indigo-200 opacity-50 transition-all hover:scale-110"
+            <button className="absolute z-10 top-1/2 -right-12 -translate-y-1/2 text-indigo-400 dark:text-indigo-200 opacity-50 transition-all hover:scale-110"
                     onClick={scrollNext}>
                 <FaArrowCircleRight className="size-10"/>
             </button>

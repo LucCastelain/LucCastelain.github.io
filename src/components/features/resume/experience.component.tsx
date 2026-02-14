@@ -5,13 +5,13 @@ import {ExperienceData} from "@/data/utils/get-data";
 export default function ExperienceComponent({experience}: Readonly<ExperienceComponentProps>): ReactElement {
     return (
         <div className="flex flex-col gap-y-1">
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col md:flex-row md:items-center">
                 <p className="font-bold text-lg">{experience.title}</p>
-                <p className="ml-4 text-sm text-neutral-500 dark:text-neutral-400">
+                <p className="md:ml-4 text-sm text-neutral-500 dark:text-neutral-400">
                     {experience.startDate.getMonth() < 9 ? "0" : ""}{experience.startDate.getMonth()+1}/{experience.startDate.getFullYear()} - {experience.endDate ? (experience.endDate.getMonth() < 9 ? `0${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}` : `${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}`) : "now"}
                 </p>
             </div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-wrap items-center">
                 {experience.companyWebsite ?
                     <a href={experience.companyWebsite}
                        className="text-sky-500 dark:text-sky-300 hover:underline"
