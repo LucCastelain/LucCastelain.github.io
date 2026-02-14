@@ -1,6 +1,6 @@
 "use client"
 
-import {ReactElement, useEffect, useState} from "react";
+import {ReactElement, useCallback, useEffect, useRef, useState} from "react";
 import ProjectCardComponent from "@/components/ui/project-card.component";
 import {getPortfolioData} from "@/data/utils/get-data";
 import {getText} from "@/data/utils/get-text";
@@ -15,17 +15,26 @@ export default function PortfolioPageComponent({language}: Readonly<PortfolioPag
     const [softwareFilter, setSoftwareFilter] = useState<string>(data.software.ALL);
     const [programmingLanguageFilter, setProgrammingLanguageFilter] = useState<string>(data.programmingLanguages.ALL);
     const [showFilters, setShowFilters] = useState<boolean>(false);
+    const filtersRef = useRef<HTMLDivElement>(null);
+
+    const closeDropdown = useCallback((e: MouseEvent): void => {
+        if(showFilters && !filtersRef.current?.contains(e.target as Node)) {
+            setShowFilters(false);
+        }
+    }, [showFilters]);
 
     useEffect(() => {
-
-    }, []);
+        document.addEventListener("click", closeDropdown);
+        return (): void => {document.removeEventListener("click", closeDropdown);};
+    }, [closeDropdown]);
 
     if(!data.projectTypes) return <div>loading...</div>
 
     return (
         <div className="size-full flex flex-col">
             <div className={twMerge("md:hidden absolute w-full h-[calc(100%-3rem)] z-10 bg-gray-900 dark:bg-neutral-800 opacity-50", !showFilters && "hidden")}/>
-            <div className={twMerge("absolute left-0 z-20 h-[calc(100%-3rem)] md:h-fit w-fit md:w-full bg-white dark:bg-neutral-900 dark:text-gray-100 md:bg-transparent md:z-0 md:static flex flex-col md:flex-row p-2 md:p-0 md:my-2 gap-4 transition-all -translate-x-full md:translate-x-0", showFilters && "translate-x-0")}>
+            <div ref={filtersRef}
+                 className={twMerge("absolute left-0 z-20 h-[calc(100%-3rem)] md:h-fit w-fit md:w-full bg-white dark:bg-neutral-900 dark:text-gray-100 md:bg-transparent md:z-0 md:static flex flex-col md:flex-row p-2 md:p-0 md:my-2 gap-4 transition-all -translate-x-full md:translate-x-0", showFilters && "translate-x-0")}>
                 <button onClick={() => setShowFilters(false)}
                         className="md:hidden md:pointer-events-none size-fit p-2 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-800">
                     <HiMiniArrowLeft className="size-5"/>

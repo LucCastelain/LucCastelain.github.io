@@ -1,6 +1,6 @@
 "use client"
 
-import {ReactElement, useState} from "react";
+import {ReactElement, useCallback, useEffect, useRef, useState} from "react";
 import {DarkModeToggleComponent} from "@/components/ui/dark-mode/dark-mode-toggle.component";
 import LanguageDropdownComponent from "@/components/ui/languages/language-dropdown.component";
 import Link from "next/dist/client/link";
@@ -14,7 +14,21 @@ export default function NavbarComponent(): ReactElement {
     const params = useSearchParams();
     const language = params.get("lang") ?? "en";
     const text = getText(language);
+
     const [openMenu, setOpenMenu] = useState<boolean>(false);
+    const menuButtonRef = useRef<HTMLButtonElement>(null);
+    const menuRef = useRef<HTMLDivElement>(null);
+
+    const closeDropdown = useCallback((e: MouseEvent): void => {
+        if(openMenu && !menuRef.current?.contains(e.target as Node) && !menuButtonRef.current?.contains(e.target as Node)) {
+            setOpenMenu(false);
+        }
+    }, [openMenu]);
+
+    useEffect(() => {
+        document.addEventListener("click", closeDropdown);
+        return (): void => {document.removeEventListener("click", closeDropdown);};
+    }, [closeDropdown]);
 
     return (
         <nav className={twMerge("absolute top-0 z-50 w-full h-fit bg-white border-gray-200 dark:border-neutral-800 dark:bg-neutral-900 border-b md:shadow-none", openMenu && "shadow-md")}>
@@ -23,13 +37,15 @@ export default function NavbarComponent(): ReactElement {
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white">Luc Castelain</span>
                     </a>
-                    <button className="ml-auto p-2 md:hidden md:pointer-events-none rounded-lg hover:bg-neutral-200 dark:text-gray-100 dark:hover:bg-neutral-800"
+                    <button ref={menuButtonRef}
+                            className="ml-auto p-2 md:hidden md:pointer-events-none rounded-lg hover:bg-neutral-200 dark:text-gray-100 dark:hover:bg-neutral-800"
                             onClick={() => setOpenMenu(!openMenu)}>
                         <FaBars className="size-5"/>
                     </button>
                 </div>
 
-                <div className={twMerge("w-full flex flex-col md:flex-row origin-top transition-all h-0 scale-y-0 md:h-fit md:scale-y-100", openMenu && "h-fit scale-y-100")}>
+                <div ref={menuRef}
+                     className={twMerge("w-full flex flex-col md:flex-row origin-top transition-all h-0 scale-y-0 md:h-fit md:scale-y-100", openMenu && "h-fit scale-y-100")}>
                     <div className="items-center justify-between w-full text-center md:w-fit md:mx-auto md:flex">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-neutral-900 dark:border-gray-700">
                             <li>
