@@ -101,8 +101,8 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
                             </div>
                             <ul className="md:w-[40%] flex flex-col gap-y-2 mt-4 md:mt-0">
                                 <li className="font-bold text-xl">Keypoints</li>
-                                {project.keypoints.map(keypoint => (
-                                    <li key={keypoint.title}>
+                                {project.keypoints.map((keypoint, index) => (
+                                    <li key={index}>
                                         {keypoint.link ?
                                             <a className="flex flex-row gap-x-1 items-center font-bold underline hover:text-blue-600 dark:hover:text-blue-500"
                                                target="_blank"

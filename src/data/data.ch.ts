@@ -1,341 +1,329 @@
 export const CH_DATA = {
 // ------------------ Matrix ------------------ //
     matrix_title: "Matrix",
-    matrix_summary: "A web app acting like an phone book or directory for the company employees.",
-    matrix_description: "Matrix is an app displaying all kind of information about the company's employees such as their professional phone number and email, the place they work in (main company or subsidiary), their department and manager.\nIt allows to search for a specific or a group of specific employees if you need to contact them.",
+    matrix_summary: "網站應用程式,就像是公司員工的電話簿或目錄",
+    matrix_description: "矩阵是一款顯示公司員工的各種資訊,例如他們的專業電話號碼和電子郵件,他們在哪裡工作 (主要公司或子公司),他們的部門和經理. 如果需要聯絡他們,它可以搜尋特定的員工或特定的團體.",
 
-    matrix_keypoint1_title: "General Data Protection Regulation (GDPR) - protection of employees sensitive data",
-    matrix_keypoint1_description: "The app does not display sensitive information about employees. Access to detailed data is restricted to only people with the correct authorization (such as the persons in charge of the salary or the HR department if needed)",
+    matrix_keypoint1_title: "總數據保護規則 (GDPR) - 保護員工敏感數據",
+    matrix_keypoint1_description: "該應用程式不會顯示員工的敏感信息. 詳細資料的使用僅限於有正確授權的人 (如薪資管理人員或人力資源部門,如有必要)",
 
-    matrix_keypoint2_title: "Connexion to Microsoft Graph API",
-    matrix_keypoint2_description: "A connexion to Microsoft Graph API allows the application to get information about user presence and schedule to directly display inside the app (for example if the person you are looking for is currently in a meeting or not)",
+    matrix_keypoint2_title: "接觸到微軟圖形API 聯繫",
+    matrix_keypoint2_description: "接入微軟圖表API讓應用程式可以獲得使用者存在和時間表的信息,直接顯示在應用程式內 (例如,您正在尋找的人是否目前正在會議)",
 
-    matrix_keypoint3_title: "Export to XLSX",
-    matrix_keypoint3_description: "An export to an XLSX file of the currently seen employees information is possible",
+    matrix_keypoint3_title: "輸出到XLSX",
+    matrix_keypoint3_description: "您可以將目前看到的員工信息輸出到XLSX檔案.",
 
-    matrix_keypoint4_title: "Filters",
-    matrix_keypoint4_description: "Users have a lot of filters to faster their search or to show a specific group of people (only one or some departments, only manager, etc...)",
+    matrix_keypoint4_title: "       ",
+    matrix_keypoint4_description: "用戶有很多濾網,以加速搜尋或顯示特定群組的人 (僅有一部分部門,僅管理員等)",
 
-    matrix_keypoint5_title: "Favorized server components",
-    matrix_keypoint5_description: "Favorized server components by putting the filters as url parameters. It also allows to share an url with the correct filters already set to find a person or group of persons.",
-
-// ------------------ BC Formation ------------------ //
+// ------------------ Support DSI ------------------ //
     supportDSI_title: "Support DSI",
-    supportDSI_summary: "A web app for user to create ticket for support from IT.",
-    supportDSI_description: "Support DSI is a web app allowing the IT employees to create a lot of different support scenarios that the other employees car ask support for (from asking for computer equipments such as mouse, screen, etc... To a software problem they encounter or else...).\nThen users can follow the scenarios according to their need to create a ticket with all the information needed for IT to help them. Once the ticket is created, users can access history of all their tickets, be notified when one is updated, exchange with IT if need and put an appreciation when a ticket is closed.",
+    supportDSI_summary: "網頁應用程式讓使用者可以創建一張票,以獲得 IT 支持.",
+    supportDSI_description: "支持DSI是一款網際網路應用程式,讓IT員工可以創造許多不同的支持情景,其他員工可以要求支持 (從要求電腦設備如鼠標,屏幕等...到他們遇到的軟體問題或其他...).\n然後,使用者可以按照需要的情況跟隨,以創建一張門票,並提供所有IT需要的信息來幫助他們.一旦門票被創建,使用者可以访问所有門票的歷史,在更新時被通知,在需要時與IT交換,并在門票結束時表達欣賞.",
 
-    supportDSI_keypoint1_title: "Role management",
-    supportDSI_keypoint1_description: "The app does not display the same information and possibility to users depending on their assigned role (IT, department manager, base user). Access to page and information have been secured both from frontend and backend point of view.",
+    supportDSI_keypoint1_title: "角色管理是如何控制自己的角色",
+    supportDSI_keypoint1_description: "應用程式不將相同的資訊和可能性顯示給使用者,取決於他們所分配的角色 (IT,部門經理,基使用者). 頁面和資訊的访问是從前端和後端的角度都得到的.",
 
-    supportDSI_keypoint2_title: "Scenario création via a graph",
-    supportDSI_keypoint2_description: "Creation and visualization of scenarios is easy thanks to a interactive graph (via cytoscape.js)",
+    supportDSI_keypoint2_title: "透過圖形來創造情景",
+    supportDSI_keypoint2_description: "透過互動圖形 (透過 cytoscape.js) 來創造和可視化情景是很容易的.",
 
-    supportDSI_keypoint3_title: "Link to GLPI issue tracking system",
-    supportDSI_keypoint3_description: "The creation of a ticket is mirrored and linked to GLPI for easy management in IT side",
+    supportDSI_keypoint3_title: "聯絡我們 GLPI 問題追蹤系統",
+    supportDSI_keypoint3_description: "建立一張門票會被反映並與GLPI連結,以便在IT方面輕鬆管理.",
 
-    supportDSI_keypoint4_title: "Very personalizable scenarios",
-    supportDSI_keypoint4_description: "Can create various type of scenarios with an extensive configuration of forms for each scenario if needed",
+    supportDSI_keypoint4_title: "非常可個人化的情景",
+    supportDSI_keypoint4_description: "如果需要,可以為每個情況打造各種不同類型的情景,並提供各種形式的配置.",
 
-    supportDSI_keypoint5_title: "Allows to quantify support data",
-    supportDSI_keypoint5_description: "Average time resolution for tickets, as well as number of tickets per category and such data can be monitored thanks to the app.",
+    supportDSI_keypoint5_title: "允許量化支持數據",
+    supportDSI_keypoint5_description: "預覽 票票的平均時間分辨率,以及每類別的票票數量,這些數據可以透過應用程序監控.",
 
 // ------------------ BC Formation ------------------ //
     bcFormation_title: "BC Formation",
-    bcFormation_summary: "A web app to manage and view a company's trainings and training sessions",
-    bcFormation_description: "BC Formation is a web app allowing user to view available trainings as well as their trainings history. The manager of each department can view the training history of all the persons in their department and ask for new trainings for them. The training administrator can add new trainings and trainers, create and manage training sessions from people in it, dates, document, location, ...",
+    bcFormation_summary: "網站應用程式可管理和查看公司的培訓和培訓",
+    bcFormation_description: "BC 培訓是一款網際網路應用程式,讓使用者可查看可用的培訓以及其培訓歷史. 每個部門的經理可查看其部門的所有人的培訓歷史,並要求他們接受新的培訓.培訓管理員可添加新的培訓和培訓人員,從其人員中建立和管理培訓,日期,文件,位置, ...",
 
-    bcFormation_keypoint1_title: "Role management",
-    bcFormation_keypoint1_description: "The app does not display the same information and possibility to users depending on their assigned role. Access to page and information have been secured both from frontend and backend point of view.",
+    bcFormation_keypoint1_title: "角色管理是如何控制自己的角色",
+    bcFormation_keypoint1_description: "應用程式不將相同的資訊和可能性顯示給使用者,取決於他們所分配的角色 (培訓管理員,部門經理,基使用者). 頁面和信息的使用,既從前端和後端的角度都得到了保障.",
 
-    bcFormation_keypoint2_title: "Training requests easy to manage for training administrator",
-    bcFormation_keypoint2_description: "Each request for a training is grouped together for the administrator to see how many there is, and then select them to create a session if there is enough.",
+    bcFormation_keypoint2_title: "培訓要求很容易管理, 培訓管理員",
+    bcFormation_keypoint2_description: "每個培訓要求都被組成在一起,讓管理員看到有多少,然後選擇這些要求,如果有足夠的,就能建立一個會議.",
 
-    bcFormation_keypoint3_title: "Each user can access his training history",
-    bcFormation_keypoint3_description: "Each user can access the history of his past trainings with his certifications. That way, each person can easily see if they need to redo a training or not.\nOn top of that, managers can see the history of the people they manage to have a global overview of their perimeter.",
+    bcFormation_keypoint3_title: "每個使用者都可以访问他的訓練歷史",
+    bcFormation_keypoint3_description: "每個使用者可以使用自己的認證,使用過去的訓練歷史,以便輕鬆查看他們是否需要重複訓練.",
 
-    bcFormation_keypoint4_title: "Notifications and emails",
-    bcFormation_keypoint4_description: "When a training session is confirmed by the training administrator, a notification is send on the app (visible through all web applications in BC Portail) as well as an email to each member of the session.\nFor each session convocation document is generated and sent with each email. It is then linked to the training request of each person in the session so that they can check it anytime.",
+    bcFormation_keypoint4_title: "通知和電子郵件",
+    bcFormation_keypoint4_description: "當訓練會由訓練管理員確認時,會在應用程式上發送通知 (可透過 BC Portal 的所有網頁應用程式看到),以及電子郵件給每個會議會員.\n每個會議的召集文件都會被生成和與每個電子郵件一起發送. 接著,它會與會議中每個人的訓練要求連接,以便他們隨時檢查.",
 
-    bcFormation_keypoint5_title: "Automatic budget summary and prediction",
-    bcFormation_keypoint5_description: "The budget summary from past training sessions and the budget to come for future training sessions is automatically calculated and can be exported to XLSX or PDF files.",
+    bcFormation_keypoint5_title: "自動預算總結和預測",
+    bcFormation_keypoint5_description: "預算總結過去的訓練和未來訓練的預算,自動計算,可以將其輸出到XLSX或PDF文件.",
 
 // ------------------ Load testing script ------------------ //
-    loadTesting_title: "Load testing script",
-    loadTesting_summary: "A script to load test the different web environments",
-    loadTesting_description: "This script allow to load test and stress test the web servers of our apps for a defined period of time and with different charges, allowing us to see if they are correctly configured and will be able to withstand a large amount of users in production.\nThis script is connected to a local Grafana board to easily monitor the results",
+    loadTesting_title: "負載測試脚本",
+    loadTesting_summary: "來測試不同的網頁環境的內容, 需要加載一個脚本",
+    loadTesting_description: "這個脚本可以在特定時間內,且以不同的費用來測試我們的應用程式的網路伺服器,以便我們看到是否配置正確,並能夠承受大量的產量使用者.\n 這個脚本與當地Grafana板連接,以便輕鬆監控結果",
 
-    loadTesting_keypoint1_title: "Can be configured to test different real-time situations",
-    loadTesting_keypoint1_description: "Different charges and period of time can be set to test thoroughly our servers.",
+    loadTesting_keypoint1_title: "可配置以測試不同的實時情況",
+    loadTesting_keypoint1_description: "還可以設定不同的費用和時間,以徹底測試我們的伺服器.",
 
-    loadTesting_keypoint2_title: "Result are easy to read and in real-time",
-    loadTesting_keypoint2_description: "On top of the results summary the script give at the end of execution, it is connected to a Grafana board to easily read the results in real-time",
+    loadTesting_keypoint2_title: "结果很容易閱讀,並以實時方式",
+    loadTesting_keypoint2_description: "除了脚本在執行結束時所提供的結果總結之外,它也連接到Grafana板上,以便在實時中輕鬆閱讀結果",
 
 // ------------------ BC Portail ------------------ //
     bcPortail_title: "BC Portail",
-    bcPortail_summary: "A web app acting at the entry point to access the company's apps",
-    bcPortail_description: "BC Portail encapsulate all the other web applications made by Baudin Chateauneuf. It works like a Service-Oriented Architecture as a common ground for each other web applications.",
+    bcPortail_summary: "網際網路應用程式在入口點處理,可進入公司的應用程式",
+    bcPortail_description: "BC Portail 包含了Baudin Chateauneuf所做的所有其他網際網路應用程式. 它像是一種服務型建築,作為互聯網應用程式的共同點.",
 
-    bcPortail_keypoint1_title: "Service-Oriented Architecture (SOA)",
-    bcPortail_keypoint1_description: "Applications are built as a collection of loosely coupled, larger-grained services. Services can be reused across different applications when needed. It allows for independent development and deployment of larger functional blocks.",
+    bcPortail_keypoint1_title: "服務型建築 (SOA) ",
+    bcPortail_keypoint1_description: "應用程式是建立在一個集合的寬鬆的連接,更大的服務. 服務可以在不同應用程式中重新使用,當需要時. 它允許獨立的開發和部署更大的功能區塊.",
 
-    bcPortail_keypoint2_title: "Common components",
-    bcPortail_keypoint2_description: "Contains a list of reusable component and services across all web applications.",
+    bcPortail_keypoint2_title: "常見的組成件",
+    bcPortail_keypoint2_description: "包含所有網際網路應用程式中可重複使用的部件和服務列表.",
 
-    bcPortail_keypoint3_title: "Default layout and configuration",
-    bcPortail_keypoint3_description: "It contains the default layout (front-end) and configuration for each web application.",
+    bcPortail_keypoint3_title: "預設布局和配置",
+    bcPortail_keypoint3_description: "它包含每個網頁應用程式的預設布局和配置.",
 
-    bcPortail_keypoint4_title: "Show all the company's applications",
-    bcPortail_keypoint4_description: "The portal shows all the company's applications, the web apps but also the thick client apps. All the applications can be launched from this place, even the thick client apps thanks to a deep linking system.",
+    bcPortail_keypoint4_title: "顯示所有公司的應用程式",
+    bcPortail_keypoint4_description: "該網站顯示了公司的所有應用程式,網頁應用程式,但也顯示了密集客戶端應用程式.所有應用程式都可以從此開啟,即使是密集客戶端應用程式,也可以透過深層連結系統開啟.",
 
-    bcPortail_keypoint5_title: "App library",
-    bcPortail_keypoint5_description: "An app library is present in the navbar for the user to be able to access any application from any app.",
+    bcPortail_keypoint5_title: "應用程式圖書館",
+    bcPortail_keypoint5_description: "在 navbar 中,有應用程式圖書館,讓使用者可以從任何應用程式中访问任何應用程式.",
 
-    bcPortail_keypoint6_title: "Configuration page",
-    bcPortail_keypoint6_description: "The configuration page let an administrator to add a web applications icon to the portal, allowing users to access the added web app. Administrators can add, edit, and remove web applications. While adding or editing a web application, they can manage which role or perimeter in the company can access the app amongst other things (name, icon, etc...). In this configuration page, an administrator can also add alerts for all users to be seen, thus allowing an extra layer of communication if needed.",
+    bcPortail_keypoint6_title: "配置頁面",
+    bcPortail_keypoint6_description: "配置頁面讓管理員在網站上添加Web應用程式圖標,讓使用者可以進入添加的Web應用程式.管理員可以添加,編輯和移除Web應用程式.在添加或編輯Web應用程式時,他們可以管理公司中哪些角色或區域可以访问應用程式,除其他事情之外 (名稱,圖標等...).在此配置頁面,管理員也可以添加警報,讓所有使用者看到,因此如果需要,可以提供额外的溝通層.",
 
-    bcPortail_keypoint7_title: "Versions & changelog",
-    bcPortail_keypoint7_description: "For each application, the version numbers and changelogs are available for users to check. The main versions updates are automatically showed to user when they connect.",
-
-    bcPortail_keypoint8_title: "Dark mode",
-    bcPortail_keypoint8_description: "All components and web application can be used in dark mode.",
+    bcPortail_keypoint7_title: "版本和變更記錄",
+    bcPortail_keypoint7_description: "对于每個應用程式,版本數字和變更日志可供使用者檢查. 當使用者連接時,主要版本更新會自動顯示給使用者.",
 
 // ------------------ This website ------------------ //
-    thisWebsite_title: "This website",
-    thisWebsite_summary: "",
-    thisWebsite_description: "Content 1",
+    thisWebsite_title: "這個網站",
+    thisWebsite_summary: "我為此製作了這個網站,以展示我的財產品和復習",
+    thisWebsite_description: "在您的網站上,您可以看到這個項目.",
 
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
-    deepMine_summary: "A 2D adventure game in a procedurally generated world",
-    deepMine_description: "《深礦》（Deep Mine）是一款2D探索挖礦遊戲，背景設定在一個程式生成的世界。遊戲由我和朋友使用Godot引擎共同開發。\n\n每個世界都透過噪音紋理和線程系統進行程式生成。遊戲創造了一個無限的世界，其中包含基於深度（世界垂直深度）和溫度（溫度由噪音紋理決定）的不同生物群落。\n\n寶石也會根據生物群落和深度出現。\n\n玩家可以交易和製作物品，並提升角色能力。玩家還可以與怪物戰鬥並完成任務。\n\n遊戲支援最多4名玩家本地聯機，並且完全支援使用手把進行遊戲。\n\n遊戲仍在開發中，並已在Steam上架。",
+    deepMine_summary: "這是一款程序生成的世界中的2D冒險遊戲",
+    deepMine_description: "Deep Mine是一款 2D 探索和挖掘遊戲,在程序生成的世界中進行.它是由使用 Godot 引擎的朋友制作.\n每個世界都是程序生成的,使用噪音質感和 threading 系統.它建立了一个以深度 (世界垂直深度) 和温度 (温度由噪音質感决定) 不同的生物體的無限世界.珠宝也根据生物體和深度而出现在.\n\n玩家可以交易和制作物体,并提高自己的角色.他可以对抗怪物和Steam 充满任务.\n遊戲可在本地玩到4名玩家,并且可以完全使用控制器玩.\n\n 這個遊戲仍在开发中,并且有一个页面.",
 
-    deepMine_keypoint1_title: "Procedurally generated world",
-    deepMine_keypoint1_description: "Use of noise textures, threads and chunks.",
+    deepMine_keypoint1_title: "程序性生成的世界",
+    deepMine_keypoint1_description: "使用噪音質感,線索和碎片.",
 
-    deepMine_keypoint2_title: "Player physics",
-    deepMine_keypoint2_description: "Can use ladders, fluid ropes and can swim.",
+    deepMine_keypoint2_title: "玩家物理",
+    deepMine_keypoint2_description: "能使用梯子,流動绳索,也能游泳.",
 
-    deepMine_keypoint3_title: "Enemies behavior",
-    deepMine_keypoint3_description: "Use of states machines, creation of behavioral routine which changes when player in range.",
+    deepMine_keypoint3_title: "敵人的行為",
+    deepMine_keypoint3_description: "使用機狀,創造行為常規,當玩家在範圍內時會改變.",
 
-    deepMine_keypoint4_title: "NPCs dialogues",
-    deepMine_keypoint4_description: "NPCs can have dialogues",
+    deepMine_keypoint4_title: "國家PC的對話",
+    deepMine_keypoint4_description: "NPCs可以有對話",
 
-    deepMine_keypoint5_title: "Crafting and trading systems",
-    deepMine_keypoint5_description: "Player can trade and craft with NPCs. Player characteristics can also be improved.",
+    deepMine_keypoint5_title: "工藝和貿易系統",
+    deepMine_keypoint5_description: "玩家可以與NPC交易和打造.玩家的特點也可以得到改善.",
 
-    deepMine_keypoint6_title: "Pixel art and pixel art animation",
-    deepMine_keypoint6_description: "Creation of textures and sprites.",
+    deepMine_keypoint6_title: "像素藝術和像素藝術動畫",
+    deepMine_keypoint6_description: "創作質感和精味.",
 
-    deepMine_keypoint7_title: "User interface",
-    deepMine_keypoint7_description: "Works with mouse, keyboard and controllers.",
+    deepMine_keypoint7_title: "接口使用者介面",
+    deepMine_keypoint7_description: "能與滑鼠,鍵盤和控制器一起工作.",
 
-    deepMine_keypoint8_title: "Local multiplayer",
-    deepMine_keypoint8_description: "Up to 4 players in split-screen.",
+    deepMine_keypoint8_title: "地方多人玩家",
+    deepMine_keypoint8_description: "在分幕上可共播4名玩家.",
 
-    deepMine_keypoint9_title: "Link to the Steam page",
+    deepMine_keypoint9_title: "聯絡到Steam頁面",
     deepMine_keypoint9_description: "",
 
 // ------------------ Dices Dungeon ------------------ //
     dicesDungeon_title: "Dices Dungeon",
-    dicesDungeon_summary: "A 2D game for IOS that let the player plays with probability",
-    dicesDungeon_description: "Dices Dungeons is a 2D game made with Godot Engine, an open source game engine.\nThis game allows the player to roll 3 dices up to 3 times. Each dice can be locked or unlocked in order to being rolled again or not. Depending on the dice combination, a chance percentage will be calculated.\nThe player can then open one of the two doors presented to him. One hide a bad thing behind it and the other a good reward.\nThe chance percentage determines the value or dangerousness of the object or monster hiding behind the choosen door.\n\nOn top of playing with probability and randomness, the player can try to do combination with the dices (such as combo of two or three same dice number...) to win objects to help him moderate the randomness of his adventure.\n\nThis game was the first game I made with Godot Engine and was published on IOS.",
+    dicesDungeon_summary: ",這是一個IOS的2D遊戲,讓玩家玩得很可能",
+    dicesDungeon_description: "子迷是用 Godot Engine,一個開放源代碼遊戲引擎制作的2D遊戲.\n 這個遊戲讓玩家滾出3個 Dice 數量高達3次. 每個 Dice 可鎖定或解鎖,以再次滾出或不. 根據 Dice 組合,會計算一定的機會百分比.\n玩家可以打開兩門中的一個. 一個隱藏一個壞事,另一個好獎勵.\n機會百分比決定了隱藏在選擇的門後的物體或怪物的價值或危險性.\n\n除了玩概率和隨機性之外,玩家可以嘗試使用 Dice (如兩三個相同的 Dice 數量組合...) 贏得對象,以幫助他平衡他的冒險性.\n這是 IOS 遊戲的首款 IOS 遊戲,並於 IOS 發表於 IOS ot.",
 
-    dicesDungeon_keypoint1_title: "First game that was published on IOS",
+    dicesDungeon_keypoint1_title: "首次在 iOS 上發表的遊戲",
     dicesDungeon_keypoint1_description: "",
 
-    dicesDungeon_keypoint2_title: "Art direction",
-    dicesDungeon_keypoint2_description: "It uses mainly 2 colors to play with contrasts and have strong art direction.",
+    dicesDungeon_keypoint2_title: "藝術方向",
+    dicesDungeon_keypoint2_description: "它主要使用2種顏色與對比度玩,並具有強烈的藝術方向.",
 
-    dicesDungeon_keypoint3_title: "Game design and mechanics",
-    dicesDungeon_keypoint3_description: "Arcade gameplay to fit the medium",
+    dicesDungeon_keypoint3_title: "遊戲設計和機械人",
+    dicesDungeon_keypoint3_description: "                          ",
 
-    dicesDungeon_keypoint4_title: "User interface",
-    dicesDungeon_keypoint4_description: "Mobile UI that stay simple but display all needed information.",
+    dicesDungeon_keypoint4_title: "接口使用者介面",
+    dicesDungeon_keypoint4_description: "移动UI保持簡單,但顯示所有必要的資訊.",
 
-    dicesDungeon_keypoint5_title: "Pixel art and pixel art animation",
-    dicesDungeon_keypoint5_description: "Designed and made textures and sprites.",
+    dicesDungeon_keypoint5_title: "像素藝術和像素藝術動畫",
+    dicesDungeon_keypoint5_description: "設計和制作質感和精華液.",
 
 // ------------------ Stardew Valley like game ------------------ //
-    farmingGame_title: "Farming game",
-    farmingGame_summary: "A 2D game prototype with farming and growing crops mechanics",
-    farmingGame_description: "Inspired by Stardew Valley, I made a prototype in Godot engine trying to replicate the farming mechanics of Stardew Valley as well as its inventory.\nI created a slots inventory (as in Minecraft, Terraria, Stardew Valley and a lot of games...) with multiple tabs. I also added a dialogue and trading mechanics, as well as a day/night cycle with a clock.\n\nIt helped me understand better how the Godot Engine works.",
+    farmingGame_title: "農作物遊戲",
+    farmingGame_summary: "還是是一款 2D 遊戲原型,有農作物和農作物機械的遊戲",
+    farmingGame_description: "啟發了 Stardew Valley,我在 Godot 引擎中製作了一種原型,嘗試複製 Stardew Valley 的農作物機械以及其庫存.\n我創造了一套插槽庫存 (如Minecraft,Terraria, Stardew Valley 和很多遊戲...) 包含多個標籤.我也添加了對話和交易機械,以及一輪白天/夜晚的鐘.\n\n它幫助我更好地了解 Godot 引擎的工作原理.",
 
-    farmingGame_keypoint1_title: "Interactive world",
-    farmingGame_keypoint1_description: "World can be heavily modified. Player can cut vegetation and destroy rocks, he can create fields, plant crops and add objects.",
+    farmingGame_keypoint1_title: "互動世界",
+    farmingGame_keypoint1_description: "玩家可以砍伐植被和摧毀岩石,他可以創造田野,種植作物,並添加物品.",
 
-    farmingGame_keypoint2_title: "NPCs dialogue",
-    farmingGame_keypoint2_description: "NPCs can have dialogues with multiple answers that can lead to different quests.",
+    farmingGame_keypoint2_title: "國家PC的對話",
+    farmingGame_keypoint2_description: "NPC 們可以與多個答案進行對話,這可能導致不同的任務.",
 
-    farmingGame_keypoint3_title: "Complex inventory system",
-    farmingGame_keypoint3_description: "Inventory has multiple tabs for different object types",
+    farmingGame_keypoint3_title: "複雜的庫存系統",
+    farmingGame_keypoint3_description: "庫存有多個不同對象類型的表格",
 
-    farmingGame_keypoint4_title: "Player customization",
-    farmingGame_keypoint4_description: "Player can create their unique player sprite from hair to skin color.",
+    farmingGame_keypoint4_title: "關於玩家的定制",
+    farmingGame_keypoint4_description: "玩家可以從頭髮到皮膚顏色創造獨特的玩家噴霧.",
 
-    farmingGame_keypoint5_title: "Player equipment",
-    farmingGame_keypoint5_description: "Player can equip different tools and clothes to change its appearance.",
+    farmingGame_keypoint5_title: "玩家的設備",
+    farmingGame_keypoint5_description: "玩家可以配備不同的工具和衣服,以改變它的外觀.",
 
-    farmingGame_keypoint6_title: "Day/Night cycle",
-    farmingGame_keypoint6_description: "Clock system that plays crops growth and day/night cycle.",
+    farmingGame_keypoint6_title: "這次的日夜周期",
+    farmingGame_keypoint6_description: "該系統是表表系統,並執行作物生長及白天/夜晚周期.",
 
-    farmingGame_keypoint7_title: "Trade system",
-    farmingGame_keypoint7_description: "Player can buy and sell items to NPCs. Merchant have their own money purse that refills over time.",
+    farmingGame_keypoint7_title: "貿易系統",
+    farmingGame_keypoint7_description: "玩家可以向NPC購買和出售商品.商人有自己的錢包,隨著時間推移,它會充滿.",
 
-    farmingGame_keypoint8_title: "Local multiplayer",
-    farmingGame_keypoint8_description: "Up to 2 players.",
+    farmingGame_keypoint8_title: "地方多人玩家",
+    farmingGame_keypoint8_description: "超過兩名玩家.",
 
 // ------------------ Card game prototype ------------------ //
-    cardGamePrototype_title: "Card game prototype",
-    cardGamePrototype_summary: "A card game prototype with its own set of rules",
-    cardGamePrototype_description: "One time, I had an idea of a card game with it own rules. To test if the idea was viable and if the game was balanced, fun and tactical, I made a prototype in Godot engine.\n\nThe prototype has been made both in 2D and 3D and had a few cards to test the balancing.\nI was made in 2 days from the creation of the rules to the end of prototyping and it was fun to do and test.",
+    cardGamePrototype_title: "卡片遊戲原型",
+    cardGamePrototype_summary: "卡片遊戲原型,有自己的規則",
+    cardGamePrototype_description: "有一次,我有個卡片遊戲的想法,它有自己的規則.為了測試這個想法是否可行的,以及遊戲是否平衡,有趣和戰略性,我用 Godot 引擎做了原型.原型已在 2D 和 3D 兩種中完成,並有幾個卡片來測試平衡.從規則的建立到原型完成後,我在 2 天內完成了,而且做和測試很有趣.",
 
-    cardGamePrototype_keypoint1_title: "Opponent AI",
-    cardGamePrototype_keypoint1_description: "Can react and play accordingly depending on player's last play.",
+    cardGamePrototype_keypoint1_title: " 對手 AI",
+    cardGamePrototype_keypoint1_description: "能反應並按此玩, 根據玩家最後的玩法.",
 
-    cardGamePrototype_keypoint2_title: "Same prototype in both 2D and 3D",
-    cardGamePrototype_keypoint2_description: "Game works in 2D or 3D with same AI.",
+    cardGamePrototype_keypoint2_title: "在 2D 和 3D 兩種情況下,相同的原型",
+    cardGamePrototype_keypoint2_description: "遊戲可以用相同的AI在2D或3D中進行操作.",
 
-    cardGamePrototype_keypoint3_title: "Created game rules and balancing",
+    cardGamePrototype_keypoint3_title: "建立了遊戲規則和平衡",
     cardGamePrototype_keypoint3_description: "",
 
 // ------------------ Atelier Ryza crafting system ------------------ //
-    atelierRyzaCraftingSystem_title: "Atelier Ryza crafting system",
-    atelierRyzaCraftingSystem_summary: "An advanced crafting system inspired by Atelier Ryza game",
-    atelierRyzaCraftingSystem_description: "This prototype is an advanced crafting system made with Godot engine. It is based on Aterlier Ryza's crafting system.\nThis crafting system use custom resources to make a really complete crafting system. Each item needs one or more specific types, subtypes or unique ingredients to be crafted. The Crafted item takes in account the quality of each ingredients used.\n\nIt is easy to add new items for craft and modify custom resourses to extant the depth of this crafting system.\nIt can be easily extanded in multiple ways. For example crafted items could take the specific characteristic(s) of choosen ingredients...\n\nThis prototype is standalone and was thought so it can be easily implemented in a more complex games.",
+    atelierRyzaCraftingSystem_title: " 雅典里扎工藝系統",
+    atelierRyzaCraftingSystem_summary: "靈感來自 Atelier Ryza 遊戲的先進工藝系統",
+    atelierRyzaCraftingSystem_description: "這個原型是用 Godot 發動機制造的先進工藝系統.它是基于 Aterlier Ryza 的工藝系統.\nThis工藝系統使用定制資源來制造真正完整的工藝系統. 每個項目需要一個或多種特定類型,子型或獨特的成分,才能制造.The Crafted 項目考慮使用的每種成分的質量.\n\nIt很容易添加新產品和修改定制資源,以擴大這個工藝系統的深度.\nIt可以輕鬆擴展多種方式.例如,工藝項目可以采用選定的成分的特定特征.\n\nThis原型是獨立的,被認為可以輕鬆實現在更複雜的遊戲.",
 
-    atelierRyzaCraftingSystem_keypoint1_title: "Easy to update",
-    atelierRyzaCraftingSystem_keypoint1_description: "Can easily add new items and characteristics without modifying source code.",
+    atelierRyzaCraftingSystem_keypoint1_title: "更新很容易",
+    atelierRyzaCraftingSystem_keypoint1_description: "很容易添加新的項目和特性,而不需要修改源代碼",
 
-    atelierRyzaCraftingSystem_keypoint2_title: "User interface",
-    atelierRyzaCraftingSystem_keypoint2_description: "Clear and readable interface with all needed information. Can be used on ultra wide screen.",
+    atelierRyzaCraftingSystem_keypoint2_title: "接口使用者介面",
+    atelierRyzaCraftingSystem_keypoint2_description: "清晰可讀的接口,包含所有必要的資訊. 它可以在超廣屏幕上使用",
 
-    atelierRyzaCraftingSystem_keypoint3_title: "User experience",
-    atelierRyzaCraftingSystem_keypoint3_description: "Makes crafting interesting and engaging.",
+    atelierRyzaCraftingSystem_keypoint3_title: "您的使用者體驗",
+    atelierRyzaCraftingSystem_keypoint3_description: "這讓人覺得工藝很有趣,吸引人",
 
-    atelierRyzaCraftingSystem_keypoint4_title: "Standalone system",
-    atelierRyzaCraftingSystem_keypoint4_description: "Easy to add in bigger games.",
+    atelierRyzaCraftingSystem_keypoint4_title: "獨立系統",
+    atelierRyzaCraftingSystem_keypoint4_description: "很容易添加更大的遊戲",
 
-    // ------------------ Genesys Designer ------------------ //
+// ------------------ Genesys Designer ------------------ //
     genesysDesigner_title: "Genesys Designer",
-    genesysDesigner_summary: "A web app for developing self-service and assisted service applications",
-    genesysDesigner_description: "Genesys Designer is a web based tool allowing big companies to create self-service (Interactive Voice Response) and assisted service (Routing) applications for their businesses. It provides functional blocks to users who can drag and drop them to easily build the self-service or routing application they want.\nUsers can set up the voice assistant persona, prompts with text to speech, their business hours, etc...\nAt the end of AngularJS support by Microsoft, I had to find a way to transition the app block by block from AngularJS to ReactJS. This transition had to be seamless and invisible for the users.",
+    genesysDesigner_summary: "網站應用程式,可開發自助服務和輔助服務應用程式",
+    genesysDesigner_description: "Genesys Designer 是一個基于網頁的工具,讓大型公司可以為自己的企業建立自助服務 (Interactive Voice Response) 和輔助服務 (Routing) 應用程式.它為使用者提供功能區塊,他們可以拖放,以便輕鬆建立自己想要的自助服務或路由應用程式.\n 用戶可以設定聲助手人格,文字到聲的提示,他們的工作時間等...\nMicrosoft支持AngularJS的結束後,我不得不找到一個方法,從AngularJS轉移一塊的應用程式區塊至 ReactJS.此次轉移必須是無縫的,對使用者來說是隱形的.",
 
-    genesysDesigner_keypoint1_title: "Easy to learn and use",
-    genesysDesigner_keypoint1_description: "Dragable and dropable functional blocks, so it really is easy for the user to learn and use",
+    genesysDesigner_keypoint1_title: "很容易學習和使用",
+    genesysDesigner_keypoint1_description: "可拉取和可放下功能積木,因此使用者很容易學習和使用",
 
-    genesysDesigner_keypoint2_title: "Adaptable to any business",
-    genesysDesigner_keypoint2_description: "Any company can adapt Designer's applications to suit their needs.",
+    genesysDesigner_keypoint2_title: "适应任何生意",
+    genesysDesigner_keypoint2_description: "任何公司都能將設計師的應用程式調整到符合其需求.",
 
-    genesysDesigner_keypoint3_title: "Microservice architecture",
-    genesysDesigner_keypoint3_description: "Almost every tab of the application is a microservice and can be removed without impacting the other tabs.",
+    genesysDesigner_keypoint3_title: "微服務架構",
+    genesysDesigner_keypoint3_description: "該應用程式的幾乎每個標籤都是微服務,可以在不影響其他標籤的情况下移除.",
 
 // ------------------ Missed! ------------------ //
     missed_title: "Missed!",
-    missed_summary: "A 3D game made with Unity3D for Android phones",
-    missed_description: "Missed is the first game I uploaded online. I was an Android game awailable on Google Plat.\nThe player has to avoid red bullets fired by white cubes rotating around the arena. The player’s score is equivalent to the time he survived. As the time goes by, more cubes will appear and the difficulty will increase.\n\nThis game was made with unity3D 2019 and C#.",
+    missed_summary: "這是一款使用 Unity3D 制作的3D遊戲,適用於Android手機.",
+    missed_description: "錯過是我上線的第一個遊戲.我是一款在 Google Plat 上可用的 Android 遊戲.\n玩家必須避免在球場周圍旋轉的白立體射出的紅色子彈.玩家的分數等於他生存的時間.隨著時間的推移,更多的立體會出現,困難也會增加.\n\n這個遊戲是由 unity3D 2019 和 C# 製作的.",
 
-    missed_keypoint1_title: "First published game",
-    missed_keypoint1_description: "Game was published on Google Play",
+    missed_keypoint1_title: "首次發表的遊戲",
+    missed_keypoint1_description: "在 Google Play 發表了遊戲",
 
-    missed_keypoint2_title: "Mobile controls",
-    missed_keypoint2_description: "Virtual joystick available anywhere on screen.",
+    missed_keypoint2_title: "移動控制",
+    missed_keypoint2_description: "虛擬的快樂鍵可在任何屏幕上使用.",
 
-    missed_keypoint3_title: "Game design",
-    missed_keypoint3_description: "Arcade gameplay adapted to the medium",
+    missed_keypoint3_title: "遊戲設計",
+    missed_keypoint3_description: "                             ",
 
-    missed_keypoint4_title: "Game balancing",
-    missed_keypoint4_description: "Difficulty increases over time without being too abrupt",
+    missed_keypoint4_title: "遊戲平衡",
+    missed_keypoint4_description: "難度隨著時間的推移增加,但沒有太急",
 
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
-    globalGameJam2022_summary: "We made aboard game during the Global Game Jam 2022 with 3 friends",
-    globalGameJam2022_description: "In 2022, we participated to the Global Game Jam with almost the same team as the Global Game Jam 2020. We had 48 hours to make a game on the theme: duality.\n\nAt the time, we used to play a lot a board game named Clank! The game is about competing with your friends to be the one to get the more treasures in a dungeon while escaping the attacks of a dragon. You can choose between staying longer in the dungeon and try to get richer or go back to the surface faster, with less treasures but hoping the other constetants will die by the dragon.\nWe wanted to have fun recreating the game as much as we could. To evolve in the dungeon, you play cards that you can buy while playing. We had to make the deplacements of the player on the board, the shop system as well as the deck building mechanic in only two days.\n\nIt was difficult but a lot of fun. We were two programmers on Unity3D and 3 for the graphics (cards and cinematic). At the end of the jam we were exhausted but happy that we could play our board game on a computer!",
+    globalGameJam2022_summary: "我們在全球遊戲 2022 年的遊戲中與3位朋友一起登上了遊戲.",
+    globalGameJam2022_description: "在2022年,我們與全球遊戲的團隊幾乎相同,我們有48小時的時間來製作一個以兩性為主題的遊戲.\n\n當時,我們常常玩一個叫Clank的桌遊!遊戲是為了與朋友競爭,在逃離龍的攻擊中,獲得更多的藏品.你可以選擇在牢獄中呆更長時間,嘗試變得更富裕或更快地回到表面,但有更少的藏品,但希望其他參加者會被龍殺死.\n我們希望盡可能盡量享受重現遊戲.在牢獄中,你可以在玩過程中玩購買的牌.我們必須讓板上的系統移動,以及板上的系統在兩個天內快樂.我們在台灣玩了很多遊戲,但我們在台灣玩了很難的遊戲和平臺.我們在台灣玩了很多遊戲和平臺.",
 
-    globalGameJam2022_keypoint1_title: "Made in 48 hours with a team",
+    globalGameJam2022_keypoint1_title: "團隊48小時內完成了",
     globalGameJam2022_keypoint1_description: "",
 
-    globalGameJam2022_keypoint2_title: "Board game",
-    globalGameJam2022_keypoint2_description: "Player movements are handled accordingly.",
+    globalGameJam2022_keypoint2_title: "板球遊戲",
+    globalGameJam2022_keypoint2_description: "玩家的動作會相應處理.",
 
-    globalGameJam2022_keypoint3_title: "Used Github for version control",
+    globalGameJam2022_keypoint3_title: "使用Github進行版本控制",
     globalGameJam2022_keypoint3_description: "",
 
-    globalGameJam2022_keypoint4_title: "Card based gameplay",
-    globalGameJam2022_keypoint4_description: "Player actions depend on the drawn cards. Player evolution in game comes from the deck building mechanic.",
+    globalGameJam2022_keypoint4_title: "基于卡片的遊戲",
+    globalGameJam2022_keypoint4_description: "玩家的行動取決於抽出的卡片. 玩家在遊戲中的演變來自甲板建築機械人.",
 
-    globalGameJam2022_keypoint5_title: "Link to the game",
+    globalGameJam2022_keypoint5_title: "聯絡我們 遊戲",
     globalGameJam2022_keypoint5_description: "",
 
 // ------------------ Global Game Jam 2020 ------------------ //
     globalGameJam2020_title: "Global Game Jam 2020",
-    globalGameJam2020_summary: "We made a 2D platformer game during the Game Jam 2020 with 3 friends",
-    globalGameJam2020_description: "In January 2020, I participated with a few friends in the Global Gam Jam. We had 48 hours to make a game on a theme : repair.\n\nWe made a 2D platformer game in a 3D environment. The player plays a broken robot that needs to found his parts in four different levels.\nEach level can be played in any order. Each part unlock a new ability that can help in another level, so the player can chose how he wants to progress.\nFor example: finding the robot's arms unlocked the capacity to climb walls or the jetpack unlocked double jumps.\n\nIt was our first game jam and the game may need some polishing, but it was a great experience. We all learned a lot and had a lot of fun.",
+    globalGameJam2020_summary: "在 2020 年的 Game Jam 期間,我們和3 位朋友一起制作了一款 2D 平臺遊戲.",
+    globalGameJam2020_description: "在 2020 年 1 月,我與幾個朋友參與了全球遊戲遊戲.我們有 48 小時的時間來製作一個主題的遊戲:維修.\n\n我們在 3D 環境中制作了 2D 平臺遊戲.玩家玩的是一個破壞的機器人,需要在四個不同的層面上找到自己的零件.\n每個層面都可以以任何順序玩.每個層面都能解鎖一個新的能力,可以幫助在另一層面上,因此玩家可以選擇他想要如何進行.\n例如:找到機器人的手臂解鎖了爬牆的能力或開啟了喷氣包的雙跳.\n\n這是我們的第一個遊戲遊戲遊戲遊戲遊戲,遊戲可能需要一些磨練,但這是一個很棒的體驗.我們都學到了很多,很有趣.",
 
-    globalGameJam2020_keypoint1_title: "Made in 48 hours with a team",
+    globalGameJam2020_keypoint1_title: "團隊48小時內完成了",
     globalGameJam2020_keypoint1_description: "",
 
-    globalGameJam2020_keypoint2_title: "Mix of 2D and 3D",
-    globalGameJam2020_keypoint2_description: "2D sprites in a 3D environment.",
+    globalGameJam2020_keypoint2_title: "2D和3D的混合",
+    globalGameJam2020_keypoint2_description: "在 3D 環境中, 2D 噴霧.",
 
-    globalGameJam2020_keypoint3_title: "Used Github for version control",
+    globalGameJam2020_keypoint3_title: "使用Github進行版本控制",
     globalGameJam2020_keypoint3_description: "",
 
-    globalGameJam2020_keypoint4_title: "Evolving gameplay",
-    globalGameJam2020_keypoint4_description: "Gameplay is not the same depending on the levels you play.",
+    globalGameJam2020_keypoint4_title: "演變的遊戲方式",
+    globalGameJam2020_keypoint4_description: "遊戲的遊戲方式不同,取決於你在玩的各級.",
 
-    globalGameJam2020_keypoint5_title: "Level design",
-    globalGameJam2020_keypoint5_description: "Level design is different depending on the level's gameplay.",
+    globalGameJam2020_keypoint5_title: "設計的水平",
+    globalGameJam2020_keypoint5_description: "不同程度的設計不同,取決於這個水平的遊戲方式.",
 
-    globalGameJam2020_keypoint6_title: "Link to the game",
+    globalGameJam2020_keypoint6_title: "聯絡我們 遊戲",
     globalGameJam2020_keypoint6_description: "",
 
 // ------------------ Game engine ------------------ //
-    gameEngine_title: "Game engine",
-    gameEngine_summary: "A simple game engine with SDL2 and C++",
-    gameEngine_description: "I decided to try to make a game without using any game engine. I master C++ but it was interesting to learn and use SDL2 with it.\n\nI made a basic prototype running. In this prototype, a map was generated thank to a grid information and a tileset. The player sprite could be moved around with the keyboard and shot projectiles.",
-
-    gameEngine_keypoint1_title: "Built from scratch",
-    gameEngine_keypoint1_description: "Game engine built from scratch from the ground up.",
-
-    gameEngine_keypoint2_title: "Basic working game",
-    gameEngine_keypoint2_description: "",
+    gameEngine_title: "遊戲引擎",
+    gameEngine_summary: "簡單的遊戲引擎,使用SDL2和C++",
+    gameEngine_description: "我決定嘗試在沒有使用任何遊戲引擎的情况下制作遊戲.我掌握C++ 但學習和使用SDL2很有趣.\n\n我做了基本的原型跑.在這個原型中,由于網格信息和一台板,生成了一幅地圖.玩家的噴霧可以用鍵盤移動,并射射彈.",
 
 // ------------------ Rotate ------------------ //
     rotate_title: "Rotate",
-    rotate_summary: "a 2D game prototype made with Swift and Xcode",
-    rotate_description: "I made a 2D game prototype for IOS to learn Swift. I used Xcode and SpriteKit to do so.\n\nIn the game a ball is bouncing regularly and infinitely on a sphere with spikes. Using its fingers, the player can rotate the sphere and guide the ball to a green place on the sphere. Once the ball is on the green place, a new sphere is generated and the score increases by one point.\nIf the ball touches a spike, the game is lost and the score is reset.",
+    rotate_summary: "采用Swift和Xcode制作的2D遊戲原型",
+    rotate_description: "我為IOS制作了 2D遊戲原型,以學習Swift.我使用Xcode和SpriteKit來做到這點.\n\n 在遊戲中,球球在一個有尖的球上定期無限跳. 玩家用手指可旋轉球,并引导球到球上的綠色位置.一旦球在綠色位置上,會生成新的球,得分增加一點.\n如果球碰到尖,遊戲就失去了,得分也會重新設定.",
 
-    rotate_keypoint1_title: "Mobile controls",
-    rotate_keypoint1_description: "Virtual joystick available anywhere on screen.",
+    rotate_keypoint1_title: "移動控制",
+    rotate_keypoint1_description: "虛擬的快樂鍵可在任何屏幕上使用.",
 
-    rotate_keypoint2_title: "Game design",
-    rotate_keypoint2_description: "Arcade gameplay adapted to the medium.",
+    rotate_keypoint2_title: "遊戲設計",
+    rotate_keypoint2_description: "                          ",
 
 // ------------------ DotWar ------------------ //
     dotWar_title: "DotWar",
-    dotWar_summary: "A game made in 24 hours with Unity3D for Android phones",
-    dotWar_description: "DotWar is a game which work on Android devices. The idea was to challenge myself to make a game in one day.\n\nIn this game, the player has to click on a red dot in a certain amount of time. The dot plays a piano note and moves when pressed.\nThe difficulty increases with the score.\n\nThis game was made with unity3D 2019 and C#.",
+    dotWar_summary: "這是一款在24小時內使用 Unity3D 制作的遊戲,適用於Android手機.",
+    dotWar_description: "DotWar是一款在Android設備上使用的遊戲.這個想法是要挑戰自己在一天內製作遊戲.在這個遊戲中,玩家必須在一定時間內點擊一點紅點. 這個點在鋼琴音符上播放,按時就移動.隨著分數增加,困難也會增加.\n\n 這個遊戲是用 unity3D 2019和C# 制作的.",
 
-    dotWar_keypoint1_title: "Made in 24 hours",
+    dotWar_keypoint1_title: "在 24 小時內完成",
     dotWar_keypoint1_description: "",
 
-    dotWar_keypoint2_title: "Published on Google Play",
+    dotWar_keypoint2_title: "在 Google Play 上發表",
     dotWar_keypoint2_description: "",
 
-    dotWar_keypoint3_title: "Game design",
-    dotWar_keypoint3_description: "Arcade gameplay adapted to the medium. Simple but effective gameplay to cope with the time constraint.",
+    dotWar_keypoint3_title: "遊戲設計",
+    dotWar_keypoint3_description: "                                                                                                                                                                                                                                                              ",
 
 // ------------------ Local Beer ------------------ //
     localBeer_title: "Local Beer",
-    localBeer_summary: "An app to display local breweries",
-    localBeer_description: "LocalBeer is an app that lists some of the breweries of Brittany, in France. It was a project made during oriented programming classes at ENIB. The perspective of LocalBeer is to push the users to consume and discover local beers and breweries, so this app completes one of the 17 sustainable development goals.\n\nThis app was made with Android Studio 3.5, Java and XML. The database is in JSON and it can be used into other programs. The app was also made with swift by an other member of my group and it works on iPhone and apple Watch.",
+    localBeer_summary: "提供顯示本地酒廠的應用程式",
+    localBeer_description: "酒是一個在 ENIB 進行定向程式課程的項目.本地酒是為了促使使用者消耗和發現當地酒和酒廠,因此這個應用程式完成了17個可持续发展目標之一.\n\n 這個應用程式是使用 Android Studio 3.5, Java 和 XML 完成的.資料庫是 JSON,可以用于其他程式.該應用程式也由我的團隊的另一位成员做成快速,它在 iPhone 和 Apple Watch 上工作.",
 
-    localBeer_keypoint1_title: "Made to complete one of the 17 sustainable development goals",
+    localBeer_keypoint1_title: "完成了17個可持续发展目標之一",
     localBeer_keypoint1_description: "",
 
-    localBeer_keypoint2_title: "Made both for IOS and Android",
-    localBeer_keypoint2_description: "Development was done in parallel for both platforms.",
+    localBeer_keypoint2_title: "這款軟件是為 iOS 和 Android 提供的",
+    localBeer_keypoint2_description: "兩者之間的發展並行.",
 
 // ------------------ Software & programming languages ------------------ //
     software: {

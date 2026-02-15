@@ -78,8 +78,9 @@ export default function PortfolioPageComponent({language}: Readonly<PortfolioPag
                     .filter(project => softwareFilter === data.software.ALL ? project : project.software.includes(softwareFilter))
                     .filter(project => programmingLanguageFilter === data.programmingLanguages.ALL ? project : project.programmingLanguages.includes(programmingLanguageFilter))
                     .map(project => (
-                    <ProjectCardComponent project={project}
-                                          key={project.id}/>
+                    <ProjectCardComponent key={project.id}
+                                          project={project}
+                                          language={language}/>
                 ))}
             </div>
         </div>

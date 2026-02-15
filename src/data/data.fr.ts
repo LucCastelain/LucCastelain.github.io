@@ -19,7 +19,7 @@ export const FR_DATA = {
     matrix_keypoint5_title: "Composants serveurs favorisés",
     matrix_keypoint5_description: "L'utilisation au maximum de composants serveurs a été favorisée, par exemple en mettant les filtres en paramètres d'url. Cela permet également de partager un url avec les bons filtres déja choisis pour trouver une personne ou un groupe de personnes.",
 
-// ------------------ BC Formation ------------------ //
+// ------------------ Support DSI ------------------ //
     supportDSI_title: "Support DSI",
     supportDSI_summary: "Une application web pour que les utilisateurs puissent créer des tickets pour le support",
     supportDSI_description: "Support DSI est une application web permettant aux employés du support informatique de créer différents scénarios pour guider les utilisateurs vers la création du ticket adéquat pour leur demande (par exemple faire une demande de souris, d'écran, etc... Ou alors un problème logiciel qu'ils rencontrent ou autre...).\nEnsuite les utilisateurs on juste a suivre le scénario qui correspond à leur besoin pour créer le ticket avec toutes les informations nécessaires au support pour les aider. Une fois le ticket créé, les utilisateurs peuvent avoir un suivi et un historique de tous leurs tickets, et sont notifiés lorsque l'un de leur ticket est mis à jour. Depuis l'application, ils peuvent également échanger avec le support si besoin ou ajouter une appréciation aux tickets déja traités.",
@@ -70,7 +70,7 @@ export const FR_DATA = {
     loadTesting_keypoint2_title: "Les résultats sont faciles à lire et en temps réel",
     loadTesting_keypoint2_description: "En plus du résumé des résultats que le script donne en fin d'exécution, il est connecté à un tableau Grafana pour lire facilement les résultats en temps réel.",
 
-// ------------------ BC Formation ------------------ //
+// ------------------ BC Portail ------------------ //
     bcPortail_title: "BC Portail",
     bcPortail_summary: "Un application web agissant comme point d'entrée pour accéder aux applications de l'entreprise",
     bcPortail_description: "BC Portail encapsule toutes les autres applications web réalisées par Baudin Châteauneuf. Il fonctionne comme une architecture orientée services (SOA) et sert de base commune aux autres applications web.",

@@ -19,7 +19,7 @@ export const EN_DATA = {
     matrix_keypoint5_title: "Favorized server components",
     matrix_keypoint5_description: "Favorized server components by putting the filters as url parameters. It also allows to share an url with the correct filters already set to find a person or group of persons.",
 
-// ------------------ BC Formation ------------------ //
+// ------------------ Support DSI ------------------ //
     supportDSI_title: "Support DSI",
     supportDSI_summary: "A web app for user to create ticket for support from IT",
     supportDSI_description: "Support DSI is a web app allowing the IT employees to create a lot of different support scenarios that the other employees can ask support for (from asking for computer equipments such as mouse, screen, etc... To a software problem they encounter or else...).\nThen users can follow the scenarios according to their need to create a ticket with all the information needed for IT to help them. Once the ticket is created, users can access history of all their tickets, be notified when one is updated, exchange with IT if need and put an appreciation when a ticket is closed.",
