@@ -5,16 +5,19 @@ export const EN_DATA = {
     matrix_description: "Matrix is an app displaying all kind of information about the company's employees such as their professional phone number and email, the place they work in (main company or subsidiary), their department and manager.\nIt allows to search for a specific or a group of specific employees if you need to contact them.",
 
     matrix_keypoint1_title: "General Data Protection Regulation (GDPR) - protection of employees sensitive data",
-    matrix_keypoint1_description: "The app does not display sensitive information about employees. Access to detailed data is restricted to only people with the correct authorization (such as the persons in charge of the salary or the HR department if needed)",
+    matrix_keypoint1_description: "The app does not display sensitive information about employees. Access to detailed data is restricted to only people with the correct authorization (such as the persons in charge of the salary or the HR department if needed).",
 
     matrix_keypoint2_title: "Connexion to Microsoft Graph API",
-    matrix_keypoint2_description: "A connexion to Microsoft Graph API allows the application to get information about user presence and schedule to directly display inside the app (for example if the person you are looking for is currently in a meeting or not)",
+    matrix_keypoint2_description: "A connexion to Microsoft Graph API allows the application to get information about user presence and schedule to directly display inside the app (for example if the person you are looking for is currently in a meeting or not).",
 
     matrix_keypoint3_title: "Export to XLSX",
-    matrix_keypoint3_description: "An export to an XLSX file of the currently seen employees information is possible",
+    matrix_keypoint3_description: "An export to an XLSX file of the currently seen employees information is possible.",
 
     matrix_keypoint4_title: "Filters",
-    matrix_keypoint4_description: "Users have a lot of filters to faster their search or to show a specific group of people (only one or some departments, only manager, etc...)",
+    matrix_keypoint4_description: "Users have a lot of filters to faster their search or to show a specific group of people (only one or some departments, only manager, etc...).",
+
+    matrix_keypoint5_title: "Favorized server components",
+    matrix_keypoint5_description: "Favorized server components by putting the filters as url parameters. It also allows to share an url with the correct filters already set to find a person or group of persons.",
 
 // ------------------ BC Formation ------------------ //
     supportDSI_title: "Support DSI",
@@ -92,6 +95,9 @@ export const EN_DATA = {
 
     bcPortail_keypoint7_title: "Versions & changelog",
     bcPortail_keypoint7_description: "For each application, the version numbers and changelogs are available for users to check. The main versions updates are automatically showed to user when they connect.",
+
+    bcPortail_keypoint8_title: "Dark mode",
+    bcPortail_keypoint8_description: "All components and web application can be used in dark mode.",
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "This website",
@@ -288,6 +294,12 @@ export const EN_DATA = {
     gameEngine_title: "Game engine",
     gameEngine_summary: "A simple game engine with SDL2 and C++",
     gameEngine_description: "I decided to try to make a game without using any game engine. I master C++ but it was interesting to learn and use SDL2 with it.\n\nI made a basic prototype running. In this prototype, a map was generated thanks to a grid information and a tileset. The player sprite could be moved around with the keyboard and shot projectiles.",
+
+    gameEngine_keypoint1_title: "Built from scratch",
+    gameEngine_keypoint1_description: "Game engine built from scratch from the ground up without external libraries.",
+
+    gameEngine_keypoint2_title: "Basic working game made with the engine",
+    gameEngine_keypoint2_description: "",
 
 // ------------------ Rotate ------------------ //
     rotate_title: "Rotate",

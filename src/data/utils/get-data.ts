@@ -185,7 +185,12 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.matrix_description,
                 creationDate: "2026",
                 types: [projectTypes.WEB],
-                images: [],
+                images: [
+                    "icon.webp",
+                    "matrix_1.webp",
+                    "matrix_2.webp",
+                    "matrix_3.webp",
+                ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
@@ -204,6 +209,10 @@ export function getPortfolioData(language: string): PortfolioData {
                     {
                         title: data.matrix_keypoint4_title,
                         description: data.matrix_keypoint4_description
+                    },
+                    {
+                        title: data.matrix_keypoint5_title,
+                        description: data.matrix_keypoint5_description
                     }
                 ]
             },
@@ -214,7 +223,17 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.supportDSI_description,
                 creationDate: "2025",
                 types: [projectTypes.WEB],
-                images: [],
+                images: [
+                    "icon.webp",
+                    "support_dsi_1.webp",
+                    "support_dsi_2.webp",
+                    "support_dsi_3.webp",
+                    "support_dsi_4.webp",
+                    "support_dsi_5.webp",
+                    "support_dsi_6.webp",
+                    "support_dsi_7.webp",
+                    "support_dsi_8.webp",
+                ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
@@ -247,7 +266,20 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.bcFormation_description,
                 creationDate: "2025",
                 types: [projectTypes.WEB],
-                images: [],
+                images: [
+                    "icon.webp",
+                    "bc_formation_1.webp",
+                    "bc_formation_2.webp",
+                    "bc_formation_3.webp",
+                    "bc_formation_4.webp",
+                    "bc_formation_5.webp",
+                    "bc_formation_6.webp",
+                    "bc_formation_7.webp",
+                    "bc_formation_8.webp",
+                    "bc_formation_9.webp",
+                    "bc_formation_10.webp",
+                    "bc_formation_11.webp",
+                ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
@@ -280,7 +312,9 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.loadTesting_description,
                 creationDate: "2025",
                 types: [projectTypes.WEB],
-                images: [],
+                images: [
+                    "icon.webp"
+                ],
                 software: [data.software.WEBSTORM, data.software.KEYCLOAK, data.software.GRAFANA, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.NEXT_JS],
                 keypoints: [
@@ -301,7 +335,15 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.bcPortail_description,
                 creationDate: "2025",
                 types: [projectTypes.WEB],
-                images: [],
+                images: [
+                    "icon.webp",
+                    "bc_portail_1.webp",
+                    "bc_portail_2.webp",
+                    "bc_portail_3.webp",
+                    "bc_portail_4.webp",
+                    "bc_portail_5.webp",
+                    "bc_portail_6.webp",
+                ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
@@ -332,6 +374,10 @@ export function getPortfolioData(language: string): PortfolioData {
                     {
                         title: data.bcPortail_keypoint7_title,
                         description: data.bcPortail_keypoint7_description
+                    },
+                    {
+                        title: data.bcPortail_keypoint8_title,
+                        description: data.bcPortail_keypoint8_description
                     },
                 ]
             },
@@ -586,7 +632,9 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.genesysDesigner_description,
                 creationDate: "2022",
                 types: [projectTypes.WEB],
-                images: [],
+                images: [
+                    "icon.webp",
+                ],
                 software: [data.software.VSCODE, data.software.GITHUB, data.software.CONFLUENCE, data.software.JIRA],
                 programmingLanguages: [data.programming_languages.ANGULAR_JS, data.programming_languages.REACT_JS, data.programming_languages.PYTHON],
                 keypoints: [
@@ -730,7 +778,16 @@ export function getPortfolioData(language: string): PortfolioData {
                 ],
                 software: [data.software.SDL2, data.software.VSCODE],
                 programmingLanguages: [data.programming_languages.C_PLUSPLUS],
-                keypoints: []
+                keypoints: [
+                    {
+                        title: data.gameEngine_keypoint1_title,
+                        description: data.gameEngine_keypoint1_description
+                    },
+                    {
+                        title: data.gameEngine_keypoint2_title,
+                        description: data.gameEngine_keypoint2_description
+                    }
+                ]
             },
             {
                 id: "rotate",

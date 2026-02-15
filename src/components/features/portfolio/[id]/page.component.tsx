@@ -49,35 +49,37 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
                                 </div>
                             ))}
                         </div>
-                        <div className="w-[80%] mx-auto transition-all rounded-lg">
-                            <CarouselComponent options={{loop: true}} setSelectedImage={setSelectedImage}>
-                                {project.images.map((src, i) => {
-                                    return (
-                                        <div key={i}
-                                             className="relative h-72 md:h-96 flex-[0_0_100%]">
-                                            {src.endsWith(".mp4") ?
-                                                <video width={500}
-                                                       height={0}
-                                                       style={{width: "auto", height: "100%"}}
-                                                       className="mx-auto"
-                                                       controls
-                                                       preload="none">
-                                                    <source src={`/static/${project.id}/${src}`} type="video/mp4" />
-                                                    {text.browserNoSupportVideo}
-                                                </video>
-                                                :
-                                                <Image src={`/static/${project.id}/${src}`}
-                                                       width={500}
-                                                       height={0}
-                                                       style={{width: "auto", height: "100%"}}
-                                                       className="mx-auto object-contain"
-                                                       alt={src}/>
-                                            }
-                                        </div>
-                                    );
-                                })}
-                            </CarouselComponent>
-                        </div>
+                        {project.images.length === 0 ? null :
+                            <div className="w-[80%] mx-auto transition-all rounded-lg">
+                                <CarouselComponent options={{loop: true}} setSelectedImage={setSelectedImage}>
+                                    {project.images.map((src, i) => {
+                                        return (
+                                            <div key={i}
+                                                 className="relative h-72 md:h-96 flex-[0_0_100%]">
+                                                {src.endsWith(".mp4") ?
+                                                    <video width={500}
+                                                           height={0}
+                                                           style={{width: "auto", height: "100%"}}
+                                                           className="mx-auto"
+                                                           controls
+                                                           preload="none">
+                                                        <source src={`/static/${project.id}/${src}`} type="video/mp4" />
+                                                        {text.browserNoSupportVideo}
+                                                    </video>
+                                                    :
+                                                    <Image src={`/static/${project.id}/${src}`}
+                                                           width={500}
+                                                           height={0}
+                                                           style={{width: "auto", height: "100%"}}
+                                                           className="mx-auto object-contain"
+                                                           alt={src}/>
+                                                }
+                                            </div>
+                                        );
+                                    })}
+                                </CarouselComponent>
+                            </div>
+                        }
                         <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
                             <div className="md:w-10 md:grow flex flex-col gap-y-2">
                                 <div className="flex flex-wrap gap-1">

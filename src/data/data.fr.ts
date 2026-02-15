@@ -16,6 +16,9 @@ export const FR_DATA = {
     matrix_keypoint4_title: "Filtres",
     matrix_keypoint4_description: "Les utilisateurs ont de nombreux filtres à leur disposition pour accelerer leur recherche ou pour afficher un groupe spécifique de personnes (seulement certains services, seulement les managers, etc...).",
 
+    matrix_keypoint5_title: "Composants serveurs favorisés",
+    matrix_keypoint5_description: "L'utilisation au maximum de composants serveurs a été favorisée, par exemple en mettant les filtres en paramètres d'url. Cela permet également de partager un url avec les bons filtres déja choisis pour trouver une personne ou un groupe de personnes.",
+
 // ------------------ BC Formation ------------------ //
     supportDSI_title: "Support DSI",
     supportDSI_summary: "Une application web pour que les utilisateurs puissent créer des tickets pour le support",
@@ -92,6 +95,9 @@ export const FR_DATA = {
 
     bcPortail_keypoint7_title: "Versions et journal des mises à jour",
     bcPortail_keypoint7_description: "Pour chaque application, les numéros de version et les journaux de mises à jour sont disponibles pour que les utilisateurs puissent les voir si besoin. Les mises à jour importantes de versions sont automatiquement présentées à l'utilisateur lors de sa connexion.",
+
+    bcPortail_keypoint8_title: "Mode sombre",
+    bcPortail_keypoint8_description: "Tous les composants et applications web prennent en charge le mode sombre.",
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "Ce site Web",
@@ -288,6 +294,12 @@ export const FR_DATA = {
     gameEngine_title: "Moteur de jeu",
     gameEngine_summary: "Un moteur de jeu simple fait avec SDL2 et C++",
     gameEngine_description: "J'ai décidé d'essayer de concevoir un jeu-vidéo sans utiliser aucun moteur de jeu. Je maîtrise le C++ mais il était intéressant d'apprendre et de l'utiliser avec SDL2 en plus.\n\nJ'ai créé un prototype fonctionnel basique. Dans ce prototype, un niveau de jeu était générée grâce aux information d'une grille (une liste de liste de nombres) et d'un tileset.",
+
+    gameEngine_keypoint1_title: "Conçu de zéro",
+    gameEngine_keypoint1_description: "Moteur de jeu créé de zéro jusqu'a un prototype fonctionnel sans librairie externe.",
+
+    gameEngine_keypoint2_title: "Jeu simple créé avec le moteur",
+    gameEngine_keypoint2_description: "",
 
 // ------------------ Rotate ------------------ //
     rotate_title: "Rotate",

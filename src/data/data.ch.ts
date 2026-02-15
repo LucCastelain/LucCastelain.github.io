@@ -16,6 +16,9 @@ export const CH_DATA = {
     matrix_keypoint4_title: "Filters",
     matrix_keypoint4_description: "Users have a lot of filters to faster their search or to show a specific group of people (only one or some departments, only manager, etc...)",
 
+    matrix_keypoint5_title: "Favorized server components",
+    matrix_keypoint5_description: "Favorized server components by putting the filters as url parameters. It also allows to share an url with the correct filters already set to find a person or group of persons.",
+
 // ------------------ BC Formation ------------------ //
     supportDSI_title: "Support DSI",
     supportDSI_summary: "A web app for user to create ticket for support from IT.",
@@ -92,6 +95,9 @@ export const CH_DATA = {
 
     bcPortail_keypoint7_title: "Versions & changelog",
     bcPortail_keypoint7_description: "For each application, the version numbers and changelogs are available for users to check. The main versions updates are automatically showed to user when they connect.",
+
+    bcPortail_keypoint8_title: "Dark mode",
+    bcPortail_keypoint8_description: "All components and web application can be used in dark mode.",
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "This website",
@@ -288,6 +294,12 @@ export const CH_DATA = {
     gameEngine_title: "Game engine",
     gameEngine_summary: "A simple game engine with SDL2 and C++",
     gameEngine_description: "I decided to try to make a game without using any game engine. I master C++ but it was interesting to learn and use SDL2 with it.\n\nI made a basic prototype running. In this prototype, a map was generated thank to a grid information and a tileset. The player sprite could be moved around with the keyboard and shot projectiles.",
+
+    gameEngine_keypoint1_title: "Built from scratch",
+    gameEngine_keypoint1_description: "Game engine built from scratch from the ground up.",
+
+    gameEngine_keypoint2_title: "Basic working game",
+    gameEngine_keypoint2_description: "",
 
 // ------------------ Rotate ------------------ //
     rotate_title: "Rotate",
