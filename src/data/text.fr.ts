@@ -12,7 +12,7 @@ export const FR_TEXT = {
     filters: "Filtres",
     keypoints: "Points clés",
     browserNoSupportVideo: "Votre navigateur ne supporte pas le lecteur vidéo",
-    aboutMe: "Hi all. My name is Luc Castelain.\nI am a French guy passionate by a lot of things. I have a big smile and I love\nto travel, discover and experiment.\n\nI am passionate by videogames and I love to make them. I have been doing videogames prototypes since I was young and experimented a lot of things in different game engines.\n\nI graduated from an engineering cursus at ENIB (Engineers National School of Brest) in France.\nI have a general engineering degree. My specialization is computer sciences and programming fields.",
+    aboutMe: "Bonjour tout le monde. Je m'appelle Luc Castelain.\nJe suis un jeune homme français passionné par beaucoup de choses. J'ai un grand sourir et j'adore voyager, découvrir et expérimenter de nouvelles choses.\n\nJe suis passionné par la programmation et j'aime vraiment créer beaucoup de choses avec. Je développe et créé des prototypes de jeux-vidéos et de sites web depuis que je suis petit et j'ai testé de nombreuses choses avec différents languages de programmation.\n\nJe suis un ingénieur diplômé de l'ENIB (École Nationale d'Ingénieurs de Brest), en France.\nJ'ai un diplôme d'ingénieur généraliste mais je suis spécialisé en programmation.\n\nVoici mon site web! J'espère que vous le trouverez interessant ☺️.",
     pageIsEmpty: "Oui, je sais que cette page est plutôt vide...",
     orOn: "Ou sur",
     canContactMeByEmail: "Vous pouvez me joindre par mail:",

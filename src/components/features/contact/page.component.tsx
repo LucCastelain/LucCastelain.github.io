@@ -8,7 +8,7 @@ export default function ContactPageComponent({language}: Readonly<ContactPageCom
     const text = getText(language);
 
     return (
-        <div className="size-full flex flex-col items-center mt-24">
+        <div className="size-full max-w-7xl mx-auto flex flex-col items-center mt-24">
             <h3 className="mx-auto text-2xl font-bold text-sky-500 mb-5">{text.contact}</h3>
             <div className="gap-y-3 flex flex-col">
                 <div className="flex flex-col md:flex-row md:items-center gap-x-1">

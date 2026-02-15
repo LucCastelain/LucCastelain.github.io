@@ -53,6 +53,9 @@ export const CH_DATA = {
     bcFormation_keypoint4_title: "Notifications and emails",
     bcFormation_keypoint4_description: "When a training session is confirmed by the training administrator, a notification is send on the app (visible through all web applications in BC Portail) as well as an email to each member of the session.\nFor each session convocation document is generated and sent with each email. It is then linked to the training request of each person in the session so that they can check it anytime.",
 
+    bcFormation_keypoint5_title: "Automatic budget summary and prediction",
+    bcFormation_keypoint5_description: "The budget summary from past training sessions and the budget to come for future training sessions is automatically calculated and can be exported to XLSX or PDF files.",
+
 // ------------------ Load testing script ------------------ //
     loadTesting_title: "Load testing script",
     loadTesting_summary: "A script to load test the different web environments",
@@ -64,7 +67,7 @@ export const CH_DATA = {
     loadTesting_keypoint2_title: "Result are easy to read and in real-time",
     loadTesting_keypoint2_description: "On top of the results summary the script give at the end of execution, it is connected to a Grafana board to easily read the results in real-time",
 
-// ------------------ BC Formation ------------------ //
+// ------------------ BC Portail ------------------ //
     bcPortail_title: "BC Portail",
     bcPortail_summary: "A web app acting at the entry point to access the company's apps",
     bcPortail_description: "BC Portail encapsulate all the other web applications made by Baudin Chateauneuf. It works like a Service-Oriented Architecture as a common ground for each other web applications.",
@@ -86,6 +89,9 @@ export const CH_DATA = {
 
     bcPortail_keypoint6_title: "Configuration page",
     bcPortail_keypoint6_description: "The configuration page let an administrator to add a web applications icon to the portal, allowing users to access the added web app. Administrators can add, edit, and remove web applications. While adding or editing a web application, they can manage which role or perimeter in the company can access the app amongst other things (name, icon, etc...). In this configuration page, an administrator can also add alerts for all users to be seen, thus allowing an extra layer of communication if needed.",
+
+    bcPortail_keypoint7_title: "Versions & changelog",
+    bcPortail_keypoint7_description: "For each application, the version numbers and changelogs are available for users to check. The main versions updates are automatically showed to user when they connect.",
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "This website",

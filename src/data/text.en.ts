@@ -12,7 +12,7 @@ export const EN_TEXT = {
     filters: "Filters",
     keypoints: "Keypoints",
     browserNoSupportVideo: "Your browser does not support the video player",
-    aboutMe: "Hi all. My name is Luc Castelain.\nI am a French guy passionate by a lot of things. I have a big smile and I love\nto travel, discover and experiment.\n\nI love programming and I love to create a lot of different stuff with it. I have been doing video games prototypes and websites since I was young and experimented a lot of things with different programming languages.\n\nI graduated from an engineering cursus at ENIB (Engineers National School of Brest) in France.\nI have a general engineering degree. My specialization is computer sciences and programming fields.\n\nThis is my website! I hope you will find it interesting ☺️.",
+    aboutMe: "Hi all. My name is Luc Castelain.\nI am a French guy passionate by a lot of things. I have a big smile and I love to travel, discover and experiment.\n\nI love programming and I love to create a lot of different stuff with it. I have been doing video games prototypes and websites since I was young and experimented a lot of things with different programming languages.\n\nI graduated from an engineering cursus at ENIB (Engineers National School of Brest) in France.\nI have a general engineering degree. My specialization is computer sciences and programming fields.\n\nThis is my website! I hope you will find it interesting ☺️.",
     pageIsEmpty: "Yeah, I know this page is pretty empty...",
     orOn: "Or on",
     canContactMeByEmail: "You can contact me by email:",

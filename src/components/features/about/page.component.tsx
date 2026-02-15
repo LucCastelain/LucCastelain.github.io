@@ -10,7 +10,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
     const text = getText(language);
 
     return (
-        <div className="flex flex-row gap-x-2 size-full overflow-y-auto">
+        <div className="flex flex-row max-w-7xl mx-auto gap-x-2 size-full overflow-y-auto">
             <Image src="/static/me.webp"
                    alt="Luc Castelain"
                    width={500}

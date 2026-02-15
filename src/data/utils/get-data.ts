@@ -267,6 +267,10 @@ export function getPortfolioData(language: string): PortfolioData {
                         title: data.bcFormation_keypoint4_title,
                         description: data.bcFormation_keypoint4_description
                     },
+                    {
+                        title: data.bcFormation_keypoint5_title,
+                        description: data.bcFormation_keypoint5_description
+                    },
                 ]
             },
             {
@@ -324,6 +328,10 @@ export function getPortfolioData(language: string): PortfolioData {
                     {
                         title: data.bcPortail_keypoint6_title,
                         description: data.bcPortail_keypoint6_description
+                    },
+                    {
+                        title: data.bcPortail_keypoint7_title,
+                        description: data.bcPortail_keypoint7_description
                     },
                 ]
             },

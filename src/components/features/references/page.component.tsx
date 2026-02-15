@@ -11,7 +11,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
     return (
         <div className="size-full flex flex-col items-center p-6">
             <h3 className="mx-auto text-2xl font-bold text-sky-500 mb-5">{text.references}</h3>
-            <div className="flex flex-col max-w-5xl mx-auto size-full text-center gap-y-4 overflow-y-auto">
+            <div className="flex flex-col max-w-7xl mx-auto size-full text-center gap-y-4 overflow-y-auto">
                 <TextWithLineBreaksComponent text={text.referencesIHave}
                                              className="text-left"/>
                 <div className="size-full flex flex-wrap justify-around">
