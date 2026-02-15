@@ -1,14 +1,19 @@
 import {ReactElement} from "react";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import {ExperienceData} from "@/data/utils/get-data";
+import {TextData} from "@/data/utils/get-text";
 
-export default function ExperienceComponent({experience}: Readonly<ExperienceComponentProps>): ReactElement {
+export default function ExperienceComponent({experience, language, text}: Readonly<ExperienceComponentProps>): ReactElement {
     return (
         <div className="flex flex-col gap-y-1">
             <div className="flex flex-col md:flex-row md:items-center">
                 <p className="font-bold text-lg">{experience.title}</p>
                 <p className="md:ml-4 text-sm text-neutral-500 dark:text-neutral-400">
-                    {experience.startDate.getMonth() < 9 ? "0" : ""}{experience.startDate.getMonth()+1}/{experience.startDate.getFullYear()} - {experience.endDate ? (experience.endDate.getMonth() < 9 ? `0${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}` : `${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}`) : "now"}
+                    {language === "ch" ?
+                        <>{experience.startDate.getMonth()}月{experience.startDate.getFullYear()}年 - {experience.endDate ? `${experience.endDate?.getMonth()}月${experience.endDate?.getFullYear()}年` : text.now}</>
+                        :
+                        <>{experience.startDate.getMonth() < 9 ? "0" : ""}{experience.startDate.getMonth()+1}/{experience.startDate.getFullYear()} - {experience.endDate ? (experience.endDate.getMonth() < 9 ? `0${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}` : `${experience.endDate.getMonth()+1}/${experience.endDate.getFullYear()}`) : text.now}</>
+                    }
                 </p>
             </div>
             <div className="flex flex-wrap items-center">
@@ -46,4 +51,6 @@ export default function ExperienceComponent({experience}: Readonly<ExperienceCom
 
 interface ExperienceComponentProps {
     experience: ExperienceData;
+    language: string;
+    text: TextData;
 }
