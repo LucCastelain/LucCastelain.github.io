@@ -1,6 +1,6 @@
 import {EN_DATA, EN_PROJECT_TYPE, EN_RESUME_TYPE} from "@/data/data.en";
 import {FR_DATA, FR_PROJECT_TYPE, FR_RESUME_TYPE} from "@/data/data.fr";
-import {CH_DATA, CH_PROJECT_TYPE, CH_RESUME_TYPE} from "@/data/data.ch";
+import {CH_DATA, CH_PROJECT_TYPE, CH_RESUME_TYPE} from "@/data/data.ch-zh";
 
 export const languages = ["en", "fr", "ch-zh"];
 
@@ -166,7 +166,7 @@ export function getPortfolioData(language: string): PortfolioData {
             data = FR_DATA;
             projectTypes = FR_PROJECT_TYPE;
             break;
-        case "ch":
+        case "ch-zh":
             data = CH_DATA;
             projectTypes = CH_PROJECT_TYPE;
             break;
