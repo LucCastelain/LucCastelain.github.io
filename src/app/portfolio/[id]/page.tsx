@@ -1,4 +1,4 @@
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import ProjectPageComponent from "@/components/features/portfolio/[id]/page.component";
 import {getPortfolioData} from "@/data/utils/get-data";
 
@@ -14,7 +14,9 @@ export default async function ProjectPage({params}: Readonly<ProjectPageProps>):
     const {id} = await params
 
     return (
-        <ProjectPageComponent projectId={id}/>
+        <Suspense fallback={<p>Loading...</p>}>
+            <ProjectPageComponent projectId={id}/>
+        </Suspense>
     );
 }
 

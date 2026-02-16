@@ -9,7 +9,7 @@ export default function ProjectCardComponent({project, language}: Readonly<Proje
     const router = useRouter();
 
     return (
-        <div className="group flex flex-col w-full p-4 gap-y-2 text-center text-gray-900 dark:text-gray-50 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+        <div className="group cursor-pointer flex flex-col w-full p-4 gap-y-2 text-center text-gray-900 dark:text-gray-50 hover:bg-neutral-100 dark:hover:bg-neutral-700"
              onClick={() => router.push(`/portfolio/${project.id}?lang=${language}`)}>
             <h3 className="text-xl font-bold">
                 {project.title}

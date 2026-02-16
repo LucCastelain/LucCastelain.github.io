@@ -3,7 +3,7 @@ import ContactPageComponent from "@/components/features/contact/page.component";
 
 export default async function ContactPage(): Promise<ReactElement> {
     return (
-        <Suspense>
+        <Suspense fallback={<p>Loading...</p>}>
             <ContactPageComponent/>
         </Suspense>
     );

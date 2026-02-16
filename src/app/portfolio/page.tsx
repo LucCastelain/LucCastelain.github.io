@@ -3,7 +3,7 @@ import {ReactElement, Suspense} from "react";
 
 export default async function PortfolioPage(): Promise<ReactElement> {
     return (
-        <Suspense>
+        <Suspense fallback={<p>Loading...</p>}>
             <PortfolioPageComponent/>
         </Suspense>
     );

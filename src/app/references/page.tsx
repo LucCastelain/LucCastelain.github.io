@@ -3,7 +3,7 @@ import ReferencesPageComponent from "@/components/features/references/page.compo
 
 export default async function ReferencesPage(): Promise<ReactElement> {
     return (
-        <Suspense>
+        <Suspense fallback={<p>Loading...</p>}>
             <ReferencesPageComponent/>
         </Suspense>
     );
