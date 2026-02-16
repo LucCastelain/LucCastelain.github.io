@@ -1,14 +1,10 @@
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import ReferencesPageComponent from "@/components/features/references/page.component";
 
-export default async function ReferencesPage({searchParams}: Readonly<ReferencesPageProps>): Promise<ReactElement> {
-    const {lang} = await searchParams;
-
+export default async function ReferencesPage(): Promise<ReactElement> {
     return (
-        <ReferencesPageComponent language={lang ?? "en"}/>
+        <Suspense>
+            <ReferencesPageComponent/>
+        </Suspense>
     );
-}
-
-interface ReferencesPageProps {
-    searchParams: Promise<{ lang: string }>;
 }

@@ -1,14 +1,10 @@
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import AboutPageComponent from "@/components/features/about/page.component";
 
-export default async function AboutPage({searchParams}: Readonly<AboutPageProps>): Promise<ReactElement> {
-    const {lang} = await searchParams;
-
+export default async function AboutPage(): Promise<ReactElement> {
     return (
-        <AboutPageComponent language={lang ?? "en"}/>
+        <Suspense>
+            <AboutPageComponent/>
+        </Suspense>
     );
-}
-
-interface AboutPageProps {
-    searchParams: Promise<{ lang: string }>;
 }

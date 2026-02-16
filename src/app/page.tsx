@@ -1,15 +1,11 @@
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import AboutPageComponent from "@/components/features/about/page.component";
 
-export default async function HomePage({searchParams}: Readonly<HomePageProps>): Promise<ReactElement> {
-    const {lang} = await searchParams;
-
+export default async function HomePage(): Promise<ReactElement> {
     return (
-        <AboutPageComponent language={lang ?? "en"}/>
+        <Suspense>
+            <AboutPageComponent/>
+        </Suspense>
     );
-}
-
-interface HomePageProps {
-    searchParams: Promise<{ lang: string }>
 }
 

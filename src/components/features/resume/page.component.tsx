@@ -4,8 +4,11 @@ import {ReactElement} from "react";
 import ExperienceComponent from "@/components/features/resume/experience.component";
 import {getResumeData} from "@/data/utils/get-data";
 import {getText} from "@/data/utils/get-text";
+import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function ResumePageComponent({language}: Readonly<ExcperiencePageComponentProps>): ReactElement {
+export default function ResumePageComponent(): ReactElement {
+    const params = useSearchParams();
+    const language = params.get("lang") ?? "en";
     const data = getResumeData(language);
     const text = getText(language);
 
@@ -32,8 +35,4 @@ export default function ResumePageComponent({language}: Readonly<ExcperiencePage
             </div>
         </div>
     );
-}
-
-interface ExcperiencePageComponentProps {
-    language: string;
 }

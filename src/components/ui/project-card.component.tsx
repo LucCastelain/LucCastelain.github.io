@@ -10,7 +10,7 @@ export default function ProjectCardComponent({project, language}: Readonly<Proje
 
     return (
         <div className="group flex flex-col w-full p-4 gap-y-2 text-center text-gray-900 dark:text-gray-50 hover:bg-neutral-100 dark:hover:bg-neutral-700"
-             onClick={() => router.push(`portfolio/${project.id}?lang=${language}`)}>
+             onClick={() => router.push(`/portfolio/${project.id}?lang=${language}`)}>
             <h3 className="text-xl font-bold">
                 {project.title}
             </h3>
@@ -23,7 +23,7 @@ export default function ProjectCardComponent({project, language}: Readonly<Proje
                 ))}
             </div>
             <div className="min-h-72 max-h-72 overflow-hidden">
-                <Image src={`/static/${project.id}/icon.webp`}
+                <Image src={`/me/static/${project.id}/icon.webp`}
                        alt={project.title}
                        width={500}
                        height={0}

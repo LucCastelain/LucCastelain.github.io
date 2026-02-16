@@ -4,8 +4,11 @@ import {ReactElement} from "react";
 import {getText} from "@/data/utils/get-text";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import Image from "next/image";
+import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function ReferencesPageComponent({language}: Readonly<ReferencesPageComponentProps>): ReactElement {
+export default function ReferencesPageComponent(): ReactElement {
+    const params = useSearchParams();
+    const language = params.get("lang") ?? "en";
     const text = getText(language);
 
     return (
@@ -15,29 +18,29 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                 <TextWithLineBreaksComponent text={text.referencesIHave}
                                              className="text-left"/>
                 <div className="size-full flex flex-wrap justify-around">
-                    <a href="/fiu_reference.pdf"
+                    <a href="/me/fiu_reference.pdf"
                        target="_blank"
                        className="group h-fit p-3 rounded-lg transition-all hover:scale-[1.02] hover:bg-neutral-100 dark:hover:bg-neutral-800">
                         <figure>
-                            <Image src="/static/references/fiu_reference.webp"
+                            <Image src="/me/static/references/fiu_reference.webp"
                                    alt="FIU reference"
                                    width={500}
                                    height={0}
                                    style={{width: "auto", height: "100%"}}
-                                   className="transition-all border group-hover:border-0 dark:border-0"/>
+                                   className="transition-all md:max-w-96 border group-hover:border-0 dark:border-0"/>
                             <figcaption>{text.fiuReference}</figcaption>
                         </figure>
                     </a>
-                    <a href="/dosisoft_reference.pdf"
+                    <a href="/me/dosisoft_reference.pdf"
                        target="_blank"
                        className="group h-fit p-3 rounded-lg transition-all hover:scale-[1.02] hover:bg-neutral-100 dark:hover:bg-neutral-800">
                         <figure>
-                            <Image src="/static/references/dosisoft_reference.webp"
+                            <Image src="/me/static/references/dosisoft_reference.webp"
                                    alt="Dosisoft reference"
                                    width={500}
                                    height={0}
                                    style={{width: "auto", height: "100%"}}
-                                   className="transition-all border group-hover:border-0 dark:border-0"/>
+                                   className="transition-all md:max-w-96 border group-hover:border-0 dark:border-0"/>
                             <figcaption>{text.dosisoftReference}</figcaption>
                         </figure>
                     </a>
@@ -45,8 +48,4 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
             </div>
         </div>
     );
-}
-
-interface ReferencesPageComponentProps {
-    language: string;
 }

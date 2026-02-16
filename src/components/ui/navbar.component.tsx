@@ -34,9 +34,9 @@ export default function NavbarComponent(): ReactElement {
         <nav className={twMerge("absolute top-0 z-50 w-full h-fit bg-white border-gray-200 dark:border-neutral-800 dark:bg-neutral-900 border-b md:shadow-none", openMenu && "shadow-md")}>
             <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between mx-auto p-2">
                 <div className="flex flex-row w-full md:w-fit">
-                    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <Link href="/me" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white">Luc Castelain</span>
-                    </a>
+                    </Link>
                     <button ref={menuButtonRef}
                             className="ml-auto p-2 md:hidden md:pointer-events-none rounded-lg hover:bg-neutral-200 dark:text-gray-100 dark:hover:bg-neutral-800"
                             onClick={() => setOpenMenu(!openMenu)}>

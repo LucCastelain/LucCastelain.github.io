@@ -1,14 +1,10 @@
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import ResumePageComponent from "@/components/features/resume/page.component";
 
-export default async function ResumePage({searchParams}: Readonly<ResumePageProps>): Promise<ReactElement> {
-    const {lang} = await searchParams;
-
+export default async function ResumePage(): Promise<ReactElement> {
     return (
-        <ResumePageComponent language={lang ?? "en"}/>
+        <Suspense>
+            <ResumePageComponent/>
+        </Suspense>
     );
-}
-
-interface ResumePageProps {
-    searchParams: Promise<{ lang: string }>
 }

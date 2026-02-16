@@ -5,13 +5,16 @@ import {getText} from "@/data/utils/get-text";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import Image from "next/image";
 import {HiMiniArrowTurnRightDown} from "react-icons/hi2";
+import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function AboutPageComponent({language}: Readonly<AboutPageComponentProps>): ReactElement {
+export default function AboutPageComponent(): ReactElement {
+    const params = useSearchParams();
+    const language = params.get("lang") ?? "en";
     const text = getText(language);
 
     return (
         <div className="flex flex-row max-w-7xl mx-auto gap-x-2 size-full overflow-y-auto">
-            <Image src="/static/me.webp"
+            <Image src="/me/static/me.webp"
                    alt="Luc Castelain"
                    width={500}
                    height={0}
@@ -27,7 +30,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
                         <p>That's me</p>
                         <HiMiniArrowTurnRightDown className=""/>
                     </div>
-                    <Image src="/static/me_small.webp"
+                    <Image src="/me/static/me_small.webp"
                            alt="Luc Castelain"
                            width={500}
                            height={0}
@@ -37,8 +40,4 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
             </div>
         </div>
     );
-}
-
-interface AboutPageComponentProps {
-    language: string;
 }

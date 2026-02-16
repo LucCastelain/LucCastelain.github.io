@@ -8,8 +8,12 @@ import {FastAverageColor, FastAverageColorResult} from "fast-average-color";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import {getText} from "@/data/utils/get-text";
 import {HiArrowTopRightOnSquare} from "react-icons/hi2";
+import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function ProjectPageComponent({language, projectId}: Readonly<ProjectPageComponentProps>): ReactElement {
+export default function ProjectPageComponent({projectId}: Readonly<ProjectPageComponentProps>): ReactElement {
+    const searchParams = useSearchParams();
+    const language = searchParams.get("lang") ?? "en";
+
     const project = getPortfolioData(language).projects.find(project => project.id === projectId);
     const text = getText(language);
 
@@ -26,7 +30,7 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
             !project.images[selectedImage].endsWith(".webp")) return;
 
         startTransition(async () => {
-            const color = await fac.getColorAsync(`/static/${project.id}/${project.images[selectedImage]}`);
+            const color = await fac.getColorAsync(`/me/static/${project.id}/${project.images[selectedImage]}`);
             setAverageColor(color);
         });
     }, [selectedImage]);
@@ -63,11 +67,11 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
                                                            className="mx-auto"
                                                            controls
                                                            preload="none">
-                                                        <source src={`/static/${project.id}/${src}`} type="video/mp4" />
+                                                        <source src={`/me/static/${project.id}/${src}`} type="video/mp4" />
                                                         {text.browserNoSupportVideo}
                                                     </video>
                                                     :
-                                                    <Image src={`/static/${project.id}/${src}`}
+                                                    <Image src={`/me/static/${project.id}/${src}`}
                                                            width={500}
                                                            height={0}
                                                            style={{width: "auto", height: "100%"}}
@@ -128,6 +132,5 @@ export default function ProjectPageComponent({language, projectId}: Readonly<Pro
 }
 
 interface ProjectPageComponentProps {
-    language: string;
     projectId: string;
 }

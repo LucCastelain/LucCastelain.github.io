@@ -1,15 +1,11 @@
 import PortfolioPageComponent from "@/components/features/portfolio/page.component";
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 
-export default async function PortfolioPage({searchParams}: Readonly<PortfolioPageProps>): Promise<ReactElement> {
-    const {lang} = await searchParams;
-
+export default async function PortfolioPage(): Promise<ReactElement> {
     return (
-        <PortfolioPageComponent language={lang ?? "en"}/>
+        <Suspense>
+            <PortfolioPageComponent/>
+        </Suspense>
     );
-}
-
-interface PortfolioPageProps {
-    searchParams: Promise<{ lang: string }>
 }
 

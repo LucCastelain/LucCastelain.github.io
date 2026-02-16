@@ -15,7 +15,7 @@ export function DarkModeToggleComponent({className}: {className?: string}): Reac
     });
 
     return (
-        <button type="button" onClick={() => darkMode.toggle()} className={twMerge("group rounded-lg p-1.5 text-sm text-gray-900 hover:bg-gray-200 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700", className)}>
+        <button type="button" onClick={() => darkMode.toggle()} className={twMerge("group rounded-lg h-fit p-1.5 text-sm text-gray-900 hover:bg-gray-200 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700", className)}>
             {darkMode.darkTheme ?
                 <HiSun className="size-5 text-gray-100 transition-colors group-hover:text-yellow-300"/>
                 :

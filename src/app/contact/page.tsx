@@ -1,14 +1,10 @@
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import ContactPageComponent from "@/components/features/contact/page.component";
 
-export default async function ContactPage({searchParams}: Readonly<ContactPageProps>): Promise<ReactElement> {
-    const {lang} = await searchParams;
-
+export default async function ContactPage(): Promise<ReactElement> {
     return (
-        <ContactPageComponent language={lang ?? "en"}/>
+        <Suspense>
+            <ContactPageComponent/>
+        </Suspense>
     );
-}
-
-interface ContactPageProps {
-    searchParams: Promise<{ lang: string }>;
 }

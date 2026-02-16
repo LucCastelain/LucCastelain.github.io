@@ -1,18 +1,23 @@
 import {ReactElement} from "react";
 import ProjectPageComponent from "@/components/features/portfolio/[id]/page.component";
+import {getPortfolioData} from "@/data/utils/get-data";
 
-export default async function ProjectPage({params, searchParams}: Readonly<ProjectPageProps>): Promise<ReactElement> {
-    const {id} = await params;
-    const {lang} = await searchParams;
+export function generateStaticParams() {
+    const portfolioData = getPortfolioData("en");
 
-    if(!id) return (<div>404 not found</div>);
+    return portfolioData.projects.map((project) => ({
+        id: project.id,
+    }));
+}
+
+export default async function ProjectPage({params}: Readonly<ProjectPageProps>): Promise<ReactElement> {
+    const {id} = await params
 
     return (
-        <ProjectPageComponent language={lang ?? "en"} projectId={id.toString()}/>
+        <ProjectPageComponent projectId={id}/>
     );
 }
 
 interface ProjectPageProps {
     params: Promise<{ id: string }>;
-    searchParams: Promise<{ lang: string }>;
 }
