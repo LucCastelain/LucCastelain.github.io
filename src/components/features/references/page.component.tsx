@@ -12,7 +12,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
             <div className="flex flex-col size-full text-center px-6 gap-y-4 overflow-y-auto">
                 <TextWithLineBreaksComponent text={text.referencesIHave}
                                              className="text-left"/>
-                <div className="size-full grid grid-cols-1 md:grid-cols-2 md:gap-6">
+                <div className="size-full grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-6">
                     <a href="/fiu_reference.pdf"
                        target="_blank"
                        rel="noopeneexitr noreferrer"
@@ -23,7 +23,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                                    width={500}
                                    height={0}
                                    style={{width: "auto", height: "100%"}}
-                                   className="transition-all border group-hover:border-0 dark:border-0"/>
+                                   className="transition-all object-contain border group-hover:border-0 dark:border-0"/>
                             <figcaption>{text.fiuReference}</figcaption>
                         </figure>
                     </a>
@@ -37,7 +37,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                                    width={500}
                                    height={0}
                                    style={{width: "auto", height: "100%"}}
-                                   className="transition-all border group-hover:border-0 dark:border-0"/>
+                                   className="transition-all object-contain border group-hover:border-0 dark:border-0"/>
                             <figcaption>{text.dosisoftReference}</figcaption>
                         </figure>
                     </a>
