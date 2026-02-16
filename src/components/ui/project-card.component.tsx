@@ -1,16 +1,12 @@
-"use client"
-
 import {ReactElement} from "react";
-import {useRouter} from "next/navigation";
 import Image from "next/image";
 import {ProjectData} from "@/data/utils/get-data";
+import Link from "next/dist/client/link";
 
 export default function ProjectCardComponent({project, language}: Readonly<ProjectCardComponentProps>): ReactElement {
-    const router = useRouter();
-
     return (
-        <div className="group cursor-pointer flex flex-col w-full p-4 gap-y-2 text-center text-gray-900 dark:text-gray-50 hover:bg-neutral-100 dark:hover:bg-neutral-700"
-             onClick={() => router.push(`/${language}/portfolio/${project.id}`)}>
+        <Link className="group cursor-pointer flex flex-col w-full p-4 gap-y-2 text-center text-gray-900 dark:text-gray-50 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+              href={`/${language}/portfolio/${project.id}`}>
             <h3 className="text-xl font-bold">
                 {project.title}
             </h3>
@@ -47,7 +43,7 @@ export default function ProjectCardComponent({project, language}: Readonly<Proje
                 </div>
                 <p>{project.summary}</p>
             </div>
-        </div>
+        </Link>
     );
 }
 

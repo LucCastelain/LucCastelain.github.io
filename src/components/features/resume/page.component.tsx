@@ -1,5 +1,3 @@
-"use client"
-
 import {ReactElement} from "react";
 import ExperienceComponent from "@/components/features/resume/experience.component";
 import {getResumeData} from "@/data/utils/get-data";

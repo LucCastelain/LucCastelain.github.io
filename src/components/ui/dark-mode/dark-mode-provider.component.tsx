@@ -33,8 +33,10 @@ export function DarkModeProvider(props: Readonly<PropsWithChildren>): ReactEleme
     const [darkTheme, setDarkTheme] = useState<boolean>(true);
 
     useEffect(() => {
-        setDarkTheme(localStorage.getItem("darkTheme") === "true");
-    }, []);
+        setDarkTheme((localStorage.getItem("darkTheme") === "true") ||
+        (!("darkTheme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches));
+        document.documentElement.classList.toggle("dark", darkTheme);
+    }, [darkTheme]);
 
     const handleSetDarkTheme = useCallback((value: boolean) => {
         setDarkTheme(value);

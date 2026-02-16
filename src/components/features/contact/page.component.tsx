@@ -1,5 +1,3 @@
-"use client"
-
 import {ReactElement} from "react";
 import {getText} from "@/data/utils/get-text";
 import {FaLinkedin} from "react-icons/fa6";
