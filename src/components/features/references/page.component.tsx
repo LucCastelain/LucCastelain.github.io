@@ -15,6 +15,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                 <div className="size-full flex flex-wrap justify-around">
                     <a href="/fiu_reference.pdf"
                        target="_blank"
+                       rel="noopeneexitr noreferrer"
                        className="group h-fit p-3 rounded-lg transition-all hover:scale-[1.02] hover:bg-neutral-100 dark:hover:bg-neutral-800">
                         <figure>
                             <Image src="/static/references/fiu_reference.webp"
@@ -28,6 +29,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                     </a>
                     <a href="/dosisoft_reference.pdf"
                        target="_blank"
+                       rel="noopener noreferrer"
                        className="group h-fit p-3 rounded-lg transition-all hover:scale-[1.02] hover:bg-neutral-100 dark:hover:bg-neutral-800">
                         <figure>
                             <Image src="/static/references/dosisoft_reference.webp"
