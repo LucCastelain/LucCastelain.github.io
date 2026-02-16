@@ -5,11 +5,8 @@ import {getText} from "@/data/utils/get-text";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import Image from "next/image";
 import {HiMiniArrowTurnRightDown} from "react-icons/hi2";
-import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function AboutPageComponent(): ReactElement {
-    const params = useSearchParams();
-    const language = params.get("lang") ?? "en";
+export default function AboutPageComponent({language}: Readonly<AboutPageComponentProps>): ReactElement {
     const text = getText(language);
 
     return (
@@ -40,4 +37,8 @@ export default function AboutPageComponent(): ReactElement {
             </div>
         </div>
     );
+}
+
+interface AboutPageComponentProps {
+    language: string;
 }

@@ -7,11 +7,8 @@ import {getText} from "@/data/utils/get-text";
 import {HiMiniArrowLeft} from "react-icons/hi2";
 import {twMerge} from "tailwind-merge";
 import {IoFilter} from "react-icons/io5";
-import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function PortfolioPageComponent(): ReactElement {
-    const params = useSearchParams();
-    const language = params.get("lang") ?? "en";
+export default function PortfolioPageComponent({language}: Readonly<PortfolioPageComponentProps>): ReactElement {
     const data = getPortfolioData(language);
     const text = getText(language);
     const [projectTypeFilter, setProjectTypeFilter] = useState<string>(data.projectTypes.ALL);
@@ -88,4 +85,8 @@ export default function PortfolioPageComponent(): ReactElement {
             </div>
         </div>
     );
+}
+
+interface PortfolioPageComponentProps {
+    language: string;
 }

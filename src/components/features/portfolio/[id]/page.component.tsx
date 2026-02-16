@@ -8,12 +8,8 @@ import {FastAverageColor, FastAverageColorResult} from "fast-average-color";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import {getText} from "@/data/utils/get-text";
 import {HiArrowTopRightOnSquare} from "react-icons/hi2";
-import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function ProjectPageComponent({projectId}: Readonly<ProjectPageComponentProps>): ReactElement {
-    const searchParams = useSearchParams();
-    const language = searchParams.get("lang") ?? "en";
-
+export default function ProjectPageComponent({projectId, language}: Readonly<ProjectPageComponentProps>): ReactElement {
     const project = getPortfolioData(language).projects.find(project => project.id === projectId);
     const text = getText(language);
 
@@ -133,4 +129,5 @@ export default function ProjectPageComponent({projectId}: Readonly<ProjectPageCo
 
 interface ProjectPageComponentProps {
     projectId: string;
+    language: string;
 }

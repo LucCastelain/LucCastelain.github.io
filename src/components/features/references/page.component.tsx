@@ -4,11 +4,8 @@ import {ReactElement} from "react";
 import {getText} from "@/data/utils/get-text";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import Image from "next/image";
-import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function ReferencesPageComponent(): ReactElement {
-    const params = useSearchParams();
-    const language = params.get("lang") ?? "en";
+export default function ReferencesPageComponent({language}: Readonly<ReferencesPageComponent>): ReactElement {
     const text = getText(language);
 
     return (
@@ -48,4 +45,8 @@ export default function ReferencesPageComponent(): ReactElement {
             </div>
         </div>
     );
+}
+
+interface ReferencesPageComponent {
+    language: string;
 }

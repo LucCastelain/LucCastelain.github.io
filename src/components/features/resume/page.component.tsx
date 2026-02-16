@@ -6,9 +6,7 @@ import {getResumeData} from "@/data/utils/get-data";
 import {getText} from "@/data/utils/get-text";
 import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function ResumePageComponent(): ReactElement {
-    const params = useSearchParams();
-    const language = params.get("lang") ?? "en";
+export default function ResumePageComponent({language}: Readonly<ResumePageComponentProps>): ReactElement {
     const data = getResumeData(language);
     const text = getText(language);
 
@@ -35,4 +33,8 @@ export default function ResumePageComponent(): ReactElement {
             </div>
         </div>
     );
+}
+
+interface ResumePageComponentProps {
+    language: string;
 }

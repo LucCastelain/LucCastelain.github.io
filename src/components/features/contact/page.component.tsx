@@ -3,11 +3,8 @@
 import {ReactElement} from "react";
 import {getText} from "@/data/utils/get-text";
 import {FaLinkedin} from "react-icons/fa6";
-import {useSearchParams} from "next/dist/client/components/navigation";
 
-export default function ContactPageComponent(): ReactElement {
-    const params = useSearchParams();
-    const language = params.get("lang") ?? "en";
+export default function ContactPageComponent({language}: Readonly<ContactPageComponent>): ReactElement {
     const text = getText(language);
 
     return (
@@ -33,4 +30,8 @@ export default function ContactPageComponent(): ReactElement {
             <p className="mt-14">{text.pageIsEmpty}</p>
         </div>
     );
+}
+
+interface ContactPageComponent {
+    language: string;
 }

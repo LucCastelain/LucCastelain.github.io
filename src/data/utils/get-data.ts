@@ -2,6 +2,8 @@ import {EN_DATA, EN_PROJECT_TYPE, EN_RESUME_TYPE} from "@/data/data.en";
 import {FR_DATA, FR_PROJECT_TYPE, FR_RESUME_TYPE} from "@/data/data.fr";
 import {CH_DATA, CH_PROJECT_TYPE, CH_RESUME_TYPE} from "@/data/data.ch";
 
+export const languages = ["en", "fr", "ch-zh"];
+
 export function getResumeData(language: string): ResumeData {
     let data = EN_DATA;
     let resumeType: ResumeType;
@@ -11,7 +13,7 @@ export function getResumeData(language: string): ResumeData {
             data = FR_DATA;
             resumeType = FR_RESUME_TYPE;
             break;
-        case "ch":
+        case "ch-zh":
             data = CH_DATA;
             resumeType = CH_RESUME_TYPE;
             break;

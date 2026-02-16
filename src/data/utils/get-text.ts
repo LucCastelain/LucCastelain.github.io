@@ -9,7 +9,7 @@ export function getText(language: string): TextData {
         case "fr":
             textData = FR_TEXT;
             break;
-        case "ch":
+        case "ch-zh":
             textData = CH_TEXT;
             break;
         default:

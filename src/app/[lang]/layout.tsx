@@ -1,10 +1,11 @@
 import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
-import "../globals.css";
+import "../../globals.css";
 import NavbarComponent from "@/components/ui/navbar.component";
 import {PropsWithChildren} from "react";
 import {DarkModeProvider} from "@/components/ui/dark-mode/dark-mode-provider.component";
 import {twMerge} from "tailwind-merge";
+import {languages} from "@/data/utils/get-data";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -24,12 +25,20 @@ export const metadata: Metadata = {
     },
 };
 
-export default async function RootLayout({children}: Readonly<PropsWithChildren>) {
+export function generateStaticParams() {
+    return languages.flatMap(lang => ({
+        lang,
+    }));
+}
+
+export default async function RootLayout({children, params}: Readonly<PropsWithChildren<RootLayoutProps>>) {
+    const {lang} = await params;
+
     return (
         <html lang="en">
             <body className={twMerge("flex flex-col max-sm:min-h-screen antialiased sm:w-screen sm:h-screen", geistSans.className, geistSans.variable, geistMono.variable)}>
                 <DarkModeProvider>
-                    <NavbarComponent/>
+                    <NavbarComponent language={lang}/>
                     <div className="h-12"/>
                     <main className="w-full h-10 grow overflow-hidden bg-white text-gray-900 dark:bg-neutral-900 dark:text-gray-50">
                         {children}
@@ -38,4 +47,8 @@ export default async function RootLayout({children}: Readonly<PropsWithChildren>
             </body>
         </html>
     );
+}
+
+interface RootLayoutProps {
+    params: Promise<{ lang: string }>;
 }
