@@ -30,7 +30,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
                            width={500}
                            height={0}
                            style={{width: "auto", height: "100%"}}
-                           className="rounded-md"/>
+                           className="rounded-md object-contain"/>
                 </div>
             </div>
         </div>

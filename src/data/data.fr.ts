@@ -104,6 +104,15 @@ export const FR_DATA = {
     thisWebsite_summary: "J'ai créé ce site Web pour montrer mon portfolio et mon CV",
     thisWebsite_description: "Vous pouvez voir ce projet en naviguant dessus ☜(⌒▽⌒)☞",
 
+    thisWebsite_keypoint1_title: "Créé depuis zéro",
+    thisWebsite_keypoint1_description: "",
+
+    thisWebsite_keypoint2_title: "Mode sombre",
+    thisWebsite_keypoint2_description: "",
+
+    thisWebsite_keypoint3_title: "Plusieurs langues",
+    thisWebsite_keypoint3_description: "Ce site peut être parcouru en français, anglais et chinois traditionnel.",
+
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
     deepMine_summary: "Un jeu d'aventure en 2D dans un monde généré de manière procédurale",

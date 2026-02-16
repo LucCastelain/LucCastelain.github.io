@@ -26,8 +26,12 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
             !project.images[selectedImage].endsWith(".webp")) return;
 
         startTransition(async () => {
-            const color = await fac.getColorAsync(`/static/${project.id}/${project.images[selectedImage]}`);
-            setAverageColor(color);
+            try {
+                const color = await fac.getColorAsync(`/static/${project.id}/${project.images[selectedImage]}`);
+                setAverageColor(color);
+            } catch (e) {
+                console.log("cannot set average color: ", e);
+            }
         });
     }, [selectedImage]);
 

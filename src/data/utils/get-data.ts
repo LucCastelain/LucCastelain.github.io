@@ -390,10 +390,25 @@ export function getPortfolioData(language: string): PortfolioData {
                 description: data.thisWebsite_description,
                 creationDate: "2026",
                 types: [projectTypes.WEB],
-                images: [],
+                images: [
+                    "icon.webp"
+                ],
                 software: [data.software.WEBSTORM, data.software.GITHUB],
                 programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.REACT_JS, data.programming_languages.TAILWIND_CSS],
-                keypoints: []
+                keypoints: [
+                    {
+                        title: data.thisWebsite_keypoint1_title,
+                        description: data.thisWebsite_keypoint1_description
+                    },
+                    {
+                        title: data.thisWebsite_keypoint2_title,
+                        description: data.thisWebsite_keypoint2_description
+                    },
+                    {
+                        title: data.thisWebsite_keypoint3_title,
+                        description: data.thisWebsite_keypoint3_description
+                    },
+                ]
             },
             {
                 id: "deep-mine",
@@ -404,20 +419,20 @@ export function getPortfolioData(language: string): PortfolioData {
                 types: [projectTypes.GAME],
                 images: [
                     "icon.webp",
-                    "DeepMine_1.webp",
-                    "DeepMine_2.webp",
-                    "DeepMine_3.png",
-                    "DeepMine_4.png",
-                    "DeepMine_5.png",
-                    "DeepMine_6.png",
-                    "DeepMine_7.png",
-                    "DeepMine_8.png",
-                    "DeepMine_9.png",
-                    "DeepMine_10.png",
-                    "DeepMine_11.webp",
-                    "DeepMine_12.png",
-                    "DeepMine_13.png",
-                    "DeepMine.mp4"
+                    "deepMine_1.webp",
+                    "deepMine_2.webp",
+                    "deepMine_3.webp",
+                    "deepMine_4.webp",
+                    "deepMine_5.webp",
+                    "deepMine_6.webp",
+                    "deepMine_7.webp",
+                    "deepMine_8.webp",
+                    "deepMine_9.webp",
+                    "deepMine_10.webp",
+                    "deepMine_11.webp",
+                    "deepMine_12.webp",
+                    "deepMine_13.webp",
+                    "deepMine.mp4"
                 ],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
@@ -512,14 +527,14 @@ export function getPortfolioData(language: string): PortfolioData {
                     "icon.webp",
                     "farmingGame_1.webp",
                     "farmingGame_2.webp",
-                    "farmingGame_3.png",
-                    "farmingGame_4.png",
-                    "farmingGame_5.png",
-                    "farmingGame_6.png",
-                    "farmingGame_7.png",
-                    "farmingGame_8.png",
-                    "farmingGame_9.png",
-                    "farmingGame_10.png",
+                    "farmingGame_3.webp",
+                    "farmingGame_4.webp",
+                    "farmingGame_5.webp",
+                    "farmingGame_6.webp",
+                    "farmingGame_7.webp",
+                    "farmingGame_8.webp",
+                    "farmingGame_9.webp",
+                    "farmingGame_10.webp",
                     "farmingGame_11.webp",
                     "farmingGame.mp4"
                 ],

@@ -104,6 +104,15 @@ export const CH_DATA = {
     thisWebsite_summary: "我為此製作了這個網站,以展示我的財產品和復習",
     thisWebsite_description: "在您的網站上,您可以看到這個項目。",
 
+    thisWebsite_keypoint1_title: "從零開始製作",
+    thisWebsite_keypoint1_description: "",
+
+    thisWebsite_keypoint2_title: "暗黑模式",
+    thisWebsite_keypoint2_description: "",
+
+    thisWebsite_keypoint3_title: "多語言",
+    thisWebsite_keypoint3_description: "本網站可瀏覽法文、英文及繁體中文。",
+
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
     deepMine_summary: "這是一款程序生成的世界中的2D冒險遊戲",
