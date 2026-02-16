@@ -29,7 +29,7 @@ export default function NavbarComponent({language}: Readonly<NavbarComponentProp
     }, [closeDropdown]);
 
     return (
-        <nav className={twMerge("absolute top-0 z-50 w-full h-fit bg-white border-gray-200 dark:border-neutral-800 dark:bg-neutral-900 border-b md:shadow-none", openMenu && "shadow-md")}>
+        <nav className={twMerge("fixed top-0 z-50 w-full h-fit bg-white border-gray-200 dark:border-neutral-800 dark:bg-neutral-900 border-b md:shadow-none", openMenu && "shadow-md")}>
             <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between mx-auto p-2">
                 <div className="flex flex-row w-full md:w-fit">
                     <Link href={`/${language}`} className="flex items-center space-x-3 rtl:space-x-reverse">

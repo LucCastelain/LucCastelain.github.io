@@ -40,7 +40,7 @@ export default async function RootLayout({children, params}: Readonly<PropsWithC
                 <DarkModeProvider>
                     <NavbarComponent language={lang}/>
                     <div className="h-12"/>
-                    <main className="w-full h-10 grow overflow-hidden bg-white text-gray-900 dark:bg-neutral-900 dark:text-gray-50">
+                    <main className="w-full h-full overflow-hidden bg-white text-gray-900 dark:bg-neutral-900 dark:text-gray-50">
                         {children}
                     </main>
                 </DarkModeProvider>
