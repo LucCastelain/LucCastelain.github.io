@@ -11,7 +11,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
 
     return (
         <div className="flex flex-row max-w-7xl mx-auto gap-x-2 size-full overflow-y-auto">
-            <Image src="/me/static/me.webp"
+            <Image src="/static/me.webp"
                    alt="Luc Castelain"
                    width={500}
                    height={0}
@@ -27,7 +27,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
                         <p>That's me</p>
                         <HiMiniArrowTurnRightDown className=""/>
                     </div>
-                    <Image src="/me/static/me_small.webp"
+                    <Image src="/static/me_small.webp"
                            alt="Luc Castelain"
                            width={500}
                            height={0}

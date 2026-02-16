@@ -15,11 +15,11 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                 <TextWithLineBreaksComponent text={text.referencesIHave}
                                              className="text-left"/>
                 <div className="size-full flex flex-wrap justify-around">
-                    <a href="/me/fiu_reference.pdf"
+                    <a href="/fiu_reference.pdf"
                        target="_blank"
                        className="group h-fit p-3 rounded-lg transition-all hover:scale-[1.02] hover:bg-neutral-100 dark:hover:bg-neutral-800">
                         <figure>
-                            <Image src="/me/static/references/fiu_reference.webp"
+                            <Image src="/static/references/fiu_reference.webp"
                                    alt="FIU reference"
                                    width={500}
                                    height={0}
@@ -28,11 +28,11 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                             <figcaption>{text.fiuReference}</figcaption>
                         </figure>
                     </a>
-                    <a href="/me/dosisoft_reference.pdf"
+                    <a href="/dosisoft_reference.pdf"
                        target="_blank"
                        className="group h-fit p-3 rounded-lg transition-all hover:scale-[1.02] hover:bg-neutral-100 dark:hover:bg-neutral-800">
                         <figure>
-                            <Image src="/me/static/references/dosisoft_reference.webp"
+                            <Image src="/static/references/dosisoft_reference.webp"
                                    alt="Dosisoft reference"
                                    width={500}
                                    height={0}

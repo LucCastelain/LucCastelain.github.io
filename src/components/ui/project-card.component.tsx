@@ -23,7 +23,7 @@ export default function ProjectCardComponent({project, language}: Readonly<Proje
                 ))}
             </div>
             <div className="min-h-72 max-h-72 overflow-hidden">
-                <Image src={`/me/static/${project.id}/icon.webp`}
+                <Image src={`/static/${project.id}/icon.webp`}
                        alt={project.title}
                        width={500}
                        height={0}

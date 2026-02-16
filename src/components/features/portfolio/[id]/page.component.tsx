@@ -26,7 +26,7 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
             !project.images[selectedImage].endsWith(".webp")) return;
 
         startTransition(async () => {
-            const color = await fac.getColorAsync(`/me/static/${project.id}/${project.images[selectedImage]}`);
+            const color = await fac.getColorAsync(`/static/${project.id}/${project.images[selectedImage]}`);
             setAverageColor(color);
         });
     }, [selectedImage]);
@@ -63,11 +63,11 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                                                            className="mx-auto"
                                                            controls
                                                            preload="none">
-                                                        <source src={`/me/static/${project.id}/${src}`} type="video/mp4" />
+                                                        <source src={`/static/${project.id}/${src}`} type="video/mp4" />
                                                         {text.browserNoSupportVideo}
                                                     </video>
                                                     :
-                                                    <Image src={`/me/static/${project.id}/${src}`}
+                                                    <Image src={`/static/${project.id}/${src}`}
                                                            width={500}
                                                            height={0}
                                                            style={{width: "auto", height: "100%"}}
