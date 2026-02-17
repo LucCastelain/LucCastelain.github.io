@@ -28,7 +28,8 @@ export default function ExperienceComponent({experience, language, text}: Readon
                         {experience.company}
                     </p>
                 }
-                <p>{language === "ch-zh" ? "，" : ", "}{experience.location}</p>
+                <p>{language === "ch-zh" ? "，" : ", "}</p>
+                <p>{experience.location}</p>
             </div>
             <div className="flex flex-wrap gap-1">
                 {experience.programmingLanguages.sort().map((language: string) => (

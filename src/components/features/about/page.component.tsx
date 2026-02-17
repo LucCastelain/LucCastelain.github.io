@@ -22,7 +22,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
                 </div>
                 <div className="flex flex-col w-full py-4 gap-y-1 md:hidden">
                     <div className="mx-auto flex flex-row items-end">
-                        <p>That's me</p>
+                        <p>{text.itsMe}</p>
                         <HiMiniArrowTurnRightDown className=""/>
                     </div>
                     <Image src="/static/me_small.webp"
