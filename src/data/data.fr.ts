@@ -7,8 +7,8 @@ export const FR_DATA = {
     matrix_keypoint1_title: "Réglement Général sur la Protection des Données (RGPD) - protection des données sensibles",
     matrix_keypoint1_description: "L'application n'affiche pas les informations sensibles des employés. L'accès à des données détaillées est strictement restraint aux personnes ayant les autorisations adéquates (par exemple les personnes du service paye ou RH s'ils en ont besoin). L'accès aux informations sensibles a été sécurisé à la fois coté backend et frontend",
 
-    matrix_keypoint2_title: "Connection à l'API Microsoft Graph",
-    matrix_keypoint2_description: "Une connection à l'API Microsoft Graph permet à l'application de récupérer les informations sur la présence et disponibilité des utilisateurs pour l'afficher directement depuis l'application (par exemple ça affiche si la personne que l'utilisateur cherche à contacter est en réunion ou non).",
+    matrix_keypoint2_title: "Lien à l'API Microsoft Graph",
+    matrix_keypoint2_description: "Une connexion à l'API Microsoft Graph permet à l'application de récupérer les informations sur la présence et disponibilité des utilisateurs pour l'afficher directement depuis l'application (par exemple ça affiche si la personne que l'utilisateur cherche à contacter est en réunion ou non).",
 
     matrix_keypoint3_title: "Export en fichier XLSX",
     matrix_keypoint3_description: "Un export des informations des personnes affichées vers un fichier XLSX est possible.",

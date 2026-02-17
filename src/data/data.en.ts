@@ -7,8 +7,8 @@ export const EN_DATA = {
     matrix_keypoint1_title: "General Data Protection Regulation (GDPR) - protection of employees sensitive data",
     matrix_keypoint1_description: "The app does not display sensitive information about employees. Access to detailed data is restricted to only people with the correct authorization (such as the persons in charge of the salary or the HR department if needed).",
 
-    matrix_keypoint2_title: "Connexion to Microsoft Graph API",
-    matrix_keypoint2_description: "A connexion to Microsoft Graph API allows the application to get information about user presence and schedule to directly display inside the app (for example if the person you are looking for is currently in a meeting or not).",
+    matrix_keypoint2_title: "Connection to Microsoft Graph API",
+    matrix_keypoint2_description: "A link to Microsoft Graph API allows the application to get information about user presence and schedule to directly display inside the app (for example if the person you are looking for is currently in a meeting or not).",
 
     matrix_keypoint3_title: "Export to XLSX",
     matrix_keypoint3_description: "An export to an XLSX file of the currently seen employees information is possible.",

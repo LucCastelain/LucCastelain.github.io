@@ -1,17 +1,17 @@
 export const CH_DATA = {
 // ------------------ Matrix ------------------ //
     matrix_title: "Matrix",
-    matrix_summary: "網站應用程式，作為公司員工的電話簿或目錄",
-    matrix_description: "Matrix是一款應用程式，顯示公司員工的各種資訊，例如他們的專業電話號碼和電子郵件，他們工作的地方（主要公司或子公司），他們的部門和經理。",
+    matrix_summary: "一個作為公司員工目錄的網頁應用程式",
+    matrix_description: "Matrix 是一款應用程式，會顯示公司員工的各種資訊，例如他們的專業電話號碼和電子郵件、工作地點（主要公司或子公司）、部門和經理。\n如果你需要聯絡某個特定員工，它允許你搜尋特定或特定員工群組。",
 
-    matrix_keypoint1_title: "總數據保護法規（GDPR）- 保護員工敏感數據",
-    matrix_keypoint1_description: "應用程式不會顯示有關員工的敏感資訊。 詳細資料的使用權限僅限於具有正確授權的人（如薪資負責人或人力資源部門，如果需要）。",
+    matrix_keypoint1_title: "通用資料保護條例（GDPR）- 保護員工敏感資料",
+    matrix_keypoint1_description: "該應用程式不會顯示員工的敏感資訊。詳細資料的存取僅限於擁有正確授權的人（例如薪資負責人或必要時的人資部門）。",
 
-    matrix_keypoint2_title: "接入微軟圖表 API",
-    matrix_keypoint2_description: "接入微軟Graph API，應用程序可以直接在應用程式內顯示使用者存在和時間安排的資訊（例如您正在尋找的人是否正在開會）。",
+    matrix_keypoint2_title: "與 Microsoft Graph API 的連結",
+    matrix_keypoint2_description: "連結到 Microsoft Graph API 讓應用程式能直接在應用程式內顯示使用者在場與排程資訊（例如你尋找的人是否正在開會）。",
 
-    matrix_keypoint3_title: "輸出至 XLSX ",
-    matrix_keypoint3_description: "目前可見的員工資訊可輸出至XLSX檔案。",
+    matrix_keypoint3_title: "匯出至 XLSX",
+    matrix_keypoint3_description: "目前可見員工資訊可匯出至 XLSX 檔案。",
 
     matrix_keypoint4_title: " 濾網 這個",
     matrix_keypoint4_description: "網站的使用者有許多過濾器可以加快搜尋速度或顯示特定的人群（只有一個或一些部門，只有管理者等等）。",
