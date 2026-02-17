@@ -1,7 +1,7 @@
 export const CH_DATA = {
 // ------------------ Matrix ------------------ //
     matrix_title: "Matrix",
-    matrix_summary: "一個作為公司員工目錄的網頁應用程式",
+    matrix_summary: "公司員工目錄的網頁應用程式",
     matrix_description: "Matrix 是一款應用程式，會顯示公司員工的各種資訊，例如他們的專業電話號碼和電子郵件、工作地點（主要公司或子公司）、部門和經理。\n如果你需要聯絡某個特定員工，它允許你搜尋特定或特定員工群組。",
 
     matrix_keypoint1_title: "通用資料保護條例（GDPR）- 保護員工敏感資料",
@@ -21,7 +21,7 @@ export const CH_DATA = {
 
 // ------------------ Support DSI ------------------ //
     supportDSI_title: "Support DSI",
-    supportDSI_summary: "一個讓使用者建立 IT 支援工單的網頁應用程式",
+    supportDSI_summary: "使用者建立 IT 支援工單的網頁應用程式",
     supportDSI_description: "Support DSI 是一款網頁應用程式，允許 IT 員工建立許多不同的支援情境，其他員工可以向這些支援請求（從請求滑鼠、螢幕等電腦設備等）。遇到軟體問題，否則...）。\n使用者可依需求依照情境建立包含所有資訊的工單，協助 IT 協助。工單建立後，使用者可存取所有工單的歷史紀錄，更新時收到通知，必要時與 IT 部門交換，並在工單關閉時留下感謝。",
 
     supportDSI_keypoint1_title: "角色管理",
@@ -41,7 +41,7 @@ export const CH_DATA = {
 
 // ------------------ BC Formation ------------------ //
     bcFormation_title: "BC Formation",
-    bcFormation_summary: "一個網頁應用程式，用以管理及查看公司的培訓與培訓課程",
+    bcFormation_summary: "管理及查看公司培訓與培訓課程的應用程式",
     bcFormation_description: "BC Formation 是一款網頁應用程式，讓使用者能查看可用的訓練內容及其訓練歷史。每個部門的經理都可以查看該部門所有人員的訓練紀錄，並申請新的培訓。訓練管理員可以新增訓練和培訓師，建立和管理訓練課程，來源包括人員、日期、文件、地點等。",
 
     bcFormation_keypoint1_title: "角色管理",
@@ -61,7 +61,7 @@ export const CH_DATA = {
 
 // ------------------ Load testing script ------------------ //
     loadTesting_title: "負載測試腳本",
-    loadTesting_summary: "一個用來測試不同網頁環境的腳本",
+    loadTesting_summary: "用來測試網頁伺服器的程式",
     loadTesting_description: "這個腳本允許在設定的時間段內對我們的應用程式伺服器進行載荷測試和壓力測試，並以不同費用進行，讓我們能確認它們是否配置正確，並能承受大量生產用戶的需求。\n此腳本連接至本地 Grafana 板，方便監控結果。",
 
     loadTesting_keypoint1_title: "可配置以測試不同的即時情境",
@@ -72,7 +72,7 @@ export const CH_DATA = {
 
 // ------------------ BC Portail ------------------ //
     bcPortail_title: "BC Portail",
-    bcPortail_summary: "一個網頁應用程式作為進入點，用以存取公司的應用程式",
+    bcPortail_summary: "作為進入點，用以存取公司程式的應用程式",
     bcPortail_description: "BC Portail 封裝了 Baudin Chateauneuf 所開發的所有其他網頁應用程式。它像是服務導向架構，作為彼此網頁應用程式的共同基礎。",
 
     bcPortail_keypoint1_title: "服務導向架構（SOA）",
@@ -101,7 +101,7 @@ export const CH_DATA = {
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "這個網站",
-    thisWebsite_summary: "我做了這個網站來展示我的作品集和履歷",
+    thisWebsite_summary: "我做了這個網站用於展示作品集和履歷",
     thisWebsite_description: "你可以在瀏覽時看到這個專案 ☜（⌒▽⌒）☞",
 
     thisWebsite_keypoint1_title: "從零開始製作",
@@ -115,7 +115,7 @@ export const CH_DATA = {
 
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
-    deepMine_summary: "在一個程序生成的世界中 2D 冒險遊戲",
+    deepMine_summary: "用程式生成的2D冒險遊戲世界",
     deepMine_description: "深礦是一個2D探索和礦業遊戲，在一個程序生成的世界發生。 它是由用 Godot引擎的朋友制作的。\n每個世界都是使用噪音質感和編程系統的程序生成的。 它創造了無限的世界，以不同的生物體的基礎，以深度（世界垂直深度）和溫度（溫度是以噪音質感決定）。 寶石也會出現，以生物體和深度為基礎。\n\n玩家可以交易和工藝物品，以及提高他的角色。 他可以與怪物和完整任務作戰。\n遊戲可玩到4名玩家本地，可以完全使用控制器。\n\n此遊戲仍在開發中，並有Steam頁面。",
 
     deepMine_keypoint1_title: "程序生成的世界",
@@ -147,7 +147,7 @@ export const CH_DATA = {
 
 // ------------------ Dices Dungeon ------------------ //
     dicesDungeon_title: "Dices Dungeon",
-    dicesDungeon_summary: "適用於 iOS 的 2D 遊戲，讓玩家玩可能",
+    dicesDungeon_summary: "適用於iOS、可讓玩家操控機率的2D遊戲",
     dicesDungeon_description: "子洞是用 Godot Engine 打造的 2D 遊戲，是一款開放源的遊戲引擎。\n這款遊戲允許玩家在 Godot Engine 打3個。每個可被鎖定或解鎖，以便再次被滾回或不滾。 取決於組合，將會計算出機會百分比。\n玩家可以打開他面前的兩扇門之一。 一把把背后藏著壞東西，另一把是好獎勵。\n子百分比決定了被選擇的門後藏著物品或怪物的價值或危險性。\n\n在玩概率和隨機之外，玩家可以試試用子的組合（如兩或三個的組合。。。）贏得相同數量的物品，幫助他適度他的冒險。\n\n這是我與Godot Engine發行的第一款遊戲，在iOS上發表。",
 
     dicesDungeon_keypoint1_title: "首款在 iOS 上發行的遊戲",
@@ -167,7 +167,7 @@ export const CH_DATA = {
 
 // ------------------ Stardew Valley like game ------------------ //
     farmingGame_title: "農場遊戲",
-    farmingGame_summary: "具有農耕和作物生長機械的 2D 遊戲原型",
+    farmingGame_summary: "農耕及農機的2D遊戲原型",
     farmingGame_description: "我在 Godot 引擎中製作了一款原型，試圖複製 Stardew Valley 的農機以及其庫存。\n我創建了一套多個子的老虎機庫存（如 Minecraft，Terraria，Stardew Valley 和很多遊戲）。我也增加了對話和交易機制，以及一週日/夜周期與鐘。\n\n它幫助我更好地理解 Godot 引擎的運作方式。",
 
     farmingGame_keypoint1_title: "互動世界",
