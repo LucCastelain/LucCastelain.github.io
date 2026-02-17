@@ -20,7 +20,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
                 <div className="max-w-5xl mx-auto text-left">
                     <TextWithLineBreaksComponent text={text.aboutMe}/>
                 </div>
-                <div className="flex flex-col py-4 gap-y-1 md:hidden">
+                <div className="flex flex-col w-full py-4 gap-y-1 md:hidden">
                     <div className="mx-auto flex flex-row items-end">
                         <p>That's me</p>
                         <HiMiniArrowTurnRightDown className=""/>
@@ -29,7 +29,7 @@ export default function AboutPageComponent({language}: Readonly<AboutPageCompone
                            alt="Luc Castelain"
                            width={500}
                            height={0}
-                           style={{width: "auto", height: "100%"}}
+                           style={{width: "100%", height: "auto"}}
                            className="rounded-md object-contain"/>
                 </div>
             </div>

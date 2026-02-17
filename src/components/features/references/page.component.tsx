@@ -22,7 +22,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                                    alt="FIU reference"
                                    width={500}
                                    height={0}
-                                   style={{width: "auto", height: "100%"}}
+                                   style={{width: "100%", height: "auto"}}
                                    className="transition-all object-contain border group-hover:border-0 dark:border-0"/>
                             <figcaption>{text.fiuReference}</figcaption>
                         </figure>
@@ -36,7 +36,7 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                                    alt="Dosisoft reference"
                                    width={500}
                                    height={0}
-                                   style={{width: "auto", height: "100%"}}
+                                   style={{width: "100%", height: "auto"}}
                                    className="transition-all object-contain border group-hover:border-0 dark:border-0"/>
                             <figcaption>{text.dosisoftReference}</figcaption>
                         </figure>

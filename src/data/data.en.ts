@@ -214,16 +214,16 @@ export const EN_DATA = {
     atelierRyzaCraftingSystem_description: "This prototype is an advanced crafting system made with Godot game engine. It is based on Aterlier Ryza's crafting system.\nThis system use custom resources to make a really complete crafting system. Each item needs one or more specific types, subtypes or unique ingredients to be crafted. The Crafted item takes in account the quality of each ingredients used.\n\nIt is easy to add new items for craft and modify custom resources to extant the depth of this crafting system.\nIt can be easily extended in multiple ways. For example crafted items could take the specific characteristic(s) of chosen ingredients...\n\nThis prototype is standalone and was thought so it can be easily implemented in a more complex games.",
 
     atelierRyzaCraftingSystem_keypoint1_title: "Easy to update",
-    atelierRyzaCraftingSystem_keypoint1_description: "Can easily add new items and characteristics without modifying source code",
+    atelierRyzaCraftingSystem_keypoint1_description: "Can easily add new items and characteristics without modifying source code.",
 
     atelierRyzaCraftingSystem_keypoint2_title: "User interface",
-    atelierRyzaCraftingSystem_keypoint2_description: "Clear and readable interface with all needed information. Can be used on ultra wide screen",
+    atelierRyzaCraftingSystem_keypoint2_description: "Clear and readable interface with all needed information. Can be used on ultra wide screen.",
 
     atelierRyzaCraftingSystem_keypoint3_title: "User experience",
-    atelierRyzaCraftingSystem_keypoint3_description: "Makes crafting interesting and engaging",
+    atelierRyzaCraftingSystem_keypoint3_description: "Makes crafting interesting and engaging.",
 
     atelierRyzaCraftingSystem_keypoint4_title: "Standalone system",
-    atelierRyzaCraftingSystem_keypoint4_description: "Easy to add in bigger games",
+    atelierRyzaCraftingSystem_keypoint4_description: "Easy to add in bigger games.",
 
 // ------------------ Genesys Designer ------------------ //
     genesysDesigner_title: "Genesys Designer",
@@ -245,16 +245,16 @@ export const EN_DATA = {
     missed_description: "Missed is the first game I uploaded online. It was an Android game available on Google Play.\nIn this game, the player has to avoid red bullets fired by white cubes rotating around the arena. The player’s score is equivalent to the time he survived. As the time goes by, more cubes will appear and the difficulty will increase.\n\nThis game was made with unity3D 2019 and C#.",
 
     missed_keypoint1_title: "First published game",
-    missed_keypoint1_description: "Game was published on Google Play",
+    missed_keypoint1_description: "Game was published on Google Play.",
 
     missed_keypoint2_title: "Mobile controls",
     missed_keypoint2_description: "Virtual joystick available anywhere on screen.",
 
     missed_keypoint3_title: "Game design",
-    missed_keypoint3_description: "Arcade gameplay adapted to the medium",
+    missed_keypoint3_description: "Arcade gameplay adapted to the medium.",
 
     missed_keypoint4_title: "Game balancing",
-    missed_keypoint4_description: "Difficulty increases over time without being too abrupt",
+    missed_keypoint4_description: "Difficulty increases over time without being too abrupt.",
 
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
@@ -401,7 +401,7 @@ export const EN_DATA = {
     engineeringDegree_title: "Engineering degree",
     engineeringDegree_summary: "Preparatory classes integrated into engineering curriculum. Engineering classes featuring three main fields: Programming, Electronics and Mechatronics. Thanks to that, we have a global understanding and knowledge in all these engineering fields no matter the specialization.\nSpecialization: programming",
     engineeringDegree_company: "ENIB",
-    engineeringDegree_company_website: "https://www.enib.fr/",
+    engineeringDegree_company_website: "https://www.enib.fr/en_enib/",
     engineeringDegree_location: "Brest, France",
     engineeringDegree_startDate: "01-09-2016",
     engineeringDegree_endDate: "01-03-2022",

@@ -214,13 +214,13 @@ export const FR_DATA = {
     atelierRyzaCraftingSystem_description: "Ce prototype est un système de crafting avancé réalisé avec le moteur de jeu Godot. Il est basé sur le système d'artisanat du jeu Aterlier Ryza.\nCe système utilise des ingrédients personnalisés pour créer un système d'artisanat vraiment complet. Chaque objet a besoin d'un ou plusieurs types, sous-types ou ingrédients uniques spécifiques pour être fabriqué. L'objet fabriqué prend en compte la qualité de chaque ingrédient utilisé.\n\nIl est facile d'ajouter de nouveaux objets à fabriquer et de modifier des ingrédients pour agrandir la profondeur de ce système d'artisanat.\nIl peut être facilement étendu de plusieurs manières. Par exemple, les objets fabriqués pourraient prendre les caractéristiques spécifiques des ingrédients choisis...\n\nCe prototype fonctionne en standalone mais a été pensé pour pouvoir être facilement implémenté dans des jeux plus complexes.",
 
     atelierRyzaCraftingSystem_keypoint1_title: "Facile à mettre à jour",
-    atelierRyzaCraftingSystem_keypoint1_description: "Il est facile d'ajouter de nouveaux éléments et caractéristiques sans modifier le code source",
+    atelierRyzaCraftingSystem_keypoint1_description: "Il est facile d'ajouter de nouveaux éléments et caractéristiques sans modifier le code source.",
 
     atelierRyzaCraftingSystem_keypoint2_title: "Interface utilisateur claire et lisible",
-    atelierRyzaCraftingSystem_keypoint2_description: "L'interface est claire et lisible et contient toutes les informations nécessaires. Elle s'adapte également aux écrans ultra larges",
+    atelierRyzaCraftingSystem_keypoint2_description: "L'interface est claire et lisible et contient toutes les informations nécessaires. Elle s'adapte également aux écrans ultra larges.",
 
     atelierRyzaCraftingSystem_keypoint3_title: "Expérience utilisateur engageante",
-    atelierRyzaCraftingSystem_keypoint3_description: "Rend l'artisanat intéressant et engageant avec son système complet",
+    atelierRyzaCraftingSystem_keypoint3_description: "Rend l'artisanat intéressant et engageant avec son système complet.",
 
     atelierRyzaCraftingSystem_keypoint4_title: "Standalone",
     atelierRyzaCraftingSystem_keypoint4_description: "Fonctionne en standalone mais peut facilement être implémenté dans des jeux plus grands.",
@@ -245,16 +245,16 @@ export const FR_DATA = {
     missed_description: "Missed est le premier jeu que j'ai publié en ligne. C'étais un jeu Android disponible sur Google Play.\nDans ce jeu, le joueur doit éviter des balles rouges tirées par des cubes blancs tournant autour d'une arène. Le score du joueur est équivalent au temps qu'il a survécu. Au fil du temps, plus de cubes apparaissent et la difficulté augmente.\n\nCe jeu a été fait avec unity3D 2019 et C#.",
 
     missed_keypoint1_title: "Premier jeu publié",
-    missed_keypoint1_description: "Le jeu a été publié sur Google Play",
+    missed_keypoint1_description: "Le jeu a été publié sur Google Play.",
 
     missed_keypoint2_title: "Contrôles adaptés pour le mobiles",
     missed_keypoint2_description: "Joystick virtuel disponible n'importe où sur l'écran.",
 
     missed_keypoint3_title: "Game design",
-    missed_keypoint3_description: "Gameplay Arcade adapté au médium",
+    missed_keypoint3_description: "Gameplay Arcade adapté au médium.",
 
     missed_keypoint4_title: "Équilibrage",
-    missed_keypoint4_description: "La difficulté augmente avec le temps sans être trop brusque",
+    missed_keypoint4_description: "La difficulté augmente avec le temps sans être trop brusque.",
 
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
