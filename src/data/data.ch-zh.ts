@@ -13,105 +13,105 @@ export const CH_DATA = {
     matrix_keypoint3_title: "匯出至 XLSX",
     matrix_keypoint3_description: "目前可見員工資訊可匯出至 XLSX 檔案。",
 
-    matrix_keypoint4_title: " 濾網 這個",
-    matrix_keypoint4_description: "網站的使用者有許多過濾器可以加快搜尋速度或顯示特定的人群（只有一個或一些部門，只有管理者等等）。",
+    matrix_keypoint4_title: "濾鏡",
+    matrix_keypoint4_description: "使用者有很多篩選器可以加快搜尋速度，或顯示特定群組（只有一個或部分部門、只有經理等）。",
 
-    matrix_keypoint5_title: "喜歡的伺服器組件",
-    matrix_keypoint5_description: "透過將波器作為url參數，優化伺服器組件。 它也允許使用已設定的正確波器來查找一個人或群體。",
+    matrix_keypoint5_title: "偏好化伺服器元件",
+    matrix_keypoint5_description: "透過將篩選器設為網址參數，偏好伺服器元件。它也允許分享一個已設定好正確篩選條件的網址，以尋找個人或一群人。",
 
 // ------------------ Support DSI ------------------ //
     supportDSI_title: "Support DSI",
-    supportDSI_summary: "網站應用程式，讓使用者創建票據，以獲得IT支持",
-    supportDSI_description: "DSI 支援是一個網頁應用程式，讓IT員工可以創建許多不同的支援場景，其他員工可以要求支援（從要求電腦設備，如鼠標，屏幕等等。。。到他們遇到的軟件問題或其他。。。）。\n然後，使用者可以按照他們的需求，創建一張票，並提供IT所需的所有資訊來幫助他們。一旦票被創建，使用者可以查看所有票的歷史，在更新時被通知，在需要時與IT交换，在票被關閉時放上感謝。",
+    supportDSI_summary: "一個讓使用者建立 IT 支援工單的網頁應用程式",
+    supportDSI_description: "Support DSI 是一款網頁應用程式，允許 IT 員工建立許多不同的支援情境，其他員工可以向這些支援請求（從請求滑鼠、螢幕等電腦設備等）。遇到軟體問題，否則...）。\n使用者可依需求依照情境建立包含所有資訊的工單，協助 IT 協助。工單建立後，使用者可存取所有工單的歷史紀錄，更新時收到通知，必要時與 IT 部門交換，並在工單關閉時留下感謝。",
 
     supportDSI_keypoint1_title: "角色管理",
-    supportDSI_keypoint1_description: "應用程式不顯示相同的資訊和可能性，取決於他們的分配角色（IT，部門經理，基礎使用者）應用程式對使用者顯示相同的資訊和可能性。 頁面和資訊的使用從前端和后端角度都得到保障。",
+    supportDSI_keypoint1_description: "應用程式根據使用者被分配的角色（IT、部門經理、基層使用者）無法顯示相同的資訊與可能性。頁面與資訊的存取權從前端與後端均已獲得保障。",
 
-    supportDSI_keypoint2_title: "情景創建 透過圖表",
-    supportDSI_keypoint2_description: "創建和可視化情景是很容易的，很容易的透過交互式圖表（透過cytoscape。js）。",
+    supportDSI_keypoint2_title: "透過圖實現情境",
+    supportDSI_keypoint2_description: "透過互動式圖表（透過cytoscape.js）建立與視覺化情境變得簡單。",
 
     supportDSI_keypoint3_title: "链接到GLPI問題跟踪系统",
     supportDSI_keypoint3_description: "工單的建立會被鏡像並連結到 GLPI，方便 IT 端的管理。",
 
     supportDSI_keypoint4_title: "非常可个性化的场景",
-    supportDSI_keypoint4_description: "需要時可創建各種類型的情景。",
+    supportDSI_keypoint4_description: "如果需要，可以建立各種情境，並為每種情境提供豐富的表單配置。",
 
-    supportDSI_keypoint5_title: "允許量化支持數據",
+    supportDSI_keypoint5_title: "允許量化支援資料",
     supportDSI_keypoint5_description: "透過應用程式，可以監控票券的平均時間解析度，以及各類別的票數等資料。",
 
 // ------------------ BC Formation ------------------ //
     bcFormation_title: "BC Formation",
-    bcFormation_summary: "網路應用程式，可管理和查看公司的培訓和培訓",
-    bcFormation_description: "BC Formation 是一個網頁應用程式，讓用戶可以查看可用的培訓以及他們的培訓歷史。 每個部門的經理可以查看他們的部門中所有人的培訓歷史，並要求他們接受新的培訓。 培訓管理員可以添加新的培訓和培訓者，創建和管理培訓會議，日期，文件，位置，。。。",
+    bcFormation_summary: "一個網頁應用程式，用以管理及查看公司的培訓與培訓課程",
+    bcFormation_description: "BC Formation 是一款網頁應用程式，讓使用者能查看可用的訓練內容及其訓練歷史。每個部門的經理都可以查看該部門所有人員的訓練紀錄，並申請新的培訓。訓練管理員可以新增訓練和培訓師，建立和管理訓練課程，來源包括人員、日期、文件、地點等。",
 
     bcFormation_keypoint1_title: "角色管理",
-    bcFormation_keypoint1_description: "應用程式不顯示相同的資訊和可能性，取決於他們的分配角色（培訓管理員，部門經理，基層使用者）應用程式對使用者顯示相同的資訊和可能性。 頁面和資訊的使用從前端和后端角度都得到保障。",
+    bcFormation_keypoint1_description: "應用程式根據使用者被分配的角色（訓練管理員、部門經理、基地使用者）不會顯示相同的資訊與可能性。頁面與資訊的存取權從前端與後端均已獲得保障。",
 
-    bcFormation_keypoint2_title: "培訓要求易於管理，可供培訓管理員",
-    bcFormation_keypoint2_description: "接著選出這些要求，如果有足夠的時間，建立一個會議。",
+    bcFormation_keypoint2_title: "培訓請求對培訓管理員來說易於管理",
+    bcFormation_keypoint2_description: "每個訓練請求都會被分組，讓管理員查看數量，若數量足夠再選擇建立會話。",
 
-    bcFormation_keypoint3_title: "每位使用者都可以查看自己的培训历史",
-    bcFormation_keypoint3_description: "每位使用者可以透過其認證，查看過去的培訓歷史。 這樣，每位使用者都能輕鬆看出是否需要重複培訓。\n此外，管理者也可以查看他們管理的人員的歷史，以獲得他們周圍的全球概況。",
+    bcFormation_keypoint3_title: "每位使用者都可以存取他的訓練紀錄",
+    bcFormation_keypoint3_description: "每位使用者都能透過其證照查閱過去訓練的歷史紀錄。這樣每個人就能輕鬆判斷是否需要重做訓練。\n此外，經理還能看到他們管理人員的歷史，並擁有整體周邊的概覽。",
 
-    bcFormation_keypoint4_title: "通知和電子郵件",
-    bcFormation_keypoint4_description: "當培訓會議由培訓管理員確認時，會議管理員會在應用程式上發送通知（可透過BC Portail的所有網頁應用程式）以及電子郵件給每位會議成員。\n每次會議召開文件都會生成並與每個電子郵件一起發送。 接著它會與會議中的每個人的培訓要求連結，以便他們隨時查看。",
+    bcFormation_keypoint4_title: "通知與電子郵件",
+    bcFormation_keypoint4_description: "當訓練管理員確認訓練課程時，應用程式會發送通知（可透過 BC Portail 的所有網頁應用程式顯示），並向每位課程成員發送電子郵件。\n每場會議都會產生畢業典禮文件，並隨郵件一併發送。接著會將它連結到每位參與者的訓練請求，讓他們隨時都能查看。",
 
-    bcFormation_keypoint5_title: "自動預算總結和預測",
-    bcFormation_keypoint5_description: "預算總結過去的訓練會和未來的訓練會的預算。",
+    bcFormation_keypoint5_title: "自動預算摘要與預測",
+    bcFormation_keypoint5_description: "過去培訓課程的預算摘要及未來培訓課程的預算會自動計算，並可匯出為 XLSX 或 PDF 檔案。",
 
 // ------------------ Load testing script ------------------ //
-    loadTesting_title: "負載測試程式",
-    loadTesting_summary: "編輯程式來負載不同網頁環境的測試",
-    loadTesting_description: "這個脚本允許我們加載測試和壓力測試我們的應用程式的網頁伺服器，在特定的時間和不同收費下，讓我們看到他們是否配置正確，能否承受大量的使用者在生產中。\n這個脚本連接到本地 Grafana 板，可以輕鬆監控結果",
+    loadTesting_title: "負載測試腳本",
+    loadTesting_summary: "一個用來測試不同網頁環境的腳本",
+    loadTesting_description: "這個腳本允許在設定的時間段內對我們的應用程式伺服器進行載荷測試和壓力測試，並以不同費用進行，讓我們能確認它們是否配置正確，並能承受大量生產用戶的需求。\n此腳本連接至本地 Grafana 板，方便監控結果。",
 
-    loadTesting_keypoint1_title: "可配置以測試不同的實時情況",
-    loadTesting_keypoint1_description: " 網路服務器的使用者可使用不同的費用和時間段。",
+    loadTesting_keypoint1_title: "可配置以測試不同的即時情境",
+    loadTesting_keypoint1_description: "不同的收費和時間段可以設定，以徹底測試我們的伺服器。",
 
-    loadTesting_keypoint2_title: "結果易於閱讀，並以實時方式",
-    loadTesting_keypoint2_description: "另外，在執行結束時，脚本會提供結果總結，它會連接到 Grafana 板，以實時閱讀結果。",
+    loadTesting_keypoint2_title: "結果易於閱讀且即時呈現",
+    loadTesting_keypoint2_description: "除了腳本執行結束時給出的結果摘要外，還連接 Grafana 板，方便即時讀取結果",
 
 // ------------------ BC Portail ------------------ //
     bcPortail_title: "BC Portail",
-    bcPortail_summary: "網路應用程式，是進入網站的入口點，可使用公司的應用程式",
-    bcPortail_description: "BC Portail 包容了 Baudin Chateauneuf 公司所製作的所有其他網頁應用程式。 它像是以服務為主導的架構，作為彼此的網頁應用程式的共同基礎。",
+    bcPortail_summary: "一個網頁應用程式作為進入點，用以存取公司的應用程式",
+    bcPortail_description: "BC Portail 封裝了 Baudin Chateauneuf 所開發的所有其他網頁應用程式。它像是服務導向架構，作為彼此網頁應用程式的共同基礎。",
 
-    bcPortail_keypoint1_title: "服務面向架構（SOA）",
-    bcPortail_keypoint1_description: "應用程式是建立的，作為一個集合的寬鬆的連結，更大的顆粒性服務。 需要時，可以在不同的應用程序中重複使用服務。 它允許獨立的開發和部署更大的功能區塊。",
+    bcPortail_keypoint1_title: "服務導向架構（SOA）",
+    bcPortail_keypoint1_description: "應用程式是作為一組鬆散耦合、較大粒度的服務所建構。服務可在不同應用程式間重複使用，視需要而行。它允許獨立開發與部署更大的功能區塊。",
 
-    bcPortail_keypoint2_title: "常見的組件",
-    bcPortail_keypoint2_description: "包含所有網頁應用程式中可重複使用的組件和服務清單。",
+    bcPortail_keypoint2_title: "常見元件",
+    bcPortail_keypoint2_description: "包含可重複使用的元件與服務清單，涵蓋所有網頁應用程式。",
 
     bcPortail_keypoint3_title: "預設的布局和配置",
-    bcPortail_keypoint3_description: "包含每個網頁應用程式的默認布局（前端）和配置。",
+    bcPortail_keypoint3_description: "它包含每個網頁應用程式的預設版面配置（前端）與設定。",
 
-    bcPortail_keypoint4_title: "顯示所有公司應用程式",
-    bcPortail_keypoint4_description: "網站上顯示了公司的所有應用程式，網頁應用程式，以及厚客戶端應用程式。 所有應用程式都可以從此處啟動。",
+    bcPortail_keypoint4_title: "顯示該公司所有申請",
+    bcPortail_keypoint4_description: "入口網站會顯示公司所有的應用程式，包括網頁應用程式，也有厚客戶端應用程式。所有應用程式都能從這裡啟動，甚至是厚重的客戶端應用程式，因為有深度連結系統。",
 
     bcPortail_keypoint5_title: "應用程式庫",
-    bcPortail_keypoint5_description: "網站內部的 navigation bar 內包含一個 app 圖書館。",
+    bcPortail_keypoint5_description: "導航列中設有應用程式函式庫，使用者可從任何網頁應用程式存取任何應用程式。",
 
     bcPortail_keypoint6_title: "配置頁面",
-    bcPortail_keypoint6_description: "設定頁面讓管理員能夠在門戶上添加一個網頁應用程式圖標，讓使用者可以使用添加的網頁應用程式。管理員可以添加，編輯和移除網頁應用程式。在添加或編輯網頁應用程式時，他們可以管理公司中的哪個角色或外圍可以使用應用程式。他們也可以管理應用程式的其他資訊（名稱，圖標，等）。在這個設定頁面上，管理員也可以添加警告，以便所有使用者可以看到，因此如果需要，可以提供額外的溝通層。",
+    bcPortail_keypoint6_description: "設定頁面允許管理員在入口網站新增網頁應用程式圖示，讓使用者能存取新增的網頁應用程式。管理員可以新增、編輯或移除網頁應用程式。在新增或編輯網頁應用程式時，他們可以管理公司內哪些職位或邊界可以存取該應用程式。他們也能管理應用程式的其他資訊（名稱、圖示等）。在此設定頁面中，管理員還可新增所有使用者的警示，若需要時能提供額外溝通層。",
 
-    bcPortail_keypoint7_title: "版本與變更日記",
-    bcPortail_keypoint7_description: "該應用程式的版本號碼和變更日志都可供使用者檢查。 當使用者連接時，主要版本更新會自動顯示給使用者。",
+    bcPortail_keypoint7_title: "版本與變更日誌",
+    bcPortail_keypoint7_description: "每個應用程式的版本號與變更日誌皆可供使用者查閱。主要版本的更新會在使用者連線時自動顯示。",
 
-    bcPortail_keypoint8_title: "暗模式 暗模式",
-    bcPortail_keypoint8_description: "所有組件和網頁應用程式都可以在暗模式下使用。",
+    bcPortail_keypoint8_title: "暗黑模式",
+    bcPortail_keypoint8_description: "所有元件與網頁應用程式皆可以暗黑模式使用。",
 
 // ------------------ This website ------------------ //
     thisWebsite_title: "這個網站",
-    thisWebsite_summary: "我製作這個網站是為了展示我的投资组合和简历",
-    thisWebsite_description: "您可以在導航過程中看到這個項目 ☜（⌒▽⌒）☞",
+    thisWebsite_summary: "我做了這個網站來展示我的作品集和履歷",
+    thisWebsite_description: "你可以在瀏覽時看到這個專案 ☜（⌒▽⌒）☞",
 
     thisWebsite_keypoint1_title: "從零開始製作",
     thisWebsite_keypoint1_description: "",
 
-    thisWebsite_keypoint2_title: "暗模式 暗模式",
+    thisWebsite_keypoint2_title: "暗黑模式",
     thisWebsite_keypoint2_description: "",
 
     thisWebsite_keypoint3_title: "多種語言",
-    thisWebsite_keypoint3_description: "網站的使用語言為法語，英语和傳統中文。",
+    thisWebsite_keypoint3_description: "本網站可瀏覽法文、英文及繁體中文。",
 
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",

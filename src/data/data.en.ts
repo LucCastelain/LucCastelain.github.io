@@ -62,13 +62,13 @@ export const EN_DATA = {
 // ------------------ Load testing script ------------------ //
     loadTesting_title: "Load testing script",
     loadTesting_summary: "A script to load test the different web environments",
-    loadTesting_description: "This script allow to load test and stress test the web servers of our apps for a defined period of time and with different charges, allowing us to see if they are correctly configured and will be able to withstand a large amount of users in production.\nThis script is connected to a local Grafana board to easily monitor the results",
+    loadTesting_description: "This script allow to load test and stress test the web servers of our apps for a defined period of time and with different charges, allowing us to see if they are correctly configured and will be able to withstand a large amount of users in production.\nThis script is connected to a local Grafana board to easily monitor the results.",
 
     loadTesting_keypoint1_title: "Can be configured to test different real-time situations",
     loadTesting_keypoint1_description: "Different charges and period of time can be set to test thoroughly our servers.",
 
     loadTesting_keypoint2_title: "Result are easy to read and in real-time",
-    loadTesting_keypoint2_description: "On top of the results summary the script give at the end of execution, it is connected to a Grafana board to easily read the results in real-time",
+    loadTesting_keypoint2_description: "On top of the results summary the script give at the end of execution, it is connected to a Grafana board to easily read the results in real-time.",
 
 // ------------------ BC Portail ------------------ //
     bcPortail_title: "BC Portail",
