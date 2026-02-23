@@ -116,7 +116,7 @@ export const EN_DATA = {
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
     deepMine_summary: "A 2D adventure game in a procedurally generated world",
-    deepMine_description: "Deep Mine is a 2D exploration and mining game that takes place in a procedurally generated world. It is made with a friend using Godot engine.\nEach world is procedurally generated using noise textures and threading system. It creates an infinite world with different biomes based on depth (vertical depth in the world) and temperature (temperature is determined with noise texture). Gems also appear depending on the biomes and depth.\n\nThe player can trade and craft objects as well as improve his character. He can fight monster and fullfil quests.\nThe game is playable with up to 4 players locally and can be fully played with a controller.\n\nThis game is still in development and has a Steam page.",
+    deepMine_description: "Deep Mine is a 2D exploration and mining game that takes place in a procedurally generated world. It is made with a friend using Godot engine.\nEach world is procedurally generated using noise textures and threading system. It creates an infinite world with different biomes based on depth (vertical depth in the world) and temperature (temperature is determined with noise texture). Gems also appear depending on the biomes and depth.\n\nThe player can trade and craft objects as well as improve his character. He can fight monster and fulfill quests.\nThe game is playable with up to 4 players locally and can be fully played with a controller.\n\nThis game is still in development and has a Steam page.",
 
     deepMine_keypoint1_title: "Procedurally generated world",
     deepMine_keypoint1_description: "Use of noise textures, threads and chunks to create an infinite procedurally generated world.",
@@ -258,7 +258,7 @@ export const EN_DATA = {
 
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
-    globalGameJam2022_summary: "We made a board game during the Global Game Jam 2022 with 3 friends",
+    globalGameJam2022_summary: "We made a board game inspired video game during the Global Game Jam 2022 with 3 friends",
     globalGameJam2022_description: "In 2022, we participated to the Global Game Jam with almost the same team as the Global Game Jam 2020. We had 48 hours to make a game on the theme: duality.\n\nAt the time, we used to play a lot a board game named Clank! The game is about competing with your friends to be the one to get the more treasures in a dungeon while escaping the attacks of a dragon. You can choose between staying longer in the dungeon and try to get richer or go back to the surface faster, with less treasures but hoping the other contestants will die by the dragon.\nWe wanted to have fun recreating the game as much as we could. To evolve in the dungeon, you play cards that you can buy while playing. We had to make the moving of the player on the board, the shop system as well as the deck building mechanic in only two days.\n\nIt was difficult but a lot of fun. We were two programmers on Unity3D and 3 for the graphics (cards and cinematic). At the end of the jam we were exhausted but happy that we could play our board game on a computer!",
 
     globalGameJam2022_keypoint1_title: "Made in 48 hours with a team",

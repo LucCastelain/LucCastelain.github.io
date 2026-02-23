@@ -116,33 +116,33 @@ export const CH_DATA = {
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
     deepMine_summary: "用程式生成的2D冒險遊戲世界",
-    deepMine_description: "深礦是一個2D探索和礦業遊戲，在一個程序生成的世界發生。 它是由用 Godot引擎的朋友制作的。\n每個世界都是使用噪音質感和編程系統的程序生成的。 它創造了無限的世界，以不同的生物體的基礎，以深度（世界垂直深度）和溫度（溫度是以噪音質感決定）。 寶石也會出現，以生物體和深度為基礎。\n\n玩家可以交易和工藝物品，以及提高他的角色。 他可以與怪物和完整任務作戰。\n遊戲可玩到4名玩家本地，可以完全使用控制器。\n\n此遊戲仍在開發中，並有Steam頁面。",
+    deepMine_description: "Deep Mine 是一款發生在程序生成世界中的 2D 探索與採礦遊戲。它是和朋友一起用 Godot 引擎製作的。\n每個世界都是透過噪音貼圖和執行緒系統程序生成的。它創造了一個無限的世界，根據深度（世界的垂直深度）和溫度（溫度由噪音紋理決定）而有不同的生態區。寶石也會根據生態區和深度出現。\n\n玩家可以交易和製作物品，並提升角色。他能打怪並完成任務。\n遊戲最多支援4名本地玩家遊玩，並可完整使用手把遊玩。\n\n這款遊戲仍在開發中，並有 Steam 頁面。",
 
     deepMine_keypoint1_title: "程序生成的世界",
-    deepMine_keypoint1_description: "使用噪音質感，線條和片段來創造無限的程序生成世界。",
+    deepMine_keypoint1_description: "利用雜訊材質、執行緒和區塊來創造無限程序生成的世界。",
 
     deepMine_keypoint2_title: "球員物理",
-    deepMine_keypoint2_description: "能使用梯子，流體。",
+    deepMine_keypoint2_description: "能使用梯子、流動繩索，也能游泳。",
 
-    deepMine_keypoint3_title: "敵人的行為",
-    deepMine_keypoint3_description: "使用狀態機，創造行為常規。",
+    deepMine_keypoint3_title: "敵人行為",
+    deepMine_keypoint3_description: "使用狀態機器，建立當玩家進入範圍時會改變的行為例程。",
 
     deepMine_keypoint4_title: "NPCs對話",
-    deepMine_keypoint4_description: "NPC可以有對話",
+    deepMine_keypoint4_description: "NPC 可以有對話",
 
     deepMine_keypoint5_title: "工藝和交易系統",
-    deepMine_keypoint5_description: "玩家可以與NPC交易和手工。 玩家特點也可以改進。",
+    deepMine_keypoint5_description: "玩家可以與 NPC 交易和製作，玩家特性也能被提升。",
 
-    deepMine_keypoint6_title: "像素藝術和像素藝術動畫",
-    deepMine_keypoint6_description: "創建質感和精靈，以及人物和敵人的動畫。",
+    deepMine_keypoint6_title: "像素藝術與像素動畫",
+    deepMine_keypoint6_description: "製作材質、精靈圖，以及角色和敵人的動畫。",
 
     deepMine_keypoint7_title: "使用者介面",
-    deepMine_keypoint7_description: "能使用鼠標，鍵盤和控制器。",
+    deepMine_keypoint7_description: "可搭配滑鼠、鍵盤和控制器使用。",
 
-    deepMine_keypoint8_title: "地方多人",
-    deepMine_keypoint8_description: "在分割屏幕上可播放最多4人。",
+    deepMine_keypoint8_title: "本地多人遊戲",
+    deepMine_keypoint8_description: "最多可分割畫面 4 人遊玩。",
 
-    deepMine_keypoint9_title: "链接到Steam的页面",
+    deepMine_keypoint9_title: "Steam 頁面連結",
     deepMine_keypoint9_description: "",
 
 // ------------------ Dices Dungeon ------------------ //
@@ -196,7 +196,7 @@ export const CH_DATA = {
 
 // ------------------ Card game prototype ------------------ //
     cardGamePrototype_title: "卡牌遊戲原型",
-    cardGamePrototype_summary: "具有自己的規則的卡牌遊戲原型",
+    cardGamePrototype_summary: "擁有自己規則的卡牌遊戲原型",
     cardGamePrototype_description: "試驗這個想法是否可行，以及遊戲是否平衡，有趣和戰術，我在 Godot 遊戲引擎中製作了一款原型。\n\n原型既在 2D，也在 3D 進行，並有一些卡片來測試平衡。\n我在 2 天內完成了從制定規則到完成原型，做和測試都很有趣。",
 
     cardGamePrototype_keypoint1_title: "打造對手AI的",
@@ -227,7 +227,7 @@ export const CH_DATA = {
 
 // ------------------ Genesys Designer ------------------ //
     genesysDesigner_title: "Genesys Designer",
-    genesysDesigner_summary: "網站應用程式，用于開發自助服務和輔助服務應用程式",
+    genesysDesigner_summary: "用於開發自助服務及輔助服務應用程式的網頁應用程式",
     genesysDesigner_description: "Genesys Designer 是一款基于網頁的工具，讓大企業為自己的業務創建自助（互動語音回應）和輔助服務（路由）應用程式。 它提供功能區塊給使用者，讓使用者可以拖放他們，輕鬆建立自己服務或路由應用程序。\n使用者可以設定語音助理人格，提示文字到言論，他們的工作時間等。。。\n在微軟支持 AngularJS 的結束時，我必須找到一個方法，從 AngularJS 轉向 ReactJS。 這種轉變必須是無縫的，對使用者而言是看不見的。",
 
     genesysDesigner_keypoint1_title: "易於學習和使用",
@@ -241,7 +241,7 @@ export const CH_DATA = {
 
 // ------------------ Missed! ------------------ //
     missed_title: "Missed!",
-    missed_summary: "透過 Unity3D 制作的 3D 遊戲，適用於 Android 手機",
+    missed_summary: "使用 Unity3D 製作的 Android 手機 3D 遊戲",
     missed_description: "Missed是我在網路上上傳的第一款遊戲。 這是一個在Google Play上可用的Android遊戲。\n在這個遊戲中，玩家必須避免由白色立方體在競技場周圍旋轉的白色立方體發射的紅色彈。 玩家的分數等於他生存的時間。 隨著時間的流逝，更多立方體會出現，難度會增加。\n\n這個遊戲是用unity3D 2019和C#制作的。",
 
     missed_keypoint1_title: "首次發表的遊戲",
@@ -258,7 +258,7 @@ export const CH_DATA = {
 
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
-    globalGameJam2022_summary: "我們在Global Game Jam 2022 期間與 3 個朋友一起制作了一款桌遊",
+    globalGameJam2022_summary: "在2022年全 Global Game Jam 期間，我們和三位朋友一起製作了一款受桌遊啟發的電子遊戲",
     globalGameJam2022_description: "在 2022 年，我們與Global Game Jam參加了。這年與Global Game Jam 2020的幾乎相同團隊。 我們有 48 小時的時間製作一款以：二元性為主題的遊戲。\n\n當時，我們常常玩一款名為 Clank 的桌遊! 這個遊戲是為了與朋友們競爭，在一個牢房中獲得更多寶藏，同時逃離龍的攻擊。 您可以在牢房中停留更長時間，嘗試變得更富有，或更快地回到表面，擁有更少的寶藏，但希望其他參賽者會被龍殺死。\n我們想盡可能多地重現遊戲。 在牢房中進化，您可以在遊戲中玩您可以買的卡片。 我們必須在板上建立玩家的遊戲系統，以及桌面機械工藝。 這只需兩天。 我們很開心，但我們在3D 劇場上玩了很多遊戲。 我們很開心，但我們在兩天後就能玩了3D 劇場和畫面遊戲!",
 
     globalGameJam2022_keypoint1_title: "團隊在 48 小時內完成",
@@ -278,7 +278,7 @@ export const CH_DATA = {
 
 // ------------------ Global Game Jam 2020 ------------------ //
     globalGameJam2020_title: "Global Game Jam 2020",
-    globalGameJam2020_summary: "我們在 Global Game Jam 2020 期間與 3 位朋友一起制作了一款 2D 平臺遊戲",
+    globalGameJam2020_summary: "我們在 2020 年 Global Game Jam 期間，和三位朋友一起製作了一款 2D 平台遊戲",
     globalGameJam2020_description: "2020年1月，我與幾個朋友參與Global Game Jam。 我們有48小時的時間製作一個主題遊戲：維修。\n\n我們在3D環境中制作了一款2D平臺遊戲。玩家扮演一個破壞的機器人，需要在四個不同的層次中找到自己的部件。\n每個層次都可以以任何順序玩。 每個發現的機器人部件都解鎖了一種新能力，可以幫助在另一個層次，所以玩家可以選擇他想要進步的方式。\n例如：找到機器人的手臂解鎖了爬牆或噴射式雙跳的能力。\n\n這是我們的第一款遊戲，遊戲可能需要一些磨練，但這是一個很棒的經驗。我們都學到了很多，很有樂趣。",
 
     globalGameJam2020_keypoint1_title: "團隊在 48 小時內完成",
@@ -312,7 +312,7 @@ export const CH_DATA = {
 
 // ------------------ Rotate ------------------ //
     rotate_title: "Rotate",
-    rotate_summary: "採用 Swift 和 Xcode 制作的 2D 遊戲原型",
+    rotate_summary: "使用 Swift 和 Xcode 製作的 2D 遊戲原型",
     rotate_description: "我為 iOS 製作了 2D 遊戲原型，以學習 Swift。 我使用 Xcode 和 SpriteKit 這樣做。\n\n在遊戲中，球在一個有尖的球上不斷地反彈。 用手指，玩家可以旋轉球，導球到球上的綠色位置。 一旦球在綠色位置上，就生成新的球，分數增加一點。\n如果球碰到尖，遊戲就失去了，分數重新設定。",
 
     rotate_keypoint1_title: "移動控制",
@@ -337,7 +337,7 @@ export const CH_DATA = {
 
 // ------------------ Local Beer ------------------ //
     localBeer_title: "Local Beer",
-    localBeer_summary: "展示當地酒廠的應用程式",
+    localBeer_summary: "用來顯示在地釀酒廠的應用程式",
     localBeer_description: "LocalBeer是一款列表法國布列塔尼（Brittany）的一些酒廠的應用程式。 這是 ENIB 校對對象導向程式寫作課程中所做的項目。 LocalBeer 的角度是鼓勵用戶消耗和發現本地酒和酒廠，因此這款應用程式完成了 17 個可持续发展目標之一。\n\n\n這款應用程式是用 Android Studio 3。5，Java 和 XML 來製作的。 資料庫是 JSON 的，可以用於其他程式。 這款應用程式也是由我的團隊的另一名成員使用 Swift 來製作的，它可以在 iPhone 和 Apple Watch 上工作。",
 
     localBeer_keypoint1_title: "旨在完成17個可持续发展目標之一",
