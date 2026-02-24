@@ -148,51 +148,51 @@ export const CH_DATA = {
 // ------------------ Dices Dungeon ------------------ //
     dicesDungeon_title: "Dices Dungeon",
     dicesDungeon_summary: "適用於iOS、可讓玩家操控機率的2D遊戲",
-    dicesDungeon_description: "子洞是用 Godot Engine 打造的 2D 遊戲，是一款開放源的遊戲引擎。\n這款遊戲允許玩家在 Godot Engine 打3個。每個可被鎖定或解鎖，以便再次被滾回或不滾。 取決於組合，將會計算出機會百分比。\n玩家可以打開他面前的兩扇門之一。 一把把背后藏著壞東西，另一把是好獎勵。\n子百分比決定了被選擇的門後藏著物品或怪物的價值或危險性。\n\n在玩概率和隨機之外，玩家可以試試用子的組合（如兩或三個的組合。。。）贏得相同數量的物品，幫助他適度他的冒險。\n\n這是我與Godot Engine發行的第一款遊戲，在iOS上發表。",
+    dicesDungeon_description: "《骰子地城》是一款使用 Godot 引擎（一個開源遊戲引擎）製作的 2D 遊戲。\n這款遊戲允許玩家最多擲3顆骰子3次。每個骰子都可以被鎖定或解鎖，決定是否再次擲骰。根據骰子組合，會計算機率百分比。\n玩家接著可以打開眼前的兩扇門中的一扇。一個藏著壞東西，另一個藏著好獎勵。\n機率百分比決定了藏在選定門後的物品或怪物的價值或危險程度。\n\n除了玩機率和隨機性外，玩家還可以嘗試與骰子組合（例如兩顆或三個相同點數的組合......）來贏得物品，幫助他調節冒險的隨機性。\n\n這款遊戲是我用 Godot Engine 製作的第一款遊戲，並在 iOS 平台發行。",
 
-    dicesDungeon_keypoint1_title: "首款在 iOS 上發行的遊戲",
+    dicesDungeon_keypoint1_title: "我第一款在 iOS 上發行的遊戲",
     dicesDungeon_keypoint1_description: "",
 
-    dicesDungeon_keypoint2_title: "藝術方向",
+    dicesDungeon_keypoint2_title: "美術指導",
     dicesDungeon_keypoint2_description: "它主要使用兩種顏色來玩味對比，並有強烈的美術指導。",
 
-    dicesDungeon_keypoint3_title: "遊戲設計與機械學",
-    dicesDungeon_keypoint3_description: "樂園遊戲玩法適合介質",
+    dicesDungeon_keypoint3_title: "遊戲設計與機制",
+    dicesDungeon_keypoint3_description: "街機玩法以適應手機媒介。",
 
     dicesDungeon_keypoint4_title: "使用者介面",
-    dicesDungeon_keypoint4_description: " 移动UI保持簡單。",
+    dicesDungeon_keypoint4_description: "行動介面保持簡單，但能顯示所有必要資訊。",
 
-    dicesDungeon_keypoint5_title: "像素藝術和像素藝術動畫",
-    dicesDungeon_keypoint5_description: "設計並製作質感和噴霧。",
+    dicesDungeon_keypoint5_title: "像素藝術與像素動畫",
+    dicesDungeon_keypoint5_description: "我設計並製作了質感和精靈圖。",
 
 // ------------------ Stardew Valley like game ------------------ //
     farmingGame_title: "農場遊戲",
     farmingGame_summary: "農耕及農機的2D遊戲原型",
-    farmingGame_description: "我在 Godot 引擎中製作了一款原型，試圖複製 Stardew Valley 的農機以及其庫存。\n我創建了一套多個子的老虎機庫存（如 Minecraft，Terraria，Stardew Valley 和很多遊戲）。我也增加了對話和交易機制，以及一週日/夜周期與鐘。\n\n它幫助我更好地理解 Godot 引擎的運作方式。",
+    farmingGame_description: "受到《Stardew Valley》啟發，我用 Godot 引擎製作了一個原型，試圖複製《Stardew Valley》的農耕機制以及它的物品欄。\n我建立了一個欄位背包（像是 Minecraft、Terraria、Stardew Valley 以及很多遊戲......），裡面有多個分頁。我還加入了對話和交易機制，以及帶時鐘的晝夜循環。\n\n這讓我更了解 Godot 引擎的運作方式。",
 
     farmingGame_keypoint1_title: "互動世界",
-    farmingGame_keypoint1_description: "玩家可以砍伐植被和摧毀岩石，他可以創造田地，種植作物和添加物品。",
+    farmingGame_keypoint1_description: "世界可以被大幅修改。玩家可以砍伐植被、破壞岩石，還能創造田地、種植作物並添加物品。",
 
     farmingGame_keypoint2_title: "NPC的對話",
-    farmingGame_keypoint2_description: "沒有任何其他方法。",
+    farmingGame_keypoint2_description: "NPC 可以有多個答案的對話，進而引導不同的任務。",
 
-    farmingGame_keypoint3_title: "複雜的庫存系統",
-    farmingGame_keypoint3_description: "庫存為不同類型的物體提供多個。 它完全與控制器兼容",
+    farmingGame_keypoint3_title: "複雜庫存系統",
+    farmingGame_keypoint3_description: "物品欄有多個不同物件類型的分頁。它完全支援控制器。",
 
-    farmingGame_keypoint4_title: "玩家定制",
-    farmingGame_keypoint4_description: "玩家可以從頭髮到皮膚顏色創建獨特的玩家噴霧。",
+    farmingGame_keypoint4_title: "玩家自訂",
+    farmingGame_keypoint4_description: "玩家可以從頭髮到膚色創建獨特的球員精靈圖。",
 
-    farmingGame_keypoint5_title: "玩家的設備",
-    farmingGame_keypoint5_description: "玩家可以裝備不同的工具和衣服。",
+    farmingGame_keypoint5_title: "球員裝備",
+    farmingGame_keypoint5_description: "玩家可以裝備不同的工具和服裝來改變外觀。",
 
-    farmingGame_keypoint6_title: "日/夜周期",
+    farmingGame_keypoint6_title: "晝夜循環",
     farmingGame_keypoint6_description: "時鐘系統會播放作物生長和日夜循環。",
 
-    farmingGame_keypoint7_title: "貿易系統",
-    farmingGame_keypoint7_description: "玩家可以買賣物品給NPC。 商人有自己的錢包。",
+    farmingGame_keypoint7_title: "貿易體系",
+    farmingGame_keypoint7_description: "玩家可以買賣物品給NPC。商人有自己的錢袋，會隨時間自動補充。",
 
-    farmingGame_keypoint8_title: "地方多人",
-    farmingGame_keypoint8_description: "超過2名玩家。",
+    farmingGame_keypoint8_title: "本地多人遊戲",
+    farmingGame_keypoint8_description: "最多可玩2名玩家。",
 
 // ------------------ Card game prototype ------------------ //
     cardGamePrototype_title: "卡牌遊戲原型",

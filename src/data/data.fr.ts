@@ -157,7 +157,7 @@ export const FR_DATA = {
     dicesDungeon_keypoint2_description: "Le jeu utilise principalement 2 couleurs pour jouer avec les contrastes et avoir une direction artistique forte.",
 
     dicesDungeon_keypoint3_title: "Game design et mécaniques de jeu",
-    dicesDungeon_keypoint3_description: "Un gameplay arcade adapté au support",
+    dicesDungeon_keypoint3_description: "Un gameplay arcade adapté au support mobile.",
 
     dicesDungeon_keypoint4_title: "Interface utilisateur",
     dicesDungeon_keypoint4_description: "Une interface pensée pour le mobile qui reste simple mais affiche toutes les informations nécessaires.",

@@ -157,13 +157,13 @@ export const EN_DATA = {
     dicesDungeon_keypoint2_description: "It uses mainly 2 colors to play with contrasts and have strong art direction.",
 
     dicesDungeon_keypoint3_title: "Game design and mechanics",
-    dicesDungeon_keypoint3_description: "Arcade gameplay to fit the medium",
+    dicesDungeon_keypoint3_description: "Arcade gameplay to fit the mobile medium.",
 
     dicesDungeon_keypoint4_title: "User interface",
     dicesDungeon_keypoint4_description: "Mobile UI that stay simple but display all needed information.",
 
     dicesDungeon_keypoint5_title: "Pixel art and pixel art animation",
-    dicesDungeon_keypoint5_description: "Designed and made textures and sprites.",
+    dicesDungeon_keypoint5_description: "I designed and made textures and sprites.",
 
 // ------------------ Stardew Valley like game ------------------ //
     farmingGame_title: "Farming game",
@@ -177,7 +177,7 @@ export const EN_DATA = {
     farmingGame_keypoint2_description: "NPCs can have dialogues with multiple answers that can lead to different quests.",
 
     farmingGame_keypoint3_title: "Complex inventory system",
-    farmingGame_keypoint3_description: "Inventory has multiple tabs for different object types. It works fully with controllers",
+    farmingGame_keypoint3_description: "Inventory has multiple tabs for different object types. It works fully with controllers.",
 
     farmingGame_keypoint4_title: "Player customization",
     farmingGame_keypoint4_description: "Player can create their unique player sprite from hair to skin color.",
