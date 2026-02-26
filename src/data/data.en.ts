@@ -211,7 +211,7 @@ export const EN_DATA = {
 // ------------------ Atelier Ryza crafting system ------------------ //
     atelierRyzaCraftingSystem_title: "Atelier Ryza crafting system",
     atelierRyzaCraftingSystem_summary: "An advanced crafting system inspired by Atelier Ryza game",
-    atelierRyzaCraftingSystem_description: "This prototype is an advanced crafting system made with Godot game engine. It is based on Aterlier Ryza's crafting system.\nThis system use custom resources to make a really complete crafting system. Each item needs one or more specific types, subtypes or unique ingredients to be crafted. The Crafted item takes in account the quality of each ingredients used.\n\nIt is easy to add new items for craft and modify custom resources to extant the depth of this crafting system.\nIt can be easily extended in multiple ways. For example crafted items could take the specific characteristic(s) of chosen ingredients...\n\nThis prototype is standalone and was thought so it can be easily implemented in a more complex games.",
+    atelierRyzaCraftingSystem_description: "This prototype is an advanced crafting system made with Godot game engine. It is based on Aterlier Ryza's crafting system.\nThis system use custom resources to make a really complete crafting system. Each item needs one or more specific types, subtypes or unique ingredients to be crafted. The Crafted item takes in account the quality of each ingredients used.\n\nIt is easy to add new items for craft and modify custom resources to extant the depth of this crafting system.\nIt can be easily extended in multiple ways. For example crafted items could take the specific characteristic(s) of chosen ingredients...\n\nThis prototype is standalone and was thought so it can be easily implemented in more complex games.",
 
     atelierRyzaCraftingSystem_keypoint1_title: "Easy to update",
     atelierRyzaCraftingSystem_keypoint1_description: "Can easily add new items and characteristics without modifying source code.",
@@ -245,13 +245,13 @@ export const EN_DATA = {
     missed_description: "Missed is the first game I uploaded online. It was an Android game available on Google Play.\nIn this game, the player has to avoid red bullets fired by white cubes rotating around the arena. The player’s score is equivalent to the time he survived. As the time goes by, more cubes will appear and the difficulty will increase.\n\nThis game was made with unity3D 2019 and C#.",
 
     missed_keypoint1_title: "First published game",
-    missed_keypoint1_description: "Game was published on Google Play.",
+    missed_keypoint1_description: "This game was published on Google Play.",
 
     missed_keypoint2_title: "Mobile controls",
     missed_keypoint2_description: "Virtual joystick available anywhere on screen.",
 
     missed_keypoint3_title: "Game design",
-    missed_keypoint3_description: "Arcade gameplay adapted to the medium.",
+    missed_keypoint3_description: "Arcade gameplay adapted to the mobile medium.",
 
     missed_keypoint4_title: "Game balancing",
     missed_keypoint4_description: "Difficulty increases over time without being too abrupt.",

@@ -197,30 +197,30 @@ export const CH_DATA = {
 // ------------------ Card game prototype ------------------ //
     cardGamePrototype_title: "卡牌遊戲原型",
     cardGamePrototype_summary: "擁有自己規則的卡牌遊戲原型",
-    cardGamePrototype_description: "試驗這個想法是否可行，以及遊戲是否平衡，有趣和戰術，我在 Godot 遊戲引擎中製作了一款原型。\n\n原型既在 2D，也在 3D 進行，並有一些卡片來測試平衡。\n我在 2 天內完成了從制定規則到完成原型，做和測試都很有趣。",
+    cardGamePrototype_description: "有一次，我想到一個有自己規則的紙牌遊戲。為了測試這個想法是否可行，以及遊戲是否平衡、有趣且具策略性，我在 Godot 遊戲引擎中製作了一個原型。\n\n原型機同時製作了 2D 和 3D 版本，並有幾張卡片測試平衡性。\n我從規則制定到原型製作結束，兩天內完成，過程很有趣，也很有趣。",
 
-    cardGamePrototype_keypoint1_title: "打造對手AI的",
-    cardGamePrototype_keypoint1_description: "該球員的AI可以反應並按其玩。",
+    cardGamePrototype_keypoint1_title: "對手 AI 的創建",
+    cardGamePrototype_keypoint1_description: "對手 AI 會根據玩家的最後一步做出反應並下棋。",
 
     cardGamePrototype_keypoint2_title: "兩種 2D 和 3D 兩種相同的原型",
-    cardGamePrototype_keypoint2_description: "遊戲可以使用相同的AI。",
+    cardGamePrototype_keypoint2_description: "遊戲在 2D 或 3D 上都能用同一個 AI 運作。",
 
-    cardGamePrototype_keypoint3_title: "創建遊戲規則和平衡",
+    cardGamePrototype_keypoint3_title: "創建了遊戲規則和平衡",
     cardGamePrototype_keypoint3_description: "",
 
 // ------------------ Atelier Ryza crafting system ------------------ //
     atelierRyzaCraftingSystem_title: "Atelier Ryza 工藝系統",
     atelierRyzaCraftingSystem_summary: "靈感來自 Atelier Ryza 遊戲的先進工藝系統",
-    atelierRyzaCraftingSystem_description: "這樣的原型是用 Godot 遊戲引擎製作的先進的工藝系統。 它是基于 Aterlier Ryza 的工藝系統。\n這個系統使用自訂的資源來製作一個真正完整的工藝系統。 每個項目需要一個或多種特定的類型，子類型或獨特的成分來製作。 工藝項目考慮使用的每個成分的品質。\n\n這很容易添加工藝新項目和修改自訂資源，擴大這個工藝系統的深度。\n它可以輕鬆地用多種方式擴展。 例如，工藝項目可以采用所選擇的成分的特定特點。。。\n\n這個原型是獨立的，因此被認為可以輕鬆地實現在更複雜的遊戲中。",
+    atelierRyzaCraftingSystem_description: "這個原型是一套使用 Godot 遊戲引擎製作的先進製作系統。它基於 Aterlier Ryza 的製作系統。\n這個系統利用自訂資源打造出非常完整的製作系統。每件物品都需要製作一種或多種特定類型、子類型或獨特材料。製作物品會考慮每種材料的品質。\n\n新增製作物品和修改自訂資源以維持這個製作系統的深度非常容易。\n它可以以多種方式輕鬆擴展。例如，製作物品可以採用所選材料的特定特性......\n\n這個原型是獨立的，並被認為能輕鬆實作於更複雜的遊戲中。",
 
-    atelierRyzaCraftingSystem_keypoint1_title: "更新起來很容易",
+    atelierRyzaCraftingSystem_keypoint1_title: "更新簡便",
     atelierRyzaCraftingSystem_keypoint1_description: "很容易可以在不修改源代码的情況下添加新項目和特征。",
 
     atelierRyzaCraftingSystem_keypoint2_title: "使用者介面",
-    atelierRyzaCraftingSystem_keypoint2_description: "清晰且可閱讀的界面，提供所有必要的資訊。 可在超寬屏幕上使用。",
+    atelierRyzaCraftingSystem_keypoint2_description: "介面清晰易讀，包含所有必要資訊。可以搭配超寬螢幕使用。",
 
     atelierRyzaCraftingSystem_keypoint3_title: "使用者體驗",
-    atelierRyzaCraftingSystem_keypoint3_description: "能讓手工藝變得有趣和吸引人。",
+    atelierRyzaCraftingSystem_keypoint3_description: "這讓製作變得有趣且引人入勝。",
 
     atelierRyzaCraftingSystem_keypoint4_title: "獨立系統",
     atelierRyzaCraftingSystem_keypoint4_description: "很容易在更大的遊戲中添加。",
@@ -228,30 +228,30 @@ export const CH_DATA = {
 // ------------------ Genesys Designer ------------------ //
     genesysDesigner_title: "Genesys Designer",
     genesysDesigner_summary: "用於開發自助服務及輔助服務應用程式的網頁應用程式",
-    genesysDesigner_description: "Genesys Designer 是一款基于網頁的工具，讓大企業為自己的業務創建自助（互動語音回應）和輔助服務（路由）應用程式。 它提供功能區塊給使用者，讓使用者可以拖放他們，輕鬆建立自己服務或路由應用程序。\n使用者可以設定語音助理人格，提示文字到言論，他們的工作時間等。。。\n在微軟支持 AngularJS 的結束時，我必須找到一個方法，從 AngularJS 轉向 ReactJS。 這種轉變必須是無縫的，對使用者而言是看不見的。",
+    genesysDesigner_description: "Genesys Designer 是一款基於網頁的工具，讓大型企業能夠為其企業建立自助式（互動語音回應）及輔助服務（路由）應用程式。它提供功能區塊給使用者，使用者可以拖放它們，輕鬆建立他們想要的自助服務或路由應用程式。\n用戶可以設定語音助理角色、文字轉語音的提示、營業時間等...\n在 Microsoft 支援 AngularJS 結束時，我必須想辦法將應用程式從 AngularJS 逐區塊轉移到 ReactJS。這種轉換必須無縫且對使用者隱形。",
 
-    genesysDesigner_keypoint1_title: "易於學習和使用",
+    genesysDesigner_keypoint1_title: "簡單易學與使用",
     genesysDesigner_keypoint1_description: "功能區塊可拖曳可丟，使用者學習和使用起來非常簡單。",
 
-    genesysDesigner_keypoint2_title: "可適應任何業務",
-    genesysDesigner_keypoint2_description: "任何企業都可以將 Designer 的應用程式改編成。",
+    genesysDesigner_keypoint2_title: "適用於任何業務",
+    genesysDesigner_keypoint2_description: "任何公司都能根據自身需求調整 Designer 的應用程式。",
 
     genesysDesigner_keypoint3_title: "微服務架構",
-    genesysDesigner_keypoint3_description: "應用程式的幾乎每個子都是微服務。",
+    genesysDesigner_keypoint3_description: "應用程式中幾乎每個分頁都是微服務，可以移除而不會影響其他分頁。",
 
 // ------------------ Missed! ------------------ //
     missed_title: "Missed!",
     missed_summary: "使用 Unity3D 製作的 Android 手機 3D 遊戲",
     missed_description: "Missed是我在網路上上傳的第一款遊戲。 這是一個在Google Play上可用的Android遊戲。\n在這個遊戲中，玩家必須避免由白色立方體在競技場周圍旋轉的白色立方體發射的紅色彈。 玩家的分數等於他生存的時間。 隨著時間的流逝，更多立方體會出現，難度會增加。\n\n這個遊戲是用unity3D 2019和C#制作的。",
 
-    missed_keypoint1_title: "首次發表的遊戲",
-    missed_keypoint1_description: "遊戲在 Google Play 上發表。",
+    missed_keypoint1_title: "我的第一次發表的遊戲",
+    missed_keypoint1_description: "這款遊戲曾在 Google Play 上發布。",
 
     missed_keypoint2_title: "移動控制",
-    missed_keypoint2_description: "虛擬的操控機可在屏幕上任何地方使用。",
+    missed_keypoint2_description: "虛擬搖桿可在螢幕上任何地方使用。",
 
     missed_keypoint3_title: "遊戲設計",
-    missed_keypoint3_description: "街機遊戲玩法也被改編成這個媒介。",
+    missed_keypoint3_description: "街機遊戲玩法改編成行動媒介。",
 
     missed_keypoint4_title: "遊戲平衡",
     missed_keypoint4_description: "難度隨著時間的推移而增加，但不會太突然。",
@@ -259,19 +259,19 @@ export const CH_DATA = {
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
     globalGameJam2022_summary: "在2022年全 Global Game Jam 期間，我們和三位朋友一起製作了一款受桌遊啟發的電子遊戲",
-    globalGameJam2022_description: "在 2022 年，我們與Global Game Jam參加了。這年與Global Game Jam 2020的幾乎相同團隊。 我們有 48 小時的時間製作一款以：二元性為主題的遊戲。\n\n當時，我們常常玩一款名為 Clank 的桌遊! 這個遊戲是為了與朋友們競爭，在一個牢房中獲得更多寶藏，同時逃離龍的攻擊。 您可以在牢房中停留更長時間，嘗試變得更富有，或更快地回到表面，擁有更少的寶藏，但希望其他參賽者會被龍殺死。\n我們想盡可能多地重現遊戲。 在牢房中進化，您可以在遊戲中玩您可以買的卡片。 我們必須在板上建立玩家的遊戲系統，以及桌面機械工藝。 這只需兩天。 我們很開心，但我們在3D 劇場上玩了很多遊戲。 我們很開心，但我們在兩天後就能玩了3D 劇場和畫面遊戲!",
+    globalGameJam2022_description: "2022年，我們以幾乎與2020年相同的團隊參加了 Global Game Jam。我們有48小時的時間來製作一款主題為「二元性」的遊戲。\n\n當時，我們常玩一款叫做《Clank！》的桌遊！這款遊戲是和朋友們競爭，爭奪地城中更多寶藏，同時逃離龍的攻擊。你可以選擇在地城待久一點以求更富有，或是更快回到地表，帶著較少的寶藏，但希望其他參賽者能死在龍手下。\n我們想盡可能享受重現遊戲的樂趣。要在地城中進化，你會使用遊戲中可購買的卡牌。我們必須在短短兩天內完成玩家在棋盤上的移動、商店系統以及牌組構築機制。雖然困難，但非常有趣。\n\n我們兩個程式設計師分別用 Unity3D，還有 3 個程式設計師負責圖形（卡和電影）。遊戲結束時，我們雖然累壞了，但很高興能在電腦上玩桌遊！",
 
-    globalGameJam2022_keypoint1_title: "團隊在 48 小時內完成",
+    globalGameJam2022_keypoint1_title: "48小時內與團隊完成",
     globalGameJam2022_keypoint1_description: "",
 
-    globalGameJam2022_keypoint2_title: "桌遊改編成視頻遊戲",
-    globalGameJam2022_keypoint2_description: "像是桌遊，玩家的動作相應處理，與更多行動的視頻遊戲相比，動作不同。",
+    globalGameJam2022_keypoint2_title: "棋盤遊戲改編成電子遊戲",
+    globalGameJam2022_keypoint2_description: "作為一款桌遊，玩家的動作處理得與更偏重動作的電子遊戲不同。",
 
-    globalGameJam2022_keypoint3_title: "使用 Github 進行版本控制",
+    globalGameJam2022_keypoint3_title: "使用了 Github 進行版本控制",
     globalGameJam2022_keypoint3_description: "",
 
-    globalGameJam2022_keypoint4_title: "基于甲板建筑的遊戲",
-    globalGameJam2022_keypoint4_description: "玩家的行動取決於抽出的卡片。 遊戲中的玩家演變來自板機械。",
+    globalGameJam2022_keypoint4_title: "以牌組構築為基礎的遊戲玩法",
+    globalGameJam2022_keypoint4_description: "玩家的行動取決於抽到的牌。遊戲中玩家的進化來自於牌組構築機制。",
 
     globalGameJam2022_keypoint5_title: "遊戲的連結",
     globalGameJam2022_keypoint5_description: "",
@@ -279,22 +279,23 @@ export const CH_DATA = {
 // ------------------ Global Game Jam 2020 ------------------ //
     globalGameJam2020_title: "Global Game Jam 2020",
     globalGameJam2020_summary: "我們在 2020 年 Global Game Jam 期間，和三位朋友一起製作了一款 2D 平台遊戲",
-    globalGameJam2020_description: "2020年1月，我與幾個朋友參與Global Game Jam。 我們有48小時的時間製作一個主題遊戲：維修。\n\n我們在3D環境中制作了一款2D平臺遊戲。玩家扮演一個破壞的機器人，需要在四個不同的層次中找到自己的部件。\n每個層次都可以以任何順序玩。 每個發現的機器人部件都解鎖了一種新能力，可以幫助在另一個層次，所以玩家可以選擇他想要進步的方式。\n例如：找到機器人的手臂解鎖了爬牆或噴射式雙跳的能力。\n\n這是我們的第一款遊戲，遊戲可能需要一些磨練，但這是一個很棒的經驗。我們都學到了很多，很有樂趣。",
+    globalGameJam2020_description: "2020年1月，我和幾位朋友參加了全球 Global Game Jam。我們有48小時的時間來製作一款主題為：修復的遊戲。\n\n我們做了一款在3D環境中的2D平台遊戲。玩家扮演一個壞掉的機器人，需要在四個不同關卡中找到零件。\n每個關卡都可以任意順序遊玩。每個找到的機器人零件都會解鎖一項新能力，能在下一關發揮作用，讓玩家可以選擇自己想要的進度方式。\n例如：找到機器人的手臂可以解鎖攀爬牆壁的能力，或是噴射背包解鎖二段跳。\n\n這是我們的第一次 Global Game Jam，遊戲可能還需要一些打磨，但整體經驗非常棒。我們都學到了很多，也玩得很開心。",
+        "",
 
-    globalGameJam2020_keypoint1_title: "團隊在 48 小時內完成",
+    globalGameJam2020_keypoint1_title: "48小時內與團隊完成",
     globalGameJam2020_keypoint1_description: "",
 
     globalGameJam2020_keypoint2_title: "2D 和 3D 的混合",
-    globalGameJam2020_keypoint2_description: "在3D環境中使用2Dsprite。",
+    globalGameJam2020_keypoint2_description: "3D 環境中的 2D 精靈圖。",
 
-    globalGameJam2020_keypoint3_title: "使用 Github 進行版本控制",
+    globalGameJam2020_keypoint3_title: "使用了 Github 進行版本控制",
     globalGameJam2020_keypoint3_description: "",
 
-    globalGameJam2020_keypoint4_title: "演變的遊戲",
-    globalGameJam2020_keypoint4_description: "遊戲的玩法不同。",
+    globalGameJam2020_keypoint4_title: "遊戲玩法演進",
+    globalGameJam2020_keypoint4_description: "遊戲玩法會因你玩關卡的順序而有所不同。",
 
-    globalGameJam2020_keypoint5_title: "層面設計",
-    globalGameJam2020_keypoint5_description: "遊戲的設計不同，取決於遊戲的玩法（玩家在上述水平獲得機器人的哪個部分）。",
+    globalGameJam2020_keypoint5_title: "關卡設計",
+    globalGameJam2020_keypoint5_description: "關卡的設計不同，取決於遊戲的玩法（玩家在上述水平獲得機器人的哪個部分）。",
 
     globalGameJam2020_keypoint6_title: "遊戲的連結",
     globalGameJam2020_keypoint6_description: "",

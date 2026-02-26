@@ -245,13 +245,13 @@ export const FR_DATA = {
     missed_description: "Missed est le premier jeu que j'ai publié en ligne. C'étais un jeu Android disponible sur Google Play.\nDans ce jeu, le joueur doit éviter des balles rouges tirées par des cubes blancs tournant autour d'une arène. Le score du joueur est équivalent au temps qu'il a survécu. Au fil du temps, plus de cubes apparaissent et la difficulté augmente.\n\nCe jeu a été fait avec unity3D 2019 et C#.",
 
     missed_keypoint1_title: "Premier jeu publié",
-    missed_keypoint1_description: "Le jeu a été publié sur Google Play.",
+    missed_keypoint1_description: "Ce jeu a été publié sur Google Play.",
 
     missed_keypoint2_title: "Contrôles adaptés pour le mobiles",
     missed_keypoint2_description: "Joystick virtuel disponible n'importe où sur l'écran.",
 
     missed_keypoint3_title: "Game design",
-    missed_keypoint3_description: "Gameplay Arcade adapté au médium.",
+    missed_keypoint3_description: "Gameplay Arcade adapté au support mobile.",
 
     missed_keypoint4_title: "Équilibrage",
     missed_keypoint4_description: "La difficulté augmente avec le temps sans être trop brusque.",
