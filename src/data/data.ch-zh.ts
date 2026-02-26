@@ -227,7 +227,7 @@ export const CH_DATA = {
 
 // ------------------ Genesys Designer ------------------ //
     genesysDesigner_title: "Genesys Designer",
-    genesysDesigner_summary: "用於開發自助服務及輔助服務應用程式的網頁應用程式",
+    genesysDesigner_summary: "用於開發自助服務及輔助服務的網頁應用程式",
     genesysDesigner_description: "Genesys Designer 是一款基於網頁的工具，讓大型企業能夠為其企業建立自助式（互動語音回應）及輔助服務（路由）應用程式。它提供功能區塊給使用者，使用者可以拖放它們，輕鬆建立他們想要的自助服務或路由應用程式。\n用戶可以設定語音助理角色、文字轉語音的提示、營業時間等...\n在 Microsoft 支援 AngularJS 結束時，我必須想辦法將應用程式從 AngularJS 逐區塊轉移到 ReactJS。這種轉換必須無縫且對使用者隱形。",
 
     genesysDesigner_keypoint1_title: "簡單易學與使用",
@@ -258,7 +258,7 @@ export const CH_DATA = {
 
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
-    globalGameJam2022_summary: "在2022年全 Global Game Jam 期間，我們和三位朋友一起製作了一款受桌遊啟發的電子遊戲",
+    globalGameJam2022_summary: "在 2022 年 Global Game Jam 期間，和三位朋友一起製作了一款受桌遊啟發的電子遊戲",
     globalGameJam2022_description: "2022年，我們以幾乎與2020年相同的團隊參加了 Global Game Jam。我們有48小時的時間來製作一款主題為「二元性」的遊戲。\n\n當時，我們常玩一款叫做《Clank！》的桌遊！這款遊戲是和朋友們競爭，爭奪地城中更多寶藏，同時逃離龍的攻擊。你可以選擇在地城待久一點以求更富有，或是更快回到地表，帶著較少的寶藏，但希望其他參賽者能死在龍手下。\n我們想盡可能享受重現遊戲的樂趣。要在地城中進化，你會使用遊戲中可購買的卡牌。我們必須在短短兩天內完成玩家在棋盤上的移動、商店系統以及牌組構築機制。雖然困難，但非常有趣。\n\n我們兩個程式設計師分別用 Unity3D，還有 3 個程式設計師負責圖形（卡和電影）。遊戲結束時，我們雖然累壞了，但很高興能在電腦上玩桌遊！",
 
     globalGameJam2022_keypoint1_title: "48小時內與團隊完成",
@@ -278,7 +278,7 @@ export const CH_DATA = {
 
 // ------------------ Global Game Jam 2020 ------------------ //
     globalGameJam2020_title: "Global Game Jam 2020",
-    globalGameJam2020_summary: "我們在 2020 年 Global Game Jam 期間，和三位朋友一起製作了一款 2D 平台遊戲",
+    globalGameJam2020_summary: "在 2020 年 Global Game Jam 期間，和三位朋友一起製作的一款 2D 平台遊戲",
     globalGameJam2020_description: "2020年1月，我和幾位朋友參加了全球 Global Game Jam。我們有48小時的時間來製作一款主題為：修復的遊戲。\n\n我們做了一款在3D環境中的2D平台遊戲。玩家扮演一個壞掉的機器人，需要在四個不同關卡中找到零件。\n每個關卡都可以任意順序遊玩。每個找到的機器人零件都會解鎖一項新能力，能在下一關發揮作用，讓玩家可以選擇自己想要的進度方式。\n例如：找到機器人的手臂可以解鎖攀爬牆壁的能力，或是噴射背包解鎖二段跳。\n\n這是我們的第一次 Global Game Jam，遊戲可能還需要一些打磨，但整體經驗非常棒。我們都學到了很多，也玩得很開心。",
 
     globalGameJam2020_keypoint1_title: "48小時內與團隊完成",
@@ -301,7 +301,7 @@ export const CH_DATA = {
 
 // ------------------ Game engine ------------------ //
     gameEngine_title: "遊戲引擎",
-    gameEngine_summary: "簡單的遊戲引擎，使用SDL2和C++",
+    gameEngine_summary: "使用SDL2和 C++ 的簡單遊戲引擎",
     gameEngine_description: "我決定嘗試不使用任何遊戲引擎來製作一款遊戲。我精通 C++，但學習並用 SDL2 也很有趣。\n\n我做了一個基本的原型在運行。在這個原型中，透過網格資訊和圖塊集生成了一張地圖。玩家角色可透過鍵盤移動並發射投射物。",
 
     gameEngine_keypoint1_title: "從零開始打造",
@@ -323,7 +323,7 @@ export const CH_DATA = {
 
 // ------------------ DotWar ------------------ //
     dotWar_title: "DotWar",
-    dotWar_summary: "玩家在 24 小時內使用 Unity3D 製作的遊戲，適用於 Android 手機",
+    dotWar_summary: "24 小時內使用 Unity3D 製作的遊戲，適用於 Android 系統",
     dotWar_description: "DotWar 是一款可在 Android 裝置上運作的遊戲。這個想法是挑戰自己在一天內做出一款遊戲。\n\n在這款遊戲中，玩家必須在限定時間內點擊紅點。這個點會彈奏鋼琴音符，按下時會移動。\n難度會隨著分數增加而提升。\n\n這款遊戲是用 Unity 3D 2019 和 C# 製作的。",
 
     dotWar_keypoint1_title: "24小時內與團隊完成",
@@ -337,7 +337,7 @@ export const CH_DATA = {
 
 // ------------------ Local Beer ------------------ //
     localBeer_title: "Local Beer",
-    localBeer_summary: "用來顯示在地釀酒廠的應用程式",
+    localBeer_summary: "顯示在地釀酒廠的應用程式",
     localBeer_description: "LocalBeer 是一款應用程式，列出法國布列塔尼的一些啤酒廠。這是在 ENIB 物件導向程式設計課程中完成的專案。LocalBeer 的目標是推動使用者消費並發現在地啤酒與釀酒廠，因此這款應用程式完成了 17 項永續發展目標之一。\n\n這款應用程式是使用 Android Studio 3.5、Java 和 XML 製作的。資料庫是 JSON 格式，可以用來做其他程式。這個應用程式也是我團隊另一位成員用 swift 製作的，並且能在 iPhone 和 Apple Watch 上使用。",
 
     localBeer_keypoint1_title: "旨在完成17個可持续发展目標之一",
