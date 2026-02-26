@@ -104,7 +104,7 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                                                              className="w-full"/>
                             </div>
                             <ul className="md:w-[40%] flex flex-col gap-y-2 mt-4 md:mt-0">
-                                <li className="font-bold text-xl">Keypoints</li>
+                                <li className="font-bold text-xl">{text.keypoints}</li>
                                 {project.keypoints.map((keypoint, index) => (
                                     <li key={index}>
                                         {keypoint.link ?
@@ -124,7 +124,7 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                         </div>
                     </>
                     :
-                    <div>Ce project n&apos;a pas été trouvé</div>
+                    <div>{text.projectNotFound}</div>
                 }
             </div>
         </div>

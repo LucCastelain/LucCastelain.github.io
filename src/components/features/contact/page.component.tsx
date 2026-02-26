@@ -23,6 +23,7 @@ export default function ContactPageComponent({language}: Readonly<ContactPageCom
                         <FaLinkedin className="size-6"/>
                         LinkedIn
                     </a>
+                    <p>{text.afterOrOn}</p>
                 </div>
             </div>
             <p className="mt-14">{text.pageIsEmpty}</p>

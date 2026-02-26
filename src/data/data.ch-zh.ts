@@ -2,22 +2,22 @@ export const CH_DATA = {
 // ------------------ Matrix ------------------ //
     matrix_title: "Matrix",
     matrix_summary: "公司員工目錄的網頁應用程式",
-    matrix_description: "Matrix 是一款應用程式，會顯示公司員工的各種資訊，例如他們的專業電話號碼和電子郵件、工作地點（主要公司或子公司）、部門和經理。\n如果你需要聯絡某個特定員工，它允許你搜尋特定或特定員工群組。",
+    matrix_description: "Matrix 是一款應用程式，會顯示公司員工的各種資訊，例如他們的公司電話號碼和電子郵件、工作地點（主要公司或子公司）、部門和經理。\n如果需要聯絡某個特定員工，它也允許搜尋特定員工群組。",
 
-    matrix_keypoint1_title: "通用資料保護條例（GDPR）- 保護員工敏感資料",
-    matrix_keypoint1_description: "該應用程式不會顯示員工的敏感資訊。詳細資料的存取僅限於擁有正確授權的人（例如薪資負責人或必要時的人資部門）。",
+    matrix_keypoint1_title: "個人資料保護條例（GDPR）- 保護員工敏感資料",
+    matrix_keypoint1_description: "該應用程式不會顯示員工的敏感資訊。詳細資料的存取僅限於擁有正式授權的人（例如發放薪資部門的員工或必要時的人資部門）。",
 
     matrix_keypoint2_title: "與 Microsoft Graph API 的連結",
-    matrix_keypoint2_description: "連結到 Microsoft Graph API 讓應用程式能直接在應用程式內顯示使用者在場與排程資訊（例如你尋找的人是否正在開會）。",
+    matrix_keypoint2_description: "連結到 Microsoft Graph API 讓此應用程式能直接在系統內顯示使用者在場與排程資訊（例如尋找的人是否正在開會）。",
 
     matrix_keypoint3_title: "匯出至 XLSX",
-    matrix_keypoint3_description: "目前可見員工資訊可匯出至 XLSX 檔案。",
+    matrix_keypoint3_description: "員工資訊可匯出至 XLSX 檔案。",
 
-    matrix_keypoint4_title: "濾鏡",
-    matrix_keypoint4_description: "使用者有很多篩選器可以加快搜尋速度，或顯示特定群組（只有一個或部分部門、只有經理等）。",
+    matrix_keypoint4_title: "篩選系統",
+    matrix_keypoint4_description: "使用者有很多篩選條件可以加快搜尋速度，或顯示特定群組（可篩選只有一個或部分部門、或是只有經理等......）。",
 
-    matrix_keypoint5_title: "偏好化伺服器元件",
-    matrix_keypoint5_description: "透過將篩選器設為網址參數，偏好伺服器元件。它也允許分享一個已設定好正確篩選條件的網址，以尋找個人或一群人。",
+    matrix_keypoint5_title: "優先採用伺服器端元件",
+    matrix_keypoint5_description: "優先使用伺服器端元件，例如將篩選條件設為 URL 參數。也允許分享一個已設定好的正確篩選條件的網址，以尋找個人或一群人。",
 
 // ------------------ Support DSI ------------------ //
     supportDSI_title: "Support DSI",
