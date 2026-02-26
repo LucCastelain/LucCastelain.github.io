@@ -280,7 +280,6 @@ export const CH_DATA = {
     globalGameJam2020_title: "Global Game Jam 2020",
     globalGameJam2020_summary: "我們在 2020 年 Global Game Jam 期間，和三位朋友一起製作了一款 2D 平台遊戲",
     globalGameJam2020_description: "2020年1月，我和幾位朋友參加了全球 Global Game Jam。我們有48小時的時間來製作一款主題為：修復的遊戲。\n\n我們做了一款在3D環境中的2D平台遊戲。玩家扮演一個壞掉的機器人，需要在四個不同關卡中找到零件。\n每個關卡都可以任意順序遊玩。每個找到的機器人零件都會解鎖一項新能力，能在下一關發揮作用，讓玩家可以選擇自己想要的進度方式。\n例如：找到機器人的手臂可以解鎖攀爬牆壁的能力，或是噴射背包解鎖二段跳。\n\n這是我們的第一次 Global Game Jam，遊戲可能還需要一些打磨，但整體經驗非常棒。我們都學到了很多，也玩得很開心。",
-        "",
 
     globalGameJam2020_keypoint1_title: "48小時內與團隊完成",
     globalGameJam2020_keypoint1_description: "",
