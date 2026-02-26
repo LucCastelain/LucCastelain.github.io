@@ -302,48 +302,48 @@ export const CH_DATA = {
 // ------------------ Game engine ------------------ //
     gameEngine_title: "遊戲引擎",
     gameEngine_summary: "簡單的遊戲引擎，使用SDL2和C++",
-    gameEngine_description: "我決定嘗試在不使用任何遊戲引擎的情況下制作遊戲。 我掌握C++，但很有趣的是學習和使用SDL2。\n\n我做了一種基本的原型。 在這個原型中，透過格式資訊和片組生成地圖。 玩家的噴射器可以用鍵盤移動並射射彈。 ",
+    gameEngine_description: "我決定嘗試不使用任何遊戲引擎來製作一款遊戲。我精通 C++，但學習並用 SDL2 也很有趣。\n\n我做了一個基本的原型在運行。在這個原型中，透過網格資訊和圖塊集生成了一張地圖。玩家角色可透過鍵盤移動並發射投射物。",
 
-    gameEngine_keypoint1_title: "建自零",
-    gameEngine_keypoint1_description: "沒有外部圖書館。",
+    gameEngine_keypoint1_title: "從零開始打造",
+    gameEngine_keypoint1_description: "遊戲引擎從零開始打造，沒有外部函式庫。",
 
-    gameEngine_keypoint2_title: "基本的工作遊戲用引擎",
+    gameEngine_keypoint2_title: "用這個引擎製作的基本工作遊戲",
     gameEngine_keypoint2_description: "",
 
 // ------------------ Rotate ------------------ //
     rotate_title: "Rotate",
     rotate_summary: "使用 Swift 和 Xcode 製作的 2D 遊戲原型",
-    rotate_description: "我為 iOS 製作了 2D 遊戲原型，以學習 Swift。 我使用 Xcode 和 SpriteKit 這樣做。\n\n在遊戲中，球在一個有尖的球上不斷地反彈。 用手指，玩家可以旋轉球，導球到球上的綠色位置。 一旦球在綠色位置上，就生成新的球，分數增加一點。\n如果球碰到尖，遊戲就失去了，分數重新設定。",
+    rotate_description: "我為 iOS 做了一個 2D 遊戲原型來學習 Swift。我用了 Xcode 和 SpriteKit 來做這件事。\n\n遊戲中球會規律且無限地彈跳，球體上有尖刺。玩家可以用手指旋轉球體，引導球體到球體上的綠色位置。當球落在綠色位置時，會產生一個新的球體，分數會增加一分。\n若球觸碰到釘子，遊戲即告失敗，分數重置。",
 
     rotate_keypoint1_title: "移動控制",
-    rotate_keypoint1_description: "虛擬的操控機可在屏幕上任何地方使用。",
+    rotate_keypoint1_description: "虛擬搖桿可在螢幕上任何地方使用。",
 
     rotate_keypoint2_title: "遊戲設計",
-    rotate_keypoint2_description: "街機遊戲玩法也被改編成這個媒介。",
+    rotate_keypoint2_description: "街機遊戲玩法改編成行動媒介。",
 
 // ------------------ DotWar ------------------ //
     dotWar_title: "DotWar",
     dotWar_summary: "玩家在 24 小時內使用 Unity3D 製作的遊戲，適用於 Android 手機",
-    dotWar_description: "DotWar是一款可以在 Android 裝置上使用的遊戲。 想法是挑戰自己在一天內製作遊戲。\n\n在這款遊戲中，玩家必須在一定時間內點擊紅點。 點播放鋼琴音符，按下時會移動。\n難度隨著分數增加。\n\n這款遊戲是用unity3D 2019和C#制作的。",
+    dotWar_description: "DotWar 是一款可在 Android 裝置上運作的遊戲。這個想法是挑戰自己在一天內做出一款遊戲。\n\n在這款遊戲中，玩家必須在限定時間內點擊紅點。這個點會彈奏鋼琴音符，按下時會移動。\n難度會隨著分數增加而提升。\n\n這款遊戲是用 Unity 3D 2019 和 C# 製作的。",
 
-    dotWar_keypoint1_title: "在 24 小時內完成",
+    dotWar_keypoint1_title: "24小時內與團隊完成",
     dotWar_keypoint1_description: "",
 
-    dotWar_keypoint2_title: "在 Google Play 發表",
+    dotWar_keypoint2_title: "發布於 Google Play",
     dotWar_keypoint2_description: "",
 
     dotWar_keypoint3_title: "遊戲設計",
-    dotWar_keypoint3_description: "簡單但有效的遊戲方式，能應對時間的限制。",
+    dotWar_keypoint3_description: "街機遊戲玩法也被改編成這個媒介。簡單但有效的玩法，以應付時間限制。",
 
 // ------------------ Local Beer ------------------ //
     localBeer_title: "Local Beer",
     localBeer_summary: "用來顯示在地釀酒廠的應用程式",
-    localBeer_description: "LocalBeer是一款列表法國布列塔尼（Brittany）的一些酒廠的應用程式。 這是 ENIB 校對對象導向程式寫作課程中所做的項目。 LocalBeer 的角度是鼓勵用戶消耗和發現本地酒和酒廠，因此這款應用程式完成了 17 個可持续发展目標之一。\n\n\n這款應用程式是用 Android Studio 3。5，Java 和 XML 來製作的。 資料庫是 JSON 的，可以用於其他程式。 這款應用程式也是由我的團隊的另一名成員使用 Swift 來製作的，它可以在 iPhone 和 Apple Watch 上工作。",
+    localBeer_description: "LocalBeer 是一款應用程式，列出法國布列塔尼的一些啤酒廠。這是在 ENIB 物件導向程式設計課程中完成的專案。LocalBeer 的目標是推動使用者消費並發現在地啤酒與釀酒廠，因此這款應用程式完成了 17 項永續發展目標之一。\n\n這款應用程式是使用 Android Studio 3.5、Java 和 XML 製作的。資料庫是 JSON 格式，可以用來做其他程式。這個應用程式也是我團隊另一位成員用 swift 製作的，並且能在 iPhone 和 Apple Watch 上使用。",
 
     localBeer_keypoint1_title: "旨在完成17個可持续发展目標之一",
     localBeer_keypoint1_description: "",
 
-    localBeer_keypoint2_title: "適用於 iOS 和 Android 兩者",
+    localBeer_keypoint2_title: "同時為 iOS 和 Android 製作",
     localBeer_keypoint2_description: "兩台平台的開發工作並行進行。",
 
 // ------------------ Software & programming languages ------------------ //

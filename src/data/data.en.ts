@@ -319,7 +319,7 @@ export const EN_DATA = {
     rotate_keypoint1_description: "Virtual joystick available anywhere on screen.",
 
     rotate_keypoint2_title: "Game design",
-    rotate_keypoint2_description: "Arcade gameplay adapted to the medium.",
+    rotate_keypoint2_description: "Arcade gameplay adapted to the mobile medium.",
 
 // ------------------ DotWar ------------------ //
     dotWar_title: "DotWar",
