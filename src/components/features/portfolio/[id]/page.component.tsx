@@ -66,7 +66,7 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                                                            style={{width: "auto", height: "100%"}}
                                                            className="mx-auto"
                                                            controls
-                                                           preload="none">
+                                                           preload="metadata">
                                                         <source src={`/static/${project.id}/${src}`} type="video/mp4" />
                                                         {text.browserNoSupportVideo}
                                                     </video>
@@ -76,6 +76,7 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                                                            height={0}
                                                            style={{width: "auto", height: "100%"}}
                                                            className="mx-auto object-contain"
+                                                           loading="lazy"
                                                            alt={src}/>
                                                 }
                                             </div>
