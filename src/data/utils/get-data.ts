@@ -419,7 +419,7 @@ export function getPortfolioData(language: string): PortfolioData {
                 types: [projectTypes.GAME],
                 images: [
                     "icon.webp",
-                    "deepMine_1.webp",
+                    "deepMine-1.webp",
                     "deepMine_2.webp",
                     "deepMine_3.webp",
                     "deepMine_4.webp",
@@ -429,10 +429,10 @@ export function getPortfolioData(language: string): PortfolioData {
                     "deepMine_8.webp",
                     "deepMine_9.webp",
                     "deepMine_10.webp",
-                    "deepMine_11.webp",
+                    "deepMine-11.webp",
                     "deepMine_12.webp",
                     "deepMine_13.webp",
-                    "deepMine.mp4"
+                    "deepMine-gameplay.mp4"
                 ],
                 software: [data.software.GODOT, data.software.ASEPRITE],
                 programmingLanguages: [data.programming_languages.GD_SCRIPT],
