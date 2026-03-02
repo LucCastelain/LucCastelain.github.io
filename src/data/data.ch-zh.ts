@@ -466,7 +466,7 @@ export const CH_DATA = {
     baudin_company: "Baudin Chateauneuf",
     baudin_company_website: "https://www.baudinchateauneuf.com/?lang=en",
     baudin_location: "Châteauneuf-sur-Loire，法國",
-    baudin_startDate: "10-21-2024",
+    baudin_startDate: "21-10-2024",
     baudin_endDate: "",
 }
 
