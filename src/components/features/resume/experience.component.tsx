@@ -5,8 +5,8 @@ import {TextData} from "@/data/utils/get-text";
 import {twMerge} from "tailwind-merge";
 
 export default function ExperienceComponent({experience, language, text}: Readonly<ExperienceComponentProps>): ReactElement {
-    const startDateMonth = experience.startDate.getMonth() === 0 ? "12" : (experience.startDate.getMonth() < 10 ? `0${experience.startDate.getMonth()}` : `${experience.startDate.getMonth()}`);
-    const endDateMonth = experience.endDate ? (experience.endDate.getMonth() === 0 ? "12" : (experience.endDate.getMonth() < 10 ? `0${experience.endDate.getMonth()}` : `${experience.endDate.getMonth()}`)) : "";
+    const startDateMonth = experience.startDate.getMonth() < 9 ? `0${experience.startDate.getMonth()+1}` : `${experience.startDate.getMonth()+1}`;
+    const endDateMonth = experience.endDate ? (experience.endDate.getMonth() < 9 ? `0${experience.endDate.getMonth()+1}` : `${experience.endDate.getMonth()+1}`) : "";
 
     return (
         <div className="flex flex-col gap-y-1">
