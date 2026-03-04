@@ -406,7 +406,7 @@ export const CH_DATA = {
     engineeringDegree_startDate: "01-09-2016",
     engineeringDegree_endDate: "01-03-2022",
 
-    erasmusExchange_title: "在挪威6個月的Erasmus交流",
+    erasmusExchange_title: "Erasmus 學期（歐洲交換學位）",
     erasmusExchange_summary: "在挪威的Erasmus學期，在那裡我主要研究數據挖掘，機器學習和網頁編程。",
     erasmusExchange_company: "University of Stavanger（斯塔萬格大學）",
     erasmusExchange_company_website: "https://www.uis.no/en",
@@ -414,8 +414,8 @@ export const CH_DATA = {
     erasmusExchange_startDate: "01-01-2020",
     erasmusExchange_endDate: "01-07-2020",
 
-    highSchool_title: "高中畢業證書（榮譽）",
-    highSchool_summary: "專業:電腦科學與程式學。",
+    highSchool_title: "高中榮譽畢業證書（榮譽）",
+    highSchool_summary: "專業：計算機與數理科學。",
     highSchool_company: "Junior High-School Jacques Monod（雅克·莫諾高中）",
     highSchool_company_website: "https://lyceejacquesmonod.eu/",
     highSchool_location: "聖讓德布賴，法國",
@@ -423,7 +423,7 @@ export const CH_DATA = {
     highSchool_endDate: "01-07-2016",
 
 // ------------------ Experiences ------------------ //
-    threeMonthsInternship_title: "3個月的程式實習",
+    threeMonthsInternship_title: "三個月的程式實習",
     threeMonthsInternship_summary: "我改良並升級了一個可以在名為「Planet Onco Dose」的醫療軟體中編輯和排版醫療報告的工具。Planet Onco Dose 是一款針對癌症疾病的醫學影像軟體，處理大量數據。在使用如此龐大資料的同時進行優化，也是讓醫療報告工具運作的重要部分。",
     threeMonthsInternship_company: "DOSIsoft",
     threeMonthsInternship_company_website: "https://www.dosisoft.com/",
@@ -431,18 +431,18 @@ export const CH_DATA = {
     threeMonthsInternship_startDate: "01-06-2019",
     threeMonthsInternship_endDate: "30-08-2019",
 
-    fourMonthsInternship_title: "4個月的程式設計實習",
+    fourMonthsInternship_title: "四個月程式設計實習",
     fourMonthsInternship_summary: "我參與了一個互動模擬系統，幫助初入職教師學習有效的教室管理技能。我必須除錯並優化一套用來建立和編輯這個系統情境的新軟體。\n我也曾在 Unity 上製作一個在 VR 裝置上運作的場景。",
     fourMonthsInternship_company: "Affective Social Computing Laboratory，Florida International University（佛羅里達國際大學）",
     fourMonthsInternship_company_website: "https://ascl.cs.fiu.edu/",
-    fourMonthsInternship_location: "來自 Centre Européen de Réalité Virtuelle（CERV），布雷斯特，法國",
+    fourMonthsInternship_location: "來自 Centre Européen de Réalité Virtuelle（CERV），布列斯特，法國",
     fourMonthsInternship_startDate: "01-09-2020",
     fourMonthsInternship_endDate: "21-12-2020",
 
-    engineeringInternship_title: "6個月工程實習",
+    engineeringInternship_title: "六個月工程實習",
     engineeringInternship_summary: "我從零開始開發了一個網頁應用程式，讓品質保證團隊能存取自己的腳本，並在失敗狀態時填寫根本原因分析。\n應用程式在不同分頁中顯示許多資訊。它是讓所有品質保證自動化測試都集中在同一個地方的起點。\n在這段實習期間，我必須每週與品質保證團隊（他們是我的客戶）討論，考慮他們的回饋，確保最終產品符合他們的期望。",
     engineeringInternship_company: "Genesys",
-    engineeringInternship_location: "布雷斯特，法國",
+    engineeringInternship_location: "布列斯特，法國",
     engineeringInternship_startDate: "01-09-2021",
     engineeringInternship_endDate: "15-03-2022",
 
@@ -450,14 +450,14 @@ export const CH_DATA = {
     genesys_summary: "我曾擔任全端軟體工程師，負責開發Genesys的產品。\nGenesys 是一家為各類合作夥伴、代理人及客戶管理提供雲端解決方案的公司。\n我曾參與開發一個網頁應用程式，讓大型企業能為他們的業務打造自助式（互動語音回應）和輔助服務（路由）應用程式。\n我合作的團隊成員來自加拿大、美國、印度和歐洲。",
     genesys_company: "Genesys",
     genesys_company_website: "https://www.genesys.com/",
-    genesys_location: "布雷斯特，法國",
+    genesys_location: "布列斯特，法國",
     genesys_startDate: "01-04-2022",
     genesys_endDate: "15-05-2023",
 
-    freelance_title: "自由開發者",
+    freelance_title: "自由接案開發者",
     freelance_summary: "我給自己一年時間，在自營公司擔任自由開發者。\n我設計並發行過多款遊戲，也製作過許多原型。每款遊戲我都做了前期製作工作：遊戲設計文件、描述「最小可行產品」以及製作 UML 圖表。\n接著我用 Godot 遊戲引擎來編寫遊戲。",
     freelance_company: "Luc Castelain",
-    freelance_location: "布雷斯特，法國",
+    freelance_location: "布列斯特，法國",
     freelance_startDate: "01-06-2023",
     freelance_endDate: "01-07-2024",
 
