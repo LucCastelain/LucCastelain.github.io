@@ -424,7 +424,7 @@ export const FR_DATA = {
 
 // ------------------ Experiences ------------------ //
     threeMonthsInternship_title: "Stage de programmation de 3 mois",
-    threeMonthsInternship_summary: "J'ai amélioré et complété un outil qui permet d'éditer et mettre en page des rapports médicaux dans un logiciel appelé 'Planet Onco Dose'. Planet Onco Dose est un logiciel d'imagerie médicale pour aider a soigner les cancers qui utilise un très grand nombre de données. L'optimisation lors de l'utilisation de telles quantités de données était une partie primordiale au fonctionnement de cet outil d'édition rapports médicaux.",
+    threeMonthsInternship_summary: "J'ai amélioré et complété un outil qui permet d'éditer et mettre en page des rapports médicaux dans un logiciel appelé 'Planet Onco Dose'. Planet Onco Dose est un logiciel d'imagerie médicale pour aider a soigner les cancers qui utilise un très grand nombre de données. L'optimisation lors de l'utilisation de telles quantités de données était une partie primordiale au fonctionnement de cet outil d'édition de rapports médicaux.",
     threeMonthsInternship_company: "DOSIsoft",
     threeMonthsInternship_company_website: "https://www.dosisoft.com/",
     threeMonthsInternship_location: "Paris, France",
