@@ -1,4 +1,4 @@
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import ResumePageComponent from "@/components/features/resume/page.component";
 import {languages} from "@/data/utils/get-data";
 
@@ -12,7 +12,9 @@ export default async function ResumePage({params}: Readonly<ResumePageProps>): P
     const {lang} = await params;
 
     return (
-        <ResumePageComponent language={lang}/>
+        <Suspense>
+            <ResumePageComponent language={lang}/>
+        </Suspense>
     );
 }
 

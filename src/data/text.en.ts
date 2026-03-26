@@ -23,4 +23,5 @@ export const EN_TEXT = {
     referencesIHave: "Here is some references I have from my previous jobs.",
     fiuReference: "FIU reference",
     dosisoftReference: "DOSIsoft reference",
+    seeMore: "See more",
 }

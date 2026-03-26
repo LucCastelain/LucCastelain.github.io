@@ -2,6 +2,7 @@ import {ReactElement} from "react";
 import Image from "next/image";
 import {ProjectData} from "@/data/utils/get-data";
 import Link from "next/dist/client/link";
+import TagComponent, {TagType} from "@/components/ui/common/tag.component";
 
 export default function ProjectCardComponent({project, language}: Readonly<ProjectCardComponentProps>): ReactElement {
     return (
@@ -11,12 +12,9 @@ export default function ProjectCardComponent({project, language}: Readonly<Proje
                 {project.title}
             </h3>
             <div className="flex flex-row gap-1 justify-center">
-                {project.types.map((type: string) => (
-                    <div key={type}
-                         className="px-2 py-1 rounded-md bg-neutral-200 border-neutral-300 dark:bg-neutral-600 dark:border-neutral-800">
-                        {type}
-                    </div>
-                ))}
+                {project.types.map((type: string) =>
+                    <TagComponent key={type} language={language} label={type} tagType={TagType.PROJECT_TYPE}/>
+                )}
             </div>
             <div className="min-h-72 max-h-72 overflow-hidden">
                 <Image src={`/static/${project.id}/icon.webp`}
@@ -28,18 +26,12 @@ export default function ProjectCardComponent({project, language}: Readonly<Proje
             </div>
             <div className="flex flex-col gap-y-2">
                 <div className="flex flex-wrap gap-1">
-                    {project.programmingLanguages.sort().map((language: string) => (
-                        <div key={language}
-                             className="px-2 py-1 rounded-md bg-green-100 border-green-200 dark:bg-green-700 dark:border-green-800">
-                            {language}
-                        </div>
-                    ))}
-                    {project.software.sort().map((software: string) => (
-                        <div key={software}
-                             className="px-2 py-1 rounded-md bg-sky-100 border-sky-200 dark:bg-sky-700 dark:border-sky-800">
-                            {software}
-                        </div>
-                    ))}
+                    {project.programmingLanguages.sort().map((progLanguage: string) =>
+                        <TagComponent key={progLanguage} language={language} label={progLanguage} tagType={TagType.PROGRAMMING_LANGUAGE}/>
+                    )}
+                    {project.software.sort().map((software: string) =>
+                        <TagComponent key={software} language={language} label={software} tagType={TagType.SOFTWARE}/>
+                    )}
                 </div>
                 <p>{project.summary}</p>
             </div>

@@ -1,5 +1,5 @@
 import PortfolioPageComponent from "@/components/features/portfolio/page.component";
-import {ReactElement} from "react";
+import {ReactElement, Suspense} from "react";
 import {languages} from "@/data/utils/get-data";
 
 export function generateStaticParams() {
@@ -8,15 +8,18 @@ export function generateStaticParams() {
     }));
 }
 
-export default async function PortfolioPage({params}: Readonly<PortfolioPageProps>): Promise<ReactElement> {
+export default async function PortfolioPage({params, searchParams}: Readonly<PortfolioPageProps>): Promise<ReactElement> {
     const {lang} = await params;
 
     return (
-        <PortfolioPageComponent language={lang}/>
+        <Suspense>
+            <PortfolioPageComponent language={lang}/>
+        </Suspense>
     );
 }
 
 interface PortfolioPageProps {
     params: Promise<{ lang: string }>;
+    searchParams: Promise<{ software?: string }>
 }
 

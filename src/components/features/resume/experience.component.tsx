@@ -3,6 +3,7 @@ import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-b
 import {ExperienceData} from "@/data/utils/get-data";
 import {TextData} from "@/data/utils/get-text";
 import {twMerge} from "tailwind-merge";
+import TagComponent, {TagType} from "@/components/ui/common/tag.component";
 
 export default function ExperienceComponent({experience, language, text}: Readonly<ExperienceComponentProps>): ReactElement {
     const startDateMonth = experience.startDate.getMonth() < 9 ? `0${experience.startDate.getMonth()+1}` : `${experience.startDate.getMonth()+1}`;
@@ -36,18 +37,12 @@ export default function ExperienceComponent({experience, language, text}: Readon
                 <p>{experience.location}</p>
             </div>
             <div className="flex flex-wrap gap-1">
-                {experience.programmingLanguages.sort().map((language: string) => (
-                    <div key={language}
-                         className="px-2 py-1 rounded-md bg-green-100 border-green-200 dark:bg-green-700 dark:border-green-800">
-                        {language}
-                    </div>
-                ))}
-                {experience.software.sort().map((software: string) => (
-                    <div key={software}
-                         className="px-2 py-1 rounded-md bg-sky-100 border-sky-200 dark:bg-sky-700 dark:border-sky-800">
-                        {software}
-                    </div>
-                ))}
+                {experience.programmingLanguages.sort().map((progLanguage: string) =>
+                    <TagComponent key={progLanguage} language={language} label={progLanguage} tagType={"PROGRAMMING_LANGUAGE" as TagType}/>
+                )}
+                {experience.software.sort().map((software: string) =>
+                    <TagComponent key={software} language={language} label={software} tagType={"SOFTWARE" as TagType}/>
+                )}
             </div>
             <TextWithLineBreaksComponent text={experience.summary}/>
         </div>

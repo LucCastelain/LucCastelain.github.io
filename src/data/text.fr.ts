@@ -23,4 +23,5 @@ export const FR_TEXT = {
     referencesIHave: "Voici des lettres de recommandation de la part de mes précédents employeurs.",
     fiuReference: "Lettre de recommandation - FIU",
     dosisoftReference: "Lettre de recommandation - DOSIsoft",
+    seeMore: "Voir plus",
 }

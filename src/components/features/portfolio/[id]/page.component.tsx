@@ -7,7 +7,8 @@ import Image from "next/image";
 import {FastAverageColor, FastAverageColorResult} from "fast-average-color";
 import TextWithLineBreaksComponent from "@/components/ui/common/text-with-line-breaks.component";
 import {getText} from "@/data/utils/get-text";
-import {HiArrowTopRightOnSquare} from "react-icons/hi2";
+import KeypointComponent from "@/components/features/portfolio/[id]/keypoint.component";
+import TagComponent, {TagType} from "@/components/ui/common/tag.component";
 
 export default function ProjectPageComponent({projectId, language}: Readonly<ProjectPageComponentProps>): ReactElement {
     const project = getPortfolioData(language).projects.find(project => project.id === projectId);
@@ -46,12 +47,9 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                             <p className="text-xl text-neutral-500 dark:text-neutral-400">• {project.creationDate} •</p>
                         </div>
                         <div className="flex flex-row items-center gap-x-1">
-                            {project.types.map((type: string) => (
-                                <div key={type}
-                                     className="px-2 py-1 rounded-md bg-neutral-200 border-neutral-300 dark:bg-neutral-600 dark:border-neutral-800">
-                                    {type}
-                                </div>
-                            ))}
+                            {project.types.map((type: string) =>
+                                <TagComponent key={type} language={language} label={type} tagType={TagType.PROJECT_TYPE}/>
+                            )}
                         </div>
                         {project.images.length === 0 ? null :
                             <div className="w-[80%] mx-auto transition-all rounded-lg">
@@ -85,43 +83,26 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                                 </CarouselComponent>
                             </div>
                         }
-                        <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-4">
-                            <div className="md:w-10 md:grow flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2 md:gap-x-4">
+                            <div className="flex flex-col gap-y-2">
                                 <div className="flex flex-wrap gap-1">
-                                    {project.programmingLanguages.sort().map((language: string) => (
-                                        <div key={language}
-                                             className="px-2 py-1 rounded-md bg-green-100 border-green-200 dark:bg-green-700 dark:border-green-800">
-                                            {language}
-                                        </div>
-                                    ))}
-                                    {project.software.sort().map((software: string) => (
-                                        <div key={software}
-                                             className="px-2 py-1 rounded-md bg-sky-100 border-sky-200 dark:bg-sky-700 dark:border-sky-800">
-                                            {software}
-                                        </div>
-                                    ))}
+                                    {project.programmingLanguages.sort().map((progLanguage: string) =>
+                                        <TagComponent key={progLanguage} language={language} label={progLanguage} tagType={TagType.PROGRAMMING_LANGUAGE}/>
+                                    )}
+                                    {project.software.sort().map((software: string) =>
+                                        <TagComponent key={software} language={language} label={software} tagType={TagType.SOFTWARE}/>
+                                    )}
                                 </div>
                                 <TextWithLineBreaksComponent text={project.description}
                                                              className="w-full"/>
                             </div>
-                            <ul className="md:w-[40%] flex flex-col gap-y-2 mt-4 md:mt-0">
-                                <li className="font-bold text-xl">{text.keypoints}</li>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 mt-2 py-2 md:px-2">
                                 {project.keypoints.map((keypoint, index) => (
-                                    <li key={index}>
-                                        {keypoint.link ?
-                                            <a className="flex flex-row gap-x-1 items-center font-bold underline hover:text-blue-600 dark:hover:text-blue-500"
-                                               target="_blank"
-                                               href={keypoint.link}>
-                                                <p>{keypoint.title}</p>
-                                                <HiArrowTopRightOnSquare className="size-5"/>
-                                            </a>
-                                            :
-                                            <p className="font-bold">{keypoint.title}</p>
-                                        }
-                                        <p className="ml-1">{keypoint.description}</p>
-                                    </li>
+                                    <KeypointComponent key={index}
+                                                       keypoint={keypoint}
+                                                       text={text}/>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
                     </>
                     :

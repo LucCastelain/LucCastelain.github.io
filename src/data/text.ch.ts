@@ -23,4 +23,5 @@ export const CH_TEXT = {
     referencesIHave: "以下為前雇主為本人撰寫之推薦信。",
     fiuReference: "FIU 的推薦信",
     dosisoftReference: "DOSIsoft 的推薦信",
+    seeMore: "查看更多",
 }

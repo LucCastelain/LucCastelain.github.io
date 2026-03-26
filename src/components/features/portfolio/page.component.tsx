@@ -7,13 +7,18 @@ import {getText} from "@/data/utils/get-text";
 import {HiMiniArrowLeft} from "react-icons/hi2";
 import {twMerge} from "tailwind-merge";
 import {IoFilter} from "react-icons/io5";
+import {useRouter, useSearchParams} from "next/dist/client/components/navigation";
 
 export default function PortfolioPageComponent({language}: Readonly<PortfolioPageComponentProps>): ReactElement {
+    const searchParams = useSearchParams();
+    const router = useRouter();
     const data = getPortfolioData(language);
     const text = getText(language);
-    const [projectTypeFilter, setProjectTypeFilter] = useState<string>(data.projectTypes.ALL);
-    const [softwareFilter, setSoftwareFilter] = useState<string>(data.software.ALL);
-    const [programmingLanguageFilter, setProgrammingLanguageFilter] = useState<string>(data.programmingLanguages.ALL);
+
+    const projectTypeFilter = searchParams.get("project-type") ?? data.projectTypes.ALL;
+    const softwareFilter = searchParams.get("software") ?? data.software.ALL;
+    const programmingLanguageFilter = searchParams.get("programming-language") ?? data.programmingLanguages.ALL;
+
     const [showFilters, setShowFilters] = useState<boolean>(false);
     const filtersRef = useRef<HTMLDivElement>(null);
 
@@ -42,7 +47,13 @@ export default function PortfolioPageComponent({language}: Readonly<PortfolioPag
                 <div className="flex flex-col">
                     <p className="ml-1 font-semibold">{text.programmingLanguage}</p>
                     <select className="w-48 px-3 py-2.5 bg-transparent border-b-2 border-blue-500 text-gray-900 dark:text-gray-50"
-                            onChange={(e) => setProgrammingLanguageFilter(e.currentTarget.value)}>
+                            defaultValue={programmingLanguageFilter}
+                            onChange={(e) => {
+                                const params = new URLSearchParams(searchParams);
+                                if(e.currentTarget.value === data.programmingLanguages.ALL) params.delete("programming-language");
+                                else params.set("programming-language", e.currentTarget.value);
+                                router.push(`/${language}/portfolio?${params.toString()}`);
+                            }}>
                         {Object.values(data.programmingLanguages).map(language => (
                             <option key={language} value={language}>{language}</option>
                         ))}
@@ -51,7 +62,13 @@ export default function PortfolioPageComponent({language}: Readonly<PortfolioPag
                 <div className="flex flex-col">
                     <p className="ml-1 font-semibold">{text.software}</p>
                     <select className="w-48 px-3 py-2.5 bg-transparent border-b-2 border-blue-500 text-gray-900 dark:text-gray-50"
-                            onChange={(e) => setSoftwareFilter(e.currentTarget.value)}>
+                            defaultValue={softwareFilter}
+                            onChange={(e) => {
+                                const params = new URLSearchParams(searchParams);
+                                if(e.currentTarget.value === data.software.ALL) params.delete("software");
+                                else params.set("software", e.currentTarget.value);
+                                router.push(`/${language}/portfolio?${params.toString()}`);
+                            }}>
                         {Object.values(data.software).map(software => (
                             <option key={software} value={software}>{software}</option>
                         ))}
@@ -60,7 +77,13 @@ export default function PortfolioPageComponent({language}: Readonly<PortfolioPag
                 <div className="flex flex-col">
                     <p className="ml-1 font-semibold">{text.projectType}</p>
                     <select className="w-48 px-3 py-2.5 bg-transparent border-b-2 border-blue-500 text-gray-900 dark:text-gray-50"
-                        onChange={(e) => setProjectTypeFilter(e.currentTarget.value)}>
+                            defaultValue={projectTypeFilter}
+                            onChange={(e) => {
+                                const params = new URLSearchParams(searchParams);
+                                if(e.currentTarget.value === data.projectTypes.ALL) params.delete("project-type");
+                                else params.set("project-type", e.currentTarget.value);
+                                router.push(`/${language}/portfolio?${params.toString()}`);
+                            }}>
                         {Object.values(data.projectTypes).map(type => (
                             <option key={type} value={type}>{type}</option>
                         ))}

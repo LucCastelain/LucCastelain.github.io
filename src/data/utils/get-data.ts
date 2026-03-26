@@ -435,7 +435,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "deepMine.mp4"
                 ],
                 software: [data.software.GODOT, data.software.ASEPRITE],
-                programmingLanguages: [data.programming_languages.GD_SCRIPT],
+                programmingLanguages: [data.programming_languages.GD_SCRIPT, data.programming_languages.UML],
                 keypoints: [
                     {
                         title: data.deepMine_keypoint1_title,
@@ -492,7 +492,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "dicesDungeon.mp4",
                 ],
                 software: [data.software.GODOT, data.software.ASEPRITE],
-                programmingLanguages: [data.programming_languages.GD_SCRIPT],
+                programmingLanguages: [data.programming_languages.GD_SCRIPT, data.programming_languages.UML],
                 keypoints: [
                     {
                         title: data.dicesDungeon_keypoint1_title,
@@ -539,7 +539,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "farmingGame.mp4"
                 ],
                 software: [data.software.GODOT, data.software.ASEPRITE],
-                programmingLanguages: [data.programming_languages.GD_SCRIPT],
+                programmingLanguages: [data.programming_languages.GD_SCRIPT, data.programming_languages.UML],
                 keypoints: [
                     {
                         title: data.farmingGame_keypoint1_title,
