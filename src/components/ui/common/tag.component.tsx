@@ -2,7 +2,7 @@
 
 import React, {ReactElement} from "react";
 import {twMerge} from "tailwind-merge";
-import {useSearchParams, useRouter} from "next/dist/client/components/navigation";
+import {useRouter} from "next/dist/client/components/navigation";
 
 export enum TagType {
     PROGRAMMING_LANGUAGE = "PROGRAMMING_LANGUAGE",
@@ -10,8 +10,7 @@ export enum TagType {
     PROJECT_TYPE = "PROJECT_TYPE"
 }
 
-export default function TagComponent({language, label, tagType}: Readonly<TagComponentProps>): ReactElement {
-    const searchParams = useSearchParams();
+export default function TagComponent({language, label, tagType, isLink}: Readonly<TagComponentProps>): ReactElement {
     const router = useRouter();
     let colorClasses = "";
 
@@ -27,8 +26,10 @@ export default function TagComponent({language, label, tagType}: Readonly<TagCom
     }
 
     function handleTagClick(event: React.MouseEvent): void {
+        if(!isLink) return;
+
         event.preventDefault();
-        const params = new URLSearchParams(searchParams);
+        const params = new URLSearchParams();
 
         switch (tagType) {
             case TagType.PROGRAMMING_LANGUAGE:
@@ -46,7 +47,7 @@ export default function TagComponent({language, label, tagType}: Readonly<TagCom
     }
 
     return (
-        <button className={twMerge("cursor-pointer px-2 py-1 rounded-md shadow-sm border", colorClasses)}
+        <button className={twMerge("px-2 py-1 rounded-md shadow-sm border", colorClasses, isLink && "cursor-pointer")}
                 onClick={handleTagClick}>
             {label}
         </button>
@@ -57,4 +58,5 @@ interface TagComponentProps {
     language: string;
     label: string;
     tagType: TagType;
+    isLink: boolean;
 }

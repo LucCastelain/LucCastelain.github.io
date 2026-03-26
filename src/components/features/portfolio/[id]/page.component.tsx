@@ -48,7 +48,7 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                         </div>
                         <div className="flex flex-row items-center gap-x-1">
                             {project.types.map((type: string) =>
-                                <TagComponent key={type} language={language} label={type} tagType={TagType.PROJECT_TYPE}/>
+                                <TagComponent key={type} language={language} label={type} tagType={TagType.PROJECT_TYPE} isLink={true}/>
                             )}
                         </div>
                         {project.images.length === 0 ? null :
@@ -87,10 +87,10 @@ export default function ProjectPageComponent({projectId, language}: Readonly<Pro
                             <div className="flex flex-col gap-y-2">
                                 <div className="flex flex-wrap gap-1">
                                     {project.programmingLanguages.sort().map((progLanguage: string) =>
-                                        <TagComponent key={progLanguage} language={language} label={progLanguage} tagType={TagType.PROGRAMMING_LANGUAGE}/>
+                                        <TagComponent key={progLanguage} language={language} label={progLanguage} tagType={TagType.PROGRAMMING_LANGUAGE} isLink={true}/>
                                     )}
                                     {project.software.sort().map((software: string) =>
-                                        <TagComponent key={software} language={language} label={software} tagType={TagType.SOFTWARE}/>
+                                        <TagComponent key={software} language={language} label={software} tagType={TagType.SOFTWARE} isLink={true}/>
                                     )}
                                 </div>
                                 <TextWithLineBreaksComponent text={project.description}

@@ -38,10 +38,10 @@ export default function ExperienceComponent({experience, language, text}: Readon
             </div>
             <div className="flex flex-wrap gap-1">
                 {experience.programmingLanguages.sort().map((progLanguage: string) =>
-                    <TagComponent key={progLanguage} language={language} label={progLanguage} tagType={"PROGRAMMING_LANGUAGE" as TagType}/>
+                    <TagComponent key={progLanguage} language={language} label={progLanguage} tagType={"PROGRAMMING_LANGUAGE" as TagType} isLink={true}/>
                 )}
                 {experience.software.sort().map((software: string) =>
-                    <TagComponent key={software} language={language} label={software} tagType={"SOFTWARE" as TagType}/>
+                    <TagComponent key={software} language={language} label={software} tagType={"SOFTWARE" as TagType} isLink={true}/>
                 )}
             </div>
             <TextWithLineBreaksComponent text={experience.summary}/>
