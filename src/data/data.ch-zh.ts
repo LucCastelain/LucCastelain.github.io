@@ -22,50 +22,50 @@ export const CH_DATA = {
 // ------------------ Support DSI ------------------ //
     supportDSI_title: "Support DSI",
     supportDSI_summary: "使用者建立 IT 支援工單的網頁應用程式",
-    supportDSI_description: "Support DSI 是一款網頁應用程式，允許 IT 員工建立許多不同的支援情境，其他員工可以向這些支援請求（從請求滑鼠、螢幕等電腦設備等）。遇到軟體問題，否則...）。\n使用者可依需求依照情境建立包含所有資訊的工單，協助 IT 協助。工單建立後，使用者可存取所有工單的歷史紀錄，更新時收到通知，必要時與 IT 部門交換，並在工單關閉時留下感謝。",
+    supportDSI_description: "Support DSI 是一款網頁應用程式，允許 IT 員工建立許多不同的支援情境，其他員工可以向這些支援請求（從請求滑鼠、螢幕等電腦設備控制等）。\n使用者可依需求依照情境建立包含所有資訊的工單，協助 IT 協助。工單建立後、使用者可存取所有工單的歷史紀錄，更新時收到通知、必要時與 IT 部門交換、並在工單關閉時留下評論。",
 
-    supportDSI_keypoint1_title: "角色管理",
-    supportDSI_keypoint1_description: "應用程式根據使用者被分配的角色（IT、部門經理、基層使用者）無法顯示相同的資訊與可能性。頁面與資訊的存取權從前端與後端均已獲得保障。",
+    supportDSI_keypoint1_title: "權限管理",
+    supportDSI_keypoint1_description: "應用程式根據使用者被分配的角色（IT、部門經理、基層使用者）能顯示不同的資訊。頁面與資訊的存取權從前端與後端皆可獲得保障。",
 
-    supportDSI_keypoint2_title: "透過圖實現情境",
+    supportDSI_keypoint2_title: "透過圖表建立情境",
     supportDSI_keypoint2_description: "透過互動式圖表（透過cytoscape.js）建立與視覺化情境變得簡單。",
 
-    supportDSI_keypoint3_title: "链接到GLPI問題跟踪系统",
-    supportDSI_keypoint3_description: "工單的建立會被鏡像並連結到 GLPI，方便 IT 端的管理。",
+    supportDSI_keypoint3_title: "連接到 GLPI 並產生追蹤系統",
+    supportDSI_keypoint3_description: "工單的建立會被複製並連接到 GLPI，方便 IT 端的管理。",
 
-    supportDSI_keypoint4_title: "非常可个性化的场景",
+    supportDSI_keypoint4_title: "客製化情境",
     supportDSI_keypoint4_description: "如果需要，可以建立各種情境，並為每種情境提供豐富的表單配置。",
 
     supportDSI_keypoint5_title: "允許量化支援資料",
-    supportDSI_keypoint5_description: "透過應用程式，可以監控票券的平均時間解析度，以及各類別的票數等資料。",
+    supportDSI_keypoint5_description: "透過應用程式，可以監控工單的平均處理時間，以及各類別的工單等資料。",
 
 // ------------------ BC Formation ------------------ //
     bcFormation_title: "BC Formation",
     bcFormation_summary: "管理及查看公司培訓與培訓課程的應用程式",
-    bcFormation_description: "BC Formation 是一款網頁應用程式，讓使用者能查看可用的訓練內容及其訓練歷史。每個部門的經理都可以查看該部門所有人員的訓練紀錄，並申請新的培訓。訓練管理員可以新增訓練和培訓師，建立和管理訓練課程，來源包括人員、日期、文件、地點等。",
+    bcFormation_description: "BC Formation 是一款網頁應用程式，讓使用者能查看可用的培訓內容及其培訓歷史。每個部門的經理都可以查看該部門所有人員的歷史紀錄，並申請新的培訓。培訓管理員可以新增培訓課程和培訓講師，建立和管理培訓課程，包括人員、日期、文件、地點等。",
 
-    bcFormation_keypoint1_title: "角色管理",
-    bcFormation_keypoint1_description: "應用程式根據使用者被分配的角色（訓練管理員、部門經理、基地使用者）不會顯示相同的資訊與可能性。頁面與資訊的存取權從前端與後端均已獲得保障。",
+    bcFormation_keypoint1_title: "權限管理",
+    bcFormation_keypoint1_description: "應用程式根據使用者被分配的權限（培訓管理員、部門經理、一般使用者）不會顯示相同的資訊。頁面與資訊的存取權從前端與後端皆可獲得保障。",
 
-    bcFormation_keypoint2_title: "培訓請求對培訓管理員來說易於管理",
-    bcFormation_keypoint2_description: "每個訓練請求都會被分組，讓管理員查看數量，若數量足夠再選擇建立會話。",
+    bcFormation_keypoint2_title: "對培訓管理員來說，培訓請求將易於管理",
+    bcFormation_keypoint2_description: "每個培訓請求都會被分類，讓管理員易於查看數量，若數量足夠再選擇建立組別。",
 
-    bcFormation_keypoint3_title: "每位使用者都可以存取他的訓練紀錄",
-    bcFormation_keypoint3_description: "每位使用者都能透過其證照查閱過去訓練的歷史紀錄。這樣每個人就能輕鬆判斷是否需要重做訓練。\n此外，經理還能看到他們管理人員的歷史，並擁有整體周邊的概覽。",
+    bcFormation_keypoint3_title: "每位使用者都可存取自己的培訓紀錄",
+    bcFormation_keypoint3_description: "每位使用者都能透過其證照查閱過去培訓的歷史紀錄。這樣每個人就能輕鬆判斷是否需要重新培訓。\n此外，經理還能看到管理人員的歷史紀錄，並有權限能檢視所有人的的培訓紀錄。",
 
     bcFormation_keypoint4_title: "通知與電子郵件",
-    bcFormation_keypoint4_description: "當訓練管理員確認訓練課程時，應用程式會發送通知（可透過 BC Portail 的所有網頁應用程式顯示），並向每位課程成員發送電子郵件。\n每場會議都會產生畢業典禮文件，並隨郵件一併發送。接著會將它連結到每位參與者的訓練請求，讓他們隨時都能查看。",
+    bcFormation_keypoint4_description: "當培訓管理員確認培訓課程時，應用程式會發送通知（可透過 BC Portail 的所有網頁應用程式顯示），並向每位課程成員發送電子郵件。\n每場培訓都會產生培訓證照，並隨郵件一併發送。接著會將它連接到每位參與者的培訓帳號，讓他們隨時都能查看。",
 
-    bcFormation_keypoint5_title: "自動預算摘要與預測",
-    bcFormation_keypoint5_description: "過去培訓課程的預算摘要及未來培訓課程的預算會自動計算，並可匯出為 XLSX 或 PDF 檔案。",
+    bcFormation_keypoint5_title: "自動摘要與自動預算評估",
+    bcFormation_keypoint5_description: "過去培訓課程的摘要及未來培訓課程的預算會自動計算，並可匯出為 XLSX 或 PDF 檔案。",
 
 // ------------------ Load testing script ------------------ //
     loadTesting_title: "負載測試腳本",
     loadTesting_summary: "用來測試網頁伺服器的程式",
-    loadTesting_description: "這個腳本允許在設定的時間段內對我們的應用程式伺服器進行載荷測試和壓力測試，並以不同費用進行，讓我們能確認它們是否配置正確，並能承受大量生產用戶的需求。\n此腳本連接至本地 Grafana 板，方便監控結果。",
+    loadTesting_description: "這個腳本用來對應用程式伺服器進行壓力測試與負載測試，可在指定的時間內模擬不同強度的流量。透過這方式，可以檢查伺服器的設定是否完善，以及在正式上線時，是否能夠承受大量使用者同時存取的情況。\n此腳本可連接到本地的 Grafana 板，方便追蹤測試結果。",
 
     loadTesting_keypoint1_title: "可配置以測試不同的即時情境",
-    loadTesting_keypoint1_description: "不同的收費和時間段可以設定，以徹底測試我們的伺服器。",
+    loadTesting_keypoint1_description: "可設定不同的負載強度與測試持續時間，以更詳細地對伺服器進行測試。",
 
     loadTesting_keypoint2_title: "結果易於閱讀且即時呈現",
     loadTesting_keypoint2_description: "除了腳本執行結束時給出的結果摘要外，還連接 Grafana 板，方便即時讀取結果",
