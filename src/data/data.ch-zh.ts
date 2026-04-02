@@ -116,30 +116,30 @@ export const CH_DATA = {
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
     deepMine_summary: "用程式生成的2D冒險遊戲世界",
-    deepMine_description: "Deep Mine 是一款發生在程序生成世界中的 2D 探索與採礦遊戲。它是和朋友一起用 Godot 引擎製作的。\n每個世界都是透過雜訊貼圖和執行緒系統程序生成的。它創造了一個無限的世界，根據深度（世界的垂直深度）和溫度（溫度由雜訊貼圖決定）而有不同的生態區。寶石也會根據生態區和深度出現。\n\n玩家可以交易和製作物品，並提升角色，讓他能打怪並完成任務。\n遊戲最多支援4名本地玩家遊玩，並可完整使用手把遊玩。\n\n這款遊戲仍在開發中，並有 Steam 頁面。",
+    deepMine_description: "Deep Mine 是一款發生在程序生成世界中的 2D 探索與採礦遊戲。它是和朋友一起用 Godot 引擎製作的。\n每個世界都是透過雜訊貼圖和執行緒系統程序生成的。它創造了一個無限的世界，根據深度（世界的垂直深度）和溫度（溫度由雜訊貼圖決定）而有不同的生態區。寶石也會根據生態區和深度出現。\n\n玩家可以交易和製作物品，並提升角色，讓他能打怪並完成任務。\n遊戲最多支援4名玩家單機遊玩，並可完整使用搖桿遊玩。\n\n這款遊戲仍在開發中，並有 Steam 頁面。",
 
     deepMine_keypoint1_title: "程序生成的世界",
-    deepMine_keypoint1_description: "利用雜訊材質、執行緒和區塊來創造無限程序生成的世界。",
+    deepMine_keypoint1_description: "利用雜訊貼圖、執行緒和區塊來創造無限程序生成的世界。",
 
-    deepMine_keypoint2_title: "球員物理",
+    deepMine_keypoint2_title: "角色動作",
     deepMine_keypoint2_description: "能使用梯子、流動繩索，也能游泳。",
 
     deepMine_keypoint3_title: "敵人行為",
-    deepMine_keypoint3_description: "使用狀態機器，建立當玩家進入範圍時會改變的行為例程。",
+    deepMine_keypoint3_description: "使用狀態機器，建立當玩家進入一定範圍時會改變的行為邏輯，並切換狀態。",
 
-    deepMine_keypoint4_title: "NPCs對話",
-    deepMine_keypoint4_description: "NPC 可以有對話",
+    deepMine_keypoint4_title: "NPCs 對話",
+    deepMine_keypoint4_description: "NPC 們能與玩家對話。",
 
     deepMine_keypoint5_title: "工藝和交易系統",
-    deepMine_keypoint5_description: "玩家可以與 NPC 交易和製作，玩家特性也能被提升。",
+    deepMine_keypoint5_description: "玩家可以與 NPC 交易和製作，讓能力提升。",
 
-    deepMine_keypoint6_title: "像素藝術與像素動畫",
-    deepMine_keypoint6_description: "製作材質、精靈圖，以及角色和敵人的動畫。",
+    deepMine_keypoint6_title: "像素美術與動畫",
+    deepMine_keypoint6_description: "製作遊戲裡的貼圖、精靈圖，以及角色和敵人的動畫。",
 
     deepMine_keypoint7_title: "使用者介面",
-    deepMine_keypoint7_description: "可搭配滑鼠、鍵盤和控制器使用。",
+    deepMine_keypoint7_description: "可搭配滑鼠、鍵盤和搖桿使用。",
 
-    deepMine_keypoint8_title: "本地多人遊戲",
+    deepMine_keypoint8_title: "多人單機遊戲",
     deepMine_keypoint8_description: "最多可分割畫面 4 人遊玩。",
 
     deepMine_keypoint9_title: "Steam 頁面連結",
