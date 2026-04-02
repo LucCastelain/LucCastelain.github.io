@@ -76,47 +76,47 @@ export const CH_DATA = {
     bcPortail_description: "BC Portail 封裝了 Baudin Chateauneuf 所開發的所有其他網頁應用程式。它像是服務導向架構，作為彼此網頁應用程式的共同基礎。",
 
     bcPortail_keypoint1_title: "服務導向架構（SOA）",
-    bcPortail_keypoint1_description: "應用程式是作為一組鬆散耦合、較大粒度的服務所建構。服務可在不同應用程式間重複使用，視需要而行。它允許獨立開發與部署更大的功能區塊。",
+    bcPortail_keypoint1_description: "應用程式是作為一組低耦合、且高粒度的服務所建構。這些服務可以在需要時被不同的應用程式重複使用。這種架構允許獨立開發與部署更大的功能區塊。",
 
     bcPortail_keypoint2_title: "常見元件",
     bcPortail_keypoint2_description: "包含可重複使用的元件與服務清單，涵蓋所有網頁應用程式。",
 
-    bcPortail_keypoint3_title: "預設的布局和配置",
-    bcPortail_keypoint3_description: "它包含每個網頁應用程式的預設版面配置（前端）與設定。",
+    bcPortail_keypoint3_title: "預設的佈局和配置",
+    bcPortail_keypoint3_description: "包含每個網頁應用程式的預設版面配置（前端）與設定。",
 
-    bcPortail_keypoint4_title: "顯示該公司所有申請",
-    bcPortail_keypoint4_description: "入口網站會顯示公司所有的應用程式，包括網頁應用程式，也有厚客戶端應用程式。所有應用程式都能從這裡啟動，甚至是厚重的客戶端應用程式，因為有深度連結系統。",
+    bcPortail_keypoint4_title: "顯示該公司所有應用程式",
+    bcPortail_keypoint4_description: "入口網站會顯示公司所有的應用程式，包括網頁應用程式，也有胖客戶端應用程式。所有應用程式都能從這裡啟動，甚至胖客戶端應用程式也能因為有深度連結系統開啟。",
 
     bcPortail_keypoint5_title: "應用程式庫",
-    bcPortail_keypoint5_description: "導航列中設有應用程式函式庫，使用者可從任何網頁應用程式存取任何應用程式。",
+    bcPortail_keypoint5_description: "導覽列中設有應用程式函式庫，使用者可從任何網頁應用程式存取任何應用程式。",
 
     bcPortail_keypoint6_title: "配置頁面",
-    bcPortail_keypoint6_description: "設定頁面允許管理員在入口網站新增網頁應用程式圖示，讓使用者能存取新增的網頁應用程式。管理員可以新增、編輯或移除網頁應用程式。在新增或編輯網頁應用程式時，他們可以管理公司內哪些職位或邊界可以存取該應用程式。他們也能管理應用程式的其他資訊（名稱、圖示等）。在此設定頁面中，管理員還可新增所有使用者的警示，若需要時能提供額外溝通層。",
+    bcPortail_keypoint6_description: "設定頁面允許管理員在入口網站新增網頁應用程式圖示，讓使用者能存取新增的網頁應用程式。管理員可以新增、編輯或移除網頁應用程式。在新增或編輯網頁應用程式時，他們可以管理公司內哪些職位或部門可以存取該應用程式。他們也能管理應用程式的其他資訊（名稱、圖示等）。在此設定頁面中，管理員還可新增所有使用者可見的通知，若需要時能提供額外的溝通管道。",
 
-    bcPortail_keypoint7_title: "版本與變更日誌",
-    bcPortail_keypoint7_description: "每個應用程式的版本號與變更日誌皆可供使用者查閱。主要版本的更新會在使用者連線時自動顯示。",
+    bcPortail_keypoint7_title: "版本與更新日誌",
+    bcPortail_keypoint7_description: "每個應用程式的版本編號與更新日誌皆可供使用者查閱。主要版本的更新會在使用者連線時自動顯示。",
 
-    bcPortail_keypoint8_title: "暗黑模式",
-    bcPortail_keypoint8_description: "所有元件與網頁應用程式皆可以暗黑模式使用。",
+    bcPortail_keypoint8_title: "深色模式",
+    bcPortail_keypoint8_description: "所有元件與網頁應用程式皆可使用深色模式。",
 
 // ------------------ This website ------------------ //
-    thisWebsite_title: "這個網站",
+    thisWebsite_title: "您正在瀏覽的這個網站",
     thisWebsite_summary: "我做了這個網站用於展示作品集和履歷",
-    thisWebsite_description: "你可以在瀏覽時看到這個專案 ☜（⌒▽⌒）☞",
+    thisWebsite_description: "您目前正在瀏覽之網站即為我的專案。 ☜（⌒▽⌒）☞",
 
     thisWebsite_keypoint1_title: "從零開始製作",
     thisWebsite_keypoint1_description: "",
 
-    thisWebsite_keypoint2_title: "暗黑模式",
+    thisWebsite_keypoint2_title: "深色模式",
     thisWebsite_keypoint2_description: "",
 
     thisWebsite_keypoint3_title: "多種語言",
-    thisWebsite_keypoint3_description: "本網站可瀏覽法文、英文及繁體中文。",
+    thisWebsite_keypoint3_description: "本網站可使用法文、英文及繁體中文瀏覽。",
 
 // ------------------ Deep Mine ------------------ //
     deepMine_title: "Deep Mine",
     deepMine_summary: "用程式生成的2D冒險遊戲世界",
-    deepMine_description: "Deep Mine 是一款發生在程序生成世界中的 2D 探索與採礦遊戲。它是和朋友一起用 Godot 引擎製作的。\n每個世界都是透過噪音貼圖和執行緒系統程序生成的。它創造了一個無限的世界，根據深度（世界的垂直深度）和溫度（溫度由噪音紋理決定）而有不同的生態區。寶石也會根據生態區和深度出現。\n\n玩家可以交易和製作物品，並提升角色。他能打怪並完成任務。\n遊戲最多支援4名本地玩家遊玩，並可完整使用手把遊玩。\n\n這款遊戲仍在開發中，並有 Steam 頁面。",
+    deepMine_description: "Deep Mine 是一款發生在程序生成世界中的 2D 探索與採礦遊戲。它是和朋友一起用 Godot 引擎製作的。\n每個世界都是透過雜訊貼圖和執行緒系統程序生成的。它創造了一個無限的世界，根據深度（世界的垂直深度）和溫度（溫度由雜訊貼圖決定）而有不同的生態區。寶石也會根據生態區和深度出現。\n\n玩家可以交易和製作物品，並提升角色，讓他能打怪並完成任務。\n遊戲最多支援4名本地玩家遊玩，並可完整使用手把遊玩。\n\n這款遊戲仍在開發中，並有 Steam 頁面。",
 
     deepMine_keypoint1_title: "程序生成的世界",
     deepMine_keypoint1_description: "利用雜訊材質、執行緒和區塊來創造無限程序生成的世界。",

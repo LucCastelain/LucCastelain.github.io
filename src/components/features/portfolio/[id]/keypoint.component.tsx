@@ -10,7 +10,7 @@ export default function KeypointComponent({keypoint, text}: Readonly<KeypointCom
                 <p className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {keypoint.title}
                 </p>
-                {keypoint.description ? null :
+                {keypoint.description || !keypoint.link ? null :
                     <a href={keypoint.link}
                        target="_blank"
                        className="ml-auto inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
