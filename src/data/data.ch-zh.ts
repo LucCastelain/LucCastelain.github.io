@@ -162,7 +162,7 @@ export const CH_DATA = {
     dicesDungeon_keypoint4_title: "使用者介面",
     dicesDungeon_keypoint4_description: "行動介面保持簡單，但能顯示所有必要資訊。",
 
-    dicesDungeon_keypoint5_title: "像素藝術與像素動畫",
+    dicesDungeon_keypoint5_title: "像素美術與動畫",
     dicesDungeon_keypoint5_description: "我設計並製作了質感和精靈圖。",
 
 // ------------------ Stardew Valley like game ------------------ //
@@ -173,7 +173,7 @@ export const CH_DATA = {
     farmingGame_keypoint1_title: "互動世界",
     farmingGame_keypoint1_description: "世界可以被大幅修改。玩家可以砍伐植被、破壞岩石，還能創造田地、種植作物並添加物品。",
 
-    farmingGame_keypoint2_title: "NPC的對話",
+    farmingGame_keypoint2_title: "NPCs 對話",
     farmingGame_keypoint2_description: "NPC 可以有多個答案的對話，進而引導不同的任務。",
 
     farmingGame_keypoint3_title: "複雜庫存系統",
@@ -191,8 +191,8 @@ export const CH_DATA = {
     farmingGame_keypoint7_title: "貿易體系",
     farmingGame_keypoint7_description: "玩家可以買賣物品給NPC。商人有自己的錢袋，會隨時間自動補充。",
 
-    farmingGame_keypoint8_title: "本地多人遊戲",
-    farmingGame_keypoint8_description: "最多可玩2名玩家。",
+    farmingGame_keypoint8_title: "多人單機遊戲",
+    farmingGame_keypoint8_description: "最多可分割畫面 2 人遊玩。",
 
 // ------------------ Card game prototype ------------------ //
     cardGamePrototype_title: "卡牌遊戲原型",
