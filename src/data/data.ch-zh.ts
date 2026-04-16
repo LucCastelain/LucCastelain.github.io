@@ -148,13 +148,13 @@ export const CH_DATA = {
 // ------------------ Dices Dungeon ------------------ //
     dicesDungeon_title: "Dices Dungeon",
     dicesDungeon_summary: "適用於iOS、可讓玩家操控機率的2D遊戲",
-    dicesDungeon_description: "《骰子地城》是一款使用 Godot 引擎（一個開源遊戲引擎）製作的 2D 遊戲。\n這款遊戲允許玩家最多擲3顆骰子3次。每個骰子都可以被鎖定或解鎖，決定是否再次擲骰。根據骰子組合，會計算機率百分比。\n玩家接著可以打開眼前的兩扇門中的一扇。一個藏著壞東西，另一個藏著好獎勵。\n機率百分比決定了藏在選定門後的物品或怪物的價值或危險程度。\n\n除了玩機率和隨機性外，玩家還可以嘗試與骰子組合（例如兩顆或三個相同點數的組合......）來贏得物品，幫助他調節冒險的隨機性。\n\n這款遊戲是我用 Godot Engine 製作的第一款遊戲，並在 iOS 平台發行。",
+    dicesDungeon_description: "《骰子地城》是一款使用 Godot 引擎（開源遊戲引擎）製作的 2D 遊戲。\n這款遊戲允許玩家最多擲3顆骰子3次。每個骰子都可以被鎖定或解鎖，決定是否再次擲骰。根據骰子組合，會計算機率百分比。\n玩家接著可以打開眼前兩扇門中的一扇。一扇後面藏著懲罰，另一扇後面藏著獎勵。\n機率百分比決定了藏在選定門後的物品或怪物的價值及危險程度。\n\n除了玩機率和隨機性外，玩家還可以嘗試骰子組合（例如兩顆或三個相同點數的組合......）來贏得物品，幫助調節冒險的隨機性。\n\n這款遊戲是我用 Godot Engine 製作的第一款遊戲，並在 iOS 平台發行。",
 
-    dicesDungeon_keypoint1_title: "我第一款在 iOS 上發行的遊戲",
+    dicesDungeon_keypoint1_title: "本人第一款在 iOS 上發行的遊戲",
     dicesDungeon_keypoint1_description: "",
 
-    dicesDungeon_keypoint2_title: "美術指導",
-    dicesDungeon_keypoint2_description: "它主要使用兩種顏色來玩味對比，並有強烈的美術指導。",
+    dicesDungeon_keypoint2_title: "美術風格",
+    dicesDungeon_keypoint2_description: "此款遊戲主要使用兩種顏色來強化對比效果，並有強烈的美術風格。",
 
     dicesDungeon_keypoint3_title: "遊戲設計與機制",
     dicesDungeon_keypoint3_description: "街機玩法以適應手機媒介。",
@@ -163,30 +163,30 @@ export const CH_DATA = {
     dicesDungeon_keypoint4_description: "行動介面保持簡單，但能顯示所有必要資訊。",
 
     dicesDungeon_keypoint5_title: "像素美術與動畫",
-    dicesDungeon_keypoint5_description: "我設計並製作了質感和精靈圖。",
+    dicesDungeon_keypoint5_description: "本人設計並製作了貼圖、精靈圖及動畫。",
 
 // ------------------ Stardew Valley like game ------------------ //
     farmingGame_title: "農場遊戲",
     farmingGame_summary: "農耕及農機的2D遊戲原型",
-    farmingGame_description: "受到《Stardew Valley》啟發，我用 Godot 引擎製作了一個原型，試圖複製《Stardew Valley》的農耕機制以及它的物品欄。\n我建立了一個欄位背包（像是 Minecraft、Terraria、Stardew Valley 以及很多遊戲......），裡面有多個分頁。我還加入了對話和交易機制，以及帶時鐘的晝夜循環。\n\n這讓我更了解 Godot 引擎的運作方式。",
+    farmingGame_description: "受到《Stardew Valley》啟發，本人用 Godot 引擎製作了一個原型，試圖複製《Stardew Valley》的農耕機制以及它的物品欄。\n本人建立了一個欄位背包（像是 Minecraft、Terraria、Stardew Valley 以及很多遊戲......），裡面有多個分頁，也加入了對話和交易機制，以及時間的晝夜循環。\n\n這讓我更了解 Godot 引擎的運作方式。",
 
     farmingGame_keypoint1_title: "互動世界",
     farmingGame_keypoint1_description: "世界可以被大幅修改。玩家可以砍伐植被、破壞岩石，還能創造田地、種植作物並添加物品。",
 
-    farmingGame_keypoint2_title: "NPCs 對話",
+    farmingGame_keypoint2_title: "NPC 對話",
     farmingGame_keypoint2_description: "NPC 可以有多個答案的對話，進而引導不同的任務。",
 
     farmingGame_keypoint3_title: "複雜庫存系統",
-    farmingGame_keypoint3_description: "物品欄有多個不同物件類型的分頁。它完全支援控制器。",
+    farmingGame_keypoint3_description: "物品欄有多個不同物件類型的分頁，也完全支援搖桿。",
 
     farmingGame_keypoint4_title: "玩家自訂",
-    farmingGame_keypoint4_description: "玩家可以從頭髮到膚色創建獨特的球員精靈圖。",
+    farmingGame_keypoint4_description: "玩家可以從頭髮到膚色創建獨特的個人角色。",
 
-    farmingGame_keypoint5_title: "球員裝備",
+    farmingGame_keypoint5_title: "玩家裝備",
     farmingGame_keypoint5_description: "玩家可以裝備不同的工具和服裝來改變外觀。",
 
     farmingGame_keypoint6_title: "晝夜循環",
-    farmingGame_keypoint6_description: "時鐘系統會播放作物生長和日夜循環。",
+    farmingGame_keypoint6_description: "時鐘系統會影響作物生長和日夜循環。",
 
     farmingGame_keypoint7_title: "貿易體系",
     farmingGame_keypoint7_description: "玩家可以買賣物品給NPC。商人有自己的錢袋，會隨時間自動補充。",
@@ -197,33 +197,33 @@ export const CH_DATA = {
 // ------------------ Card game prototype ------------------ //
     cardGamePrototype_title: "卡牌遊戲原型",
     cardGamePrototype_summary: "擁有自己規則的卡牌遊戲原型",
-    cardGamePrototype_description: "有一次，我想到一個有自己規則的紙牌遊戲。為了測試這個想法是否可行，以及遊戲是否平衡、有趣且具策略性，我在 Godot 遊戲引擎中製作了一個原型。\n\n原型機同時製作了 2D 和 3D 版本，並有幾張卡片測試平衡性。\n我從規則制定到原型製作結束，兩天內完成，過程很有趣，也很有趣。",
+    cardGamePrototype_description: "有次，本人想到了一個有自己規則的紙牌遊戲，因此為了測試是否可行，及遊戲是否平衡、有趣及具策略性，本人在 Godot 遊戲引擎上製作了一個原型。\n\n本人同時製作了 2D 和 3D 版本的原型機，並有幾張卡片測試平衡性。\n這個遊戲從規則設計到原型完成僅花了 2 天時間，整個開發與測試過程都相當有趣。",
 
     cardGamePrototype_keypoint1_title: "對手 AI 的創建",
-    cardGamePrototype_keypoint1_description: "對手 AI 會根據玩家的最後一步做出反應並下棋。",
+    cardGamePrototype_keypoint1_description: "對手 AI 會根據玩家的最後一步做出反應並出牌。",
 
-    cardGamePrototype_keypoint2_title: "兩種 2D 和 3D 兩種相同的原型",
+    cardGamePrototype_keypoint2_title: "2D 和 3D 兩種相同的原型",
     cardGamePrototype_keypoint2_description: "遊戲在 2D 或 3D 上都能用同一個 AI 運作。",
 
-    cardGamePrototype_keypoint3_title: "創建了遊戲規則和平衡",
+    cardGamePrototype_keypoint3_title: "創建遊戲規則和平衡",
     cardGamePrototype_keypoint3_description: "",
 
 // ------------------ Atelier Ryza crafting system ------------------ //
     atelierRyzaCraftingSystem_title: "Atelier Ryza 工藝系統",
     atelierRyzaCraftingSystem_summary: "靈感來自 Atelier Ryza 遊戲的先進工藝系統",
-    atelierRyzaCraftingSystem_description: "這個原型是一套使用 Godot 遊戲引擎製作的先進製作系統。它基於 Aterlier Ryza 的製作系統。\n這個系統利用自訂資源打造出非常完整的製作系統。每件物品都需要製作一種或多種特定類型、子類型或獨特材料。製作物品會考慮每種材料的品質。\n\n新增製作物品和修改自訂資源以維持這個製作系統的深度非常容易。\n它可以以多種方式輕鬆擴展。例如，製作物品可以採用所選材料的特定特性......\n\n這個原型是獨立的，並被認為能輕鬆實作於更複雜的遊戲中。",
+    atelierRyzaCraftingSystem_description: "這個原型是一套使用 Godot 遊戲引擎製作的先進製作系統。基於 Aterlier Ryza 的製作系統。\n這個系統利用自訂資源打造出非常完整的製作系統。每件物品都需要製作一種或多種特定類型、子類型或獨特材料。且製作物品會考慮每種材料的品質。\n\n新增製作物品和修改自訂資源以維持這個製作系統非常容易。\n它可以以多種方式輕鬆擴展。例如，製作物品可以採用所選材料的特定特性......\n\n這個原型是獨立的，並被認為能輕鬆實作於更複雜的遊戲中。",
 
-    atelierRyzaCraftingSystem_keypoint1_title: "更新簡便",
-    atelierRyzaCraftingSystem_keypoint1_description: "很容易可以在不修改源代码的情況下添加新項目和特征。",
+    atelierRyzaCraftingSystem_keypoint1_title: "更新容易",
+    atelierRyzaCraftingSystem_keypoint1_description: "容易可以在不修改原代碼的情況下添加新元素。",
 
     atelierRyzaCraftingSystem_keypoint2_title: "使用者介面",
     atelierRyzaCraftingSystem_keypoint2_description: "介面清晰易讀，包含所有必要資訊。可以搭配超寬螢幕使用。",
 
     atelierRyzaCraftingSystem_keypoint3_title: "使用者體驗",
-    atelierRyzaCraftingSystem_keypoint3_description: "這讓製作變得有趣且引人入勝。",
+    atelierRyzaCraftingSystem_keypoint3_description: "透過完整的系統設計，讓製作機制變得有趣且具吸引力。",
 
     atelierRyzaCraftingSystem_keypoint4_title: "獨立系統",
-    atelierRyzaCraftingSystem_keypoint4_description: "很容易在更大的遊戲中添加。",
+    atelierRyzaCraftingSystem_keypoint4_description: "可獨立運作，同時也能輕鬆整合到更大型的遊戲中使用。",
 
 // ------------------ Genesys Designer ------------------ //
     genesysDesigner_title: "Genesys Designer",
