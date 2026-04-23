@@ -228,10 +228,10 @@ export const CH_DATA = {
 // ------------------ Genesys Designer ------------------ //
     genesysDesigner_title: "Genesys Designer",
     genesysDesigner_summary: "用於開發自助服務及輔助服務的網頁應用程式",
-    genesysDesigner_description: "Genesys Designer 是一款基於網頁的工具，讓大型企業能夠為其企業建立自助式（互動語音回應）及輔助服務（路由）應用程式。它提供功能區塊給使用者，使用者可以拖放它們，輕鬆建立他們想要的自助服務或路由應用程式。\n用戶可以設定語音助理角色、文字轉語音的提示、營業時間等...\n在 Microsoft 支援 AngularJS 結束時，我必須想辦法將應用程式從 AngularJS 逐區塊轉移到 ReactJS。這種轉換必須無縫且對使用者隱形。",
+    genesysDesigner_description: "Genesys Designer 是一款網頁的工具，讓大型企業能夠為其企業建立自動（互動語音回應）及輔助服務（路由）應用程式。此工具提供功能區塊給使用者，使用者可以拖放並輕鬆建立他們想要的自服務或路由應用程式。\n用戶可以設定語音助理角色、文字轉語音的提示、營業時間等......\n在 Microsoft 支援 AngularJS 結束時，本人必須想辦法將應用程式從 AngularJS 逐區轉移到 ReactJS 上。這個操作須透明且讓使用者無法察覺。",
 
     genesysDesigner_keypoint1_title: "簡單易學與使用",
-    genesysDesigner_keypoint1_description: "功能區塊可拖曳可丟，使用者學習和使用起來非常簡單。",
+    genesysDesigner_keypoint1_description: "功能區塊可拖曳，使用者學習和使用起來非常簡單。",
 
     genesysDesigner_keypoint2_title: "適用於任何業務",
     genesysDesigner_keypoint2_description: "任何公司都能根據自身需求調整 Designer 的應用程式。",
