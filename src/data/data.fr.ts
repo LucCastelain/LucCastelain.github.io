@@ -259,13 +259,13 @@ export const FR_DATA = {
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
     globalGameJam2022_summary: "Nous avons fait un jeu de société pendant la Global Game Jam 2022 avec 3 amis",
-    globalGameJam2022_description: "En 2022, nous avons participé à la Global Game Jam avec presque la même équipe que la Global Game Jam 2020. Nous avions 48 heures pour faire un jeu sur le thème: dualité.\n\nÀ l'époque, nous avions l'habitude de jouer beaucoup à un jeu de société nommé Clank! Le jeu vous fait jouer face à vos amis pour être celui qui obtiendra les plus de trésors dans un donjon tout en échappant aux attaques d'un dragon. Vous pouvez choisir entre rester plus longtemps dans le donjon et essayer de vous enrichir ou retourner à la surface plus rapidement. Remonter plus vite vous fera récupérer moins de trésors mais peut vous permettre de survivre alors que vos concurrents risque de mourrir face au dragon.\nNous voulions nous amuser à recréer le jeu autant que nous le pouvions.",
+    globalGameJam2022_description: "En 2022, nous avons participé à la Global Game Jam avec presque la même équipe que la Global Game Jam 2020. Nous avions 48 heures pour faire un jeu sur le thème: dualité.\n\nÀ l'époque, nous avions l'habitude de jouer beaucoup à un jeu de société nommé Clank! Le jeu vous fait jouer face à vos amis pour être celui qui obtiendra les plus de trésors dans un donjon tout en échappant aux attaques d'un dragon. Vous pouvez choisir entre rester plus longtemps dans le donjon et essayer de vous enrichir ou retourner à la surface plus rapidement. Remonter plus vite vous fera récupérer moins de trésors mais peut vous permettre de survivre alors que vos concurrents risque de mourrir face au dragon. Pour évoluer dans le donjon, vous jouez des cartes que vous pouvez acheter lors de la partie.\nNous voulions nous amuser à recréer le jeu autant que nous le pouvions. Nous avons dû programmer le déplacement du joueur sur le plateau, le système de boutique ainsi que la mécanique de construction du deck en seulement deux jours.",
 
     globalGameJam2022_keypoint1_title: "Fabriqué en 48 heures en équipe",
     globalGameJam2022_keypoint1_description: "",
 
     globalGameJam2022_keypoint2_title: "Jeu de société adapté en jeu-vidéo",
-    globalGameJam2022_keypoint2_description: "Comme le jeu développé est un jeu de société, les mouvements des joueurs sont gérés en conséquence et sont bien différent d'un jeu-vidéo plus classique orienté action.",
+    globalGameJam2022_keypoint2_description: "Comme le jeu développé est un jeu de société, les mouvements des joueurs sont gérés en conséquence et sont bien différents d'un jeu-vidéo plus classique orienté action.",
 
     globalGameJam2022_keypoint3_title: "Github utilisé pour la gestion de versions",
     globalGameJam2022_keypoint3_description: "",

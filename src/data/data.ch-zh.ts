@@ -242,16 +242,16 @@ export const CH_DATA = {
 // ------------------ Missed! ------------------ //
     missed_title: "Missed!",
     missed_summary: "使用 Unity3D 製作的 Android 手機 3D 遊戲",
-    missed_description: "Missed是我在網路上上傳的第一款遊戲。 這是一個在Google Play上可用的Android遊戲。\n在這個遊戲中，玩家必須避免由白色立方體在競技場周圍旋轉的白色立方體發射的紅色彈。 玩家的分數等於他生存的時間。 隨著時間的流逝，更多立方體會出現，難度會增加。\n\n這個遊戲是用unity3D 2019和C#制作的。",
+    missed_description: "Missed是我在網路上上傳的第一款遊戲。 這是一個在Google Play上下載的Android遊戲。\n在這個遊戲中，玩家必須避開由在競技場周圍旋轉的白色立方體發射的紅色子彈。 生存的時間會是玩家的分數。 隨著時間的流逝，更多立方體會出現，難度會增加。\n\n這個遊戲是用 Unity3D 2019 和 C# 製作的。",
 
-    missed_keypoint1_title: "我的第一次發表的遊戲",
-    missed_keypoint1_description: "這款遊戲曾在 Google Play 上發布。",
+    missed_keypoint1_title: "本人第一次發表的遊戲",
+    missed_keypoint1_description: "這款遊戲曾在 Google Play 上發佈。",
 
     missed_keypoint2_title: "移動控制",
     missed_keypoint2_description: "虛擬搖桿可在螢幕上任何地方使用。",
 
     missed_keypoint3_title: "遊戲設計",
-    missed_keypoint3_description: "街機遊戲玩法改編成行動媒介。",
+    missed_keypoint3_description: "街機遊戲玩法改編成的手機遊戲。",
 
     missed_keypoint4_title: "遊戲平衡",
     missed_keypoint4_description: "難度隨著時間的推移而增加，但不會太突然。",
@@ -259,67 +259,67 @@ export const CH_DATA = {
 // ------------------ Global Game Jam 2022 ------------------ //
     globalGameJam2022_title: "Global Game Jam 2022",
     globalGameJam2022_summary: "在 2022 年 Global Game Jam 期間，和三位朋友一起製作了一款受桌遊啟發的電子遊戲",
-    globalGameJam2022_description: "2022年，我們以幾乎與2020年相同的團隊參加了 Global Game Jam。我們有48小時的時間來製作一款主題為「二元性」的遊戲。\n\n當時，我們常玩一款叫做《Clank！》的桌遊！這款遊戲是和朋友們競爭，爭奪地城中更多寶藏，同時逃離龍的攻擊。你可以選擇在地城待久一點以求更富有，或是更快回到地表，帶著較少的寶藏，但希望其他參賽者能死在龍手下。\n我們想盡可能享受重現遊戲的樂趣。要在地城中進化，你會使用遊戲中可購買的卡牌。我們必須在短短兩天內完成玩家在棋盤上的移動、商店系統以及牌組構築機制。雖然困難，但非常有趣。\n\n我們兩個程式設計師分別用 Unity3D，還有 3 個程式設計師負責圖形（卡和電影）。遊戲結束時，我們雖然累壞了，但很高興能在電腦上玩桌遊！",
+    globalGameJam2022_description: "2022年，我們以參加2020年的幾乎相同的團隊成員，再次參與了 Global Game Jam 競賽。我們有48小時的時間來製作一款主題為「二元性」的遊戲。\n\n當時，我們常玩一款叫做《Clank！》的桌遊！這是一款和朋友們競爭、爭奪地城中更多寶藏，也需同時逃離龍攻擊的遊戲。你可以選擇在地城待久一點以變得更富有，或是更快回到地表，帶著較少的寶藏，但希望其他玩家能死在龍的攻擊下。若想在地城中進化，也能使用遊戲中可購買的卡牌。\n我們盡可能享受重新創建遊戲的樂趣，必須在短短兩天內完成玩家在棋盤上的移動、商店系統以及牌組構築機制。雖然困難，但非常有趣。\n\n我們兩個程式設計師分別用 Unity3D，還有 3 個程式設計師負責圖形（卡和電影）。遊戲結束時，我們雖然累壞了，但很高興能在電腦上玩桌遊！",
 
-    globalGameJam2022_keypoint1_title: "48小時內與團隊完成",
+    globalGameJam2022_keypoint1_title: "需與團隊在48小時內完成",
     globalGameJam2022_keypoint1_description: "",
 
     globalGameJam2022_keypoint2_title: "棋盤遊戲改編成電子遊戲",
-    globalGameJam2022_keypoint2_description: "作為一款桌遊，玩家的動作處理得與更偏重動作的電子遊戲不同。",
+    globalGameJam2022_keypoint2_description: "作為一款桌遊，玩家的動作處理得跟偏重動作的電子遊戲不同。",
 
-    globalGameJam2022_keypoint3_title: "使用了 Github 進行版本控制",
+    globalGameJam2022_keypoint3_title: "使用 Github 進行版本控制",
     globalGameJam2022_keypoint3_description: "",
 
     globalGameJam2022_keypoint4_title: "以牌組構築為基礎的遊戲玩法",
-    globalGameJam2022_keypoint4_description: "玩家的行動取決於抽到的牌。遊戲中玩家的進化來自於牌組構築機制。",
+    globalGameJam2022_keypoint4_description: "玩家的行動取決於抽到的牌。遊戲中玩家的發展來自於牌組構築機制。",
 
-    globalGameJam2022_keypoint5_title: "遊戲的連結",
+    globalGameJam2022_keypoint5_title: "遊戲連結",
     globalGameJam2022_keypoint5_description: "",
 
 // ------------------ Global Game Jam 2020 ------------------ //
     globalGameJam2020_title: "Global Game Jam 2020",
     globalGameJam2020_summary: "在 2020 年 Global Game Jam 期間，和三位朋友一起製作的一款 2D 平台遊戲",
-    globalGameJam2020_description: "2020年1月，我和幾位朋友參加了全球 Global Game Jam。我們有48小時的時間來製作一款主題為：修復的遊戲。\n\n我們做了一款在3D環境中的2D平台遊戲。玩家扮演一個壞掉的機器人，需要在四個不同關卡中找到零件。\n每個關卡都可以任意順序遊玩。每個找到的機器人零件都會解鎖一項新能力，能在下一關發揮作用，讓玩家可以選擇自己想要的進度方式。\n例如：找到機器人的手臂可以解鎖攀爬牆壁的能力，或是噴射背包解鎖二段跳。\n\n這是我們的第一次 Global Game Jam，遊戲可能還需要一些打磨，但整體經驗非常棒。我們都學到了很多，也玩得很開心。",
+    globalGameJam2020_description: "2020年1月，我和幾位朋友參加了全球 Global Game Jam 競賽。我們有48小時的時間來製作一款主題為：修復的遊戲。\n\n我們做了一款在3D環境中的2D平台遊戲。玩家扮演一個壞掉的機器人，需要在四個不同關卡中找到零件。\n所有關卡都可以以任意順序進行遊玩。每個找到的機器人零件都會解鎖一項新能力，能在下一關發揮作用，讓玩家可以選擇自己想要的進度方式進行。\n例如：找到機器人的手臂可以解鎖攀爬牆壁的能力，或是噴射背包能解鎖二段跳。\n\n這是我們參加的第一次 Global Game Jam 競賽，遊戲可能還需要一些改善，但整體經驗非常棒。我們都學到了很多，也玩得很開心。",
 
-    globalGameJam2020_keypoint1_title: "48小時內與團隊完成",
+    globalGameJam2020_keypoint1_title: "需與團隊在48小時內完成",
     globalGameJam2020_keypoint1_description: "",
 
     globalGameJam2020_keypoint2_title: "2D 和 3D 的混合",
     globalGameJam2020_keypoint2_description: "3D 環境中的 2D 精靈圖。",
 
-    globalGameJam2020_keypoint3_title: "使用了 Github 進行版本控制",
+    globalGameJam2020_keypoint3_title: "使用 Github 進行版本控制",
     globalGameJam2020_keypoint3_description: "",
 
     globalGameJam2020_keypoint4_title: "遊戲玩法演進",
     globalGameJam2020_keypoint4_description: "遊戲玩法會因你玩關卡的順序而有所不同。",
 
     globalGameJam2020_keypoint5_title: "關卡設計",
-    globalGameJam2020_keypoint5_description: "關卡的設計不同，取決於遊戲的玩法（玩家在上述水平獲得機器人的哪個部分）。",
+    globalGameJam2020_keypoint5_description: "關卡的設計不同，取決於玩家由玩遊戲的順序（玩家在上一道關卡取得的零件）。",
 
-    globalGameJam2020_keypoint6_title: "遊戲的連結",
+    globalGameJam2020_keypoint6_title: "遊戲連結",
     globalGameJam2020_keypoint6_description: "",
 
 // ------------------ Game engine ------------------ //
     gameEngine_title: "遊戲引擎",
-    gameEngine_summary: "使用SDL2和 C++ 的簡單遊戲引擎",
-    gameEngine_description: "我決定嘗試不使用任何遊戲引擎來製作一款遊戲。我精通 C++，但學習並用 SDL2 也很有趣。\n\n我做了一個基本的原型在運行。在這個原型中，透過網格資訊和圖塊集生成了一張地圖。玩家角色可透過鍵盤移動並發射投射物。",
+    gameEngine_summary: "使用 SDL2 和 C++ 的簡單遊戲引擎",
+    gameEngine_description: "本人決定嘗試不使用任何遊戲引擎來製作一款遊戲。雖然本人精通 C++，但學習並用 SDL2 也很有趣。\n\n我做了一個基本的遊戲原型。在這個原型中，透過網格資訊和圖塊集生成了一張地圖。玩家角色可透過鍵盤移動並發射投射物。",
 
     gameEngine_keypoint1_title: "從零開始打造",
     gameEngine_keypoint1_description: "遊戲引擎從零開始打造，沒有外部函式庫。",
 
-    gameEngine_keypoint2_title: "用這個引擎製作的基本工作遊戲",
+    gameEngine_keypoint2_title: "用這個引擎製作的基礎簡單遊戲",
     gameEngine_keypoint2_description: "",
 
 // ------------------ Rotate ------------------ //
     rotate_title: "Rotate",
     rotate_summary: "使用 Swift 和 Xcode 製作的 2D 遊戲原型",
-    rotate_description: "我為 iOS 做了一個 2D 遊戲原型來學習 Swift。我用了 Xcode 和 SpriteKit 來做這件事。\n\n遊戲中球會規律且無限地彈跳，球體上有尖刺。玩家可以用手指旋轉球體，引導球體到球體上的綠色位置。當球落在綠色位置時，會產生一個新的球體，分數會增加一分。\n若球觸碰到釘子，遊戲即告失敗，分數重置。",
+    rotate_description: "本人在 iOS 上使用了 Xcode 和 SpriteKit做了一個 2D 遊戲原型來學習 Swift。\n\n遊戲中球會規律且無限地彈跳，球體上有尖刺。玩家可以用手指旋轉球體，引導球體到綠色的位置上。當球落在綠色的位置上時，會產生一個新的球體，分數也會增加一分。\n若球觸碰到釘子，遊戲即失敗，分數重置。",
 
     rotate_keypoint1_title: "移動控制",
     rotate_keypoint1_description: "虛擬搖桿可在螢幕上任何地方使用。",
 
     rotate_keypoint2_title: "遊戲設計",
-    rotate_keypoint2_description: "街機遊戲玩法改編成行動媒介。",
+    rotate_keypoint2_description: "街機遊戲玩法改編成的手機遊戲。",
 
 // ------------------ DotWar ------------------ //
     dotWar_title: "DotWar",
