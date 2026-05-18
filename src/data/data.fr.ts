@@ -333,7 +333,7 @@ export const FR_DATA = {
     dotWar_keypoint2_description: "",
 
     dotWar_keypoint3_title: "Game design",
-    dotWar_keypoint3_description: "Gameplay Arcade adapté au médium. Gameplay simple mais efficace fait pour être réalisé en 24h sans dépassé la contrainte de temps.",
+    dotWar_keypoint3_description: "Gameplay Arcade adapté au médium. Gameplay simple mais efficace fait pour être réalisé en 24h sans dépasser la contrainte de temps.",
 
 // ------------------ Local Beer ------------------ //
     localBeer_title: "Local Beer",

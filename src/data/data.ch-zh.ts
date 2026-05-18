@@ -324,27 +324,27 @@ export const CH_DATA = {
 // ------------------ DotWar ------------------ //
     dotWar_title: "DotWar",
     dotWar_summary: "24 小時內使用 Unity3D 製作的遊戲，適用於 Android 系統",
-    dotWar_description: "DotWar 是一款可在 Android 裝置上運作的遊戲。這個想法是挑戰自己在一天內做出一款遊戲。\n\n在這款遊戲中，玩家必須在限定時間內點擊紅點。這個點會彈奏鋼琴音符，按下時會移動。\n難度會隨著分數增加而提升。\n\n這款遊戲是用 Unity 3D 2019 和 C# 製作的。",
+    dotWar_description: "DotWar 是一款可在 Android 裝置上運作的遊戲。這個遊戲是想要挑戰自己在一天內做出一款遊戲。\n\n在這款遊戲中，玩家必須在限定時間內點擊紅點。這個點會彈奏鋼琴音符，按下時會移動。\n難度會隨著分數增加而提升。\n\n這款遊戲是用 Unity 3D 2019 和 C# 製作的。",
 
-    dotWar_keypoint1_title: "24小時內與團隊完成",
+    dotWar_keypoint1_title: "24小時內完成",
     dotWar_keypoint1_description: "",
 
-    dotWar_keypoint2_title: "發布於 Google Play",
+    dotWar_keypoint2_title: "發布於 Google Play 上",
     dotWar_keypoint2_description: "",
 
     dotWar_keypoint3_title: "遊戲設計",
-    dotWar_keypoint3_description: "街機遊戲玩法也被改編成這個媒介。簡單但有效的玩法，以應付時間限制。",
+    dotWar_keypoint3_description: "這個遊戲能透過街機玩法在所有手機平台上遊玩。簡單但有效的玩法，以應付時間限制。",
 
 // ------------------ Local Beer ------------------ //
     localBeer_title: "Local Beer",
     localBeer_summary: "顯示在地釀酒廠的應用程式",
-    localBeer_description: "LocalBeer 是一款應用程式，列出法國布列塔尼的一些啤酒廠。這是在 ENIB 物件導向程式設計課程中完成的專案。LocalBeer 的目標是推動使用者消費並發現在地啤酒與釀酒廠，因此這款應用程式完成了 17 項永續發展目標之一。\n\n這款應用程式是使用 Android Studio 3.5、Java 和 XML 製作的。資料庫是 JSON 格式，可以用來做其他程式。這個應用程式也是我團隊另一位成員用 swift 製作的，並且能在 iPhone 和 Apple Watch 上使用。",
+    localBeer_description: "LocalBeer 是一款應用程式，列出法國布列塔尼的一些釀啤酒廠。這是在 ENIB 物件導向程式設計課程中完成的專案。LocalBeer 的目標是推動使用者消費並探索在地啤酒與釀酒廠，因此這款應用程式達成了 17 項永續發展目標之一。\n\n這款應用程式是使用 Android Studio 3.5、Java 和 XML 製作的。資料庫是 JSON 格式，可以用來做其他程式。這個應用程式也是我團隊另一位成員用 swift 製作的，並且能在 iPhone 和 Apple Watch 上使用。",
 
-    localBeer_keypoint1_title: "旨在完成17個可持续发展目標之一",
+    localBeer_keypoint1_title: "旨在達成17個可永續發展目標之一",
     localBeer_keypoint1_description: "",
 
     localBeer_keypoint2_title: "同時為 iOS 和 Android 製作",
-    localBeer_keypoint2_description: "兩台平台的開發工作並行進行。",
+    localBeer_keypoint2_description: "兩個平台的開發工作同時進行。",
 
 // ------------------ Software & programming languages ------------------ //
     software: {
