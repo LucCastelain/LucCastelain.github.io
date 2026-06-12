@@ -21,6 +21,7 @@ export const CH_TEXT = {
     afterOrOn: "上聯絡我。",
     canContactMeByEmail: "您可以透過電子郵件聯絡我:",
     referencesIHave: "以下為前雇主為本人撰寫之推薦信。",
+    baudinReference: "Baudin Chateauneuf 的推薦信",
     fiuReference: "FIU 的推薦信",
     dosisoftReference: "DOSIsoft 的推薦信",
     seeMore: "查看更多",

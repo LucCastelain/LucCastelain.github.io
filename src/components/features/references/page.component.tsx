@@ -13,6 +13,20 @@ export default function ReferencesPageComponent({language}: Readonly<ReferencesP
                 <TextWithLineBreaksComponent text={text.referencesIHave}
                                              className="text-left"/>
                 <div className="size-full grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-6">
+                    <a href="/baudin_reference.pdf"
+                       target="_blank"
+                       rel="noopeneexitr noreferrer"
+                       className="group mx-auto h-fit p-3 rounded-lg transition-all hover:scale-[1.02] hover:bg-neutral-100 dark:hover:bg-neutral-800">
+                        <figure>
+                            <Image src="/static/references/baudin_reference.webp"
+                                   alt="Baudin reference"
+                                   width={500}
+                                   height={0}
+                                   style={{width: "100%", height: "auto"}}
+                                   className="transition-all object-contain border group-hover:border-0 dark:border-0"/>
+                            <figcaption>{text.baudinReference}</figcaption>
+                        </figure>
+                    </a>
                     <a href="/fiu_reference.pdf"
                        target="_blank"
                        rel="noopeneexitr noreferrer"

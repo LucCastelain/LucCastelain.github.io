@@ -21,6 +21,7 @@ export const EN_TEXT = {
     afterOrOn: "",
     canContactMeByEmail: "You can contact me by email:",
     referencesIHave: "Here is some references I have from my previous jobs.",
+    baudinReference: "Baudin Chateauneuf reference",
     fiuReference: "FIU reference",
     dosisoftReference: "DOSIsoft reference",
     seeMore: "See more",
