@@ -181,6 +181,76 @@ export function getPortfolioData(language: string): PortfolioData {
         programmingLanguages: data.programming_languages,
         projects: [
             {
+                id: "factur-x",
+                title: data.facturX_title,
+                summary: data.facturX_summary,
+                description: data.facturX_description,
+                creationDate: "2026",
+                types: [projectTypes.WEB],
+                images: [
+                    "icon.webp",
+                    "facturX_1.webp",
+                    "facturX_2.webp",
+                    "facturX_3.webp",
+                    "facturX_4.webp",
+                    "facturX_5.webp",
+                ],
+                software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB, data.software.CLAUDE_CODE],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.TYPESCRIPT, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS, data.programming_languages.MARIA_DB],
+                keypoints: [
+                    {
+                        title: data.facturX_keypoint1_title,
+                        description: data.facturX_keypoint1_description
+                    },
+                    {
+                        title: data.facturX_keypoint2_title,
+                        description: data.facturX_keypoint2_description
+                    },
+                    {
+                        title: data.facturX_keypoint3_title,
+                        description: data.facturX_keypoint3_description
+                    },
+                    {
+                        title: data.facturX_keypoint4_title,
+                        description: data.facturX_keypoint4_description
+                    },
+                ]
+            },
+            {
+                id: "gesprod",
+                title: data.gesprod_title,
+                summary: data.gesprod_summary,
+                description: data.gesprod_description,
+                creationDate: "2026",
+                types: [projectTypes.WEB],
+                images: [
+                    "icon.webp",
+                    "gesprod_1.webp",
+                    "gesprod_2.webp",
+                    "gesprod_3.webp",
+                    "gesprod_4.webp",
+                    "gesprod_5.webp",
+                    "gesprod_6.webp",
+                    "gesprod_7.webp",
+                ],
+                software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.TYPESCRIPT, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                keypoints: [
+                    {
+                        title: data.gesprod_keypoint1_title,
+                        description: data.gesprod_keypoint1_description
+                    },
+                    {
+                        title: data.gesprod_keypoint2_title,
+                        description: data.gesprod_keypoint2_description
+                    },
+                    {
+                        title: data.gesprod_keypoint3_title,
+                        description: data.gesprod_keypoint3_description
+                    }
+                ]
+            },
+            {
                 id: "matrix",
                 title: data.matrix_title,
                 summary: data.matrix_summary,
@@ -194,7 +264,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "matrix_3.webp",
                 ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
-                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.TYPESCRIPT, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
                     {
                         title: data.matrix_keypoint1_title,
@@ -237,7 +307,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "support_dsi_8.webp",
                 ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
-                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.TYPESCRIPT, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
                     {
                         title: data.supportDSI_keypoint1_title,
@@ -283,7 +353,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "bc_formation_11.webp",
                 ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
-                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.TYPESCRIPT, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
                     {
                         title: data.bcFormation_keypoint1_title,
@@ -347,7 +417,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "bc_portail_6.webp",
                 ],
                 software: [data.software.WEBSTORM, data.software.POSTMAN, data.software.KEYCLOAK, data.software.PGADMIN, data.software.DOCKER, data.software.GITLAB],
-                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.NEST_JS, data.programming_languages.REACT_JS, data.programming_languages.TYPESCRIPT, data.programming_languages.POSTGRE_SQL, data.programming_languages.PRISMA, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
                     {
                         title: data.bcPortail_keypoint1_title,
@@ -394,7 +464,7 @@ export function getPortfolioData(language: string): PortfolioData {
                     "icon.webp"
                 ],
                 software: [data.software.WEBSTORM, data.software.GITHUB],
-                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.REACT_JS, data.programming_languages.TAILWIND_CSS],
+                programmingLanguages: [data.programming_languages.NEXT_JS, data.programming_languages.REACT_JS, data.programming_languages.TYPESCRIPT, data.programming_languages.TAILWIND_CSS],
                 keypoints: [
                     {
                         title: data.thisWebsite_keypoint1_title,

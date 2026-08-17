@@ -1,4 +1,35 @@
 export const CH_DATA = {
+// ------------------ Factur-X ------------------ //
+    facturX_title: "Factur-X",
+    facturX_summary: "可讓使用者產生符合 Factur-X EN16931 標準發票的網頁應用程式",
+    facturX_description: "Factur-X 是依據歐洲電子發票改革所開發的應用程式。它可填寫產生符合 Factur-X EN16931 標準發票所需的全部資訊，亦即內嵌 XML 的 PDF，其中包含所有發票資訊，可供人員與電腦系統讀取。\n發票產生後，系統會自動傳送至經核准的平台進行驗證，之後可隨時查閱。",
+
+    facturX_keypoint1_title: "可從 MariaDB 取得既有資料",
+    facturX_keypoint1_description: "在某些情況下，當發票資料已存在公司的資料庫中時，應用程式可從 MariaDB 取得資料，以產生符合新歐洲標準的發票。",
+
+    facturX_keypoint2_title: "所有產生的發票皆符合 Factur-X EN16931",
+    facturX_keypoint2_description: "應用程式不允許產生不符合 Factur-X EN16931 的發票。它會強制要求填寫必填欄位，並在欄位遺漏或填寫錯誤時顯示警告。",
+
+    facturX_keypoint3_title: "使用者可預覽發票",
+    facturX_keypoint3_description: "使用者可隨時預覽即將產生之發票的 PDF 或 XML。",
+
+    facturX_keypoint4_title: "發票摘要與歷程",
+    facturX_keypoint4_description: "發票依合約整理，以便查找。每份合約皆可查看發票金額摘要。",
+
+// ------------------ Gesprod ------------------ //
+    gesprod_title: "Gesprod Metal",
+    gesprod_summary: "作為公司所有金屬生產資料入口的網頁應用程式",
+    gesprod_description: "Baudin Chateauneuf 是一家建造橋梁、大型建築、金屬骨架等工程的公司。金屬生產是其主要業務。\n此應用程式供所有部門使用，以集中管理金屬生產資料。它彙整從設計到施工的所有金屬生產相關資料，並可為特定金屬零件或一組零件建立新的金屬專案。專案的所有資訊皆可設定，例如專屬時程、檢查點、地址、金屬處理及技術規格等。\n它會顯示不同零件與子零件的階層結構、組織方式、所使用的材料、用途或所屬工地，以及更多資訊。\n此應用程式旨在集中管理所有金屬生產資料。",
+
+    gesprod_keypoint1_title: "半動態模型",
+    gesprod_keypoint1_description: "為讓使用者保有最大的彈性，並使模型能適用於不同類型的專案與零件，我們決定使用 JSON 來表示及儲存資料。這種方式具有高度彈性，也能輕鬆修改而不影響資料庫模型。使用 JSON 時，同一個模型可用於表示不同零件，每個零件都有特定欄位，同時仍保有型別驗證。",
+
+    gesprod_keypoint2_title: "完整且詳細的專案歷程",
+    gesprod_keypoint2_description: "專案資料的每次修改都會儲存並可供顯示。因此可精確查看由誰修改、修改了什麼，以及修改時間。",
+
+    gesprod_keypoint3_title: "角色管理",
+    gesprod_keypoint3_description: "應用程式會依使用者獲指派的角色與部門，提供不同的資訊與操作功能。從前端與後端角度來看，頁面與資訊的存取皆已受到保護。",
+
 // ------------------ Matrix ------------------ //
     matrix_title: "Matrix",
     matrix_summary: "公司員工目錄的網頁應用程式",
@@ -370,6 +401,7 @@ export const CH_DATA = {
         DOCKER: "Docker",
         KEYCLOAK: "Keycloak",
         POSTMAN: "Postman",
+        CLAUDE_CODE: "Claude code",
     },
     programming_languages: {
         ALL: "全部",
@@ -388,12 +420,14 @@ export const CH_DATA = {
         REACT_JS: "ReactJS",
         NEXT_JS: "Next.js",
         NEST_JS: "Nest.js",
+        TYPESCRIPT: "Typescript",
         SWIFT: "Swift",
         POSTGRE_SQL: "PortgreSQL",
         MYSQL: "MySQL",
         PRISMA: "Prisma",
         TAILWIND_CSS: "Tailwind CSS",
-        JAVA: "Java"
+        JAVA: "Java",
+        MARIA_DB: "MariaDB",
     },
 
 // ------------------ Resume data ------------------ //

@@ -1,4 +1,35 @@
 export const EN_DATA = {
+// ------------------ Factur-X ------------------ //
+    facturX_title: "Factur-X",
+    facturX_summary: "A web app allowing user to generate invoice compatible Factur-X EN16931",
+    facturX_description: "Factur-X is an app made following the European e-invoicing reform. It allows to fill in all needed information to generate an invoice compatible with the Factur-X EN16931 norm, meaning a PDF with embedded XML containing all the invoice information to be both human and machine readable.\nOnce the invoice is generated, it is automatically sent to an approved platform for validation and can then be consulted anytime.",
+
+    facturX_keypoint1_title: "Can get existing data from MariaDB",
+    facturX_keypoint1_description: "In some scenarios, when invoice data already exists in the company's databases, the app can get it from MariaDB to generate an invoice respecting the new European norm.",
+
+    facturX_keypoint2_title: "All generated invoices are Factur-X EN16931 compatible",
+    facturX_keypoint2_description: "The app does not allow to generate invoices that are not Factur-X EN16931 compatible. It enforce mandatory fields and show warnings when one is missing or incorrectly filled.",
+
+    facturX_keypoint3_title: "Available previews for users",
+    facturX_keypoint3_description: "The user can at any time preview the PDF or XML for the soon to be generated invoice.",
+
+    facturX_keypoint4_title: "Invoices summary and history",
+    facturX_keypoint4_description: "Invoices are organized by contract to be easy to find. A summary of the invoices' value for each contract is available.",
+
+// ------------------ Gesprod ------------------ //
+    gesprod_title: "Gesprod Metal",
+    gesprod_summary: "A web app acting like an entry point for all the company's metal production data",
+    gesprod_description: "Baudin Chateauneuf is a company that makes bridges, big constructions, metal frames and such. The metal production is its main activity.\nThis app is an app for all departments to use and centralize metal prodution's data. It regroups all data concerning metal production, from conception to construction. It allows to create a new metal project for a specific metal piece or group of pieces. All information about a project can be set, for example specific timeline, verifications points, addresses, metal treatments, technical specifications, etc...\nIt shows a hierarchy of the different pieces and sub-pieces, how they are organized, which what kind of material they are made, for which destination or construction site they are made for and many more information.\nThe app is made to centralize all metal production data.",
+
+    gesprod_keypoint1_title: "Semi dynamic model",
+    gesprod_keypoint1_description: "To let users the most freedom possible and adapt the model for different kind of projects and pieces, we decided to use JSON to represent and store the data. It allows for great versatility while being easy to modify without altering the database models. With JSON, the same model can be used to represent different pieces with each having specific fields all while still enforcing type validation.",
+
+    gesprod_keypoint2_title: "Complete and detailed project history",
+    gesprod_keypoint2_description: "Each modification in the project data is saved and can be displayed. It allows to see exactly who modified something, what was modified and when.",
+
+    gesprod_keypoint3_title: "Roles management",
+    gesprod_keypoint3_description: "The app does not display the same information and possibility to users depending on their assigned role and department. Access to page and information have been secured both from frontend and backend point of view.",
+
 // ------------------ Matrix ------------------ //
     matrix_title: "Matrix",
     matrix_summary: "A web app acting like an phone book or directory for the company employees",
@@ -44,7 +75,7 @@ export const EN_DATA = {
     bcFormation_summary: "A web app to manage and view the company's trainings and training sessions",
     bcFormation_description: "BC Formation is a web app allowing user to view available trainings as well as their trainings history. The manager of each department can view the training history of all the persons in their department and ask for new trainings for them. The training administrator can add new trainings and trainers, create and manage training sessions from people in it, dates, document, location, ...",
 
-    bcFormation_keypoint1_title: "Role management",
+    bcFormation_keypoint1_title: "Roles management",
     bcFormation_keypoint1_description: "The app does not display the same information and possibility to users depending on their assigned role (training administrator, department manager, base user). Access to page and information have been secured both from frontend and backend point of view.",
 
     bcFormation_keypoint2_title: "Training requests easy to manage for training administrator",
@@ -370,6 +401,7 @@ export const EN_DATA = {
         DOCKER: "Docker",
         KEYCLOAK: "Keycloak",
         POSTMAN: "Postman",
+        CLAUDE_CODE: "Claude code",
     },
     programming_languages: {
         ALL: "All",
@@ -388,12 +420,14 @@ export const EN_DATA = {
         REACT_JS: "ReactJS",
         NEXT_JS: "Next.js",
         NEST_JS: "Nest.js",
+        TYPESCRIPT: "Typescript",
         SWIFT: "Swift",
         POSTGRE_SQL: "PortgreSQL",
         MYSQL: "MySQL",
         PRISMA: "Prisma",
         TAILWIND_CSS: "Tailwind CSS",
-        JAVA: "Java"
+        JAVA: "Java",
+        MARIA_DB: "MariaDB",
     },
 
 // ------------------ Resume data ------------------ //

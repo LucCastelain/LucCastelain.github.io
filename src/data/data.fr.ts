@@ -1,4 +1,35 @@
 export const FR_DATA = {
+// ------------------ Factur-X ------------------ //
+    facturX_title: "Factur-X",
+    facturX_summary: "Une app web permettant de générer des factures compatibles Factur-X EN16931",
+    facturX_description: "Factur-X est une application développée dans le cadre de la réforme européenne sur la facturation électronique. Elle permet de renseigner toutes les informations nécessaires pour générer une facture compatible avec la norme Factur-X EN16931, c’est-à-dire un PDF contenant un XML embarqué avec toutes les informations de la facture, lisible à la fois par des humains et des machines.\nUne fois la facture générée, elle est automatiquement envoyée à une plateforme agréée pour validation et peut ensuite être consultée à tout moment.",
+
+    facturX_keypoint1_title: "Récupération des données existantes depuis MariaDB",
+    facturX_keypoint1_description: "Dans certains cas, lorsque les données de facturation existent déjà dans les bases de données de l’entreprise, l’application peut les récupérer depuis MariaDB afin de générer une facture respectant la nouvelle norme européenne.",
+
+    facturX_keypoint2_title: "Toutes les factures générées sont compatibles Factur-X EN16931",
+    facturX_keypoint2_description: "L’application ne permet pas de générer de factures incompatibles avec la norme Factur-X EN16931. Elle impose les champs requis et affiche des avertissements lorsqu’un champ est manquant ou mal renseigné.",
+
+    facturX_keypoint3_title: "Aperçus disponibles pour les utilisateurs",
+    facturX_keypoint3_description: "Les utilisateurs peuvent à tout moment prévisualiser le PDF ou le XML de la facture qui sera générée.",
+
+    facturX_keypoint4_title: "Récapitulatif et historique des factures",
+    facturX_keypoint4_description: "Les factures sont organisées par contrat afin d’être faciles à retrouver. Un récapitulatif du montant total des factures est disponible pour chaque contrat.",
+
+// ------------------ Gesprod ------------------ //
+    gesprod_title: "Gesprod Metal",
+    gesprod_summary: "Une app web servant de point d’entrée pour toutes les données liées à la production métallique de l’entreprise",
+    gesprod_description: "Baudin Chateauneuf est une entreprise qui réalise des ponts, des grandes constructions, des ouvrages d'art, des charpentes métalliques etc... La production métallique est son activité principale.\nCette application est destinée à tous les services afin de centraliser les données de la production métallique. Elle regroupe toutes les données liées à cette production, de la conception à la construction. Elle permet de créer de nouveaux projets pour la production métallique, que ce soit pour une pièce spécifique ou un groupe de pièces. Toutes les informations d’un projet peuvent être définies, par exemple un calendrier spécifique, des points de contrôle, des adresses, des traitements métalliques ou encore des spécifications techniques.\nElle présente également une hiérarchie des différentes pièces et sous-pièces, leur organisation, les matériaux qui les composent, leur destination ou le chantier auquel elles sont destinées, ainsi que de nombreuses autres informations.\nL’application a été conçue pour centraliser toutes les données de production métallique.",
+
+    gesprod_keypoint1_title: "Modèle semi-dynamique",
+    gesprod_keypoint1_description: "Afin de laisser un maximum de liberté aux utilisateurs et d’adapter le modèle aux différents types de projets et de pièces, nous avons choisi d’utiliser du JSON pour représenter et stocker les données. Cela offre une grande souplesse tout en restant facile à modifier, sans altérer les modèles de base de données. Avec du JSON, un même modèle peut représenter différentes pièces, chacune avec ses propres champs, tout en conservant la validation de types.",
+
+    gesprod_keypoint2_title: "Historique complet et détaillé des projets",
+    gesprod_keypoint2_description: "Chaque modification des données du projet est enregistrée et peut être affichée. Il est ainsi possible de savoir précisément qui a effectué une modification, ce qui a été modifié et à quel moment.",
+
+    gesprod_keypoint3_title: "Gestion des rôles",
+    gesprod_keypoint3_description: "L’application n’affiche pas les mêmes informations ni les mêmes possibilités selon le rôle et le service attribués aux utilisateurs. L’accès aux pages et aux informations est sécurisé côté frontend comme côté backend.",
+
 // ------------------ Matrix ------------------ //
     matrix_title: "Matrix",
     matrix_summary: "Une app web jouant le rôle d'annuaire pour les employés de l'entreprise",
@@ -370,6 +401,7 @@ export const FR_DATA = {
         DOCKER: "Docker",
         KEYCLOAK: "Keycloak",
         POSTMAN: "Postman",
+        CLAUDE_CODE: "Claude code",
     },
     programming_languages: {
         ALL: "Tous",
@@ -388,12 +420,14 @@ export const FR_DATA = {
         REACT_JS: "ReactJS",
         NEXT_JS: "Next.js",
         NEST_JS: "Nest.js",
+        TYPESCRIPT: "Typescript",
         SWIFT: "Swift",
         POSTGRE_SQL: "PortgreSQL",
         MYSQL: "MySQL",
         PRISMA: "Prisma",
         TAILWIND_CSS: "Tailwind CSS",
-        JAVA: "Java"
+        JAVA: "Java",
+        MARIA_DB: "MariaDB",
     },
 
 // ------------------ Resume data ------------------ //
